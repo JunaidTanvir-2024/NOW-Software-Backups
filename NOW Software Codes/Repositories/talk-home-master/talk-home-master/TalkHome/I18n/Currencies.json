@@ -1,0 +1,38 @@
+﻿{
+  "GB": {
+    "currencySymbol": "£",
+    "currency": "GBP"
+  },
+  "IT": {
+    "currencySymbol": "€",
+    "currency": "EUR"
+  },
+  "NL": {
+    "currencySymbol": "€",
+    "currency": "EUR"
+  },
+  "DE": {
+    "currencySymbol": "€",
+    "currency": "EUR"
+  },
+  "FR": {
+    "currencySymbol": "€",
+    "currency": "EUR"
+  },
+  "GR": {
+    "currencySymbol": "€",
+    "currency": "EUR"
+  },
+  "CY": {
+    "currencySymbol": "€",
+    "currency": "EUR"
+  },
+  "NO": {
+    "currencySymbol": "€",
+    "currency": "EUR"
+  },
+  "default": {
+    "currencySymbol": "$",
+    "currency": "USD"
+  }
+}

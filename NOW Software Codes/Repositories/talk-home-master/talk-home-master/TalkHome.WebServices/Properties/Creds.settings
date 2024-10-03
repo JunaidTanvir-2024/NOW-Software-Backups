@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TalkHome.WebServices.Properties" GeneratedClassName="Creds">
+  <Profiles />
+  <Settings>
+    <Setting Name="AppApiBasicAuth" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">440000000000:3302</Value>
+    </Setting>
+    <Setting Name="WebApiBasicAuth" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">webdev:FenyCKbVsdVRQBf2</Value>
+    </Setting>
+    <Setting Name="AddressIoAuth" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">api-key:2_Ua7jVDxk291udlLRiZ0Q5856</Value>
+    </Setting>
+    <Setting Name="IpInfoKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">536fc3c409075b</Value>
+    </Setting>
+    <Setting Name="AppApiBasicAuthGBP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">440000000000:3302</Value>
+    </Setting>
+    <Setting Name="AppApiBasicAuthEUR" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3570000000000:8596</Value>
+    </Setting>
+    <Setting Name="AppApiBasicAuthUSD" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">10000000000:8009</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

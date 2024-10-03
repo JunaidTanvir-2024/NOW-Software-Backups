@@ -1,0 +1,383 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body { color: #333; font-family: Lato, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 1.1em; line-height: 1.5em; margin: 0px; }
+a:hover, a:focus { text-decoration: none !important; }
+.international-topup a:hover, .international-topup a:hover { border: none; box-shadow: none; outline: none; }
+input:focus { box-shadow: none !important; }
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle { color: #000; background-color: #dee228; border-color: #dee228; }
+.btn-primary.focus, .btn-primary:focus, .btn:focus { box-shadow: unset !important; }
+/* ----------------------------------------------------------------------------- Notification STARTS ------------------ */
+.notifications { border-radius: 0; font-size: 1.4em; line-height: 1.4em; font-weight: 700; margin: 70px auto 0 auto; clear: both; text-align: center; }
+.notifications .alert { padding: 40px 5% 30px !important; line-height: normal; font-size: 20px; margin: auto; margin-bottom: 0px; max-width: 1000px; }
+#notification.notifications {
+    margin: 0;
+    background-color: rgb(192, 12, 0) !important;
+    color: #fff !important;
+    padding-top: 3rem;
+}
+.notifications .alert { padding: 30px 5%; }
+/* ----------------------------------------------------------------------------- Notification Ends ------------------ */
+/***** Alerts *****/
+.success,
+.valid,
+.alert-success { background-color: rgb(219, 240, 219); color: rgb(0, 127, 0); }
+.error,
+.invalid,
+.alert-danger { background-color: rgb(255, 244, 244); color: rgb(192, 12, 0); }
+/* ----------------------------------------------------------------------------- NAVIGATION STARTS ------------------ */
+.navbar { position: relative; }
+.navbar-brand img { position: absolute; z-index: 999; top: -30px; }
+.navbar-nav li.nav-item .nav-link { font-size: 20px; color: #002266 !important; display: block; padding: 1rem 0.5rem; }
+.navbar-nav li.nav-item .nav-link::after { padding-left: 12px; content: '|'; }
+.navbar-nav li.nav-item:last-child .nav-link::after { padding-left: 0px; content: '' !important; }
+.navbar-nav li { position: relative; }
+.navbar-nav li.nav-item.active:after { font-family: 'FontAwesome'; font-size: 30px; content: '\f0d7'; color: #002266; text-align: center; margin-left: auto; margin-right: auto; position: absolute; left: 0; right: 0; top: -16px; padding-right: 12px; }
+section.slider { padding: 0px; }
+.tp-caption.NotGeneric-Title, .NotGeneric-Title, .NotGeneric-SubTitle { font-family: 'Lato', sans-serif !important; color: #002266 !important; }
+.tp-caption.WebProduct-Button, .WebProduct-Button { font-family: 'Lato', sans-serif !important; background-color: rgba(222, 226, 40, 1.00); border-color: rgba(0, 0, 0, 1.00); border-radius: 0 0 0 0; color: #000 !important; }
+.NotGeneric-Title span { font-weight: 500 !important; }
+/* ----------------------------------------------------------------------------- NAVIGATION ENDS ------------------ */
+/* ----------------------------------------------------------------------------- INNER PAGES BANNER ENDS ------------------ */
+.inner-banner { padding-top: 220px; padding-bottom: 30px; }
+.inner-banner .herotext { padding: 0px; text-align: center; }
+.inner-banner .herotext h1 { font-family: 'Lato', sans-serif; font-size: 2.4em; font-weight: 400; line-height: normal; color: #fff; margin: 0px; padding-top: 0px; padding-bottom: 0px; }
+.inner-banner .herotext h2 { font-family: 'Lato', sans-serif; font-size: 2.4em; font-weight: 400; line-height: normal; color: #fff; margin: 0px; padding-top: 0px; padding-bottom: 0px; }
+.inner-banner .herotext h1 span, .inner-banner .herotext h2 span { font-weight: 700; }
+.breadcrumb { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0rem; margin-bottom: 0rem; list-style: none; background-color: transparent; border-radius: 0rem; margin-top: 10px; padding-top: 10px; border-top: 1px solid #ccc; }
+.breadcrumb-item a { color: #000; }
+.breadcrumb-item.active { color: #0098da; }
+.banner-img-01 { background-image: url('../images/inner-pages-banners/1.jpg'); background-repeat: repeat-y; background-position: 50% 0; }
+.banner-img-02 { background-image: url('../images/inner-pages-banners/2.jpg'); background-repeat: repeat-y; background-position: 50% 0; }
+.banner-img-03 { background-image: url('../images/inner-pages-banners/3.jpg'); background-repeat: repeat-y; background-position: 50% 0; }
+.banner-img-04 { background-image: url('../images/inner-pages-banners/4.jpg'); background-repeat: repeat-y; background-position: 50% 0; }
+.banner-img-05 { background-image: url('../images/inner-pages-banners/5.jpg'); background-repeat: repeat-y; background-position: 50% 0; }
+/* ----------------------------------------------------------------------------- INNER PAGES BANNER ENDS ------------------ */
+
+/* ----------------------------------------------------------------------------- INTERNATIONAL TOPUP STARTS ------------------ */
+.international-topup .nav-tabs { border-bottom: 0px solid #dee2e6; }
+.nav-tabs .nav-item .nav-link .icon, .nav-tabs .nav-link .icon { border: 2px solid #777; border-radius: 50%; height: 80px; width: 80px; text-align: center; margin-bottom: 10px; margin-left: auto; margin-right: auto; padding-top: 10px; color: #777; font-size: 36px; padding-top: 20px; }
+.nav-tabs .nav-item.show .nav-link .icon, .nav-tabs .nav-link:hover .icon { color: #fff; background-color: #0098da; border-color: #0098da; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+.nav-tabs .nav-item.show .nav-link .icon, .nav-tabs .nav-link.active .icon { border: 2px solid #0098da; border-radius: 50%; height: 80px; width: 80px; text-align: center; margin-left: auto; margin-right: auto; color: #fff; background-color: #0098da; }
+.international-topup li.nav-item .nav-link { font-size: 20px; color: #777; display: block; padding: 1rem 2rem; }
+.international-topup li.nav-item .nav-link::after { padding-left: 0px; content: ''; }
+.nav-tabs .nav-item .nav-link, .nav-tabs .nav-link { color: #777; background-color: transparent; border-color: transparent; border-color: transparent transparent #0098da; border: solid; border-top: 0; border-left: 0; border-right: 0; border-bottom: 5px solid #ccc; }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { color: #0098da !important; background-color: transparent; border-color: transparent transparent #0098da; border-color: transparent transparent #0098da; border: 5px solid; border-top: 0; border-left: 0; border-right: 0; }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover { color: #0098da !important; background-color: transparent; border-color: transparent transparent #0098da; border-color: transparent transparent #0098da; border: 5px solid; border-top: 0; border-left: 0; border-right: 0; }
+.nav-tabs .nav-link { border: 2px solid transparent; border-top-left-radius: .25rem; border-top-right-radius: .25rem; }
+.international-topup .tab-pane { padding: 30px; border: 1px solid #ccc; -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2); -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2); box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2); }
+.international-topup .tab-content h1 { font-family: 'Lato', sans-serif; font-size: 1.3em; font-weight: 700; line-height: 1.6em; padding-bottom: 12px; color: #2f3387; }
+.international-topup #login-signup .block { border: 1px solid #59c9e4; padding: 15px 20px 20px; }
+.international-topup #login-signup .block .description { font-size: 1.1em !important; font-weight: 500; line-height: 1.3em; padding-bottom: 20px; }
+.international-topup .form-control { display: block; height: calc(2.25rem + 2px); padding: .375rem .75rem; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #ced4da; border-radius: 0rem; min-height: 40px; transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+.international-topup .forgotten { padding-top: 8px; }
+.international-topup #package h1 .county-name { font-family: 'Lato', sans-serif; font-size: 1.2em; font-weight: 500; line-height: 1.6em; padding-bottom: 12px; color: #2e3266; padding-left: 20px; }
+.international-topup #package h1 .county-name img { display: inline-block; width: auto; height: 48px; margin-right: 5px; }
+.international-topup #package .svg-icon { height: 30px; }
+.international-topup #package ul { margin: 0; padding: 0; list-style-type: none; text-align: center; }
+.international-topup #package ul li { display: inline-block; }
+.international-topup #package .block { margin-top: 10px; margin-bottom: 10px; border: 1px solid #ccc; padding: 15px; min-width: 130px; margin-right: 10px; margin-left: 10px; }
+input[type="radio"] { display: none; opacity: 0; width: 0px !important; height: 0; position: absolute; }
+label:hover .block, input[type="radio"]:checked + label .block { background-color: #0098da; color: #fff; }
+.international-topup #package .package-name { font-family: 'Lato', sans-serif; font-size: 1.2em; font-weight: 700; line-height: 1.2em; padding-bottom: 6px; }
+.international-topup #package .package-name span { font-size: 0.8em !important; font-weight: 400; text-transform: uppercase; }
+.international-topup #package .price { font-family: 'Lato', sans-serif; font-size: 1.2em; font-weight: 700; line-height: 1.4em; padding-bottom: 0px; }
+.international-topup #package .block .custom-control-inline { margin: 0px; }
+.form-inline label { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 10px; margin-right: 20px; }
+.international-topup ul.confirm-transfer { list-style-type: none; padding: 0px; margin: 0px; }
+.international-topup ul.confirm-transfer li { font-size: 1.25em; padding-top: 10px; padding-bottom: 10px; }
+.international-topup ul.confirm-transfer li { color: #666; }
+.international-topup ul.confirm-transfer li strong { font-weight: 700; color: #000; }
+.international-topup ul.confirm-transfer li #location { color: #000000; font-weight: 700; }
+.international-topup .btn { padding: .375rem 1.7rem; height: calc(2.25rem + 2px); }
+/* ----------------------------------------------------------------------------- INTERNATIONAL TOPUP ENDS ------------------ */
+/* ----------------------------------------------------------------------------- SECTION TAG STARTS ------------------ */
+section { padding-top: 50px; padding-bottom: 50px; }
+/* ----------------------------------------------------------------------------- SECTION TAG ENDS ------------------ */
+/* ----------------------------------------------------------------------------- HERO TEXT STARTS ------------------ */
+.herotext { padding-bottom: 40px; }
+.herotext h1 { font-family: 'Lato', sans-serif; font-size: 2.6em; font-weight: 700; line-height: 1em; padding-bottom: 10px; }
+.herotext h1 span { font-weight: 400; }
+.herotext h2 { font-size: 1.5em; font-weight: 400; line-height: 1.3em; }
+.herotext h3 { font-size: 1.4em; font-weight: 400; text-transform: uppercase; line-height: 1.4em; }
+.herotext h3 span { font-weight: 400; }
+/* ----------------------------------------------------------------------------- HERO TEXT ENDS ------------------ */
+.white-text { color: #fff; }
+.red-text { color: red; }
+.bg-light { background-color: #fff !important; }
+svg { position: absolute; bottom: 0; width: 100%; height: 10vw; /* set height to pixels if you want angle to change with screen width */ }
+
+.card { position: relative; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; min-width: 0; word-wrap: break-word; background-color: #fff; background-clip: border-box; border: 0px solid rgba(0, 0, 0, .125); border-radius: .25rem; }
+.card-header { padding: 0.5rem; margin-bottom: 10px !important; color: inherit; background-color: transparent; border: 1px solid rgba(0, 0, 0, .3); border-radius: 0px !important; padding-top: 4px; padding-bottom: 4px; }
+.card-header:hover { background-color: #f5f5f5; }
+.card-body { -ms-flex: 1 1 auto; flex: 1 1 auto; padding: 0.5rem 1rem 1.8rem 1rem; }
+/* ----------------------------------------------------------------------------- HELP ENDS ------------------ */
+
+/* ----------------------------------------------------------------------------- BACKGROUNDS COLORS STARTS ------------------ */
+.light-grey-bg { background-color: #f5f5f5; }
+.light-blue-bg { background-color: #0098da; }
+.dark-blue-bg { background-color: #002266; }
+.dark-grey-bg { background-color: #222222; }
+.black-bg { background-color: #000; }
+/* ----------------------------------------------------------------------------- BACKGROUNDS COLORS ENDS ------------------ */
+/* ----------------------------------------------------------------------------- PRIMARY BUTTON STARTS ------------------ */
+.button a { font-family: 'Lato', sans-serif; font-size: 16px; font-weight: 700; color: #000 !important; background-color: #dee228; padding: 10px 40px; }
+button { color: #000; background-color: #dee228; border-color: #dee228; border-radius: 0px !important; font-weight: 600; border: none; cursor: pointer; padding-left: 20px; padding-right: 20px; padding-top: 6px; padding-bottom: 6px; }
+.btn-primary { color: #000 !important; background-color: #dee228; border-color: #dee228; font-weight: 700; }
+.btn-primary:hover { color: #000 !important; background-color: #dee228 !important; border-color: #dee228 !important; }
+.btn { border-radius: 0px; font-weight: 600; }
+.btn-primary.disabled, .btn-primary:disabled, .co-btn:disabled, .co-btn.disabled { color: #000; background-color: #dee228; border-color: #dee228; cursor: not-allowed; }
+/* ----------------------------------------------------------------------------- PRIMARY BUTTON ENDS ------------------ */
+/* ----------------------------------------------------------------------------- TOP UP SHOPS STARTS ------------------ */
+.top-ups-shops h1 { font-family: 'Lato', sans-serif; font-size: 1.7em; font-weight: 400; line-height: normal; color: #002266; margin: 0px; padding-top: 0px; padding-bottom: 10px; }
+.top-ups-shops h1 span { font-weight: 600; }
+.top-ups-shops img { padding-top: 6px; padding-bottom: 6px; padding-left: 3px; padding-right: 3px; }
+/* ----------------------------------------------------------------------------- TOP UP SHOPS ENDS ------------------ */
+
+.transfer-package { border: unset; margin-top: unset; margin-bottom: unset; padding: unset; color: unset; border-radius: unset; text-align: unset; }
+.transfer-package label { margin-bottom: 0; }
+.transfer-package-selected { background-color: unset; color: unset; border: unset; }
+.international-topup .forgotten a { font-size: 1rem; font-weight: 400; }
+.international-topup .forgotten a:hover, .international-topup .forgotten a:focus { border: unset; }
+
+.fade:not(.show) { opacity: 0; display: none; }
+
+.lable-margin { margin-top: 34px; }
+.field-validation-valid { padding: 0 !important; margin: 0 !important; display: inline; }
+
+/*country code flags*/
+.intl-tel-input input, .intl-tel-input input[type=text], .intl-tel-input input[type=tel] { font-weight: 700; width: 320px; display: inline-block; }
+.intl-tel-input .selected-flag:focus { box-shadow: none !important; outline: none !important; }
+.iti-flag.us { transform: scale(1.2); }
+.intl-tel-input .selected-flag .iti-arrow { margin-left: 8px !important; border-left: 5px solid transparent !important; border-right: 5px solid transparent !important; border-top: 6px solid #555 !important; }
+.intl-tel-input .selected-flag .iti-arrow.up { border-top: none !important; border-bottom: 6px solid #555 !important; }
+.intl-tel-input.allow-dropdown input::-webkit-input-placeholder { color: #6c757d; opacity: 1 }
+.intl-tel-input.allow-dropdown input::-moz-placeholder { color: #bcbcbc; }
+.intl-tel-input.allow-dropdown input:-ms-input-placeholder { color: #bcbcbc; }
+.intl-tel-input.allow-dropdown input::-ms-input-placeholder { color: #bcbcbc; }
+.intl-tel-input.allow-dropdown input::placeholder { color: #bcbcbc; }
+
+/*Nigiran Landing page*/
+.lp-top-banner { background-color: #cfd8dc; background-position-x: 0%; color: #fff; background-size: cover; position: relative; min-height: 320px; }
+.lp-top-banner.nigerian-banner { background-image: url('../../web_assets/images/nigeria-lg-banner.jpg'); }
+.nigerian-banner p, h2, h4, h3 { margin: 0; line-height: 1.1; }
+.nigerian-banner h4 { font-size: 46px; font-weight: 600; margin-bottom: 5px; }
+.nigerian-banner h2 { letter-spacing: 2px; font-size: 74px; font-weight: 600; color: #dee228; }
+.nigerian-banner p { font-size: 48px; margin-bottom: 5px; }
+.nigerian-banner h3 { font-size: 36px; }
+.nigerian-banner h3 strong { color: #dee228; font-size: 46px; font-weight: 600; }
+
+.lp-top-banner.nigerian-banner.ghana-banner { background-image: url('../../web_assets/images/ghana-lg-banner.jpg'); }
+.lp-top-banner.nigerian-banner.bangladesh-banner { background-image: url('../../web_assets/images/bangladesh-lg-banner.jpg'); }
+
+
+
+.brand-heading { margin-bottom: 0; padding-left: 0; list-style: none; color: #2f3387; }
+.brand-heading li { display: inline-block; vertical-align: middle; }
+.brand-heading li:first-child { margin-right: 15px; }
+.brand-heading li:last-child { text-align: left; }
+.brand-heading li img { display: inline-block; width: 106px; height: auto; max-height: 100%; }
+.brand-heading li h4 { font-size: 1.8rem; font-weight: 800; letter-spacing: 4px; }
+.brand-heading li h2 { font-size: 2.8rem; font-weight: 800; }
+.brand-heading li h2 img { display: inline-block; width: 60px; height: auto; max-height: 100%; vertical-align: middle; margin-left: 10px; margin-top: -10px; box-shadow: 4px 4px 10px rgba(0,0,0,0.15); }
+.lp-ng a { font-size: 2rem; }
+
+.plan-card { box-sizing: border-box; height: 100%; box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.10); border: 1px solid #fafafa; background-color: #fafafa; padding: 30px 10px; border-radius: 4px; text-align: center; transition: all 150ms ease-in; cursor: pointer; }
+.plan-card:hover { background-color: #ffffff; border: 1px solid #ffffff; box-shadow: 0 0px 10px rgba(0,0,0,0.15), 0 0 15px 0px rgba(0,0,0,0.15); transform: scale(1.025); }
+.pkg-bg .row.justify-content-center > .col-lg-4 { margin-bottom: 30px; }
+.plan-title { font-size: 26px; font-weight: 700; text-align: center; color: #59c9e4; margin-bottom: 20px; letter-spacing: 0.5px; text-transform: uppercase; transition: all 200ms ease-in; }
+/*.plan-card:hover .plan-title { color: #2f3387; }*/
+.plan-details { margin-bottom: 15px; }
+.plan-details img { display: block; width: auto; height: 24px; margin: auto; margin-top: 10px; opacity: 0.65; }
+.plan-details span { font-size: 12px; font-weight: 400; display: block; }
+.plan-details strong { font-size: 36px; font-weight: 800; color: #2f3387; display: block; margin-top: 20px; margin-bottom: 10px; transition: all 200ms ease-in; }
+.plan-card:hover strong { font-size: 40px; }
+.strikethrough:before { position: absolute; content: ""; left: 0; top: 50%; right: 0; border-top: 3px solid; border-color: inherit; color: red; -webkit-transform: rotate(-5deg); -moz-transform: rotate(-5deg); -ms-transform: rotate(-5deg); -o-transform: rotate(-5deg); transform: rotate(-5deg); }
+.plan-details .strikethrough { position: absolute; display: inline-block; font-size: 20px; font-weight: 900; bottom: 16px; left: 50%; transform: translateX(-50%); padding: 0 0.3rem; }
+.plan-details .strikethrough::before { color: rgba(255,0,0,0.65) !important; border-top: 2px solid !important; }
+.plan-details .strikethrough + span { margin-top: 15px; }
+.plan-details .col-4:not(:last-child) { border-right: 1px solid #ccc; border-left: 2px solid transparent; }
+.m-or-t { position: relative; }
+.m-or-t::after { content: 'OR'; display: inline-block; position: absolute; font-size: 10px; font-weight: 800; color: #59c9e4; box-sizing: border-box; padding: 2px 6px 2px 5px; background-color: #fff; border: 1px solid #ccc; line-height: 10px; border-radius: 3px; transform: translateY(-50%) rotate(-90deg); left: -15px; top: 50%; }
+.plan-info { display: block; text-align: center; margin-bottom: 15px; padding: 0; }
+.plan-info li { display: inline-block; }
+.plan-info li:first-child { margin-right: 15%; }
+.plan-info label { font-size: 14px; font-weight: 400 !important; cursor: pointer; }
+.plan-info label:hover, .plan-info label:focus { border: 0 !important; text-decoration: underline; }
+.plan-info label img { width: auto; height: 16px; display: inline-block; margin-top: -3px; margin-right: 5px; }
+.pkg-bg { background-color: #59c9e4; padding: 70px 15px; }
+
+.order-sim-banner { background-image: url('../../web_assets/images/order-sim-lg-banner.jpg'); background-position-x: 0%; color: #2f3387; }
+.order-sim-banner h1 { font-size: 3.6rem; line-height: 1.1; font-weight: 900; margin-bottom: 1rem; }
+.order-sim-banner ul { display: block; margin-bottom: 1.6rem; padding-left: 0; }
+.order-sim-banner ul li { display: inline-block; line-height: normal; font-weight: 900; text-transform: uppercase; font-size: 1.4rem; }
+.order-sim-banner ul li:not(:last-child) { border-right: 2px solid #59c9e4; padding-right: 1rem; margin-right: 1rem; }
+.order-sim-banner ul li img { display: inline-block; margin-bottom: 5px; }
+.order-sim-banner .co-btn { font-weight: 900; font-size: 1.2rem; padding: 0.5rem 1rem; }
+.tag-title { font-size: 2.6rem; font-weight: 900; color: #fff; }
+
+.competition-plan { background-image: url('../../web_assets/images/competition-plan-lg-banner.jpg'); background-position-x: 0%; color: #ffffff; }
+.competition-plan h1 { font-size: 4.2rem; font-weight: 800; margin-top: 3vw; }
+
+.competition-plan-terms { background-color: #fafafa; border-top: 1px solid #efefef; font-size: 0.9rem; line-height: 1.5; padding-top: 50px; padding-bottom: 35px; }
+.competition-plan-terms p { margin: 0; margin-bottom: 0.75rem; }
+
+.th-control.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after { background-image: none; }
+.th-control.custom-checkbox .custom-control-label::before { border-radius: 0; }
+.sisu-wrapper { box-shadow: none !important; }
+
+/*=x=x=x= Festive Bundles =x=x=x=*/
+.col-align-center { margin: 0 auto !important; }
+.festive-nav { padding: 1.2rem 5rem; box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.5); position: relative; z-index: 39; }
+.festive-nav .brand-logo { position: absolute; top: 10px; }
+.festive-nav img { width: 105px; height: auto; display: inline-block; }
+.festive-nav .login-cta strong { color: #2f3387; vertical-align: middle; margin-right: 0.5rem; }
+
+.festive-header { background: #f5f5f5 no-repeat 100% 50%; background-size: cover; position: relative; min-height: 400px; }
+.festive-header.nigeria { background-image: url('../../web_assets/images/festive-bundles-desktop-nigeria.jpg'); }
+.festive-header.bangladesh { background-image: url('../../web_assets/images/fsetive-bundles-desktop-bangladesh.jpg'); }
+.festive-header.ghana { background-image: url('../../web_assets/images/fsetive-bundles-desktop-ghana.jpg'); }
+.festive-header.pakistan { background-image: url("../../web_assets/images/fsetive-bundles-desktop-pakistan'.jpg"); }
+.festive-header.uk { background-image: url('../../web_assets/images/fsetive-bundles-desktop-uk.jpg'); }
+
+.festive-header h1 { color: #2f3387; font-weight: 800; font-size: 2.85rem; }
+.festive-header p { font-size: 1.25rem; font-weight: 600; line-height: 1.4; }
+.festive-header .btn { font-size: 1.85rem; padding: 0.35rem 2.5rem; }
+
+.blue-cta-strip { background-color: #2f3387; color: #fff; padding: 2rem 1rem; position: relative; }
+.blue-cta-strip h2 { display: inline-block; vertical-align: middle; font-size: 2.5rem; font-weight: 600; margin-right: 0.5rem; }
+.blue-cta-strip .btn { font-size: 1.85rem; padding: 0.35rem 2.5rem; }
+
+.festive-ticket { position: absolute; background-color: #f7f7f7; color: #000; border-radius: 50%; height: 200px; width: 200px; top: 50%; left: 3rem; transform: translateY(-50%); box-shadow: 0 0 15px 1px rgba(0,0,0,0.5), 0 0 0px 3px #c40018 inset; border: 10px solid #fff; }
+
+.snow-footer { background: #59c9e4 url('../../web_assets/images/snow-footer.png') no-repeat 50% 100%; min-height: 120px; }
+.snow-footer img { display: inline-block; height: auto; width: 128px; padding: 20px; }
+
+.yellow-cta-strip { background-color: #dee228; color: #000; padding: 1rem; }
+.yellow-cta-strip h4 { font-size: 2rem; font-weight: 800; }
+.yellow-cta-strip h4 span { font-weight: 400 !important; }
+#myTabContent { display: block !important; }
+/* ----------------------------------------------------------------------------- MEDIA QURIES STARTS ------------------ */
+@media(max-width: 1199.98px) {
+    .nigerian-banner h4 { font-size: 36px;}
+    .nigerian-banner h2 { font-size: 54px; }
+    .nigerian-banner p { font-size: 36px; }
+    .nigerian-banner h3 { font-size: 30px; }
+
+    .lp-top-banner.nigerian-banner.ghana-banner { background-position-x: 17%; }
+    .lp-top-banner.nigerian-banner.bangladesh-banner { background-position-x: 17%; }
+
+    .competition-plan { background-position-x: 40%; }
+}
+
+@media (max-width: 991.98px ) {
+    .nav-tabs .nav-item .nav-link .icon, .nav-tabs .nav-link .icon { border: 2px solid #777; border-radius: 50%; height: 50px; width: 50px; text-align: center; margin-bottom: 20px; margin-left: auto; margin-right: auto; padding-top: 10px; color: #777; font-size: 24px; padding-top: 10px; }
+    .nav-tabs .nav-item.show .nav-link .icon, .nav-tabs .nav-link:hover .icon { color: #fff; background-color: #0098da; border-color: #0098da; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+    .nav-tabs .nav-item.show .nav-link .icon, .nav-tabs .nav-link.active .icon { border: 2px solid #0098da; border-radius: 50%; height: 50px; width: 50px; text-align: center; margin-left: auto; margin-right: auto; color: #fff; background-color: #0098da; }
+    .international-topup li.nav-item .nav-link { font-size: 1rem; line-height: 1.2rem; display: block; padding: 1rem 1rem; }
+    .international-topup .btn { padding: .375rem 0.8rem; font-size: 0.8rem; }
+
+    .site-header { padding: 8px 0 0; }
+    .logo img { left: 8px; position: relative; }
+    .menu-container { left: unset; padding-left: 16px; }
+    /*Nigiran Landing page*/
+    .lp-top-banner { min-height: 280px; }
+    .nigerian-banner { background-position-x: 10%; }
+    .nigerian-banner h4 { font-size: 30px; }
+    .nigerian-banner h2 { font-size: 44px; }
+    .nigerian-banner p { font-size: 30px; }
+    .nigerian-banner h3 strong { font-size: 36px; }
+
+    .brand-heading li:first-child { margin-right: 5px; }
+    .brand-heading li img { width: 64px; }
+    .brand-heading li h4 { font-size: 1.2rem; letter-spacing: 2px; }
+    .brand-heading li h2 { font-size: 1.8rem; }
+    .brand-heading li h2 img { width: 36px; margin-top: -5px; }
+    .lp-ng a { font-size: 1.2rem; }
+
+    .lp-top-banner.nigerian-banner.ghana-banner { background-position-x: 20%; }
+    .lp-top-banner.nigerian-banner.bangladesh-banner { background-position-x: 20%; }
+
+    .order-sim-banner { background-position-x: 20%; }
+    .order-sim-banner h1 { font-size: 2.4rem; }
+    .order-sim-banner ul li { font-size: 1.1rem; }
+    .order-sim-banner ul li img { height: auto; width: 36px; }
+    .tag-title { font-size: 2rem; }
+
+    .competition-plan { background-position-x: 30%; }
+    .competition-plan h1 { font-size: 3.2rem; font-weight: 800; margin-top: 10vw; }
+
+    /*=x=x=x= Festive Bundles =x=x=x=*/
+    .festive-nav { padding: 1.2rem 0rem; }
+    .festive-header { background: #f5f5f5 no-repeat 85% 50%; min-height: 300px;}
+    .festive-header h1 { font-size: 1.75rem; }
+    .festive-header p { font-size: 1rem; }
+    .festive-header .btn { font-size: 1.35rem; padding: 0.35rem 1.75rem; }
+    .blue-cta-strip h2 { display: block; vertical-align: middle; font-size: 1.8rem; font-weight: 600; margin-right: 0; margin-bottom: 1rem; }
+    .blue-cta-strip .btn { font-size: 1.25rem; padding: 0.35rem 1.5rem; }
+    .festive-ticket { position: unset; left: 0; transform: unset; margin: 0 auto; margin-top: -3.5rem; margin-bottom: 1rem; }
+    .blue-cta-strip {padding: 2rem 1rem; }
+    .yellow-cta-strip h4 { font-size: 1.6rem; font-weight: 600; }
+}
+
+@media (max-width: 767.98px) {
+    .herotext h1 { font-size: 1.7em; line-height: 1em; }
+    .herotext h2 { font-size: 1.3em; line-height: 1.2em; }
+    .international-topup .tab-pane { padding: 30px 15px; }
+    .international-topup li.nav-item .nav-link { padding: 1rem 0.4rem; text-align: center; font-size: 0.9rem; }
+    .international-topup #package-tab { padding-bottom: 35.2px; }
+    .herotext { padding-bottom: 10px; }
+    .international-topup .tab-content h1 { font-size: 1.2rem; line-height: 1.5rem; }
+    .international-topup #login-signup .block { padding: 15px; font-size: 0.8rem; }
+    .get-loc-label { display: block; width: 100%; }
+    .flag-container input { max-width: 200px; }
+    .international-topup #package h1 .county-name { display: block; padding-left: 0; margin-top: 15px; font-size: 1.1em; font-weight: 700; padding-bottom: 0; }
+    .international-topup #package .block { padding: 15px 5px; min-width: 110px; margin-right: 5px; margin-left: 5px; }
+    .international-topup #package .package-name { font-size: 0.9em; }
+    .international-topup #package .price { font-size: 1em; }
+    .transfer-package { width: unset; }
+    .international-topup ul.confirm-transfer li { font-size: 1em; margin-bottom: 10px; display: block !important; border-bottom: 1px solid #cccccc; }
+    .international-topup ul.confirm-transfer li strong { display: block; font-size: 1.2em; }
+    .international-topup ul.confirm-transfer li #location { display: block; font-size: 1.2em; }
+    .international-topup ul.confirm-transfer li:not(:last-child) { border-bottom: 1px solid #cccccc; }
+    .lable-margin { margin-top: 15px; }
+    .intl-tel-input input, .intl-tel-input input[type=text], .intl-tel-input input[type=tel] { width: 100%; display: block; }
+    #btnGetPackage { margin-top: 30px !important; }
+
+    /*Nigiran Landing page*/
+    .lp-top-banner { min-height: 240px; }
+    .lp-top-banner.nigerian-banner { background-image: url('../../web_assets/images/nigeria-sm-banner.jpg'); background-position-x: 0; }
+    .lp-top-banner.nigerian-banner.ghana-banner { background-image: url('../../web_assets/images/ghana-sm-banner.jpg'); background-position-x: 0; }
+    .lp-top-banner.nigerian-banner.bangladesh-banner { background-image: url('../../web_assets/images/bangladesh-sm-banner.jpg'); background-position-x: 0; }
+    .nigerian-banner h4 { font-size: 22px; }
+    .nigerian-banner h2 { font-size: 28px; letter-spacing: 0; }
+    .nigerian-banner p { font-size: 17px; }
+    .nigerian-banner h3 { font-size: 1rem; }
+    .nigerian-banner h3 strong { font-size: 28px; }
+
+    .pkg-bg { padding: 30px 0px; }
+    .brand-heading { margin-bottom: 15px; text-align: center; }
+    .tag-title { font-size: 1.7rem; }
+    /*.brand-heading li { display: block; text-align: center; margin-right: 0; margin-bottom: 10px; }*/
+
+    .order-sim-banner { background-image: url('../../web_assets/images/order-sim-sm-banner.jpg') !important; background-position-x: 0%; }
+    .order-sim-banner h1 { font-size: 1.2rem; }
+    .order-sim-banner ul { margin-bottom: 1rem; }
+    .order-sim-banner ul li { display: block; font-size: 0.8rem; }
+    .order-sim-banner ul li br { display: none; }
+    .order-sim-banner ul li:not(:last-child) { border-right: 0; padding-right: 0px; margin-right: 0; border-bottom: 1px solid #59c9e4; padding-bottom: 0.5rem; margin-bottom: 0.5rem; }
+    .order-sim-banner .co-btn { font-weight: 900; font-size: 0.9rem; padding: 0.4rem 1rem; }
+    .order-sim-banner ul li img { height: auto; width: 24px; margin-right: 5px; margin-bottom: 0; }
+
+    .competition-plan { background-image: url('../../web_assets/images/competition-plan-sm-banner.jpg') !important; background-position-x: 0%; }
+    .competition-plan h1 { font-size: 1.7rem; font-weight: 800; margin-top: -5vw; text-align: center; display: inline-block; }
+
+
+    /*=x=x=x= Festive Bundles =x=x=x=*/
+    .festive-nav .login-cta { text-align: right; }
+    .festive-nav .brand-logo { position: absolute; top: 5px; }
+    .festive-nav img { width: 76px; height: auto; display: inline-block; }
+    .festive-nav .login-cta strong { margin-right: 0; font-size: 0.9rem; display: block; }
+    .festive-header { background: #f5f5f5 no-repeat 90% 50%; min-height: 300px; }
+    .festive-header [class*="col-"] { background-color: rgba(255,255,255,0.8); padding: 1.3rem; border-radius: 1rem; }
+    .festive-ticket { margin-top: unset; }
+}

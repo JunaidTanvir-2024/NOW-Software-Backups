@@ -1,0 +1,106 @@
+﻿/* ----------------------------------------------------------------------------- ERROR PAGE STARTS ------------------ */
+
+.error-page-01 .svg_icons {
+    min-width: 180px;
+    float: left;
+}
+
+.error-page-01 .text {
+    font-size: 110px;
+    float: left;
+    color: #2f3387;
+    font-weight: 900;
+    line-height: 100px;
+    padding-left: 40px;
+}
+
+    .error-page-01 .text span {
+        font-size: 60px;
+        float: left;
+        color: #cccccc;
+        font-weight: 400;
+    }
+
+.error-page-01 h1 {
+    font-size: 80px;
+    font-weight: 900;
+    color: #2f3387;
+}
+
+.error-page-01 h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+.error-page-01 .button a {
+    color: #000;
+    text-align: center;
+    width: 100%;
+    border: 2px solid #dee228;
+    background-color: #dee228;
+    padding-top: 14px;
+    padding-right: 36px;
+    padding-bottom: 14px;
+    padding-left: 36px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0px;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .error-page-01 .svg_icons {
+        min-width: 90px;
+        float: left;
+    }
+
+    .error-page-01 .text {
+        font-size: 60px;
+        float: left;
+        font-weight: 900;
+        line-height: 50px;
+        padding-left: 10px;
+    }
+
+        .error-page-01 .text span {
+            font-size: 34px;
+            float: left;
+            color: #cccccc;
+            font-weight: 400;
+        }
+
+    .error-page-01 h1 {
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .error-page-01 h2 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .error-page-01 .button a {
+        text-align: center;
+        width: 100%;
+        padding-top: 10px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .error-page-01 h1 {
+        font-size: 72px;
+        font-weight: 900;
+    }
+}
+
+
+/* ----------------------------------------------------------------------------- ERROR PAGE ENDS ------------------ */

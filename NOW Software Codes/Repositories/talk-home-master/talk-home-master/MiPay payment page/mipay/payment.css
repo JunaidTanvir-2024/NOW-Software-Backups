@@ -1,0 +1,1461 @@
+﻿/**
+ * General style for the payment page. Defines the style for elements that don't depend on SubIDs for their appearance.
+ *   
+ * @author micheled
+ * Created on 07 Sept 2017
+ *
+ */
+@media all and (max-width: 737px) {
+
+    body {
+        background-color: rgb(74, 209, 237);
+    }
+
+}
+
+@media all and (min-width: 737px) {
+
+    .talkhome .header,
+    .now .header,
+    .talkhome .footer,
+    .now .footer,
+    .talkhome .line {
+        display: block;
+    }
+
+    * {
+        margin: 0;
+      }
+      html, body {
+        height: 100%;
+      }
+      .page-wrap {
+        min-height: 100%;
+        margin-bottom: -64px; 
+      }
+      .page-wrap:after {
+        content: "";
+        display: block;
+      }
+      .site-footer, 
+      .page-wrap:after {
+        height: 64px; 
+      }
+      .site-footer {
+        background: orange;
+      }
+
+    .talkhome .line {
+        background-size: 1908px 200px;
+        padding: 0 0 200px;
+    }
+}
+
+@media all and (min-width: 1908px) {
+
+    .talkhome .line {
+        background-size: 2560px 400px;
+        padding: 0 0 400px;
+    }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+    .gridd {
+        width: 100%;
+        min-width: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    [class*='col-'] {
+        width: auto;
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    /* Mobile Layout */
+    [class*='mobile-col-'] {
+        float: left;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .mobile-col-1-1 {
+        width: 100%;
+    }
+
+    .mobile-col-2-3, .mobile-col-8-12 {
+        width: 66.66%;
+    }
+
+    .mobile-col-1-2, .mobile-col-6-12 {
+        width: 50%;
+    }
+
+    .mobile-col-1-3, .mobile-col-4-12 {
+        width: 33.33%;
+    }
+
+    .mobile-col-1-4, .mobile-col-3-12 {
+        width: 25%;
+    }
+
+    .mobile-col-1-5 {
+        width: 20%;
+    }
+
+    .mobile-col-1-6, .mobile-col-2-12 {
+        width: 16.667%;
+    }
+
+    .mobile-col-1-7 {
+        width: 14.28%;
+    }
+
+    .mobile-col-1-8 {
+        width: 12.5%;
+    }
+
+    .mobile-col-1-9 {
+        width: 11.1%;
+    }
+
+    .mobile-col-1-10 {
+        width: 10%;
+    }
+
+    .mobile-col-1-11 {
+        width: 9.09%;
+    }
+
+    .mobile-col-1-12 {
+        width: 8.33%;
+    }
+    /* Layout Columns */
+    .mobile-col-11-12 {
+        width: 91.66%;
+    }
+
+    .mobile-col-10-12 {
+        width: 83.333%;
+    }
+
+    .mobile-col-9-12 {
+        width: 75%;
+    }
+
+    .mobile-col-5-12 {
+        width: 41.66%;
+    }
+
+    .mobile-col-7-12 {
+        width: 58.33%;
+    }
+
+    .hide-on-mobile {
+        display: none !important;
+        width: 0;
+        height: 0;
+    }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+    .field-validation-error,
+    .field-validation-error-manual {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 350px) {
+
+}
+/* -------------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------	      End media queries	    ------------------------------------*/
+/* -------------------------------------------------------------------------------------------------------------*/
+
+/**** General ****/
+body,
+html {
+    margin: 0px;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+.header,
+.footer {
+	display: none;
+}
+
+.header {
+    position: relative;
+}
+
+.header .inner {
+	height: 72px;
+	max-width: 960px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    width: 100%;
+    margin: 48px 0;
+    font-weight: 700;
+}
+
+h2.title {
+	font-size: 2.2em;
+	line-height: 1;
+	border-bottom: 1px solid;
+	padding: 0 0 48px;
+	margin: 48px 0 32px;
+}
+
+.subtitle {
+	text-align: center;
+	font-weight: 700;
+	margin: 16px 0 32px;
+	font-size: 1.2em;
+}
+
+.input-container {
+	max-width: 260px;
+	margin: 0 auto;
+}
+
+.box-container {
+	margin: 0 auto;
+	max-width: 354px;
+	padding: 0 8px;
+}
+
+.btn-primary {
+    cursor: pointer;
+	border: 0 none;
+	padding: 16px 0;
+	font-family: inherit;
+	font-size: 1em;
+	font-weight: 900;
+	display: block;
+    width: 100%;
+    margin: 32px 0 0;
+}
+
+.terms {
+    font-size: 0.85em;
+    text-align: center;
+}
+
+.terms a:link,
+.terms a:visited,
+.terms a:active {
+    text-decoration: underline;
+}
+.terms a:hover,
+.terms a:focus {
+    text-decoration: none;
+}
+
+.box-container.border *,
+.box-container.border *:after,
+.box-container.border *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contains-input {
+	position: relative;
+	margin: 16px 0;
+	float: none;
+	clear: both;
+}
+
+[type="text"], 
+[type="password"], 
+[type="tel"], 
+[type="number"], 
+select {
+	height: 48px;
+	line-height: 48px;
+	display: block;
+	border-radius: 4px;
+	width: 100%;
+	font-size: 1em;
+    font-family: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+
+.contains-input input[type='text'],
+.contains-input input[type='password'],
+.contains-input input[type='tel'],
+.contains-input input[type='number'] {
+    position: relative;
+    text-indent: 4px;
+}
+
+.contains-input input[type='text']:focus,
+.contains-input input[type='password']:focus,
+.contains-input input[type='tel']:focus,
+.contains-input input[type='number']:focus {
+    outline-offset: 0;
+}
+
+.contains-input .select {
+    display: block;
+	position: relative;
+	border: 0 none;
+	border-radius: 4px;
+}
+
+.contains-input select {
+	cursor: pointer;
+	background-image: url("https://talkhomeapp.com/mipay/dropdown.svg");
+	background-color: #fff;
+	background-size: 24px auto;
+	background-repeat: no-repeat;
+	background-position: center right 5px;
+}
+
+.contains-input label {
+    color: rgb(0, 0, 0);
+	width: 100%;
+	display: block;
+	font-weight: 700;
+	font-size: 0.9em;
+}
+
+.radio-group input[type='radio']:checked + label {
+    background-color: #e60000;
+    color: #fff;
+}
+
+.expiry-wrapper {
+	position: relative;
+	height: 40px;
+}
+
+.contains-input .select {
+    width: 45%;
+}
+
+.contains-input .select.month {
+    float: left;
+}
+
+.contains-input .select.year {
+    float: right;
+}
+
+.input-validation-error {
+    border: 2px solid #e60000;
+}
+
+#wait-msg p {
+    margin-top: 10px;
+    color: #e60000;
+    margin: 0;
+}
+
+.line {
+    display: none;
+}
+
+.field-validation-error,
+.field-validation-error-manual {
+    position: relative;
+    margin: 8px 0;
+    padding: 8px;
+    color: #fff;
+    background-color: #e60000;
+    border-radius: 3px;
+    font-size: 12px;
+    float: left;
+    clear: both;
+}
+
+.input-container .contains-input:nth-child(2) .field-validation-error {
+    margin: 8px 0 -8px; /* Fixes extra margins */
+}
+
+.field-validation-error:after,
+.field-validation-error-manual:after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background-color: #e60000;
+    top: -4px;
+    -ms-transform: rotate(225deg);
+    /* IE 9 */
+    -webkit-transform: rotate(225deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(225deg);
+    bottom: -5px;
+    left: 20px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #e60000;
+}
+
+.contains-input input[type='text']:focus,
+.contains-input input[type='password']:focus,
+.contains-input input[type='tel']:focus,
+.contains-input input[type='number']:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.powered-by-mipay {
+    text-align: right;
+    padding: 0 0 8px;
+}
+
+.footer {
+	background-color: rgb(0, 0, 0);
+	padding: 24px 0;
+	margin: 72px 0 0;
+}
+
+.powered-by-mipay a:link,
+.powered-by-mipay a:active,
+.powered-by-mipay a:visited {
+    font-size: 0.7em;
+    line-height: 1;
+    text-decoration: none;
+}
+
+[class*='col-'] {
+    float: left;
+    padding-right: 0px;
+}
+
+[class*='col-']:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.gridd {
+    width: 100%;
+    max-width: 1140px;
+    min-width: 755px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.gridd:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.push-right {
+    float: right;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.clear-right {
+    clear: right;
+}
+
+.clear-both {
+    clear: both;
+}
+
+/* Content Columns */
+.col-1-1 {
+    width: 100%;
+}
+
+.col-2-3, .col-8-12 {
+    width: 66.66%;
+}
+
+.col-1-2, .col-6-12 {
+    width: 50%;
+}
+
+.col-1-3, .col-4-12 {
+    width: 33.33%;
+}
+
+.col-1-4, .col-3-12 {
+    width: 25%;
+}
+
+.col-1-5 {
+    width: 20%;
+}
+
+.col-1-6, .col-2-12 {
+    width: 16.667%;
+}
+
+.col-5-6 {
+    width: 83.333%;
+}
+
+.col-1-7 {
+    width: 14.28%;
+}
+
+.col-1-8 {
+    width: 12.5%;
+}
+
+.col-1-9 {
+    width: 11.1%;
+}
+
+.col-1-10 {
+    width: 10%;
+}
+
+.col-1-11 {
+    width: 9.09%;
+}
+
+.col-1-12 {
+    width: 8.33%;
+}
+
+/* Layout Columns */
+.col-11-12 {
+    width: 91.66%;
+}
+
+.col-10-12 {
+    width: 83.333%;
+}
+
+.col-9-12 {
+    width: 75%;
+}
+
+.col-5-12 {
+    width: 41.66%;
+}
+
+.col-7-12 {
+    width: 58.33%;
+}
+
+/* Pushing blocks */
+.push-2-3, .push-8-12 {
+    margin-left: 66.66%;
+}
+
+.push-1-2, .push-6-12 {
+    margin-left: 50%;
+}
+
+.push-1-3, .push-4-12 {
+    margin-left: 33.33%;
+}
+
+.push-1-4, .push-3-12 {
+    margin-left: 25%;
+}
+
+.push-1-5 {
+    margin-left: 20%;
+}
+
+.push-1-6, .push-2-12 {
+    margin-left: 16.667%;
+}
+
+.push-1-7 {
+    margin-left: 14.28%;
+}
+
+.push-1-8 {
+    margin-left: 12.5%;
+}
+
+.push-1-9 {
+    margin-left: 11.1%;
+}
+
+.push-1-10 {
+    margin-left: 10%;
+}
+
+.push-1-11 {
+    margin-left: 9.09%;
+}
+
+.push-1-12 {
+    margin-left: 8.33%;
+}
+
+/* -------------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------	        	Utils	     	------------------------------------*/
+/* -------------------------------------------------------------------------------------------------------------*/
+.emptyLine {
+    clear: both;
+    width: 100%;
+}
+
+.mTop5px {
+    margin-top: 5px;
+}
+
+.mTop10px {
+    margin-top: 10px;
+}
+
+.mTop15px {
+    margin-top: 15px;
+}
+
+.mTop20px {
+    margin-top: 20px;
+}
+
+.mTop25px {
+    margin-top: 25px;
+}
+
+.mTop30px {
+    margin-top: 30px;
+}
+
+.mTop40px {
+    margin-top: 40px;
+}
+
+.mTop50px {
+    margin-top: 50px;
+}
+
+.mTop70px {
+    margin-top: 70px;
+}
+
+.mTop100px {
+    margin-top: 100px;
+}
+
+.mTop130px {
+    margin-top: 130px;
+}
+
+.mBot0px {
+    margin-bottom: 0px;
+}
+
+.mBot5px {
+    margin-bottom: 5px;
+}
+
+.mBot10px {
+    margin-bottom: 10px;
+}
+
+.mBot15px {
+    margin-bottom: 15px;
+}
+
+.mBot20px {
+    margin-bottom: 20px;
+}
+
+.mBot30px {
+    margin-bottom: 30px;
+}
+
+.mBot40px {
+    margin-bottom: 40px;
+}
+
+.mBot50px {
+    margin-bottom: 50px;
+}
+
+.mR30px {
+    margin-right: 30px;
+}
+
+.paddingLR {
+    padding: 0 15px;
+}
+
+.floatR {
+    float: right;
+}
+
+.floatL {
+    float: left;
+}
+
+.floatN {
+    float: none;
+}
+
+.clearB {
+    clear: both;
+}
+
+.clearR {
+    clear: right;
+}
+
+.clearL {
+    clear: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+    width: 100%;
+}
+
+.overlay-dialog {
+    display: none;
+}
+
+html.overlay-dialog-is-open {
+    overflow: hidden;
+}
+
+html.overlay-dialog-is-open body {
+    position: relative;
+}
+
+html.overlay-dialog-is-open .overlay-dialog {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+html.overlay-dialog-is-open .overlay-dialog:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+html.overlay-dialog-is-open .dialog {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    font-size: 15px;
+    padding: 15px;
+    padding-top: 0;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 0px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.loading {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    height: 10px;
+    background-image: url("images/loading.gif");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+::-webkit-input-placeholder {
+    color: #aaa;
+    font-weight: 300;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #aaa;
+    font-weight: 300;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #aaa;
+    font-weight: 300;
+}
+
+:-ms-input-placeholder {
+    color: #aaa;
+    font-weight: 300;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: inherit;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input:-moz-autofill {
+    -moz-text-fill-color: inherit;
+    -moz-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input:-o-autofill {
+    -o-text-fill-color: inherit;
+    -o-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input:-khtml-autofill {
+    -khtml-text-fill-color: inherit;
+    -khtml-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input:focus:-webkit-autofill {
+    -webkit-text-fill-color: inherit;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input:focus:-moz-autofill {
+    -moz-text-fill-color: inherit;
+    -moz-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input:focus:-o-autofill {
+    -o-text-fill-color: inherit;
+    -o-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input:focus:-khtml-autofill {
+    -khtml-text-fill-color: inherit;
+    -khtml-box-shadow: 0 0 0px 1000px white inset;
+}
+
+#wait-msg {
+    font-family: "HelveticaNeueW01-75Bold",Arial, sans-serif;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.box-container.box-blank {
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.content {
+    padding: 0.5em 0em 0em 3em;
+    overflow: auto;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.required-fields-info {
+    position: absolute;
+    bottom: 5px;
+}
+
+.btn-dropdown {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+h6, li, dt, dd, label, blockquote, p, div {
+    color: inherit;
+}
+
+.for-border {
+    border: 1px solid #ACACAC;
+    position: relative;
+    border: none;
+}
+
+.powered-by-mipay a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin: 0;
+}
+
+form:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+#mpt input[type='radio'] {
+    display: none;
+    height: 22px;
+    width: 22px;
+}
+
+#mpt input[type='radio'] + label {
+    color: #222222;
+    display: block;
+    float: left;
+    height: 46px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    vertical-align: middle;
+    width: 170px;
+    background: url(http://www.vodafone.co.uk/cs/groups/public/documents/image/form-sprite.png) no-repeat scroll -330px -610px/auto padding-box border-box;
+    padding: 0;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    line-height: 46px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#mpt input[type='radio']:checked + label {
+    background-position: -330px -705px;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tooltipster-base {
+    border: 1px solid #aaa;
+}
+
+tooltipster-arrow {
+    border: 1px solid #aaa;
+}
+
+.tooltipster-content {
+    background: white;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, white 0%, #e0e0e0 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e0e0e0));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, white 0%, #e0e0e0 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, white 0%, #e0e0e0 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, white 0%, #e0e0e0 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, white 0%, #e0e0e0 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0',GradientType=0 );
+    /* IE6-9 */
+    border-radius: 5px;
+}
+
+#address_block {
+    width: 500px;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+    #address_block {
+        width: 100%;
+    }
+}
+
+.radio-group {
+    position: relative;
+}
+
+.radio-group input[type='radio'] + label {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-top: none;
+    height: auto;
+    padding-left: 15px;
+    line-height: 36px;
+    font-size: 12px;
+    background: #fff;
+}
+
+#CardDetails_Year.input-validation-error ~ span.field-validation-error:after {
+    left: initial;
+    right: 20px;
+}
+
+#CardDetails_Month.input-validation-error ~ span.field-validation-error:after {
+    left: 20px;
+    right: initial;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.hide_until_load {
+    opacity: 0;
+}
+
+.btn-continue, .btn-back {
+    float: right;
+    position: relative;
+    background-position: 100% -1409px;
+    box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 0px 0px;
+    color: #ffffff !important;
+    display: inline-block;
+    height: 38px;
+    max-width: 450px;
+    text-align: left;
+    text-decoration: none !important;
+    width: 170px;
+    background: #2C2C2C;
+    background: #2C2C2C url(http://www.vodafone.co.uk/cs/groups/public/documents/image/global-sprite.png) no-repeat scroll 100% -1409px/auto padding-box border-box;
+    border-radius: 2px 2px 2px 2px;
+    font-size: 14px !important;
+    line-height: 28px;
+    margin: 3px 0px;
+    padding: 4px 20px 4px 20px;
+    -webkit-transition: background-color 200ms ease-out;
+    -moz-transition: background-color 200ms ease-out;
+    -o-transition: background-color 200ms ease-out;
+    transition: background-color 200ms ease-out;
+}
+
+.btn-continue:hover, .btn-back:hover {
+    background-color: #1C1C1C;
+    -webkit-transition: background-color 200ms ease-out;
+    -moz-transition: background-color 200ms ease-out;
+    -o-transition: background-color 200ms ease-out;
+    transition: background-color 200ms ease-out;
+}
+
+.btn-continue:active, .btn-back:active {
+    background-color: #1C1C1C;
+    box-shadow: transparent 0px 0px 0px 0px;
+    left: 2px;
+    top: 1px;
+    -webkit-transition: background-color 200ms ease-out;
+    -moz-transition: background-color 200ms ease-out;
+    -o-transition: background-color 200ms ease-out;
+    transition: background-color 200ms ease-out;
+}
+
+.btn-back {
+    text-align: center;
+    background: #2C2C2C;
+    float: left;
+    width: 100px;
+}
+
+.btn-back:active {
+    left: -2px;
+    top: 1px;
+}
+
+input.mop + label {
+    background-position-x: -335px !important;
+    background-position-y: -613px !important;
+    width: 160px !important;
+}
+
+input.mop:checked + label {
+    background-position-x: -335px !important;
+    background-position-y: -707px !important;
+    width: 160px !important;
+}
+
+.required-fields-info {
+    display: none;
+}
+
+.card-logos {
+    width: 240px;
+    height: 40px;
+    float: right;
+    margin-top: 8px;
+    background: url("http://shop.vodafone.co.uk/shop/css/img/eshop-sprite.png") 0px -30px;
+}
+
+.loader-gif {
+    display: block;
+    float: left;
+    height: 48px;
+    width: 48px;
+    background-image: url("images/wait.gif");
+}
+
+.btn-primary:focus {
+    outline: none;
+}
+
+.btn-secondary {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    float: left;
+    background: transparent;
+    font-family: "HelveticaNeueW01-75Bold",Arial, sans-serif;
+    border: none;
+    border: 2px solid #4d4d4d;
+    color: #4d4d4d !important;
+    font-size: 20px;
+    line-height: 36px;
+    height: 42px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.btn-secondary:focus {
+    outline: none;
+}
+
+.btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.btn-secondary:active {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.btn-delete {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    float: left;
+    background: #39b4b1 !important;
+    font-family: "HelveticaNeueW01-75Bold",Arial, sans-serif;
+    border: none;
+    /*border-bottom: 0px solid darken($btn-primary-color,20%);*/
+    color: #ffffff !important;
+    font-size: 16px;
+    height: 28px;
+    width: 80%;
+    margin-left: 10%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.btn-delete:focus {
+    outline: none;
+}
+
+.btn-delete:hover {
+    background: #3dc0bc !important;
+    color: #ffffff !important;
+}
+
+#btnPayPal:hover {
+    background-position: 0 0px;
+    background-color: #006080;
+}
+
+#btnPayPal.disabled {
+    background-position: 0 -60px;
+    pointer-events: none;
+}
+
+#btnCard:disabled,
+#btnPayByCard:disabled {
+    background: #ccc !important;
+    border-color: #ccc !important;
+    color: #fff !important;
+    pointer-events: none !important;
+    cursor: default;
+}
+
+.floatR {
+    float: right;
+}
+
+html.wait {
+    cursor: none !important;
+}
+
+span.field-validation-valid {
+    display: none;
+}
+
+span.field-validation-error + span.field-validation-error {
+    display: none;
+}
+
+.tooltipster-base {
+    border: 0px solid #aaa !important;
+    box-shadow: 2px 2px 0px #3F3F3F;
+}
+
+.tooltipster-arrow {
+    border: 1px solid #aaa;
+}
+
+.tooltipster-content {
+    background: #0099CC !important;
+    /* Old browsers */
+    color: #fff;
+    border-radius: 0px;
+}
+
+/**
+ * Overriden style for Talk Home website.
+ *
+ * rgb(74, 209, 237) light blue
+ * rgb(246, 62, 49) error color
+ *
+ */
+.talkhome .body-content {
+    color: rgb(255, 255, 255);
+    background-color: rgb(74, 209, 237);
+}
+
+.talkhome .header .logo {
+	margin: 8px 0 0 16px;
+	display: block;
+	height: 134px;
+	width: 111px;
+	background-image: url("https://talkhomeapp.com/mipay/talk-home-logo.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	position: relative;
+	z-index: 2;
+}
+
+.talkhome .form {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 -70px;
+}
+
+.talkhome .line {
+	background-image: url("https://talkhomeapp.com/mipay/light-slanted-to-right.svg");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.talkhome h2.title {
+	padding: 48px 0 48px;
+	margin: 0 0 48px;
+}
+
+.talkhome a:link,
+.talkhome a:visited,
+.talkhome a:active {
+    color: rgb(255, 255, 255);
+}
+
+.talkhome .btn-primary {
+    color: rgb(0, 0, 0);
+	background-color: rgb(227, 255, 25);
+}
+
+.talkhome .contains-input input[type='text'],
+.talkhome .contains-input input[type='password'],
+.talkhome .contains-input input[type='tel'],
+.talkhome .contains-input input[type='number'] {
+    border: none;
+}
+
+.talkhome .contains-input select {
+    border: 0 none;
+}
+
+.talkhome .contains-input input[type="text"].input-validation-error,
+.talkhome .contains-input input[type="password"].input-validation-error,
+.talkhome .contains-input input[type="tel"].input-validation-error {
+    border: 2px solid rgb(246, 62, 49);
+}
+
+.talkhome .radio-group input[type='radio']:checked + label,
+.talkhome .field-validation-error,
+.talkhome .field-validation-error-manual,
+.talkhome .field-validation-error:after,
+.talkhome .field-validation-error-manual:after {
+    background-color: rgb(246, 62, 49);
+}
+
+.talkhome .field-validation-error:after,
+.talkhome .field-validation-error-manual:after {
+    border-color: rgb(246, 62, 49);
+}
+
+.talkhome #wait-msg p {
+    color: rgb(246, 62, 49);
+}
+
+/**
+ * Overriden style for Talk Home In-app transactions.
+ *
+ * rgb(0, 67, 136) dark blue
+ *
+ */
+.talkhomeapp body {
+    background-color: transparent;
+    color: rgb(0, 67, 136);
+}
+.talkhomeapp a:link,
+.talkhomeapp a:visited,
+.talkhomeapp a:active {
+    color: rgb(0, 67, 136);
+    font-weight: 700;
+}
+
+.talkhomeapp .btn-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 67, 136);
+    font-weight: 700;
+}
+
+.talkhomeapp .contains-input select {
+    background-image: url("https://talkhomeapp.com/mipay/dropdown-inapp.svg");
+}
+
+.talkhomeapp [type="text"], 
+.talkhomeapp [type="password"], 
+.talkhomeapp [type="tel"], 
+.talkhomeapp [type="number"], 
+.talkhomeapp select {
+	border: 2px solid rgb(0, 67, 136);
+}
+
+.talkhomeapp .input-validation-error {
+    border: 2px solid #e60000;
+}
+
+/**
+ * Overriden style for Now Mobile website.
+ *
+ * rgb(86, 212, 40) green
+ *
+ */
+.now body {
+    background-color: transparent;
+    color: rgb(102,102,102);
+}
+.now a:link,
+.now a:visited,
+.now a:active {
+    color: rgb(86, 212, 40);
+}
+
+.now .header {
+    height: 140px;
+}
+
+.now .header .logo {
+	margin: 0 0 0 16px;
+	display: block;
+	height: 120px;
+	width: 120px;
+	background-image: url("https://talkhomeapp.com/mipay/now-mobile-logo.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	position: relative;
+	z-index: 2;
+	border-radius: 100%;
+}
+
+.now h2.title {
+	padding: 48px 0 48px;
+	margin: 0 0 48px;
+}
+
+.now .now-background {
+	background-color: rgb(86, 212, 40);
+	position: absolute;
+	height: 80px;
+	bottom: 0;
+	width: 100%;
+}
+
+.now .btn-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(247, 92, 2);
+    font-weight: 700;
+}
+
+.now .contains-input select {
+    background-image: url("https://talkhomeapp.com/mipay/dropdown-now.svg");
+}
+
+.now [type="text"], 
+.now [type="password"], 
+.now [type="tel"], 
+.now [type="number"], 
+.now select {
+	border: 2px solid rgb(86, 212, 40);
+}
+
+.now .input-validation-error {
+    border: 2px solid #e60000;
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "ContainingType": "CQRSAndMediatrWithFluentValidationSampleApi.Controllers.ProductController",
+    "Method": "Create",
+    "RelativePath": "Product",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "product",
+        "Type": "CQRSAndMediatrWithFluentValidationSampleApplication.Product.Dto.ProductRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CQRSAndMediatrWithFluentValidationSampleApi.Controllers.ProductController",
+    "Method": "Update",
+    "RelativePath": "Product",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "product",
+        "Type": "CQRSAndMediatrWithFluentValidationSampleApplication.Product.Dto.ProductRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CQRSAndMediatrWithFluentValidationSampleApi.Controllers.ProductController",
+    "Method": "Remove",
+    "RelativePath": "Product",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productSku",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CQRSAndMediatrWithFluentValidationSampleApi.Controllers.ProductController",
+    "Method": "NotifyAsync",
+    "RelativePath": "Product/notify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CQRSAndMediatrWithFluentValidationSampleApi.Controllers.ProductController",
+    "Method": "Get",
+    "RelativePath": "Product/product",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productSKu",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CQRSAndMediatrWithFluentValidationSampleApi.Controllers.ProductController",
+    "Method": "GetAll",
+    "RelativePath": "Product/products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

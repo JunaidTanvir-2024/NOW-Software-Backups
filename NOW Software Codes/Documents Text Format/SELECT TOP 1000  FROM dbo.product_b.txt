@@ -1,0 +1,12 @@
+SELECT TOP 1000 * FROM dbo.product_benefit
+SELECT * FROM dbo.product WHERE product_id = 11453
+
+
+SELECT TOP 1000 p.product_id, pb.product_benefit_id,pb.product_id, pb.description, pb.unit, pb.benefit_type,pb.benefit_with_tax FROM dbo.product_benefit pb
+RIGHT OUTER JOIN dbo.product p
+ON p.product_id = pb.product_id
+
+SELECT * FROM dbo.product_benefit WHERE product_id = 11453
+
+SELECT product_id, COUNT(*) FROM dbo.product_benefit
+GROUP BY product_id HAVING COUNT(*) > 1

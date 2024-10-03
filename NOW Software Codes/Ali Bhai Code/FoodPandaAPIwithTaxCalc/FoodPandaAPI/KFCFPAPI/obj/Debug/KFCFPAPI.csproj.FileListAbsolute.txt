@@ -1,0 +1,279 @@
+D:\WebAPI\KFCFPAPI\bin\ApplicationInsights.config
+D:\WebAPI\KFCFPAPI\bin\roslyn\csc.exe
+D:\WebAPI\KFCFPAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WebAPI\KFCFPAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WebAPI\KFCFPAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WebAPI\KFCFPAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WebAPI\KFCFPAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WebAPI\KFCFPAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WebAPI\KFCFPAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\WebAPI\KFCFPAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\WebAPI\KFCFPAPI\bin\roslyn\vbc.exe
+D:\WebAPI\KFCFPAPI\bin\roslyn\VBCSCompiler.exe
+D:\WebAPI\KFCFPAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\WebAPI\KFCFPAPI\bin\KFCFPAPI.dll.config
+D:\WebAPI\KFCFPAPI\bin\KFCFPAPI.dll
+D:\WebAPI\KFCFPAPI\bin\KFCFPAPI.pdb
+D:\WebAPI\KFCFPAPI\bin\Antlr3.Runtime.dll
+D:\WebAPI\KFCFPAPI\bin\EntityFramework.dll
+D:\WebAPI\KFCFPAPI\bin\EntityFramework.SqlServer.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AI.DependencyCollector.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AI.Web.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AI.WindowsServer.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.ApplicationInsights.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.Core.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Security.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Facebook.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Google.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Twitter.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\WebAPI\KFCFPAPI\bin\Newtonsoft.Json.dll
+D:\WebAPI\KFCFPAPI\bin\Owin.dll
+D:\WebAPI\KFCFPAPI\bin\System.Net.Http.Formatting.dll
+D:\WebAPI\KFCFPAPI\bin\System.Web.Helpers.dll
+D:\WebAPI\KFCFPAPI\bin\System.Web.Http.dll
+D:\WebAPI\KFCFPAPI\bin\System.Web.Http.Owin.dll
+D:\WebAPI\KFCFPAPI\bin\System.Web.Http.WebHost.dll
+D:\WebAPI\KFCFPAPI\bin\System.Web.Mvc.dll
+D:\WebAPI\KFCFPAPI\bin\System.Web.Optimization.dll
+D:\WebAPI\KFCFPAPI\bin\System.Web.Razor.dll
+D:\WebAPI\KFCFPAPI\bin\System.Web.WebPages.Deployment.dll
+D:\WebAPI\KFCFPAPI\bin\System.Web.WebPages.dll
+D:\WebAPI\KFCFPAPI\bin\System.Web.WebPages.Razor.dll
+D:\WebAPI\KFCFPAPI\bin\WebGrease.dll
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AI.DependencyCollector.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AI.Web.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AI.WindowsServer.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.ApplicationInsights.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WebAPI\KFCFPAPI\bin\Newtonsoft.Json.xml
+D:\WebAPI\KFCFPAPI\bin\System.Net.Http.Formatting.xml
+D:\WebAPI\KFCFPAPI\bin\System.Web.Helpers.xml
+D:\WebAPI\KFCFPAPI\bin\System.Web.Http.xml
+D:\WebAPI\KFCFPAPI\bin\System.Web.Http.WebHost.xml
+D:\WebAPI\KFCFPAPI\bin\System.Web.Mvc.xml
+D:\WebAPI\KFCFPAPI\bin\System.Web.Optimization.xml
+D:\WebAPI\KFCFPAPI\bin\System.Web.Razor.xml
+D:\WebAPI\KFCFPAPI\bin\System.Web.WebPages.xml
+D:\WebAPI\KFCFPAPI\bin\System.Web.WebPages.Deployment.xml
+D:\WebAPI\KFCFPAPI\bin\System.Web.WebPages.Razor.xml
+D:\WebAPI\KFCFPAPI\bin\Antlr3.Runtime.pdb
+D:\WebAPI\KFCFPAPI\bin\EntityFramework.xml
+D:\WebAPI\KFCFPAPI\bin\EntityFramework.SqlServer.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.Core.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Security.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Facebook.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Google.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Twitter.xml
+D:\WebAPI\KFCFPAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\WebAPI\KFCFPAPI\bin\System.Web.Http.Owin.xml
+D:\WebAPI\KFCFPAPI\obj\Debug\KFCFPAPI.csprojResolveAssemblyReference.cache
+D:\WebAPI\KFCFPAPI\obj\Debug\KFCFPAPI.dll
+D:\WebAPI\KFCFPAPI\obj\Debug\KFCFPAPI.pdb
+D:\WebAPI\KFCFPAPI\bin\KFCDB.dll
+D:\WebAPI\KFCFPAPI\bin\KFCDB.pdb
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\ApplicationInsights.config
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\csc.exe
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\vbc.exe
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\VBCSCompiler.exe
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\KFCFPAPI.dll.config
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\KFCFPAPI.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\KFCFPAPI.pdb
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Antlr3.Runtime.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Elmah.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\EntityFramework.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\EntityFramework.SqlServer.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\KFCDB.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.DependencyCollector.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.Web.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.WindowsServer.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.ApplicationInsights.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.Core.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Facebook.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Google.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Twitter.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Newtonsoft.Json.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Owin.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Net.Http.Formatting.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Helpers.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Http.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Http.Owin.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Http.WebHost.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Mvc.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Optimization.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Razor.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.WebPages.Deployment.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.WebPages.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.WebPages.Razor.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\WebGrease.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\KFCDB.pdb
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.DependencyCollector.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.Web.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.WindowsServer.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.ApplicationInsights.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Net.Http.Formatting.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Helpers.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Http.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Http.WebHost.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Mvc.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Optimization.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Razor.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.WebPages.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.WebPages.Deployment.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.WebPages.Razor.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Antlr3.Runtime.pdb
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\EntityFramework.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\EntityFramework.SqlServer.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.Core.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Facebook.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Google.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Twitter.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Http.Owin.xml
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\obj\Debug\KFCFPAPI.csprojResolveAssemblyReference.cache
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\obj\Debug\KFCFPAPI.dll
+D:\WebAPI\FoodPandaAPI\KFCFPAPI\obj\Debug\KFCFPAPI.pdb
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\ApplicationInsights.config
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\csc.exe
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\vbc.exe
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\VBCSCompiler.exe
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\KFCFPAPI.dll.config
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\KFCFPAPI.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\KFCFPAPI.pdb
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Antlr3.Runtime.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Elmah.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\EntityFramework.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\EntityFramework.SqlServer.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\KFCDB.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.DependencyCollector.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.Web.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.WindowsServer.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.ApplicationInsights.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Google.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Newtonsoft.Json.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Owin.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Net.Http.Formatting.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Helpers.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Http.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Http.Owin.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Http.WebHost.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Mvc.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Optimization.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Razor.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.WebPages.Deployment.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.WebPages.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.WebPages.Razor.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\WebGrease.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\KFCDB.pdb
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\KFCDB.dll.config
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.DependencyCollector.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.Web.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AI.WindowsServer.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.ApplicationInsights.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Net.Http.Formatting.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Helpers.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Http.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Http.WebHost.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Mvc.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Optimization.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Razor.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.WebPages.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.WebPages.Deployment.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.WebPages.Razor.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Antlr3.Runtime.pdb
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\EntityFramework.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\EntityFramework.SqlServer.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Google.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\bin\System.Web.Http.Owin.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\obj\Debug\KFCFPAPI.csproj.AssemblyReference.cache
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\obj\Debug\KFCFPAPI.csproj.CoreCompileInputs.cache
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\obj\Debug\KFCFPAPI.csproj.CopyComplete
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\obj\Debug\KFCFPAPI.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCFPAPI\obj\Debug\KFCFPAPI.pdb

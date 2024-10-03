@@ -1,0 +1,24 @@
+DECLARE @total_pages FLOAT;
+DECLARE  @total_records INT;
+
+DECLARE @filters product_filters
+INSERT INTO @filters
+(
+    country_iso_code,
+    currency,
+    calling_code,
+    validity_unit
+)
+VALUES
+(   'pk',
+    NULL,
+    NULL, -- calling_code - varchar(50)
+    NULL  -- validity_unit - varchar(50)
+    )
+EXEC dbo.fh_product_get @filters,                       -- product_filters
+                        @is_active = 1,                     -- bit
+                        @is_deleted = 0,                    -- bit
+                        @page = 1,                             -- int
+                        @records_per_page = 100,                 -- int
+                        @total_pages = @total_pages OUTPUT,    -- float
+                        @total_records = @total_records OUTPUT -- int

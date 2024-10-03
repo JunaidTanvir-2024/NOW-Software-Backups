@@ -1,0 +1,111 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TalkHome.Properties" GeneratedClassName="ContentIds">
+  <Profiles />
+  <Settings>
+    <Setting Name="TalkHome" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1330</Value>
+    </Setting>
+    <Setting Name="TalkHomeMobile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1343</Value>
+    </Setting>
+    <Setting Name="TalkHomeApp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1344</Value>
+    </Setting>
+    <Setting Name="TalkHomeMobileTopUps" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1349</Value>
+    </Setting>
+    <Setting Name="TalkHomeMobilePlans" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1350</Value>
+    </Setting>
+    <Setting Name="TalkHomeAppTopUps" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1352</Value>
+    </Setting>
+    <Setting Name="TalkHomeAppBundles" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1351</Value>
+    </Setting>
+    <Setting Name="CallingCardsTopUps" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1353</Value>
+    </Setting>
+    <Setting Name="CustomErrorPage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1396</Value>
+    </Setting>
+    <Setting Name="Unauthorised" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1436</Value>
+    </Setting>
+    <Setting Name="ThmUKRates" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1291</Value>
+    </Setting>
+    <Setting Name="ThmUKPlans" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1299</Value>
+    </Setting>
+    <Setting Name="SignUp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1447</Value>
+    </Setting>
+    <Setting Name="OrderASim" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1448</Value>
+    </Setting>
+    <Setting Name="ThaBundles" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1293</Value>
+    </Setting>
+    <Setting Name="ThaGBRates" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1284</Value>
+    </Setting>
+    <Setting Name="ThaDownload" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1290</Value>
+    </Setting>
+    <Setting Name="ThccMinutes" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1281</Value>
+    </Setting>
+    <Setting Name="OrderACard" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1449</Value>
+    </Setting>
+    <Setting Name="TopUp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1421</Value>
+    </Setting>
+    <Setting Name="Basket" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1255</Value>
+    </Setting>
+    <Setting Name="Help" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1354</Value>
+    </Setting>
+    <Setting Name="TermsAndConditions" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1405</Value>
+    </Setting>
+    <Setting Name="PrivacyPolicy" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1407</Value>
+    </Setting>
+    <Setting Name="LogIn" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1261</Value>
+    </Setting>
+    <Setting Name="UserPages" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1254</Value>
+    </Setting>
+    <Setting Name="Pages" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1317</Value>
+    </Setting>
+    <Setting Name="PUKTooltip" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1575</Value>
+    </Setting>
+    <Setting Name="CallingCardNumberTooltip" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1576</Value>
+    </Setting>
+    <Setting Name="AppPINTooltip" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1577</Value>
+    </Setting>
+    <Setting Name="AppNumberTooltip" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1578</Value>
+    </Setting>
+    <Setting Name="CallHistoryRules" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1658</Value>
+    </Setting>
+    <Setting Name="UpgradePlans" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1676</Value>
+    </Setting>
+    <Setting Name="CallingCards" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1345</Value>
+    </Setting>
+    <Setting Name="CallingCardsHomepage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1888</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

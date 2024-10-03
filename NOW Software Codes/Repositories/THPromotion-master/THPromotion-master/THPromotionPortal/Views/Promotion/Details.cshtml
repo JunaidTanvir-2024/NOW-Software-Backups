@@ -1,0 +1,132 @@
+﻿@model THPromotionPortal.Models.ApiContracts.Response.PromotionResponseDTO
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>PromotionResponseDTO</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Promotion Id
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            Promotion Unique Name
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PromotionUniqueName)
+        </dd>
+        <dt class = "col-sm-2">
+            Promo Code
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PromoCode)
+        </dd>
+        <dt class="col-sm-2">
+            Is Active
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+        <dt class = "col-sm-2">
+            Promotion Type
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TypeId)
+        </dd>
+        <dt class = "col-sm-2">
+            Promotion Value
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PromotionValue)
+        </dd>
+        <dt class = "col-sm-2">
+            Promotion Value Type
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PromotionValueTypeId)
+        </dd>
+        <dt class="col-sm-2">
+            Medium Type
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MediumTypeId)
+        </dd>
+        <dt class = "col-sm-2">
+            Purchase Type
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PurchaseTypeId)
+        </dd>
+        <dt class = "col-sm-2">
+            Description
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-2">
+            Is Promo Code
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IsPromoCode)
+        </dd>
+        <dt class = "col-sm-2">
+            Threshold
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Threshold)
+        </dd>
+        <dt class = "col-sm-2">
+            Threshold Type
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ThresholdTypeId)
+        </dd>
+        <dt class = "col-sm-2">
+            Audience Status Type
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AudienceStatusTypeId)
+        </dd>
+        <dt class = "col-sm-2">
+            Created Date Time)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreatedDateTime)
+        </dd>
+        <dt class = "col-sm-2">
+            Created By
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreatedBy)
+        </dd>
+        <dt class = "col-sm-2">
+            Last Updated Date Time
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LastUpdatedDateTime)
+        </dd>
+        <dt class = "col-sm-2">
+            Updated By
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UpdatedBy)
+        </dd>
+        <dt class = "col-sm-2">
+            Is Archived
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IsArchived)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

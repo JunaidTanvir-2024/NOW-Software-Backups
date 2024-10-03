@@ -1,0 +1,24 @@
+# Umbraco user at installation
+
+mdurante@nowtel.co.uk
+B6@j!5hUv5IM*2NPpUC0
+
+# Basic auth string
+Basic d2ViZGV2OkZlbnlDS2JWc2RWUlFCZjI=
+
+# Sample users
+history@test6.com
+test6
+
+th_now_test4@outlook.com
+taj28BWUQCRKzvRk
+
+history@test2.com
+test2
+
+aaa@aaa.aaa
+aaa
+
+asharp@nowtel.co.uk
+n}F0itvxdG
+ 

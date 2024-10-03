@@ -1,0 +1,14 @@
+.header .logo .svg_icons { height: 120px; }
+.header .hero-text { line-height: normal; font-size: 16px; letter-spacing: 0; }
+.header .hero-text .regular { font-size: 34px; font-weight: 800; margin-top: 20px; }
+.header .hero-text p { text-transform: none; letter-spacing: 0.5px; font-size: 18px; }
+.header .sub-txt { text-align: center; line-height: normal; color: #2e3266; margin-bottom: 0; }
+.pricing-table .block ul { padding-left: 30px; }
+.footer-txt { line-height: normal; font-size: 10px; margin-bottom: 0px; margin-top: 10px; text-align: center; }
+
+
+/* media queries */
+@media (max-width: 575.98px) {
+    .got-a-sim { padding: 0px; }
+    .header .hero-text p { margin-bottom: 5px;}
+}

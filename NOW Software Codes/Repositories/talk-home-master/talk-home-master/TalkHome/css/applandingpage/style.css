@@ -1,0 +1,525 @@
+﻿/* Navbar */
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+.header-download .Landing-logo img {
+	width: 120px;
+}
+
+.header-download .download-icons img {
+	width: 170px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.header-download h1 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+
+
+
+.strip {
+	padding: 10px;
+}
+
+.strip h1 {
+	color: #fff;
+    font-size: 36px;
+    font-weight: 900;
+}
+.slick-slider .slider-text ul.logos{
+	padding: 0px;
+	margin: 0px;
+	padding-top: 20px;
+}
+.slick-slider .slider-text ul.logos li{
+	display: inline-block;
+}
+.slick-slider .slider-text ul.logos li:nth-child(1n) img { 
+	max-width: 100px!important;
+}
+.slick-slider .slider-text ul.logos li:nth-child(2n) img { 
+	max-width: 120px!important;
+}
+.slick-slider .slider-text ul.logos li:nth-child(3n) img { 
+	max-width: 160px!important;
+}
+
+.yellow-flip{
+	position: absolute;
+	width: 200px!important;
+	top:0;
+	right:0
+}
+
+.low-cost-calls {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.low-cost-calls h1 {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.low-cost-calls h2 {
+	font-size: 45px;
+}
+
+.low-cost-calls h2 strong {
+	font-weight: 800;
+}
+
+.low-cost-calls .description {
+	font-size: 26px;
+}
+
+.low-cost-calls .description strong {
+	font-weight: 800;
+}
+
+.low-cost-calls .download-icons img {
+	width: 200px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.share-love {
+    background-image: url(/web_assets/images/Landing-page/share-love.jpg);
+    background-position: center center;
+    min-height: 670px;
+    padding-top: 70px;
+    padding-bottom: 120px;
+}
+
+.share-love h1 {
+    font-size: 55px;
+    font-weight: 900;
+	color: #fff;
+	margin-bottom: 0px;
+}
+
+.share-love h2 {
+    font-size: 45px;
+    
+	color: #fff;
+	margin-top: 0px;
+}
+
+.buy-vouchers {
+	font-size: 26px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.transfer-credit {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.transfer-credit h1 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.transfer-credit .description {
+	font-size: 26px;
+}
+
+.transfer-credit .icon {
+	width: 175px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+.uk-mobile-plans {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.uk-mobile-plans h1 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.uk-mobile-plans .description {
+	font-size: 22px;
+}
+.uk-mobile-plans ul.links  {
+	padding: 0px;
+	margin: 0px;
+	
+}
+.uk-mobile-plans ul.links li {
+	display: inline-block;
+	padding: 10px;
+	
+}
+.uk-mobile-plans ul.links li a {
+	background-color: #dee228;
+	padding: 8px 30px;
+	color: #000;
+	font-size: 18px;
+}
+.uk-mobile-plans ul.links li a:hover {
+	text-decoration: none;
+}
+
+.do-the-five {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.do-the-five h1 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.do-the-five .description {
+	font-size: 22px;
+}
+
+.do-the-five .icon {
+	min-height: 190px;
+	vertical-align: middle;
+}
+
+.download-app {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.download-app h1 {
+	font-size: 40px;
+}
+
+.download-app img {
+	width: 170px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.download-app .description {
+	font-size: 13px;
+	
+}
+
+.link a {
+	background-color: #dee228;
+	padding: 8px 30px;
+	color: #000;
+	font-size: 18px;
+}
+
+footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #fff;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	color: #ccc!important;
+}
+
+footer ul.landing-social-links{
+	padding:0px;
+	margin: 0px;
+	padding-bottom: 10px;
+}
+
+footer ul.landing-social-links li{
+	display: inline-block;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+footer ul.landing-social-links li img{
+	width: 34px;
+}
+
+.blue-bg {
+	background-color: #4dade9;
+}
+
+.light-blue-bg {
+	background-color: #77c7e1;
+}
+
+.black-bg {
+	background-color: #000;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) { 
+	.header-download .Landing-logo img {
+		width: 90px;
+	}
+	section.header-download {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.header-download h1 {
+		font-size: 26px;
+		font-weight: 900;
+		padding-bottom: 10px;
+	}
+	.header-download .download-icons img {
+		width: 150px;
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+	.strip {
+		padding: 4px;
+	}
+	.strip h1 {
+		color: #fff;
+		font-size: 24px;
+		font-weight: 900;
+	}
+	.yellow-flip{
+		position: absolute;
+		width: 100px!important;
+		top:0;
+		right:0
+	}
+	.slick-slider .slider-text ul.logos{
+		padding-left: 0px;
+	}
+
+
+	.slick-slider .slider-text ul.logos li{
+		display: block;
+		padding-bottom: 12px;
+	}
+
+
+	.slick-slider .slider-text ul.logos li:nth-child(1n){
+		margin-right: 10px;
+	}
+
+	
+	.slick-slider .slider-text ul.logos li:nth-child(1n) img { 
+		max-width: 90px!important;
+	
+	}
+	.slick-slider .slider-text ul.logos li:nth-child(2n) img { 
+		max-width: 110px!important;
+	}
+	/*.slick-slider .slider-text ul.logos li:nth-child(3n) { 
+		
+		display: block!important;
+	}*/
+	.slick-slider .slider-text ul.logos li:nth-child(3n) img { 
+		max-width: 110px!important;
+		
+	}
+	.low-cost-calls h1 {
+		font-size: 34px;
+		
+	}
+	.low-cost-calls .description {
+		font-size: 20px;
+	}
+	.low-cost-calls h2 {
+		font-size: 28px;
+		
+	}
+	.low-cost-calls .download-icons img {
+		width: 150px;
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+	.share-love h1 {
+		font-size: 34px;
+		
+	}
+	.share-love h2 {
+		font-size: 28px;
+		
+	}
+    .share-love {
+        background-image: url(/web_assets/images/Landing-page/share-love-2.jpg);
+        background-position: center top;
+        min-height: 450px;
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+	.buy-vouchers {
+		font-size: 20px;
+		
+	}
+	.transfer-credit h1 {
+		font-size: 34px;
+	}
+	.transfer-credit .description {
+		font-size: 18px;
+	}
+	.transfer-credit .icon {
+		width: 110px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
+	.transfer-credit .col-lg-3{
+		margin-bottom: 40px;
+	}
+
+	.uk-mobile-plans h1 {
+		font-size: 34px;
+		
+	}
+	.uk-mobile-plans .description {
+		font-size: 20px;
+	}
+
+	.uk-mobile-plans .col-lg-7 .icon {
+		max-width: 250px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.uk-mobile-plans ul.links li a {
+		max-width: 250px;
+		
+	}
+
+	.do-the-five h1 {
+		font-size: 34px;
+		
+	}
+	.do-the-five .icon {
+		min-height: 120px;
+		vertical-align: middle;
+	}
+	.do-the-five .description {
+		font-size: 22px;
+		line-height: normal;
+	}
+	.download-app h1 {
+		font-size: 34px;
+	}
+ }
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/*  Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	section.header-download {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	
+	.low-cost-calls h1 {
+		font-size: 34px;
+		
+	}
+	.low-cost-calls .description {
+		font-size: 20px;
+	}
+	.low-cost-calls h2 {
+		font-size: 28px;
+		
+	}
+	.low-cost-calls .download-icons img {
+		width: 150px;
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+	.share-love h1 {
+		font-size: 34px;
+		
+	}
+	.share-love h2 {
+		font-size: 28px;
+		
+	}
+    .share-love {
+        background-image: url(/web_assets/images/Landing-page/share-love-2.jpg);
+        background-position: center top;
+        min-height: 450px;
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+	.buy-vouchers {
+		font-size: 20px;
+		
+	}
+	.transfer-credit h1 {
+		font-size: 34px;
+	}
+	.transfer-credit .description {
+		font-size: 20px;
+	}
+	.transfer-credit .icon {
+		width: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
+	.transfer-credit .col-lg-3{
+		margin-bottom: 40px;
+	}
+
+	.uk-mobile-plans h1 {
+		font-size: 34px;
+		
+	}
+	.uk-mobile-plans .description {
+		font-size: 20px;
+	}
+
+	.uk-mobile-plans .col-lg-7 .icon {
+		max-width: 250px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.do-the-five h1 {
+		font-size: 34px;
+		
+	}
+	.do-the-five .icon {
+		min-height: 120px;
+		vertical-align: middle;
+	}
+	.do-the-five .description {
+		font-size: 22px;
+		line-height: normal;
+	}
+	.download-app h1 {
+		font-size: 34px;
+	}
+
+ }
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+	
+ }
+
+ @media (min-width: 1024px) and (max-width: 1199.98px) {
+
+    .share-love {
+        background-image: url(/web_assets/images/Landing-page/share-love.jpg);
+        background-position: center center;
+        min-height: 670px;
+        padding-top: 70px;
+        padding-bottom: 120px;
+        background-size: cover;
+    }
+ }
+
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }

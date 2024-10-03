@@ -1,0 +1,279 @@
+﻿@model THPromotionPortal.Models.ViewModel.CreatePromotionViewModel
+
+@{
+    ViewData["Title"] = "CreatePromotion";
+}
+@if (User.Identity.IsAuthenticated)
+{
+
+    <div class="d-flex flex-column-fluid">
+        <!--begin::Container-->
+        <div class="container">
+            <!--begin::Card-->
+            <div class="card card-custom card-sticky" id="kt_page_sticky_card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h3 class="card-label">
+                            Create Promotion
+                            <i class="mr-2"></i>
+                            <small class="">try to scroll the page</small>
+                        </h3>
+                    </div>
+                    <div class="card-toolbar">
+                        <a href="#" class="btn btn-light-primary font-weight-bolder mr-2">
+                            <i class="ki ki-long-arrow-back icon-sm"></i>Back
+                        </a>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary font-weight-bolder">
+                                <i class="ki ki-check icon-sm"></i>Save Form
+                            </button>
+                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                                <ul class="nav nav-hover flex-column">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="nav-icon flaticon2-reload"></i>
+                                            <span class="nav-text">Save &amp; continue</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="nav-icon flaticon2-add-1"></i>
+                                            <span class="nav-text">Save &amp; add new</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            <i class="nav-icon flaticon2-power"></i>
+                                            <span class="nav-text">Save &amp; exit</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <!--begin::Form-->
+                    <form class="form" id="kt_form" asp-action="CreatePromotions">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="row">
+                            <div class="col-xl-2"></div>
+                            <div class="col-xl-8">
+                                <div class="my-5">
+                                    <h3 class="text-dark font-weight-bold mb-10">Promotion Info:</h3>
+                                    <div class="form-group row">
+                                        <div class="col-9 col-form-label">
+                                            <div class="radio-inline">
+                                                <label class="radio radio-success">
+                                                    <input class="form-check-input" asp-for="IsPromoCode" />
+                                                    <span></span>
+                                                    Promo Code
+                                                </label>
+                                            </div>
+                                            <span class="form-text text-muted">Promotion Contains Promo Code or Not</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label asp-for="PromoCode" class="col-3">Promo Code</label>
+                                        <div class="col-9">
+                                            <input asp-for="PromoCode" class="form-control form-control-solid" type="text" value="" />
+                                            <span asp-validation-for="PromoCode" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label asp-for="PromotionUniqueName" class="col-3">Promotion Name</label>
+                                        <div class="col-9">
+                                            <input asp-for="PromotionUniqueName" class="form-control form-control-solid" type="text" value="" />
+                                            <span asp-validation-for="PromotionUniqueName" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label asp-for="TypeId" class="col-3">Promotion Type</label>
+                                        <div class="col-9">
+                                            <select class="form-control" asp-for="TypeId" asp-items="Html.GetEnumSelectList<THPromotionPortal.Models.enums.PromotionType>()">
+                                                <option></option>
+                                            </select>
+                                            <span asp-validation-for="TypeId" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label asp-for="PromotionValue" class="col-3">Promotion Value</label>
+                                        <div class="col-9">
+                                            <input asp-for="PromotionValue" class="form-control form-control-solid" type="number" value="" />
+                                            <span asp-validation-for="PromotionValue" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label asp-for="PromotionValueTypeId" class="col-3">Promotion Value Type</label>
+                                        <div class="col-9">
+                                            <select class="form-control" asp-for="PromotionValueTypeId" asp-items="Html.GetEnumSelectList<THPromotionPortal.Models.enums.PromotionValueType>()">
+                                                <option></option>
+                                            </select>
+                                            <span asp-validation-for="TypeId" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label asp-for="MediumTypeId" class="col-3">Promotion Medium Type</label>
+                                        <div class="col-9">
+                                            <select class="form-control" asp-for="MediumTypeId" asp-items="Html.GetEnumSelectList<THPromotionPortal.Models.enums.Medium>()">
+                                                <option></option>
+                                            </select>
+                                            <span asp-validation-for="MediumTypeId" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label asp-for="ThresholdTypeId" class="col-3">Promotion Threshold Type</label>
+                                        <div class="col-9">
+                                            <select class="form-control" asp-for="ThresholdTypeId" asp-items="Html.GetEnumSelectList<THPromotionPortal.Models.enums.ThresholdType>()">
+                                                <option></option>
+                                            </select>
+                                            <span asp-validation-for="ThresholdTypeId" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label asp-for="Threshold" class="col-3">Threshold</label>
+                                        <div class="col-9">
+                                            <input asp-for="Threshold" class="form-control form-control-solid" type="number" value="" />
+                                            <span asp-validation-for="Threshold" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label asp-for="AudienceStatusTypeId" class="col-3">Audience Type</label>
+                                    <div class="col-9">
+                                        <select class="form-control" asp-for="AudienceStatusTypeId" asp-items="Html.GetEnumSelectList<THPromotionPortal.Models.enums.AudienceStatusType>()">
+                                            <option></option>
+                                        </select>
+                                        <span asp-validation-for="AudienceStatusTypeId" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Create" class="btn btn-primary" />
+                        </div>
+                    </form>
+                    <!--end::Form-->
+                </div>
+            </div>
+            <!--end::Card-->
+        </div>
+        <!--end::Container-->
+    </div>
+
+
+    @*<h1>CreatePromotion</h1>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="CreatePromotions">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="PromotionUniqueName" class="control-label">Promotion Unique Name</label>
+                    <input asp-for="PromotionUniqueName" class="form-control" />
+                    <span asp-validation-for="PromotionUniqueName" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="IsPromoCode" /> @Html.DisplayNameFor(model => model.IsPromoCode)
+                    </label>
+                </div>
+                <div class="form-group" disabled>
+                    <label asp-for="PromoCode" class="control-label">Promo Code</label>
+                    <input asp-for="PromoCode" class="form-control" />
+                    <span asp-validation-for="PromoCode" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="StartDate" class="control-label">Start Date</label>
+                    <input asp-for="StartDate" class="form-control" />
+                    <span asp-validation-for="StartDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="EndDate" class="control-label">End Date</label>
+                    <input asp-for="EndDate" class="form-control" />
+                    <span asp-validation-for="EndDate" class="text-danger"></span>
+                </div>
+                <div class="form-group row" id="Divv">
+                    <label asp-for="TypeId" class="control-label">Promotion Type</label>
+                    <select class="form-control" asp-for="TypeId" id="selecttt" onchange="createCountryCodeElement()" asp-items="Html.GetEnumSelectList<THPromotionPortal.Models.enums.PromotionType>()">
+                        <option selected="selected" value="">Please select</option>
+                    </select>
+                    <span asp-validation-for="TypeId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PromotionValue" class="control-label">Promotion Value</label>
+                    <input asp-for="PromotionValue" class="form-control" />
+                    <span asp-validation-for="PromotionValue" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PromotionValueTypeId" class="control-label">Promotion Value Type</label>
+                    <select class="form-control" asp-for="PromotionValueTypeId" asp-items="Html.GetEnumSelectList<THPromotionPortal.Models.enums.PromotionValueType>()">
+                        <option selected="selected" value="">Please select</option>
+                    </select>
+                    <span asp-validation-for="PromotionValueTypeId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MediumTypeId" class="control-label">Promotion Medium</label>
+                    <select class="form-control" asp-for="MediumTypeId" asp-items="Html.GetEnumSelectList<THPromotionPortal.Models.enums.Medium>()">
+                        <option selected="selected" value="">Please select</option>
+                    </select>
+                    <span asp-validation-for="MediumTypeId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PurchaseTypeId" class="control-label">Purchase Type</label>
+                    <select class="form-control" asp-for="PurchaseTypeId" asp-items="Html.GetEnumSelectList<THPromotionPortal.Models.enums.PurchaseType>()">
+                        <option selected="selected" value="">Please select</option>
+                    </select>
+                    <span asp-validation-for="PurchaseTypeId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label">Promotion Description</label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Threshold" class="control-label">Promotion Threshold Value</label>
+                    <input asp-for="Threshold" class="form-control" />
+                    <span asp-validation-for="Threshold" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ThresholdTypeId" class="control-label">Promotion Threshold Type</label>
+                    <select class="form-control" asp-for="ThresholdTypeId" asp-items="Html.GetEnumSelectList<THPromotionPortal.Models.enums.ThresholdType>()">
+                        <option selected="selected" value="">Please select</option>
+                    </select>
+                    <span asp-validation-for="ThresholdTypeId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AudienceStatusTypeId" class="control-label">Audience Status Type</label>
+                    <select class="form-control" asp-for="AudienceStatusTypeId" asp-items="Html.GetEnumSelectList<THPromotionPortal.Models.enums.AudienceStatusType>()">
+                        <option selected="selected" value="">Please select</option>
+                    </select>
+                    <span asp-validation-for="AudienceStatusTypeId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>*@
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+    <script>var KTAppSettings = { "breakpoints": { "sm": 576, "md": 768, "lg": 992, "xl": 1200, "xxl": 1400 }, "colors": { "theme": { "base": { "white": "#ffffff", "primary": "#3699FF", "secondary": "#E5EAEE", "success": "#1BC5BD", "info": "#8950FC", "warning": "#FFA800", "danger": "#F64E60", "light": "#E4E6EF", "dark": "#181C32" }, "light": { "white": "#ffffff", "primary": "#E1F0FF", "secondary": "#EBEDF3", "success": "#C9F7F5", "info": "#EEE5FF", "warning": "#FFF4DE", "danger": "#FFE2E5", "light": "#F3F6F9", "dark": "#D6D6E0" }, "inverse": { "white": "#ffffff", "primary": "#ffffff", "secondary": "#3F4254", "success": "#ffffff", "info": "#ffffff", "warning": "#ffffff", "danger": "#ffffff", "light": "#464E5F", "dark": "#ffffff" } }, "gray": { "gray-100": "#F3F6F9", "gray-200": "#EBEDF3", "gray-300": "#E4E6EF", "gray-400": "#D1D3E0", "gray-500": "#B5B5C3", "gray-600": "#7E8299", "gray-700": "#5E6278", "gray-800": "#3F4254", "gray-900": "#181C32" } }, "font-family": "Poppins" };</script>
+    <!--end::Global Config-->
+    <!--begin::Global Theme Bundle(used by all pages)-->
+    <script src="~/assets/plugins/global/plugins.bundle.js"></script>
+    <script src="~/assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
+    <script src="~/assets/js/scripts.bundle.js"></script>
+    <script src="~/assets/js/pages/crud/forms/widgets/bootstrap-switch.js"></script>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        <!--begin::Global Config(global config for global JS scripts)-->
+    }
+}

@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkHome", "TalkHome\TalkHome.csproj", "{B4C217C4-46A8-4D17-B709-52BB846B291C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{918C279B-3F6F-4623-909C-BC767157C438} = {918C279B-3F6F-4623-909C-BC767157C438}
+		{E2E5DDBB-5692-460C-B2A9-AEA7764325EB} = {E2E5DDBB-5692-460C-B2A9-AEA7764325EB}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkHome.Models", "TalkHome.Models\TalkHome.Models.csproj", "{E2E5DDBB-5692-460C-B2A9-AEA7764325EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkHome.WebServices", "TalkHome.WebServices\TalkHome.WebServices.csproj", "{918C279B-3F6F-4623-909C-BC767157C438}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4E7A5349-5D31-4608-B90B-CF1FF76A2515}"
+	ProjectSection(SolutionItems) = preProject
+		TalkHome.Tests.testsettings = TalkHome.Tests.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkHome.Logger", "TalkHome.Logger\TalkHome.Logger.csproj", "{5E78FA8B-2B6C-45A2-BC6D-758BC8F4D0A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4C217C4-46A8-4D17-B709-52BB846B291C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C217C4-46A8-4D17-B709-52BB846B291C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C217C4-46A8-4D17-B709-52BB846B291C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B4C217C4-46A8-4D17-B709-52BB846B291C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C217C4-46A8-4D17-B709-52BB846B291C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4C217C4-46A8-4D17-B709-52BB846B291C}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{B4C217C4-46A8-4D17-B709-52BB846B291C}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{E2E5DDBB-5692-460C-B2A9-AEA7764325EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2E5DDBB-5692-460C-B2A9-AEA7764325EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2E5DDBB-5692-460C-B2A9-AEA7764325EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2E5DDBB-5692-460C-B2A9-AEA7764325EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2E5DDBB-5692-460C-B2A9-AEA7764325EB}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{E2E5DDBB-5692-460C-B2A9-AEA7764325EB}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{918C279B-3F6F-4623-909C-BC767157C438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{918C279B-3F6F-4623-909C-BC767157C438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{918C279B-3F6F-4623-909C-BC767157C438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{918C279B-3F6F-4623-909C-BC767157C438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{918C279B-3F6F-4623-909C-BC767157C438}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{918C279B-3F6F-4623-909C-BC767157C438}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{5E78FA8B-2B6C-45A2-BC6D-758BC8F4D0A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E78FA8B-2B6C-45A2-BC6D-758BC8F4D0A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E78FA8B-2B6C-45A2-BC6D-758BC8F4D0A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E78FA8B-2B6C-45A2-BC6D-758BC8F4D0A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E78FA8B-2B6C-45A2-BC6D-758BC8F4D0A1}.Staging|Any CPU.ActiveCfg = Release|Any CPU
+		{5E78FA8B-2B6C-45A2-BC6D-758BC8F4D0A1}.Staging|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+﻿/**
+ * Shared stylesheet for user-created plugins.
+ *
+*/
+.hidden,
+.form-horizontal input.hidden {
+    display: none;
+}
+.app-plugin label {
+    display: block;
+    margin: 16px 0 4px;
+}
+.html-textarea {
+    min-width: 100%;
+    min-height: 600px;
+}
+[type="number"] {
+    width: 206px;
+    max-width: 206px;
+    min-width: 206px;
+}
+.select-multiple {
+    width: 66%;
+    min-height: 250px;
+}
+.destinations label {
+    display: inline-block;
+    margin: 0 4px 8px 0;
+}

@@ -1,0 +1,52 @@
+@using Articulate
+@using Umbraco.Core
+@using Newtonsoft.Json.Linq;
+
+@model Articulate.Models.PostModel
+@{
+    Layout = "Master.cshtml";
+    ViewBag.CssBodyClass = "post-template tag-sublime tag-javascript";
+
+
+    string json = Model.PostImageUrl;
+    JObject jurl = JObject.Parse(json);
+    string url = jurl.SelectToken("src").ToString();
+    string murl = url.Replace("desktop", "mobile");
+}
+
+
+
+<form id="PurchaseFromBlog" method="POST" action="/account/purchasecheckout">
+@Html.AntiForgeryToken()
+<input id="BundleId" name="Id" type="hidden" value="">
+<input name="ProductCode" type="hidden" value="THM">
+<input name="Source" type="hidden" value="blog" />
+<main>
+
+    <div class="blog-header-image" style="background-image: url(@url);">
+
+    </div>
+
+    <div class="blog-header-mobile-image" style="background-image: url(@murl);">
+
+    </div>
+
+    <div id="BackNavigation">
+        <a href="/blog/">
+            <img class="back-image" alt="back" src="~/web_assets/icons/back-arrow.svg" />
+        </a>
+    </div>
+
+    <article>
+        <small class="date">
+            <span>@Model.PublishedDate.ToString("dddd, dd MMMM, yyyy")</span>
+        </small>
+        <a class="title" href="@Model.Url">
+            <h1 class="title-article-blog single-post-article">@Model.Name</h1>
+        </a>
+        <div class="text">
+            @Model.Body
+        </div>
+    </article>
+</main>
+</form>

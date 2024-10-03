@@ -1,0 +1,21 @@
+SELECT TOP 100 p.product_id, p.name,p.vendor_id, pc.product_category_id, pc.name, psc.product_subcategory_id, psc.name
+FROM dbo.product p
+INNER JOIN dbo.product_category pc ON pc.product_category_id = p.product_category_id
+RIGHT JOIN dbo.product_subcategory psc ON psc.product_category_id = pc.product_category_id
+WHERE p.product_id = 1 AND p.vendor_id = 2
+
+SELECT * FROM dbo.product_category
+
+SELECT * FROM dbo.product_subcategory psc
+WHERE psc.product_category_id = 1
+
+
+
+SELECT * FROM dbo.product_category
+SELECT * FROM dbo.product_subcategory
+
+
+
+SELECT pc.product_category_id, pc.name, psc.product_category_id, psc.name FROM dbo.product_category pc
+INNER JOIN dbo.product_subcategory psc  ON psc.product_category_id = pc.product_category_id
+WHERE pc.name_alias = 'gift_cards'

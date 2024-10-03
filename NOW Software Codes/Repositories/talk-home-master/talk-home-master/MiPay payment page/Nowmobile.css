@@ -1,0 +1,40 @@
+/**
+ * Overriden style for Now Mobile website.
+ *
+ * @author micheled
+ * Created on 07 Sept 2017
+ *
+ * rgb(86, 212, 40) green
+ *
+ */
+ body {
+    background-color: transparent;
+    color: rgb(102,102,102);
+}
+a:link,
+a:visited,
+a:active {
+    color: rgb(86, 212, 40);
+}
+
+.btn-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(86, 212, 40);
+    font-weight: 700;
+}
+
+.contains-input select {
+    background-image: url("dropdown-now.svg");
+}
+
+[type="text"], 
+[type="password"], 
+[type="tel"], 
+[type="number"], 
+select {
+	border: 2px solid rgb(86, 212, 40);
+}
+
+.input-validation-error {
+    border: 2px solid #e60000;
+}

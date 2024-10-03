@@ -1,0 +1,21 @@
+@using Articulate
+@model Articulate.Models.IMasterModel
+
+
+
+@if (!HttpContext.Current.IsDebuggingEnabled)
+{
+    Html.RenderPartial("_MarketingHeaderTags");
+}
+<header id="BlogListHeader">
+
+    <div class="blog-header-image" style="background-image: url(/web_assets/articles_header.png);">
+    </div>
+
+    <div class="blog-header-mobile-image list-mobile-image" style="background-image: url(/web_assets/articles_header.png);">
+    </div>
+
+    <a id="TalkHomeLogo" href="/" rel="HOME">
+        <img class="logo" src="~/web_assets/talk-home-logo.svg" />
+    </a>
+</header>

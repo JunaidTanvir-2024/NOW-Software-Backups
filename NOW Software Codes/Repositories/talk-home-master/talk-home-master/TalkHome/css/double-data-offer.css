@@ -1,0 +1,91 @@
+.center-middle-text { display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; }
+.center-bottom-text { display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: end; -ms-flex-align: end; -webkit-align-items: flex-end; align-items: flex-end; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; }
+.background-norepeat-cover { -webkit-background-size: cover; background-size: cover; background-repeat: no-repeat; }
+#DoubleDataOffer { display: -ms-grid; display: grid; -ms-grid-columns: 100%; grid-template-columns: 100%; -ms-grid-rows: 25% 4% 39% 32%; grid-template-rows: 25% 5% 55% 30%; grid-template-areas: "DDO__Header" "DDO__Title" "DDO__Body" "DDO__Footer"; /*************/ height: 1650px; position: relative; }
+#DDO_Logo { top: 22%; left: 10%; width: 150px; height: 180px; position: absolute; background-image: url('../web_assets/talk-home-logo.svg'); }
+#DDO_Logo:hover, #DDO__Body__Banners div:hover { cursor: pointer; }
+#DDO__Header { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: DDO__Header; /*************/ height: 100%; background-position: center; }
+#DDO__Title { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: DDO__Title; /*************/ }
+.DDO__Title--lower { text-transform: none; color: rgb(37, 33, 146); }
+#DDO__Body { -ms-grid-row: 3; -ms-grid-column: 1; display: -ms-grid; display: grid; grid-area: DDO__Body; -ms-grid-columns: 100%; grid-template-columns: 100%; -ms-grid-rows: 26% 74%; grid-template-rows: 26% 74%; grid-template-areas: "DDO__Body__Text" "DDO__Body__Banners"; }
+#DDO__Body__Text { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: DDO__Body__Text; /*************/ color: white; display: inline; text-align: left; font-size: 1.5em; font-weight: bold; line-height: 1.3em; padding: 3% 25% 0 25%; }
+#DDO__Body__Text .DDO__Body__Text--mobile { display: none; }
+#DDO__Body__Banners { -ms-grid-row: 2; -ms-grid-column: 1; display: -ms-grid; display: grid; grid-area: DDO__Body__Banners; -ms-grid-rows: 100%; grid-template-rows: 100%; -ms-grid-columns: 27% 13% 22% 13%; grid-template-columns: 27% 12% 22% 13%; grid-template-areas: ". DDO__Body__Banners--left . DDO__Body__Banners--right"; /*************/ }
+#DDO__Body__Banners div { top: 57%; width: 365px; height: 730px; position: absolute; }
+#DDO__Body__Banners--left { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: DDO__Body__Banners--left; /*************/ left: 24%; }
+#DDO__Body__Banners--right { -ms-grid-row: 1; -ms-grid-column: 4; grid-area: DDO__Body__Banners--right; /*************/ left: 55%; }
+#DDO__Footer { -ms-grid-row: 4; -ms-grid-column: 1; grid-area: DDO__Footer; /*************/ color: white; font-size: 1.4em; line-height: 1.2em; padding: 0 10% 45px 10%; background-position: center; }
+#DDO__Footer p { margin: 0; }
+
+@media all and (max-width: 1300px) {
+    #DoubleDataOffer { height: 1480px; -ms-grid-rows: 20% 4% 50% 26%; grid-template-rows: 20% 4% 50% 26%; }
+    #DDO_Logo { top: 16%; left: 8%; width: 125px; height: 150px; }
+    #DDO__Body__Text { font-size: 1.2em; }
+    #DDO__Body__Banners div { top: 49%; width: 300px; height: 606px; }
+    #DDO__Footer { font-size: 1em; }
+}
+
+@media all and (max-width: 1200px) {
+    #DoubleDataOffer { height: 1500px; -ms-grid-rows: 20% 4% 50% 26%; grid-template-rows: 20% 4% 55% 26%; }
+    #DDO_Logo { top: 16%; left: 8%; width: 125px; height: 150px; }
+    #DDO__Body__Text { font-size: 1.2em; }
+    #DDO__Body__Banners div { top: 51%; width: 300px; height: 606px; }
+    #DDO__Footer { font-size: 1em; }
+}
+
+@media all and (max-width: 991px) {
+    #DoubleDataOffer { height: 1150px; -ms-grid-rows: 20% 5% 45% 30%; grid-template-rows: 20% 5% 45% 30%; }
+    #DDO_Logo { left: 8%; top: 16%; width: 85px; height: 100px; }
+    #DDO__Title { font-size: 0.8em; }
+    #DDO__Body__Text { font-size: 1em; padding: 3% 22% 0 22%; }
+    #DDO__Body__Banners div { top: 54%; width: 200px; height: 404px; }
+    #DDO__Footer { padding: 0 3% 15px 3%; }
+}
+
+@media all and (max-width: 960px) {
+    #DDO_Logo { top: 16%; }
+    .DDO__Title--lower { margin: unset; }
+    #DDO__Footer { font-size: 0.8em; padding: 0 15% 15px 15%; }
+}
+/*** LAYOUT CHANGES HERE ***/
+@media all and (max-width: 740px) {
+    #DoubleDataOffer { height: 2000px; display: block; }
+    #DDO__Header { height: 245px; -webkit-background-size: cover; background-size: cover; }
+    #DDO__Body { display: block; }
+    #DDO__Body__Text { display: block; padding: 5%; font-size: 1.4em; }
+    #DDO__Body__Text .DDO__Body__Text--desktop { display: none; }
+    #DDO__Body__Text .DDO__Body__Text--mobile { display: block; }
+    #DDO__Body__Text .DDO__Body__Text--mobile p { margin-top: 0; }
+    #DDO_Logo { top: 10%; left: 3%; width: 80px; height: 95px; background-image: url('../web_assets/talk-home-logo.svg'); }
+    #DDO__Title p { margin: 15px 0; }
+    #DDO__Body__Banners { display: block; padding-bottom: 5px; }
+    #DDO__Body__Banners div { left: unset; top: unset; width: unset; height: 730px; position: relative; -webkit-background-size: 65% 90%; background-size: 65% 90%; background-position-x: center; }
+    #DDO__Footer { padding: 0px; font-size: 0.9em; background-position-y: bottom; border-bottom: 5px solid white; }
+    #DDO__Footer p { margin: 0; padding: 0 5% 35px 5%; border-bottom: 5px solid white; }
+}
+
+@media all and (max-width: 570px) {
+    #DoubleDataOffer { height: 1130px; }
+    #DDO__Header { height: 175px; }
+    #DDO_Logo { top: 10.5%; width: 65px; height: 80px; }
+    .page-title { font-size: 2em; }
+    #DDO__Body__Text { font-size: 1em; padding: 5% 7%; }
+    #DDO__Body__Banners { padding-top: 0; }
+    #DDO__Body__Banners div { height: 420px; -webkit-background-size: 50% 90%; background-size: contain; margin-bottom: 20px; }
+    #DDO__Footer { line-height: normal; }
+    #DDO__Footer p { -webkit-transform: translateY(5px); -ms-transform: translateY(5px); transform: translateY(5px); }
+    #DDO__Footer p:after { top: 80%; }
+}
+
+@media all and (max-width: 440px) {
+    #DDO_Logo { top: 11.5%; width: 55px; height: 65px; }
+    #DDO__Title { font-size: 0.6em; }
+    #DDO__Body__Text { font-size: 0.9em; padding: 5% 5% 3% 5%; }
+    #DDO__Footer { -webkit-background-size: cover; background-size: cover; }
+    #DDO__Footer p { -webkit-transform: translateY(10px); -ms-transform: translateY(10px); transform: translateY(10px); }
+}
+
+@media all and (max-width: 370px) {
+    #DDO__Body__Banners div { /*height: 700px;*/ /* height: 440px; */ /* -webkit-background-size: 65% 85%; */ /* background-size: 65% 85%; */ }
+    #DDO__Footer p { margin: 0; -webkit-transform: translateY(15px); -ms-transform: translateY(15px); transform: translateY(15px); }
+}

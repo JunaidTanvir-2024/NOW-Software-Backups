@@ -1,0 +1,19 @@
+{
+  propertyEditors: [
+    {
+      alias: "AppPlugins.BuyViaSMS",
+      name: "Buy via SMS",
+      editor: {
+        view: "~/App_Plugins/AppPlugins.BuyViaSMS/buyviasms.html",
+        valueType: "JSON"
+      }
+    }
+  ]
+  ,
+  javascript: [
+    '~/App_Plugins/AppPlugins.BuyViaSMS/buyviasms.controller.js'
+  ],
+  css: [
+    '~/App_Plugins/css/plugins.css'
+  ]
+}

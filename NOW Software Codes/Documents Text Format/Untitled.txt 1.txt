@@ -1,0 +1,84 @@
+
+            //Dictionary<string, IEnumerable<OperatorBySubCategoryDto.Response>>
+
+
+            //var groupedOperators = operators
+            //    .GroupBy(x => x.SubCategoryName)
+            //    .Select(group => new GetOperatorsBySubCategory.Response()
+            //    {
+            //        SubCategoryName = group.Key,
+            //        Operators = group.Select(operatorItem => new Response.OperatorInfo()
+            //        {
+            //            OperatorName = operatorItem.OperatorName,
+            //            OperatorAliasName = operatorItem.OperatorAliasName,
+            //            OperatorShortCode = operatorItem.OperatorShortCode,
+            //            OperatorDescription = operatorItem.OperatorDescription,
+            //            Logo = operatorItem.Logo,
+            //            CountryIsoCode = operatorItem.CountryIsoCode,
+            //            CurrencyCode = operatorItem.CurrencyCode,
+            //            Category = new Response.OperatorInfo.CategoryInfo()
+            //            {
+            //                CategoryName = operatorItem.CategoryName,
+            //                SubCategoryName = operatorItem.SubCategoryName
+            //            }
+            //        }).ToList()
+            //    }).ToList();
+
+
+            //var subCategoryName = groupedOperators.Select(x => x.SubCategoryName);
+            //var subCategoryOperators = groupedOperators.Select(x => x.Operators);
+
+
+
+
+
+            //            var groupedOperators = operators
+            //.GroupBy(x => x.SubCategoryName)
+            //.ToDictionary(
+            //    group => group.Key,
+            //    group => group.Select(operatorItem => new
+            //    {
+            //        operatorName = operatorItem.OperatorName,
+            //        operatorAliasName = operatorItem.OperatorAliasName,
+            //        operatorShortCode = operatorItem.OperatorShortCode,
+            //        operatorDescription = operatorItem.OperatorDescription,
+            //        logo = operatorItem.Logo,
+            //        countryIsoCode = operatorItem.CountryIsoCode,
+            //        currencyCode = operatorItem.CurrencyCode,
+            //        category = new
+            //        {
+            //            categoryName = operatorItem.CategoryName,
+            //            subCategoryName = operatorItem.SubCategoryName
+            //        }
+            //    }).ToList()
+            //);
+
+
+
+            var groupedOperators = new Dictionary<string, List<object>>();
+
+            foreach (var x in operators)
+            {
+                if (!groupedOperators.ContainsKey(x.SubCategoryName))
+                {
+                    groupedOperators[x.SubCategoryName] = new List<object>();
+                }
+
+                groupedOperators[x.SubCategoryName].Add(new
+                {
+                    operatorName = x.OperatorName,
+                    operatorAliasName = x.OperatorAliasName,
+                    operatorShortCode = x.OperatorShortCode,
+                    operatorDescription = x.OperatorDescription,
+                    logo = x.Logo,
+                    countryIsoCode = x.CountryIsoCode,
+                    currencyCode = x.CurrencyCode,
+                    category = new
+                    {
+                        categoryName = x.CategoryName,
+                        subCategoryName = x.SubCategoryName
+                    }
+                });
+            }
+
+

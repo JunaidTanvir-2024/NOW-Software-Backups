@@ -1,0 +1,31 @@
+D:\WebAPI\KFCDB\bin\Debug\KFCDB.dll.config
+D:\WebAPI\KFCDB\bin\Debug\KFCDB.dll
+D:\WebAPI\KFCDB\bin\Debug\KFCDB.pdb
+D:\WebAPI\KFCDB\bin\Debug\EntityFramework.dll
+D:\WebAPI\KFCDB\bin\Debug\EntityFramework.SqlServer.dll
+D:\WebAPI\KFCDB\bin\Debug\EntityFramework.xml
+D:\WebAPI\KFCDB\bin\Debug\EntityFramework.SqlServer.xml
+D:\WebAPI\KFCDB\obj\Debug\KFCDB.csprojResolveAssemblyReference.cache
+D:\WebAPI\KFCDB\obj\Debug\KFCDB.dll
+D:\WebAPI\KFCDB\obj\Debug\KFCDB.pdb
+D:\WebAPI\FoodPandaAPI\KFCDB\bin\Debug\KFCDB.dll.config
+D:\WebAPI\FoodPandaAPI\KFCDB\bin\Debug\KFCDB.dll
+D:\WebAPI\FoodPandaAPI\KFCDB\bin\Debug\KFCDB.pdb
+D:\WebAPI\FoodPandaAPI\KFCDB\bin\Debug\EntityFramework.dll
+D:\WebAPI\FoodPandaAPI\KFCDB\bin\Debug\EntityFramework.SqlServer.dll
+D:\WebAPI\FoodPandaAPI\KFCDB\bin\Debug\EntityFramework.xml
+D:\WebAPI\FoodPandaAPI\KFCDB\bin\Debug\EntityFramework.SqlServer.xml
+D:\WebAPI\FoodPandaAPI\KFCDB\obj\Debug\KFCDB.dll
+D:\WebAPI\FoodPandaAPI\KFCDB\obj\Debug\KFCDB.pdb
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCDB\bin\Debug\KFCDB.dll.config
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCDB\bin\Debug\KFCDB.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCDB\bin\Debug\KFCDB.pdb
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCDB\bin\Debug\EntityFramework.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCDB\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCDB\bin\Debug\EntityFramework.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCDB\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCDB\obj\Debug\KFCDB.csproj.AssemblyReference.cache
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCDB\obj\Debug\KFCDB.csproj.CoreCompileInputs.cache
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCDB\obj\Debug\KFCDB.csproj.CopyComplete
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCDB\obj\Debug\KFCDB.dll
+D:\Ufone\Waqas PC\FPAPI\FoodPandaAPI\KFCDB\obj\Debug\KFCDB.pdb

@@ -1,0 +1,20 @@
+{
+  propertyEditors: [
+    {
+      alias: "AppPlugins.HtmlTextarea",
+      name: "HTML Textarea",
+      editor: {
+        view: "~/App_Plugins/AppPlugins.HtmlTextarea/htmltextarea.html",
+        valueType: "JSON",
+		validation: {}
+      }
+    }
+  ]
+  ,
+  javascript: [
+    '~/App_Plugins/AppPlugins.HtmlTextarea/htmltextarea.controller.js'
+  ],
+  css: [
+    '~/App_Plugins/css/plugins.css'
+  ]
+}

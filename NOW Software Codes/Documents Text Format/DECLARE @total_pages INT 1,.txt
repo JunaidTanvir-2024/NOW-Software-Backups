@@ -1,0 +1,32 @@
+DECLARE @total_pages INT,
+        @total_records INT,
+		@filters product_filters;
+
+
+		INSERT @filters
+		(
+		    country_iso_code,
+		    currency_code,
+		    calling_code,
+		    validity_unit,
+		    operator_id
+		)
+		VALUES
+		(   NULL, -- country_iso_code - nvarchar(2)
+		    NULL, -- currency_code - nvarchar(50)
+		    NULL, -- calling_code - smallint
+		    NULL, -- validity_unit - nvarchar(100)
+		    824  -- operator_id - nvarchar(50)
+		    )
+
+	
+
+
+
+EXEC dbo.fh_product_get @filters = @filters,                       -- product_filters
+                        @is_active = 1,                     -- bit
+                        @is_deleted = 0,                    -- bit
+                        @page = 1,                             -- int
+                        @records_per_page = 100,                 -- int
+                        @total_pages = @total_pages OUTPUT,    -- int
+                        @total_records = @total_records OUTPUT -- int

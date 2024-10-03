@@ -1,0 +1,19 @@
+{
+  propertyEditors: [
+    {
+      alias: "AppPlugins.BundlesData",
+      name: "Bundles data",
+      editor: {
+        view: "~/App_Plugins/AppPlugins.BundlesData/bundlesdata.html",
+        valueType: "JSON"
+      }
+    }
+  ]
+  ,
+  javascript: [
+    '~/App_Plugins/AppPlugins.BundlesData/bundlesdata.controller.js'
+  ],
+  css: [
+    '~/App_Plugins/css/plugins.css'
+  ]
+}

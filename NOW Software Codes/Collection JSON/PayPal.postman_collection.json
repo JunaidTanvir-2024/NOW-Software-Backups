@@ -1,0 +1,612 @@
+{
+	"info": {
+		"_postman_id": "ca701b13-e7ef-407a-99d0-b8e3e9e95101",
+		"name": "PayPal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32945586"
+	},
+	"item": [
+		{
+			"name": "Authorization",
+			"item": [
+				{
+					"name": "Get Access Token",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessToken",
+									"value": "A21AAKb1Jngr7ekvm_WvMznx5NBIQ9Q5Ww3wayjKBQ24CLwZtkof5ngdrTIV2Alboq1cb2KziXZj_30au1YVb4HsoBcNDcYvQ",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "PayPal",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "refresh_token",
+									"type": "any"
+								},
+								{
+									"key": "expires_in",
+									"value": 32344,
+									"type": "number"
+								},
+								{
+									"key": "token_id",
+									"value": "85272acc-026f-4a23-a867-84de4ac4a505",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1708949553787,
+									"type": "number"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://api-m.sandbox.paypal.com/v1/oauth2/token",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "{{client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "{{secret_id}}",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": true,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/oauth2/token",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"intent\": \"CAPTURE\",\r\n    \"purchase_units\": [\r\n        {\r\n            \"items\": [\r\n                {\r\n                    \"name\": \"T-Shirt\",\r\n                    \"description\": \"Green XL\",\r\n                    \"quantity\": \"1\",\r\n                    \"unit_amount\": {\r\n                        \"currency_code\": \"USD\",\r\n                        \"value\": \"100.00\"\r\n                    }\r\n                }\r\n            ],\r\n            \"amount\": {\r\n                \"currency_code\": \"USD\",\r\n                \"value\": \"100.00\",\r\n                \"breakdown\": {\r\n                    \"item_total\": {\r\n                        \"currency_code\": \"USD\",\r\n                        \"value\": \"100.00\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v2/checkout/orders",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v2",
+								"checkout",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show order details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v2/checkout/orders/2YT099991T496490P",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v2",
+								"checkout",
+								"orders",
+								"2YT099991T496490P"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update order",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"op\": \"add\",\r\n        \"path\": \"/purchase_units/@reference_id=='default'/shipping/address\",\r\n        \"value\": {\r\n            \"address_line_1\": \"123 Townsend St\",\r\n            \"address_line_2\": \"Floor 6\",\r\n            \"admin_area_2\": \"San Francisco\",\r\n            \"admin_area_1\": \"CA\",\r\n            \"postal_code\": \"94101\",\r\n            \"country_code\": \"US\"\r\n        }\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v2/checkout/orders/2YT099991T496490P",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v2",
+								"checkout",
+								"orders",
+								"2YT099991T496490P"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirm Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"payment_source\": {\r\n        \"paypal\": {\r\n            \"name\": {\r\n                \"given_name\": \"Muhammad Arslan\",\r\n                \"surname\": \"Muhammad Arslan\"\r\n            },\r\n            \"email_address\": \"arslan.tufail@now.net.pk\",\r\n            \"experience_context\": {\r\n                \"payment_method_preference\": \"IMMEDIATE_PAYMENT_REQUIRED\",\r\n                \"brand_name\": \"EXAMPLE INC\",\r\n                \"locale\": \"en-US\",\r\n                \"landing_page\": \"LOGIN\",\r\n                \"shipping_preference\": \"SET_PROVIDED_ADDRESS\",\r\n                \"user_action\": \"PAY_NOW\",\r\n                \"return_url\": \"https://example.com/returnUrl\",\r\n                \"cancel_url\": \"https://example.com/cancelUrl\"\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v2/checkout/orders/2YT099991T496490P/confirm-payment-source",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v2",
+								"checkout",
+								"orders",
+								"2YT099991T496490P",
+								"confirm-payment-source"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authorize payment for order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "PayPal-Request-Id",
+								"value": "7b92603e-77ed-4896-8e78-5dea2050476a",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/v2/checkout/orders/2YT099991T496490P/authorize",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v2",
+								"checkout",
+								"orders",
+								"2YT099991T496490P",
+								"authorize"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product Catalog",
+			"item": [
+				{
+					"name": "Create Products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"T-Shirt\",\r\n    \"type\": \"DIGITAL\",\r\n    \"description\": \"Cotton XL\",\r\n    \"category\": \"CLOTHING\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/catalogs/products",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"catalogs",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Porducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v1/catalogs/products",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"catalogs",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show product details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v1/catalogs/products/PROD-36G26410GT449611P",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"catalogs",
+								"products",
+								"PROD-36G26410GT449611P"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update product",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/name\",\r\n        \"value\": \"T-Shirt Pakistan\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/catalogs/products/PROD-36G26410GT449611P",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"catalogs",
+								"products",
+								"PROD-36G26410GT449611P"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Plan",
+			"item": [
+				{
+					"name": "Create plan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\": \"PROD-36G26410GT449611P\",\r\n    \"name\": \"MonthX\",\r\n    \"status\": \"ACTIVE\",\r\n    \"billing_cycles\": [\r\n        {\r\n            \"frequency\": {\r\n                \"interval_unit\": \"MONTH\",\r\n                \"interval_count\": 1\r\n            },\r\n            \"tenure_type\": \"TRIAL\",\r\n            \"sequence\": 1,\r\n            \"total_cycles\": 2,\r\n            \"pricing_scheme\": {\r\n                \"fixed_price\": {\r\n                    \"value\": \"3\",\r\n                    \"currency_code\": \"USD\"\r\n                }\r\n            }\r\n        },\r\n        {\r\n            \"frequency\": {\r\n                \"interval_unit\": \"MONTH\",\r\n                \"interval_count\": 1\r\n            },\r\n            \"tenure_type\": \"TRIAL\",\r\n            \"sequence\": 2,\r\n            \"total_cycles\": 3,\r\n            \"pricing_scheme\": {\r\n                \"fixed_price\": {\r\n                    \"value\": \"6\",\r\n                    \"currency_code\": \"USD\"\r\n                }\r\n            }\r\n        },\r\n        {\r\n            \"frequency\": {\r\n                \"interval_unit\": \"MONTH\",\r\n                \"interval_count\": 1\r\n            },\r\n            \"tenure_type\": \"REGULAR\",\r\n            \"sequence\": 3,\r\n            \"total_cycles\": 12,\r\n            \"pricing_scheme\": {\r\n                \"fixed_price\": {\r\n                    \"value\": \"10\",\r\n                    \"currency_code\": \"USD\"\r\n                }\r\n            }\r\n        }\r\n    ],\r\n    \"payment_preferences\": {\r\n        \"auto_bill_outstanding\": true,\r\n        \"setup_fee\": {\r\n            \"value\": \"10\",\r\n            \"currency_code\": \"USD\"\r\n        },\r\n        \"setup_fee_failure_action\": \"CONTINUE\",\r\n        \"payment_failure_threshold\": 3\r\n    },\r\n    \"taxes\": {\r\n        \"percentage\": \"10\",\r\n        \"inclusive\": false\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/billing/plans",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"billing",
+								"plans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List plans",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v1/billing/plans",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"billing",
+								"plans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show plan detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v1/billing/plans/P-8BD22049XX465500EMXOIBKA",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"billing",
+								"plans",
+								"P-8BD22049XX465500EMXOIBKA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activate plan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v1/billing/plans/P-8BD22049XX465500EMXOIBKA/activate",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"billing",
+								"plans",
+								"P-8BD22049XX465500EMXOIBKA",
+								"activate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update plan",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/name\",\r\n        \"value\": \"Month 30 Pro\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/billing/plans/P-8BD22049XX465500EMXOIBKA",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"billing",
+								"plans",
+								"P-8BD22049XX465500EMXOIBKA"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subscription",
+			"item": [
+				{
+					"name": "Create subscription",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"plan_id\": \"P-8BD22049XX465500EMXOIBKA\",\r\n  \"shipping_amount\": {\r\n    \"currency_code\": \"USD\",\r\n    \"value\": \"10.00\"\r\n  },\r\n  \"subscriber\": {\r\n    \"name\": {\r\n      \"given_name\": \"Muhammad Arslan\",\r\n      \"surname\": \"Tufail\"\r\n    },\r\n    \"email_address\": \"arslan.tufail@now.net.pk\",\r\n    \"shipping_address\": {\r\n      \"name\": {\r\n        \"full_name\": \"Muhammad Aslan\"\r\n      },\r\n      \"address\": {\r\n        \"address_line_1\": \"2211 N First Street\",\r\n        \"address_line_2\": \"Building 17\",\r\n        \"admin_area_2\": \"San Jose\",\r\n        \"admin_area_1\": \"CA\",\r\n        \"postal_code\": \"95131\",\r\n        \"country_code\": \"US\"\r\n      }\r\n    }\r\n  },\r\n  \"application_context\": {\r\n    \"brand_name\": \"walmart\",\r\n    \"locale\": \"en-US\",\r\n    \"shipping_preference\": \"SET_PROVIDED_ADDRESS\",\r\n    \"user_action\": \"SUBSCRIBE_NOW\",\r\n    \"payment_method\": {\r\n      \"payer_selected\": \"PAYPAL\",\r\n      \"payee_preferred\": \"IMMEDIATE_PAYMENT_REQUIRED\"\r\n    },\r\n    \"return_url\": \"https://example.com/returnUrl\",\r\n    \"cancel_url\": \"https://example.com/cancelUrl\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/billing/subscriptions",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"billing",
+								"subscriptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show subscription detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v1/billing/subscriptions/I-0ET9DU7G4S1V",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"billing",
+								"subscriptions",
+								"I-0ET9DU7G4S1V"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Subscription",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/start_time\",\r\n        \"value\": {\r\n           \"start_time\": \"null\"\r\n        }\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/billing/subscriptions/I-U0W9SAGNRPAX",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"billing",
+								"subscriptions",
+								"I-U0W9SAGNRPAX"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Active Subscription",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"reason\": \"Reactivating the subscription\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/v1/billing/subscriptions/I-809SR5V731U0/activate",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1",
+								"billing",
+								"subscriptions",
+								"I-809SR5V731U0",
+								"activate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{access_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

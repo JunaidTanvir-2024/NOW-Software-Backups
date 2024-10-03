@@ -1,0 +1,377 @@
+﻿.porting-information {
+    /*Keeping this for conversion to SASS*/
+    font-size: 0.9em;
+}
+
+    .porting-information .porting-information-table {
+        width: 100%;
+        text-align: center;
+    }
+
+    .porting-information .porting-information-table-header {
+        color: #fff;
+        text-align: left;
+        background-color: var(--theme-dark-blue);
+    }
+
+        .porting-information .porting-information-table-header th {
+            padding: 5px 0 5px 5px;
+        }
+
+    .porting-information .porting-information-table-body {
+        text-align: left;
+        background-color: white;
+    }
+
+        .porting-information .porting-information-table-body .porting-getdetails-td {
+            padding: 0;
+            text-align: center;
+        }
+
+            .porting-information .porting-information-table-body .porting-getdetails-td a {
+                background: none;
+                color: var(--theme-light-blue);
+            }
+
+                .porting-information .porting-information-table-body .porting-getdetails-td a:hover {
+                    text-decoration: underline;
+                }
+
+        .porting-information .porting-information-table-body td {
+            padding: 5px;
+            vertical-align: middle;
+        }
+
+        .porting-information .porting-information-table-body tr:nth-child(even) {
+            background-color: var(--theme-light-grey);
+        }
+
+        .porting-information .porting-information-table-body .porting-getdetails-btn {
+            width: 90%;
+            padding: 10px 0;
+        }
+
+.porting-options {
+    margin-top: 90px;
+}
+
+    .porting-options .porting-option-button {
+        float: left;
+        width: 33.33%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+        .porting-options .porting-option-button a {
+            width: 53%; /*80px is also a good option*/
+        }
+
+/*#region Modal*/
+
+/*increasing specificity to override the "#CreditModalContent .modal-content" in main.css*/
+#CreditModalContent.modal.modal-porting .modal-content {
+    padding: 0;
+    font-weight: bold;
+}
+
+#CreditModalContent .porting-modal-header {
+    width: 100%;
+    float: right;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: var(--theme-dark-blue);
+}
+
+    #CreditModalContent .porting-modal-header:hover {
+        color: white;
+        cursor: default;
+        background-color: var(--theme-dark-blue);
+    }
+
+    #CreditModalContent .porting-modal-header .close,
+    #CreditModalContent .porting-modal-header .close:hover {
+        color: white;
+    }
+
+#PortingModalContent .portIn-section input,
+#PortingModalContent .portOut-section input,
+#PortingModalContent .portIn-section select {
+    width: 88%;
+    margin: 5px 0 10px 0;
+}
+
+#PortingModalContent .portIn-section label,
+#PortingModalContent .portOut-section label {
+    float: left;
+    margin-left: 6%;
+    font-weight: bold;
+}
+
+#PortingModalContent .porting-modal-buttons button {
+    width: 35%;
+    height: 46px;
+    margin: 30px 6%;
+    background-color: var(--theme-yellow);
+}
+
+#PortDate + div.icon.ion-md-calendar,
+#Reason + div.icon.ion-md-arrow-dropdown {
+    left: 38%;
+    height: 0;
+    top: -48px;
+    position: relative;
+    pointer-events: none;
+}
+
+
+.sim-port + div.icon.ion-md-calendar{
+    left:420px !important;
+    top:-42px !important;     
+}
+
+.portIn-sim-section {
+    display:none;
+}
+
+#Reason + div.icon.ion-md-arrow-dropdown {
+    top: -55px;
+}
+
+#PortDate + div.icon.ion-md-calendar:before {
+    font-size: 2em;
+    color: var(--theme-dark-blue);
+}
+
+#Reason + div.icon.ion-md-arrow-dropdown:before {
+    font-size: 3em;
+    color: var(--theme-dark-blue);
+}
+
+#SelectReason {
+    text-indent: 0;
+}
+
+    #PortDate:hover,
+    #SelectReason:hover,
+    #Reason + div.icon.ion-md-arrow-dropdown:hover {
+        cursor: pointer;
+    }
+
+
+.modal-porting input {
+    position: inherit;
+}
+
+.calendar-wrapper {
+    font-family: Lato !important;
+}
+
+    .calendar-wrapper[data-theme='blue'] .calendar-head-card {
+        background-color: var(--theme-dark-blue) !important;
+    }
+
+    .calendar-wrapper.picker {
+        top: 25%;
+    }
+
+.calendar-grid .calendar-date-holder {
+    height: 220px !important;
+}
+
+
+.calendar-head-card {
+    padding: 8px !important;
+}
+
+    .calendar-head-card .calendar-date-wrapper {
+        font-size: 20px !important;
+    }
+
+    .calendar-head-card .calendar-year,
+    .calendar-head-card .calendar-date-wrapper {
+        color: white !important;
+    }
+
+#PortingSpinner {
+    display: none;
+    width: 100%;
+    left: 50%;
+    position: absolute;
+    margin-top: -100px;
+}
+
+#PortingResults {
+    /*initially kept zero to avoid having space aboce the buttons*/
+    height: 0;
+}
+
+    #PortingResults div:nth-child(even) label,
+    #PortingResults div:nth-child(even) span {
+        background-color: var(--theme-light-grey);
+    }
+
+    #PortingResults div {
+        text-align: left;
+        padding: 5px 6%;
+    }
+
+        #PortingResults div label,
+        #PortingResults div span {
+            width: 50%;
+            display: inline-block;
+        }
+
+        #PortingResults div label {
+            text-align: left;
+        }
+
+        #PortingResults div span {
+            font-weight:lighter;
+        }
+/*#endregion Modal*/
+
+.input-container-toggler {
+    margin-bottom:70px;
+}
+
+@media all and (max-width: 760px) {
+
+    /* Force table to not be like tables anymore */
+    .porting-information table,
+    .porting-information thead,
+    .porting-information tbody,
+    .porting-information th,
+    .porting-information td,
+    .porting-information tr {
+        display: block;
+    }
+
+        /* Hide table headers (but not display: none;, for accessibility) */
+        .porting-information thead tr {
+            top: -9999px;
+            left: -9999px;
+            position: absolute;
+        }
+
+    .porting-information tr {
+        font-size: 0.8em;
+        border-bottom: 1px solid black;
+    }
+
+    .porting-information .porting-information-table-body td {
+        padding-left: 46%;
+    }
+
+        .porting-information .porting-information-table-body td:empty {
+            display: none;
+        }
+
+    .porting-information .porting-information-table-body .porting-getdetails-btn {
+        margin: 10px 0;
+        font-size: 1.4em;
+    }
+
+    .porting-information .porting-information-table-body .porting-getdetails-td a {
+        color: black;
+        background-color: var(--theme-yellow);
+    }
+
+        .porting-information .porting-information-table-body .porting-getdetails-td a:active,
+        .porting-information .porting-information-table-body .porting-getdetails-td a:focus,
+        .porting-information .porting-information-table-body .porting-getdetails-td a:hover,
+        .porting-information .porting-information-table-body .porting-getdetails-td a:visited {
+            text-decoration: none;
+        }
+
+    .porting-information td {
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        vertical-align: middle;
+        border-bottom: 1px solid #eee;
+    }
+
+        .porting-information td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            left: 10px;
+            width: 45%;
+            font-weight: bold;
+            padding-right: 10px;
+            white-space: nowrap;
+            vertical-align: middle;
+        }
+
+        /*#region Labeling the data*/
+        .porting-information td:nth-of-type(1):before {
+            content: "Type";
+        }
+
+        .porting-information td:nth-of-type(2):before {
+            content: "Title";
+        }
+
+        .porting-information td:nth-of-type(3):before {
+            content: "Resolution";
+        }
+
+        .porting-information td:nth-of-type(4):before {
+            content: "Status";
+        }
+    /*#endregion Labeling the data*/
+
+    .porting-options {
+        margin-top: 20px;
+    }
+
+        .porting-options .porting-option-button {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+            .porting-options .porting-option-button a {
+                width: 90%;
+                padding: 10px 0;
+            }
+
+    #PortingModalContent .porting-modal-buttons .portOut-section,
+    #PortingModalContent .porting-modal-buttons .portIn-section {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    #PortingModalContent .porting-modal-buttons button { /**/
+        width: 88%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    #PortingModalContent .porting-modal-buttons #CancelButton {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .porting-modal-buttons {
+        font-size: 1.1em;
+    }
+}
+
+
+/*Glaxt S5*/
+@media all and (max-width: 360px) {
+    .porting-information .porting-information-table-body td {
+        padding-left: 42%;
+    }
+}
+
+/*iphone5*/
+@media all and (max-width: 320px) {
+    .porting-information .porting-information-table-body td {
+        padding-left: 36%;
+    }
+}

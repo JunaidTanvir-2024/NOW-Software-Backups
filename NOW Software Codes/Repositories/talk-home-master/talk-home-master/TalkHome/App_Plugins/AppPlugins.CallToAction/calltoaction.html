@@ -1,0 +1,21 @@
+﻿<div class="app-plugin" ng-controller="AppPlugins.CallToAction">
+
+    <label for="text">Text</label>
+    <input class="umb-editor umb-textstring textstring ng-pristine ng-valid ng-valid-required" 
+           id="text" 
+           type="text" 
+           ng-trim="false" 
+           required="required" 
+           ng-required="model.validation.mandatory" 
+           ng-model="model.value.text" />
+
+    <label for="target">Link target</label>
+    <input class="umb-editor umb-textstring textstring ng-pristine ng-valid ng-valid-required"
+           id="target"
+           type="text"
+           ng-trim="false"
+           required="required"
+           ng-required="model.validation.mandatory"
+           ng-model="model.value.target" />
+
+</div>

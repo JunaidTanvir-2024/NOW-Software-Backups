@@ -1,0 +1,134 @@
+@using Articulate
+@using Articulate.Models
+@using Umbraco.Core
+@using Umbraco.Web
+@using Newtonsoft.Json.Linq;
+
+@model Articulate.Models.ListModel
+@{
+    Layout = "Master.cshtml";
+}
+
+@Html.ThemedPartial(Model, "Header")
+<link href="~/css/UmbracoCustom/blog.css" rel="stylesheet" />
+<main id="BlogsList">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10" style="margin: auto;">
+                <div class="row">
+                    @if (!Model.Children.Any())
+                    {
+                        <article>No blog posts found</article>
+                    }
+                    else
+                    {
+                        foreach (var post in Model.Posts)
+                        {
+                            string url = "";
+                            string turl = "";
+                            string murl = "";
+                            string json = post.PostImageUrl;
+                            if (!String.IsNullOrEmpty(json))
+                            {
+                                JObject jurl = JObject.Parse(json);
+                                url = jurl.SelectToken("src").ToString();
+                                turl = url.Replace("desktop", "desktop-thumb");
+                                murl = url.Replace("desktop", "mobile-thumb");
+                            }
+                            <div class="col-md-6 th-card-margin">
+                                <div class="th-card">
+                                    @if (!post.PostImageUrl.IsNullOrWhiteSpace())
+                                    {
+                                        var thumbnail = post.GetCropUrl("postImage", "blogPost");
+                                        if (!thumbnail.IsNullOrWhiteSpace())
+                                        {
+                                            <img class="th-card-img" src="@(turl)" alt="@post.Name" />
+                                        }
+                                    }
+                                    <div class="th-card-body">
+                                        <h4 class="th-card-title"><a class="title" title="@post.Name" href="@post.Url">@post.Name</a></h4>
+                                        <span class="th-card-date">@post.PublishedDate.ToString("dddd, dd MMMM, yyyy")</span>
+                                        <p class="th-card-text">@post.Excerpt</p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @*
+
+                        @if (!Model.Children.Any())
+            {
+                <article>No blog posts found</article>
+            }
+            else
+            {
+
+                    foreach (var post in Model.Posts)
+                {
+                    string url = "";
+                    string turl = "";
+                    string murl = "";
+                    string json = post.PostImageUrl;
+                    if (!String.IsNullOrEmpty(json))
+                    {
+                        JObject jurl = JObject.Parse(json);
+                        url = jurl.SelectToken("src").ToString();
+                        turl = url.Replace("desktop", "desktop-thumb");
+                        murl = url.Replace("desktop", "mobile-thumb");
+                    }
+
+                    <article>
+                        <div class="blog-info">
+                            <a class="title" title="@post.Name" href="@post.Url">
+                                <h1 class="title-article  truncate-text">@post.Name</h1>
+                            </a>
+                            <div class="date">
+                                @post.PublishedDate.ToString("dddd, dd MMMM, yyyy")
+                            </div>
+                            <div class="subtitle-article" title="@post.Excerpt">
+                                <p class="truncate-text">@post.Excerpt</p>
+                            </div>
+                        </div>
+                        <div class="blog-thumbnail thumb-desktop">
+
+                            @if (!post.PostImageUrl.IsNullOrWhiteSpace())
+                            {
+                                var thumbnail = post.GetCropUrl("postImage", "blogPost");
+                                if (!thumbnail.IsNullOrWhiteSpace())
+                                {
+                                    <img class="thumb" src="@(turl)" alt="@post.Name" />
+                                }
+                            }
+                        </div>
+
+                        <div class="blog-thumbnail thumb-mobile">
+
+                            @if (!post.PostImageUrl.IsNullOrWhiteSpace())
+                            {
+                                var thumbnail = post.GetCropUrl("postImage", "blogPost");
+                                if (!thumbnail.IsNullOrWhiteSpace())
+                                {
+                                    <img class="thumb thumb-mobile-image" src="@(murl)" alt="@post.Name" />
+                                }
+                            }
+                        </div>
+
+                        <div style="clear:both"></div>
+                        <div class="article-divider">
+                            &nbsp;
+                        </div>
+                    </article>
+                }
+        }*@
+
+    @Html.ThemedPartial(Model, "Pager", Model.Pages)
+
+    @*<div class="pagination p-ghost">{{pagination}}</div>*@
+</main>

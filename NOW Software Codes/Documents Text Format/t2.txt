@@ -1,0 +1,34 @@
+CREATE PROC fh_sub_category_get  (
+  @is_active BIT = 1,
+  @is_deleted BIT = 0,
+  @category_name_alias NVARCHAR(150)
+)
+AS
+
+BEGIN
+
+  
+
+	SELECT 
+		 --pc.product_category_id AS [CategoryId],
+		 --pc.name AS [CategoryName],
+		 --pc.name_aliasAS [CategoryAliasName],
+		 --pc.description AS [CategoryDescription]
+
+		 pc.name_alias AS [CategoryAliasName],
+		 psc.product_category_id AS [SubCategoryId],
+		 psc.name AS [SubCategoryName],
+		 psc.short_code AS [SubCategoryShortCode],
+		 psc.description AS [SubCategoryDescription]
+		 
+	FROM dbo.product_category pc
+	INNER JOIN dbo.product_subcategory psc 
+	ON psc.product_category_id = pc.product_category_id
+
+	WHERE 		   psc.is_active = 1    
+				AND psc.is_deleted = 0
+				AND pc.name_alias = @category_name_alias
+
+END 
+
+

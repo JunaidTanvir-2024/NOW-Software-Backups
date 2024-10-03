@@ -1,0 +1,287 @@
+﻿{
+  "TopPlans": [
+    {
+      "CurrentPlan": "267C58AD-F54F-416F-94DC-747009BB2BFA",
+      "Name": "Bangladesh 40"
+    },
+    {
+      "CurrentPlan": "C30A07B8-CE06-45CD-BFC4-B34F43D7E152",
+      "Name": "Freedom 10"
+    },
+    {
+      "CurrentPlan": "F25D38DA-DC38-43BE-99FB-0CE681185548",
+      "Name": "India 10"
+    },
+    {
+      "CurrentPlan": "14308656-2719-4A69-A98C-F017DC0BB58C",
+      "Name": "Data 10"
+    },
+    {
+      "CurrentPlan": "E79AF14A-4396-4A06-BC94-46FCDF349587",
+      "Name": "UK Plan 25"
+    }
+  ],
+  "UpgradeRules": [
+    {
+      "CurrentPlan": "C30A07B8-CE06-45CD-BFC4-B34F43D7E152",
+      "Name": "Freedom 10",
+      "UpgradePlan": "E6CF2C58-3E7B-4620-A70D-E0939B65329F"
+    },
+    {
+      "CurrentPlan": "E6CF2C58-3E7B-4620-A70D-E0939B65329F",
+      "Name": "Freedom 15",
+      "UpgradePlans": [
+        { "UpgradePlan": "F5459F36-1B68-44E2-9FC5-F3D891EC1B31" },
+        { "UpgradePlan": "14308656-2719-4A69-A98C-F017DC0BB58C" }
+      ]
+    },
+    {
+      "CurrentPlan": "F5459F36-1B68-44E2-9FC5-F3D891EC1B31",
+      "Name": "Freedom 20",
+      "UpgradePlans": [
+        { "UpgradePlan": "F5459F36-1B68-44E2-9FC5-F3D891EC1B31" },
+        { "UpgradePlan": "964F42EB-5B26-4B2B-B74C-012CCB5B295F" }
+      ]
+    },
+    {
+      "CurrentPlan": "B72C3191-042C-4ABA-B276-8E55AA53606B",
+      "Name": "UK Plan 5",
+      "UpgradePlans": [
+        { "UpgradePlan": "3CD97F38-75B8-4DE4-9ABF-9E4775FCF2A0" }
+      ]
+    },
+    {
+      "CurrentPlan": "DC727749-65D5-40A3-9202-5289592535EF",
+      "Name": "UK Plan 8",
+      "UpgradePlans": [
+        { "UpgradePlan": "48277F03-8EF9-4C32-9747-C0F2466CC87E" }
+      ]
+    },
+    {
+      "CurrentPlan": "3CD97F38-75B8-4DE4-9ABF-9E4775FCF2A0",
+      "Name": "UK Plan 10",
+      "UpgradePlans": [
+        { "UpgradePlan": "F5459F36-1B68-44E2-9FC5-F3D891EC1B31" }
+      ]
+    },
+    {
+      "CurrentPlan": "48277F03-8EF9-4C32-9747-C0F2466CC87E",
+      "Name": "UK Plan 15",
+      "UpgradePlans": [
+        { "UpgradePlan": "4120A211-ABD1-4AE8-A911-258C7E2A81E2" }
+      ]
+    },
+    {
+      "CurrentPlan": "4120A211-ABD1-4AE8-A911-258C7E2A81E2",
+      "Name": "UK Plan 20",
+      "UpgradePlans": [
+        { "UpgradePlan": "E79AF14A-4396-4A06-BC94-46FCDF349587" }
+      ]
+    },
+    {
+      "CurrentPlan": "E79AF14A-4396-4A06-BC94-46FCDF349587",
+      "Name": "UK Plan 25",
+      "UpgradePlans": [
+        { "UpgradePlan": "E79AF14A-4396-4A06-BC94-46FCDF349587" }
+      ]
+    },
+    {
+      "CurrentPlan": "6F7BDC8A-F198-46C9-97AA-F5DF0F80C761",
+      "Name": "Data 5",
+      "UpgradePlans": [
+        { "UpgradePlan": "14308656-2719-4A69-A98C-F017DC0BB58C" }
+      ]
+    },
+    {
+      "CurrentPlan": "22B523AC-BA8F-4136-A58E-2588F2571F9F",
+      "Name": "Data 8",
+      "UpgradePlans": [
+        { "UpgradePlan": "14308656-2719-4A69-A98C-F017DC0BB58C" }
+      ]
+    },
+    {
+      "CurrentPlan": "14308656-2719-4A69-A98C-F017DC0BB58C",
+      "Name": "Data 10",
+      "UpgradePlans": [
+        { "UpgradePlan": "964F42EB-5B26-4B2B-B74C-012CCB5B295F" }
+      ]
+    },
+    {
+      "CurrentPlan": "964F42EB-5B26-4B2B-B74C-012CCB5B295F",
+      "Name": "Data 12",
+      "UpgradePlans": [
+        { "UpgradePlan": "964F42EB-5B26-4B2B-B74C-012CCB5B295F" }
+      ]
+    },
+    {
+      "CurrentPlan": "2FF8AC52-F1D4-4225-A429-9AA76A78464B",
+      "Name": "Angola 20",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "A8A160E9-4BFE-41C9-AE9E-C0F1C444F923",
+      "Name": "Bangladesh 10",
+      "UpgradePlans": [
+        { "UpgradePlan": "6BC28595-6FA0-4014-BAEE-62ACBA6CB2C0" }
+      ]
+    },
+    {
+      "CurrentPlan": "6BC28595-6FA0-4014-BAEE-62ACBA6CB2C0",
+      "Name": "Bangladesh 20",
+      "UpgradePlans": [
+        { "UpgradePlan": "267C58AD-F54F-416F-94DC-747009BB2BFA" }
+      ]
+    },
+    {
+      "CurrentPlan": "267C58AD-F54F-416F-94DC-747009BB2BFA",
+      "Name": "Bangladesh 40",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "3B7C64B7-C8D8-498D-AA55-1D924109DB18",
+      "Name": "Bulgaria 10",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "0BFB82C9-C59A-4E81-BB53-5F75231BFA5A",
+      "Name": "Ghana 20",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "BCBB393F-023E-424E-8BCF-040CE42974C7",
+      "Name": "Ghana 40",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "F25D38DA-DC38-43BE-99FB-0CE681185548",
+      "Name": "India 10",
+      "UpgradePlans": [
+        { "UpgradePlan": "5A7468F5-955D-412C-9A7E-E4CDBBB83B49" }
+      ]
+    },
+    {
+      "CurrentPlan": "5A7468F5-955D-412C-9A7E-E4CDBBB83B49",
+      "Name": "India 20",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "241D55CE-036F-459E-ACAA-2E1A401CDF97",
+      "Name": "Jamaica 20",
+      "UpgradePlans": [
+        { "UpgradePlan": "D3066896-6D6C-47FC-934D-192AF6BE8FD9" }
+      ]
+    },
+    {
+      "CurrentPlan": "D3066896-6D6C-47FC-934D-192AF6BE8FD9",
+      "Name": "Jamaica 40",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "2C0A8EE7-5A83-4EAE-A025-D95452C4071D",
+      "Name": "Nigeria 10",
+      "UpgradePlans": [
+        { "UpgradePlan": "42C66E27-23F8-4BC9-910C-D117F91032F9" }
+      ]
+    },
+    {
+      "CurrentPlan": "42C66E27-23F8-4BC9-910C-D117F91032F9",
+      "Name": "Nigeria 20",
+      "UpgradePlans": [
+        { "UpgradePlan": "C91C3F01-ADA4-4CCC-B353-79EE1817008C" }
+      ]
+    },
+    {
+      "CurrentPlan": "C91C3F01-ADA4-4CCC-B353-79EE1817008C",
+      "Name": "Nigeria 40",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "145DE44E-633C-45E6-ACBE-061E945C23A2",
+      "Name": "Pakistan 10",
+      "UpgradePlans": [
+        {
+          "UpgradePlan": "E09F273C-6395-42D5-A2C3-63FABB7F64DA"
+        }
+      ]
+    },
+    {
+      "CurrentPlan": "E09F273C-6395-42D5-A2C3-63FABB7F64DA",
+      "Name": "Pakistan 20",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "8453D68C-41F9-4347-A58A-233A7F36D451",
+      "Name": "Philippines 20",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "1EBAD1CE-424E-4959-943A-927A256FCB7D",
+      "Name": "Poland 10",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "D75E6FF6-ED03-4BDA-B871-80BE3386A422",
+      "Name": "Romania 10",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "0F35496F-E1F3-4BAA-9338-F0022D2B537E",
+      "Name": "Sierra Leone 20",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "B4C38A94-BC3A-4938-8F58-1E802B53DC34",
+      "Name": "Sri Lanka 20",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "88403E3E-657A-4DB6-9859-6DE0F332ACCE",
+      "Name": "South Africa 10",
+      "UpgradePlans": [
+        { "UpgradePlan": "C469B830-527C-4765-92C9-A60DFB1633D0" }
+      ]
+    },
+    {
+      "CurrentPlan": "C469B830-527C-4765-92C9-A60DFB1633D0",
+      "Name": "South Africa 20",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    },
+    {
+      "CurrentPlan": "2B5D09FB-4391-4B7D-8831-FAE1AA3714D1",
+      "Name": "Turkey 10",
+      "UpgradePlans": [
+        { "UpgradePlan": "" }
+      ]
+    }
+  ]
+}

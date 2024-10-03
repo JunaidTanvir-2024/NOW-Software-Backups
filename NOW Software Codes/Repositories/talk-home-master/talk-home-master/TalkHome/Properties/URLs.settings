@@ -1,0 +1,171 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TalkHome.Properties" GeneratedClassName="URLs">
+  <Profiles />
+  <Settings>
+    <Setting Name="Login" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/login</Value>
+    </Setting>
+    <Setting Name="MyAccount" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/account/myaccount/</Value>
+    </Setting>
+    <Setting Name="ResetPasswordRequest" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/account/reset-password-request</Value>
+    </Setting>
+    <Setting Name="ResetPasswordConfirm" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/account/reset-password-confirm</Value>
+    </Setting>
+    <Setting Name="ResetPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/account/reset-password</Value>
+    </Setting>
+    <Setting Name="CookieName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Account</Value>
+    </Setting>
+    <Setting Name="CreateAccount" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/account/create-an-account/</Value>
+    </Setting>
+    <Setting Name="RegisterProduct" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/register-product/</Value>
+    </Setting>
+    <Setting Name="SignUpVerification" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/account/verification/</Value>
+    </Setting>
+    <Setting Name="SuccessfulSimOrder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/order-a-sim/success/</Value>
+    </Setting>
+    <Setting Name="LogOut" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/account/log-out/</Value>
+    </Setting>
+    <Setting Name="TopUp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/top-up/</Value>
+    </Setting>
+    <Setting Name="Basket" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/basket/</Value>
+    </Setting>
+    <Setting Name="AccountDetails" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/account/account-details/</Value>
+    </Setting>
+    <Setting Name="SuccessfulCardOrder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/order-a-calling-card/success/</Value>
+    </Setting>
+    <Setting Name="SuccessfulAppCheckout" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/app/complete</Value>
+    </Setting>
+    <Setting Name="FailedAppCheckout" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/app/complete</Value>
+    </Setting>
+    <Setting Name="AppCheckout" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/app/checkout</Value>
+    </Setting>
+    <Setting Name="AppFailure" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/app/failure</Value>
+    </Setting>
+    <Setting Name="Checkout" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/checkout/</Value>
+    </Setting>
+    <Setting Name="VerifyNumber" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/verify-your-number/</Value>
+    </Setting>
+    <Setting Name="TopUpPayment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/account/starttopuppayment</Value>
+    </Setting>
+    <Setting Name="BasketPayment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/account/start-basket-payment</Value>
+    </Setting>
+    <Setting Name="AppStartPayment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/app/start-payment</Value>
+    </Setting>
+    <Setting Name="SuccessfulTopUp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/top-up/confirmation/</Value>
+    </Setting>
+    <Setting Name="FailedTopUp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/top-up/confirmation/</Value>
+    </Setting>
+    <Setting Name="AppOneClickComplete" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/app/oneclickcomplete/</Value>
+    </Setting>
+    <Setting Name="OneClickComplete" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/one-click/confirmation/</Value>
+    </Setting>
+    <Setting Name="SuccessfulPurchase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/purchase/confirmation/</Value>
+    </Setting>
+    <Setting Name="FailedPurchase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/purchase/confirmation/</Value>
+    </Setting>
+    <Setting Name="OrderSIM" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/order-a-sim/</Value>
+    </Setting>
+    <Setting Name="OrderCallingCard" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/order-a-calling-card/</Value>
+    </Setting>
+    <Setting Name="SignUp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/sign-up/</Value>
+    </Setting>
+    <Setting Name="SuccessfulSignUp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/sign-up/success/</Value>
+    </Setting>
+    <Setting Name="ConfirmProductDetails" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/confirm-product-details/</Value>
+    </Setting>
+    <Setting Name="PromoSignUp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/promo/</Value>
+    </Setting>
+    <Setting Name="NonGBHome" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/talk-home-app/</Value>
+    </Setting>
+    <Setting Name="NonGBHelp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/help/talk-home-app/</Value>
+    </Setting>
+    <Setting Name="NonGBTermsAndConditions" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/terms-and-conditions/talk-home-app/</Value>
+    </Setting>
+    <Setting Name="NonGBPrivacyPolicy" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/privacy-policy/talk-home-app/</Value>
+    </Setting>
+    <Setting Name="ForgottenPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/forgotten-password/</Value>
+    </Setting>
+    <Setting Name="CreateNewPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/create-new-password/</Value>
+    </Setting>
+    <Setting Name="PlansPage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/mobile/plans/</Value>
+    </Setting>
+    <Setting Name="BundlesPage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/talk-home-app/bundles/</Value>
+    </Setting>
+    <Setting Name="ErrorPage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/404-not-found/</Value>
+    </Setting>
+    <Setting Name="PurchasePayment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/account/startpurchasepayment</Value>
+    </Setting>
+    <Setting Name="AccountSettings" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/account/settings/</Value>
+    </Setting>
+    <Setting Name="CustomErrorPage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/errorpage/</Value>
+    </Setting>
+    <Setting Name="SuccessfulCreditPurchase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/account/succesfulcreditpurchase</Value>
+    </Setting>
+    <Setting Name="Pay360PurchasePayment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/pay360account/startpurchasepayment</Value>
+    </Setting>
+    <Setting Name="Pay360TopUpPayment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/pay360account/starttopuppayment</Value>
+    </Setting>
+    <Setting Name="PayPalStartPayment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/payPal/payPalStartPayment</Value>
+    </Setting>
+    <Setting Name="Porting" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/account/portdetails</Value>
+    </Setting>
+    <Setting Name="Pay360CreditSimPayment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/pay360account/CreditSimPayment</Value>
+    </Setting>
+    <Setting Name="CreditSimSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">creditsimsuccess</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

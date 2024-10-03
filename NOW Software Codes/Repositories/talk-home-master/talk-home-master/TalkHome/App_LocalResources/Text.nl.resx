@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="App_help_link_0" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="App_help_link_1" xml:space="preserve">
+    <value>Algemene Voorwaarden</value>
+  </data>
+  <data name="App_help_link_2" xml:space="preserve">
+    <value>Privacybeleid</value>
+  </data>
+  <data name="Button_0" xml:space="preserve">
+    <value>Opwaarderen</value>
+  </data>
+  <data name="Button_1" xml:space="preserve">
+    <value>Opwaarderen met behulp van PayPal</value>
+  </data>
+  <data name="Button_2" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="Button_3" xml:space="preserve">
+    <value>Doorgaan</value>
+  </data>
+  <data name="Button_4" xml:space="preserve">
+    <value>Bewerken</value>
+  </data>
+  <data name="Button_5" xml:space="preserve">
+    <value>Terug</value>
+  </data>
+  <data name="Button_apply_voucher" xml:space="preserve">
+    <value>Voucher toepassen</value>
+  </data>
+  <data name="Button_make_payment" xml:space="preserve">
+    <value>Betaling verrichten</value>
+  </data>
+  <data name="Charset" xml:space="preserve">
+    <value>utf-8</value>
+  </data>
+  <data name="Form_label_0" xml:space="preserve">
+    <value>Voucher code</value>
+  </data>
+  <data name="Form_label_1" xml:space="preserve">
+    <value>Ga akkoord met de Algemene Voorwaarden</value>
+  </data>
+  <data name="Form_label_10" xml:space="preserve">
+    <value>E-mailadres bevestigen</value>
+  </data>
+  <data name="Form_label_11" xml:space="preserve">
+    <value>Adresregel 1</value>
+  </data>
+  <data name="Form_label_12" xml:space="preserve">
+    <value>Adresregel 2</value>
+  </data>
+  <data name="Form_label_13" xml:space="preserve">
+    <value>Stad</value>
+  </data>
+  <data name="Form_label_14" xml:space="preserve">
+    <value>Gemeente/Staat</value>
+  </data>
+  <data name="Form_label_15" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="Form_label_16" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="Form_label_17" xml:space="preserve">
+    <value>Kaarttype</value>
+  </data>
+  <data name="Form_label_18" xml:space="preserve">
+    <value>Kaartnummer</value>
+  </data>
+  <data name="Form_label_19" xml:space="preserve">
+    <value>Naam op kaart</value>
+  </data>
+  <data name="Form_label_20" xml:space="preserve">
+    <value>Beveiligingscode</value>
+  </data>
+  <data name="Form_label_21" xml:space="preserve">
+    <value>Uitgifte nummer</value>
+  </data>
+  <data name="Form_label_22" xml:space="preserve">
+    <value>Begindatum</value>
+  </data>
+  <data name="Form_label_23" xml:space="preserve">
+    <value>Vervaldatum</value>
+  </data>
+  <data name="Form_label_24" xml:space="preserve">
+    <value>Maand</value>
+  </data>
+  <data name="Form_label_25" xml:space="preserve">
+    <value>Jaar</value>
+  </data>
+  <data name="Form_label_7" xml:space="preserve">
+    <value>Voornaam</value>
+  </data>
+  <data name="Form_label_8" xml:space="preserve">
+    <value>Achternaam</value>
+  </data>
+  <data name="Form_label_9" xml:space="preserve">
+    <value>E-mailadres</value>
+  </data>
+  <data name="Label_add_credit" xml:space="preserve">
+    <value>Voeg krediet toe</value>
+  </data>
+  <data name="Label_add_voucher" xml:space="preserve">
+    <value>Voeg voucher toe</value>
+  </data>
+  <data name="Label_select_option" xml:space="preserve">
+    <value>Kies een opwaardeer-optie</value>
+  </data>
+  <data name="Message_0" xml:space="preserve">
+    <value>Er deed zich een fout voor tijdens het verifiëren van uw account. Keer terug naar het beginscherm en probeer het vervolgens opnieuw. Neem contact op met onze klantenservice als het probleem aanhoudt.</value>
+  </data>
+  <data name="Message_1" xml:space="preserve">
+    <value>Uw transactie is geannuleerd.</value>
+  </data>
+  <data name="Message_10" xml:space="preserve">
+    <value>Uw kaart is geautoriseerd en uw betaling werd ontvangen. U zult binnenkort een e-mail ontvangen waarin uw aankoop bevestigd wordt met een transactiereferentienummer. Bedankt voor uw aankoop.</value>
+  </data>
+  <data name="Message_101" xml:space="preserve">
+    <value>You have reached the maximum number of bundles for your subscription</value>
+  </data>
+  <data name="Message_12" xml:space="preserve">
+    <value>Er deed zich een probleem voor tijdens het maken van verbinding/het ontvangen van een reactie. Neem contact op met onze klantenservice.</value>
+  </data>
+  <data name="Message_13" xml:space="preserve">
+    <value>Aanmaken van rekeningoverzicht is mislukt.</value>
+  </data>
+  <data name="Message_14" xml:space="preserve">
+    <value>Uw transactie is gelukt. Er deed zich een fout voor tijdens het opwaarderen van uw account. Onze systeembeheerder is op de hoogte gebracht en het krediet zal binnenkort aan uw account worden toegevoegd.</value>
+  </data>
+  <data name="Message_15" xml:space="preserve">
+    <value>Er deed zich een probleem voor tijdens het maken van verbinding/het ontvangen van een reactie. Neem contact op met onze klantenservice.</value>
+  </data>
+  <data name="Message_16" xml:space="preserve">
+    <value>3D veilige validatie mislukt.</value>
+  </data>
+  <data name="Message_17" xml:space="preserve">
+    <value>Er deed zich een probleem voor tijdens het maken van verbinding/het ontvangen van een reactie. Neem contact op met onze klantenservice.</value>
+  </data>
+  <data name="Message_18" xml:space="preserve">
+    <value>De validatie van uw inzending is mislukt.</value>
+  </data>
+  <data name="Message_19" xml:space="preserve">
+    <value>Er deed zich een Interne Serverfout voor.</value>
+  </data>
+  <data name="Message_2" xml:space="preserve">
+    <value>Uw transactie werd om veiligheidsredenen geannuleerd, omdat het opwaardeerproces enige tijd inactief was.</value>
+  </data>
+  <data name="Message_3" xml:space="preserve">
+    <value>Uw account is met succes gecrediteerd met een bedrag van.</value>
+  </data>
+  <data name="Message_4" xml:space="preserve">
+    <value>Wij konden uw account niet opwaarderen. Probeer het later nog eens.</value>
+  </data>
+  <data name="Message_5" xml:space="preserve">
+    <value>Deze voucher wordt niet herkend.</value>
+  </data>
+  <data name="Message_6" xml:space="preserve">
+    <value>Wij konden uw account niet opwaarderen. Probeer het opnieuw of neem contact op met de klantenservice op</value>
+  </data>
+  <data name="Message_601" xml:space="preserve">
+    <value>De betaling is niet geautoriseerd</value>
+  </data>
+  <data name="Message_7" xml:space="preserve">
+    <value>Deze voucher is vervallen.</value>
+  </data>
+  <data name="Message_783" xml:space="preserve">
+    <value>De automatische verlenging is succesvol geconfigureerd</value>
+  </data>
+  <data name="Message_784" xml:space="preserve">
+    <value>De gebruiker heeft de SIM-bestellingen voor dit account overschreden. Neem contact op met de klantenservice als u nog een simkaart nodig hebt</value>
+  </data>
+  <data name="Message_785" xml:space="preserve">
+    <value>Onvoldoende krediet om dit product aan het winkelmandje toe te voegen. Afrekenen met huidige mandproducten</value>
+  </data>
+  <data name="Message_786" xml:space="preserve">
+    <value>Manglende kreditt på mobilkontoen din for å overføre.</value>
+  </data>
+  <data name="Message_787" xml:space="preserve">
+    <value>The email addresses do no match</value>
+  </data>
+  <data name="Message_8" xml:space="preserve">
+    <value>Deze voucher is ongeldig.</value>
+  </data>
+  <data name="Message_9" xml:space="preserve">
+    <value>Er deed zich een fout voor tijdens het verwerken van uw betaling. Probeer het opnieuw en neem, als het probleem aanhoudt, contact op met onze klantenservice, met vermelding van de volgende foutmelding.</value>
+  </data>
+  <data name="Message_994" xml:space="preserve">
+    <value>You entered an invalid post code. Please try again</value>
+  </data>
+  <data name="Message_995" xml:space="preserve">
+    <value>Please contact customer services to validate the account for this PIN</value>
+  </data>
+</root>

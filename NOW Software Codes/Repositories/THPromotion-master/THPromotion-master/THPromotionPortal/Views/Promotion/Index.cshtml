@@ -1,0 +1,143 @@
+﻿@model IEnumerable<THPromotionPortal.Models.ApiContracts.Response.PromotionResponseDTO>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table" width="100" height="100" overflow-x: false>
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PromotionUniqueName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PromoCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TypeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PromotionValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PromotionValueTypeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MediumTypeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PurchaseTypeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsPromoCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Threshold)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThresholdTypeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AudienceStatusTypeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastUpdatedDateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UpdatedBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsArchived)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.PromotionUniqueName)
+            </td class='text-nowrap'>
+            <td>
+                @Html.DisplayFor(modelItem => item.PromoCode)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.IsActive)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.TypeId)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.PromotionValue)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.PromotionValueTypeId)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.MediumTypeId)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.PurchaseTypeId)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.IsPromoCode)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.Threshold)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.ThresholdTypeId)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.AudienceStatusTypeId)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.CreatedDateTime)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.CreatedBy)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.LastUpdatedDateTime)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.UpdatedBy)
+            </td>
+            <td class='text-nowrap'>
+                @Html.DisplayFor(modelItem => item.IsArchived)
+            </td>
+            <td class='text-nowrap'>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

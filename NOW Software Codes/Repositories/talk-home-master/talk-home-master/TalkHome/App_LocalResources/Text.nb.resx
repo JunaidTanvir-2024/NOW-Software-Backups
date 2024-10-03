@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="App_help_link_0" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="App_help_link_1" xml:space="preserve">
+    <value>Vilkår og betingelser</value>
+  </data>
+  <data name="App_help_link_2" xml:space="preserve">
+    <value>Retningslinjer for personvern</value>
+  </data>
+  <data name="Button_0" xml:space="preserve">
+    <value>Fyll på</value>
+  </data>
+  <data name="Button_1" xml:space="preserve">
+    <value>Fyll på via Paypal</value>
+  </data>
+  <data name="Button_2" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="Button_3" xml:space="preserve">
+    <value>Fortsett</value>
+  </data>
+  <data name="Button_4" xml:space="preserve">
+    <value>Rediger</value>
+  </data>
+  <data name="Button_5" xml:space="preserve">
+    <value>Tilbake</value>
+  </data>
+  <data name="Button_apply_voucher" xml:space="preserve">
+    <value>Benytt verdikupong</value>
+  </data>
+  <data name="Button_make_payment" xml:space="preserve">
+    <value>Gjennomfør betaling</value>
+  </data>
+  <data name="Charset" xml:space="preserve">
+    <value>utf-8</value>
+  </data>
+  <data name="Form_label_0" xml:space="preserve">
+    <value>Kupongkode</value>
+  </data>
+  <data name="Form_label_1" xml:space="preserve">
+    <value>Vennligst aksepter Vilkår &amp; Betingelser</value>
+  </data>
+  <data name="Form_label_10" xml:space="preserve">
+    <value>Bekreft e-post</value>
+  </data>
+  <data name="Form_label_11" xml:space="preserve">
+    <value>Adresselinje 1</value>
+  </data>
+  <data name="Form_label_12" xml:space="preserve">
+    <value>Adresselinje 2</value>
+  </data>
+  <data name="Form_label_13" xml:space="preserve">
+    <value>By</value>
+  </data>
+  <data name="Form_label_14" xml:space="preserve">
+    <value>Fylke</value>
+  </data>
+  <data name="Form_label_15" xml:space="preserve">
+    <value>Postnummer</value>
+  </data>
+  <data name="Form_label_16" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="Form_label_17" xml:space="preserve">
+    <value>Korttype</value>
+  </data>
+  <data name="Form_label_18" xml:space="preserve">
+    <value>Kortnummer</value>
+  </data>
+  <data name="Form_label_19" xml:space="preserve">
+    <value>Navn på kortet</value>
+  </data>
+  <data name="Form_label_20" xml:space="preserve">
+    <value>Sikkerhetskode</value>
+  </data>
+  <data name="Form_label_21" xml:space="preserve">
+    <value>Utgave</value>
+  </data>
+  <data name="Form_label_22" xml:space="preserve">
+    <value>Startdato</value>
+  </data>
+  <data name="Form_label_23" xml:space="preserve">
+    <value>Utløpsdato</value>
+  </data>
+  <data name="Form_label_24" xml:space="preserve">
+    <value>Måned</value>
+  </data>
+  <data name="Form_label_25" xml:space="preserve">
+    <value>År</value>
+  </data>
+  <data name="Form_label_7" xml:space="preserve">
+    <value>Fornavn</value>
+  </data>
+  <data name="Form_label_8" xml:space="preserve">
+    <value>Etternavn</value>
+  </data>
+  <data name="Form_label_9" xml:space="preserve">
+    <value>E-post</value>
+  </data>
+  <data name="Label_add_credit" xml:space="preserve">
+    <value>Legg til kreditt</value>
+  </data>
+  <data name="Label_add_voucher" xml:space="preserve">
+    <value>Legg til verdikupong</value>
+  </data>
+  <data name="Label_select_option" xml:space="preserve">
+    <value>Velg en metode for å fylle opp</value>
+  </data>
+  <data name="Message_0" xml:space="preserve">
+    <value>Det oppsto en feil under forsøket på å verifisere kontoen din. Gå tilbake til hjemmesiden og prøv igjen. Dersom problemet vedvarer, ber vi deg ta kontakt med kundeservice.</value>
+  </data>
+  <data name="Message_1" xml:space="preserve">
+    <value>Transaksjonen din er blitt avbrutt.</value>
+  </data>
+  <data name="Message_10" xml:space="preserve">
+    <value>Ditt kort er bekreftet og du har mottatt betaling. Om noen få strakser vil du motta en e-post med et referansenummer som bekrefter ditt kjøp. Takk for din handel med oss.</value>
+  </data>
+  <data name="Message_101" xml:space="preserve">
+    <value>You have reached the maximum number of bundles for your subscription</value>
+  </data>
+  <data name="Message_12" xml:space="preserve">
+    <value>Det har oppstått et problem under forsøk på å koble til/motta respons. Vennligst ta kontakt med vårt kundesenter.</value>
+  </data>
+  <data name="Message_13" xml:space="preserve">
+    <value>Mislykket forsøk på å registrere transaksjon.</value>
+  </data>
+  <data name="Message_14" xml:space="preserve">
+    <value>Transaksjonen ble vellykket. Det har oppstått en feil under forsøk på å fylle på kontoen din. Vår systemadministrator har blitt varslet om dette, og kreditten blir straks overført til kontoen din.</value>
+  </data>
+  <data name="Message_15" xml:space="preserve">
+    <value>Det har oppstått et problem under forsøk på å koble til/motta respons. Vennligst ta kontakt med vårt kundesenter.</value>
+  </data>
+  <data name="Message_16" xml:space="preserve">
+    <value>Mislykket 3D-verifisering.</value>
+  </data>
+  <data name="Message_17" xml:space="preserve">
+    <value>Det har oppstått et problem under forsøk på å koble til/motta respons. Vennligst ta kontakt med vårt kundesenter.</value>
+  </data>
+  <data name="Message_18" xml:space="preserve">
+    <value>Mislykket verifisering av din forespørsel.</value>
+  </data>
+  <data name="Message_19" xml:space="preserve">
+    <value>Det har oppstått en feil i forbindelse med internserveren.</value>
+  </data>
+  <data name="Message_2" xml:space="preserve">
+    <value>Transaksjonen ble avbrutt av sikkerhetsårsaker, da prosessen med å fylle opp var inaktiv.</value>
+  </data>
+  <data name="Message_3" xml:space="preserve">
+    <value>Kontoen din er kreditert med summen.</value>
+  </data>
+  <data name="Message_4" xml:space="preserve">
+    <value>Vi var ikke i stand til å fylle opp kontoen din. Vennligst prøv igjen senere.</value>
+  </data>
+  <data name="Message_5" xml:space="preserve">
+    <value>Verdikupongen er ikke gjenkjent.</value>
+  </data>
+  <data name="Message_6" xml:space="preserve">
+    <value>Vi var ikke i stand til å fylle opp kontoen din. Vennligst prøv igjen senere eller kontakt kundeservice</value>
+  </data>
+  <data name="Message_601" xml:space="preserve">
+    <value>Betalingen er ikke godkjent</value>
+  </data>
+  <data name="Message_7" xml:space="preserve">
+    <value>Verdikupongen er utløpt.</value>
+  </data>
+  <data name="Message_783" xml:space="preserve">
+    <value>Den automatiske fornyelsen ble vellykket konfigurert</value>
+  </data>
+  <data name="Message_784" xml:space="preserve">
+    <value>L'utente ha superato gli ordini SIM per questo account. Contatta il servizio clienti se hai bisogno di un'altra SIM</value>
+  </data>
+  <data name="Message_785" xml:space="preserve">
+    <value>Manglende kreditt for å legge til dette produktet i handlekurven. Kassen med nåværende kurvprodukter</value>
+  </data>
+  <data name="Message_786" xml:space="preserve">
+    <value>Manglende kreditt på mobilkontoen din for å overføre.</value>
+  </data>
+  <data name="Message_787" xml:space="preserve">
+    <value>The email addresses do no match</value>
+  </data>
+  <data name="Message_8" xml:space="preserve">
+    <value>Verdikupongen er ugyldig.</value>
+  </data>
+  <data name="Message_9" xml:space="preserve">
+    <value>Det har oppstått en feil under forsøk på å behandle betalingen din. Vennligst prøv på nytt eller nevn følgende feilmelding til vårt kundesenter dersom problemet vedvarer.</value>
+  </data>
+  <data name="Message_994" xml:space="preserve">
+    <value>You entered an invalid post code. Please try again</value>
+  </data>
+  <data name="Message_995" xml:space="preserve">
+    <value>Please contact customer services to validate the account for this PIN</value>
+  </data>
+</root>

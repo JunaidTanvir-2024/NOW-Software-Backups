@@ -1,0 +1,56 @@
+/**
+ * Overriden style for Talk Home website.
+ *
+ * @author micheled
+ * Created on 07 Sept 2017
+ *
+ * rgb(74, 209, 237) light blue
+ * rgb(246, 62, 49) error color
+ *
+ */
+body {
+    color: rgb(255, 255, 255);
+    background-color: rgb(74, 209, 237);
+}
+a:link,
+a:visited,
+a:active {
+    color: rgb(255, 255, 255);
+}
+
+.btn-primary {
+    color: rgb(0, 0, 0);
+	background-color: rgb(227, 255, 25);
+}
+
+.contains-input input[type='text'],
+.contains-input input[type='password'],
+.contains-input input[type='tel'],
+.contains-input input[type='number'] {
+    border: none;
+}
+
+.contains-input select {
+    border: 0 none;
+}
+
+.input-validation-error {
+    border: 2px solid rgb(246, 62, 49);
+}
+
+.radio-group input[type='radio']:checked + label,
+.field-validation-error,
+.field-validation-error-manual,
+.field-validation-error:after,
+.field-validation-error-manual:after {
+    background-color: rgb(246, 62, 49);
+}
+
+.field-validation-error:after,
+.field-validation-error-manual:after {
+    border-color: rgb(246, 62, 49);
+}
+
+#wait-msg p {
+    color: rgb(246, 62, 49);
+}

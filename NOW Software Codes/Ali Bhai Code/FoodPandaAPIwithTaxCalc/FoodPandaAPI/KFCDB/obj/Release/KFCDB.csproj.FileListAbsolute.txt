@@ -1,0 +1,10 @@
+D:\WebAPI\FoodPandaAPI\KFCDB\bin\Release\KFCDB.dll.config
+D:\WebAPI\FoodPandaAPI\KFCDB\bin\Release\KFCDB.dll
+D:\WebAPI\FoodPandaAPI\KFCDB\bin\Release\KFCDB.pdb
+D:\WebAPI\FoodPandaAPI\KFCDB\bin\Release\EntityFramework.dll
+D:\WebAPI\FoodPandaAPI\KFCDB\bin\Release\EntityFramework.SqlServer.dll
+D:\WebAPI\FoodPandaAPI\KFCDB\bin\Release\EntityFramework.xml
+D:\WebAPI\FoodPandaAPI\KFCDB\bin\Release\EntityFramework.SqlServer.xml
+D:\WebAPI\FoodPandaAPI\KFCDB\obj\Release\KFCDB.dll
+D:\WebAPI\FoodPandaAPI\KFCDB\obj\Release\KFCDB.pdb
+D:\WebAPI\FoodPandaAPI\KFCDB\obj\Release\KFCDB.csprojResolveAssemblyReference.cache

@@ -1,0 +1,9 @@
+
+
+ALTER TABLE  dbo.product_category
+ADD name_alias varchar(150);
+
+SELECT * FROM  dbo.product_category
+SELECT  TOP 10 * FROM dbo.operator
+UPDATE dbo.product_category
+SET name_alias  =REPLACE(LOWER(name), ' ', '_')

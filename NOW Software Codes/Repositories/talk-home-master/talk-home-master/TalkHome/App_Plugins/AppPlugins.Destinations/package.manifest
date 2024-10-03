@@ -1,0 +1,19 @@
+{
+  propertyEditors: [
+    {
+      alias: "AppPlugins.Destinations",
+      name: "Destinations",
+      editor: {
+        view: "~/App_Plugins/AppPlugins.Destinations/destinations.html",
+        valueType: "STRING"
+      }
+    }
+  ]
+  ,
+  javascript: [
+    '~/App_Plugins/AppPlugins.Destinations/destinations.controller.js'
+  ],
+  css: [
+    '~/App_Plugins/css/plugins.css'
+  ]
+}

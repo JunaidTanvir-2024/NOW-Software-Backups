@@ -1,0 +1,1925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="KFC_PortalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Branch">
+          <Key>
+            <PropertyRef Name="BranchID" />
+          </Key>
+          <Property Name="BranchID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="100" />
+          <Property Name="Address" Type="varchar" MaxLength="100" />
+          <Property Name="City" Type="varchar" MaxLength="100" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+          <Property Name="Branch_Name" Type="varchar" MaxLength="100" />
+          <Property Name="regionID" Type="bigint" />
+          <Property Name="BranchID_Old" Type="bigint" />
+          <Property Name="Branch_Code" Type="nvarchar" MaxLength="100" />
+          <Property Name="RGM" Type="bigint" />
+          <Property Name="AreaCoach" Type="bigint" />
+          <Property Name="BusniessHead" Type="bigint" />
+          <Property Name="AsstManagerDelivery" Type="bigint" />
+          <Property Name="DeliveryHead" Type="bigint" />
+          <Property Name="ManagerCC" Type="bigint" />
+          <Property Name="TimeExtension" Type="int" />
+          <Property Name="email" Type="nvarchar" MaxLength="200" />
+          <Property Name="bStatus" Type="int" />
+          <Property Name="tempStatus" Type="int" />
+          <Property Name="statusReasons" Type="nvarchar(max)" />
+          <Property Name="extReasons" Type="nvarchar(max)" />
+          <Property Name="ClosingTime" Type="nvarchar" MaxLength="50" />
+          <Property Name="SupplyChainManager" Type="bigint" />
+          <Property Name="SupplyChainTeam" Type="bigint" />
+          <Property Name="ConcernCallCenter" Type="bigint" />
+          <Property Name="locationIdDT" Type="bigint" />
+          <Property Name="addressDT" Type="nvarchar(max)" />
+          <Property Name="DeliveryArea" Type="bigint" />
+          <Property Name="Lat" Type="nvarchar" MaxLength="50" />
+          <Property Name="Lon" Type="nvarchar" MaxLength="50" />
+          <Property Name="ClosingMon" Type="nvarchar" MaxLength="50" />
+          <Property Name="ClosingTue" Type="nvarchar" MaxLength="50" />
+          <Property Name="ClosingWed" Type="nvarchar" MaxLength="50" />
+          <Property Name="ClosingThu" Type="nvarchar" MaxLength="50" />
+          <Property Name="ClosingFri" Type="nvarchar" MaxLength="50" />
+          <Property Name="ClosingSat" Type="nvarchar" MaxLength="50" />
+          <Property Name="ClosingSun" Type="nvarchar" MaxLength="50" />
+          <Property Name="Tax" Type="numeric" Precision="18" Scale="2" />
+          <Property Name="MidnightTime" Type="nvarchar" MaxLength="50" />
+          <Property Name="FoodPandaBranchId" Type="bigint" />
+          <Property Name="isEnabledForRiderApp" Type="int" />
+          <Property Name="gesCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="isAutoDelivery" Type="int" />
+          <Property Name="perKMRate" Type="int" />
+          <Property Name="ServerName" Type="nvarchar" MaxLength="250" />
+          <Property Name="DatabaseName" Type="nvarchar" MaxLength="250" />
+          <Property Name="Terminal" Type="nvarchar" MaxLength="250" />
+          <Property Name="serverUsername" Type="nvarchar" MaxLength="250" />
+          <Property Name="serverPassword" Type="nvarchar" MaxLength="250" />
+          <Property Name="creditMode" Type="nvarchar" MaxLength="150" />
+          <Property Name="foodPandaCode" Type="varchar" MaxLength="25" />
+          <Property Name="posStoreNo" Type="varchar" MaxLength="50" />
+          <Property Name="isDynamicPosEnabled" Type="int" />
+          <Property Name="OpeningTime" Type="varchar" MaxLength="100" />
+          <Property Name="walletPassword" Type="nvarchar" MaxLength="500" />
+          <Property Name="isWalletPasswordChanged" Type="int" />
+          <Property Name="DynamicApi" Type="int" />
+          <Property Name="isDynamicPullEnabled" Type="int" />
+          <Property Name="IsStagingEnabled" Type="int" />
+          <Property Name="EnabledForVentureDive" Type="int" />
+          <Property Name="EnabledForFPHero" Type="int" />
+          <Property Name="PolyGon" Type="varchar(max)" />
+          <Property Name="Terminal_P" Type="varchar" MaxLength="500" />
+          <Property Name="serverUsername_P" Type="varchar" MaxLength="500" />
+          <Property Name="serverPassword_P" Type="varchar" MaxLength="500" />
+          <Property Name="DatabaseName_P" Type="varchar" MaxLength="500" />
+          <Property Name="posStoreNo_P" Type="varchar" MaxLength="500" />
+          <Property Name="ServerName_P" Type="varchar" MaxLength="500" />
+          <Property Name="creditcard" Type="varchar" MaxLength="5" />
+          <Property Name="OpeningMon" Type="varchar" MaxLength="100" />
+          <Property Name="OpeningTue" Type="varchar" MaxLength="100" />
+          <Property Name="OpeningWed" Type="varchar" MaxLength="100" />
+          <Property Name="OpeningThu" Type="varchar" MaxLength="100" />
+          <Property Name="OpeningFri" Type="varchar" MaxLength="100" />
+          <Property Name="OpeningSat" Type="varchar" MaxLength="100" />
+          <Property Name="OpeningSun" Type="varchar" MaxLength="100" />
+          <Property Name="autoDispatchDistance" Type="int" />
+          <Property Name="autoAssignDistacne" Type="int" />
+          <Property Name="orderLimit" Type="int" />
+          <Property Name="orderAssignTime" Type="int" />
+          <Property Name="simplexEnabled" Type="int" />
+          <Property Name="PickupClosingMon" Type="varchar" MaxLength="100" />
+          <Property Name="PickupClosingTue" Type="varchar" MaxLength="100" />
+          <Property Name="PickupClosingWed" Type="varchar" MaxLength="100" />
+          <Property Name="PickupClosingThu" Type="varchar" MaxLength="100" />
+          <Property Name="PickupClosingFri" Type="varchar" MaxLength="100" />
+          <Property Name="PickupClosingSat" Type="varchar" MaxLength="100" />
+          <Property Name="PickupClosingSun" Type="varchar" MaxLength="100" />
+          <Property Name="updatePaymentMode" Type="bit" />
+          <Property Name="TaxAuthority" Type="nvarchar" MaxLength="50" />
+          <Property Name="TaxRate" Type="bigint" />
+          <Property Name="CashTaxRate" Type="bigint" />
+          <Property Name="CreditTaxRate" Type="bigint" />
+          <Property Name="POSID" Type="bigint" />
+          <Property Name="IdentNoFBR" Type="nvarchar" MaxLength="500" />
+          <Property Name="BranchNameFBR" Type="nvarchar" MaxLength="500" />
+          <Property Name="CodeFBR" Type="nvarchar" MaxLength="50" />
+          <Property Name="TokenFBR" Type="nvarchar" MaxLength="500" />
+          <Property Name="PCTCode" Type="nvarchar" MaxLength="500" />
+          <Property Name="isTaxWorkingEnabled" Type="bit" />
+          <Property Name="DynamicPosRegionId" Type="int" />
+          <Property Name="EnabledForFPAutoAcceptance" Type="int" />
+        </EntityType>
+        <EntityType Name="DeliveryOrder">
+          <Key>
+            <PropertyRef Name="DeliveryOrderID" />
+          </Key>
+          <Property Name="DeliveryOrderID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OrderNo" Type="bigint" />
+          <Property Name="BranchID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="OrderStatus" Type="bigint" />
+          <Property Name="PromotionID" Type="bigint" />
+          <Property Name="HundredthOrderCount" Type="bigint" />
+          <Property Name="DeliveryAddress" Type="nvarchar" MaxLength="500" />
+          <Property Name="Instruction" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Amount" Type="bigint" />
+          <Property Name="AgentID" Type="bigint" />
+          <Property Name="BookedDateTime" Type="datetime" />
+          <Property Name="ReceivedByID" Type="bigint" />
+          <Property Name="ReceivedByDateTime" Type="datetime" />
+          <Property Name="DispatchedByID" Type="bigint" />
+          <Property Name="DispatchedDateTime" Type="datetime" />
+          <Property Name="FinalStatusByID" Type="bigint" />
+          <Property Name="FinalStatusDateTIme" Type="datetime" />
+          <Property Name="BranchRiderID" Type="bigint" />
+          <Property Name="PartialRejectAmount" Type="bigint" />
+          <Property Name="PartialRejectComment" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Location" Type="bigint" />
+          <Property Name="PaymentMode" Type="nvarchar" MaxLength="50" />
+          <Property Name="CancelAgentID" Type="bigint" />
+          <Property Name="CancelComment" Type="nvarchar" MaxLength="1000" />
+          <Property Name="BranchLock" Type="bit" />
+          <Property Name="takeAway" Type="bit" />
+          <Property Name="ServiceCharges" Type="bigint" />
+          <Property Name="timeRequired" Type="nvarchar" MaxLength="50" />
+          <Property Name="OrderThrough" Type="nvarchar" MaxLength="50" />
+          <Property Name="Complaints" Type="nvarchar(max)" />
+          <Property Name="isModified" Type="bit" />
+          <Property Name="modifiedDate" Type="datetime" />
+          <Property Name="modifiedBy" Type="bigint" />
+          <Property Name="ComplaintComments" Type="nvarchar(max)" />
+          <Property Name="ComplaintCategory" Type="nvarchar" MaxLength="100" />
+          <Property Name="ComplaintStatus" Type="int" />
+          <Property Name="ComplaintStatusBy" Type="bigint" />
+          <Property Name="ComplaintStatusDateTIme" Type="datetime" />
+          <Property Name="AddressDisable" Type="bit" />
+          <Property Name="DonationAmount" Type="bigint" />
+          <Property Name="IsPusshToPOS" Type="bit" />
+          <Property Name="deliverOnBranch" Type="bit" />
+          <Property Name="OfflineOrder" Type="int" />
+          <Property Name="DiscountPercent" Type="bigint" />
+          <Property Name="Discount" Type="float" />
+          <Property Name="DeliveryOrderIDTemp" Type="bigint" />
+          <Property Name="cancelCheckOnBranch" Type="int" />
+          <Property Name="customerAddressDisableComment" Type="nvarchar(max)" />
+          <Property Name="ConfirmRejectionComment" Type="nvarchar(max)" />
+          <Property Name="isConfirmRejection" Type="int" />
+          <Property Name="ConfirmRejectionBy" Type="bigint" />
+          <Property Name="ConfirmRejectionDate" Type="datetime" />
+          <Property Name="CLI" Type="nvarchar" MaxLength="50" />
+          <Property Name="SamsungRiderDate" Type="datetime" />
+          <Property Name="SamsungDeliveryDate" Type="datetime" />
+          <Property Name="Latitude" Type="nvarchar" MaxLength="50" />
+          <Property Name="Longitude" Type="nvarchar" MaxLength="50" />
+          <Property Name="AppRiderId" Type="bigint" />
+          <Property Name="AppOrderStatus" Type="bigint" />
+          <Property Name="AppOrderStatusDate" Type="datetime" />
+          <Property Name="AppRiderAssignDate" Type="datetime" />
+          <Property Name="lat" Type="nvarchar" MaxLength="50" />
+          <Property Name="lon" Type="nvarchar" MaxLength="50" />
+          <Property Name="SamsungAPIResponse" Type="nvarchar(max)" />
+          <Property Name="isPushToSamsung" Type="bit" />
+          <Property Name="rating" Type="float" />
+          <Property Name="rating2" Type="float" />
+          <Property Name="rating3" Type="float" />
+          <Property Name="ratingComment" Type="nvarchar(max)" />
+          <Property Name="HowDoYouKnow" Type="bigint" />
+          <Property Name="DistanceByRider" Type="nvarchar" MaxLength="50" />
+          <Property Name="AutoTransfer" Type="bit" />
+          <Property Name="isPushToRiderApp" Type="bit" />
+          <Property Name="isPickup" Type="int" />
+          <Property Name="reachedDateTime" Type="datetime" />
+          <Property Name="deliveryTime" Type="nvarchar" MaxLength="50" />
+          <Property Name="dynamicApiResponseCreate" Type="nvarchar(max)" />
+          <Property Name="dynamicApiDateTime" Type="datetime" />
+          <Property Name="dynamicApiResponseUpdate" Type="nvarchar(max)" />
+          <Property Name="PaymentModeOld" Type="nvarchar" MaxLength="150" />
+          <Property Name="isChargeToFoodPanda" Type="int" />
+          <Property Name="chargeToFoodPandaReason" Type="nvarchar(max)" />
+          <Property Name="isPaymentModeChange" Type="int" />
+          <Property Name="FPOrderId" Type="varchar" MaxLength="50" />
+          <Property Name="NEW_TIME" Type="datetime" />
+          <Property Name="RECEIVED_TIME" Type="datetime" />
+          <Property Name="WAITING_FOR_TRANSPORT_TIME" Type="datetime" />
+          <Property Name="ASSIGNED_TO_TRANSPORT_TIME" Type="datetime" />
+          <Property Name="COURIER_ACCEPTED_DELIVERY_TIME" Type="datetime" />
+          <Property Name="NEAR_VENDOR_TIME" Type="datetime" />
+          <Property Name="PICKED_UP_TIME" Type="datetime" />
+          <Property Name="COURIER_LEFT_VENDOR_TIME" Type="datetime" />
+          <Property Name="NEAR_CUSTOMER_TIME" Type="datetime" />
+          <Property Name="DELIVERED_TIME" Type="datetime" />
+          <Property Name="DELAYED_TIME" Type="datetime" />
+          <Property Name="CANCELLED_TIME" Type="datetime" />
+          <Property Name="fpAssignDatetime" Type="datetime" />
+          <Property Name="VentureDiveOrderId" Type="varchar" MaxLength="50" />
+          <Property Name="cancelByKFC" Type="int" />
+          <Property Name="PaymentReversalId" Type="varchar" MaxLength="50" />
+          <Property Name="ActionId" Type="varchar" MaxLength="50" />
+          <Property Name="PaymentReversalAction" Type="varchar" MaxLength="200" />
+          <Property Name="PaymentReversalDateTime" Type="varchar" MaxLength="50" />
+          <Property Name="PaymentReversalCreateDate" Type="datetime" />
+          <Property Name="ARN" Type="varchar" MaxLength="25" />
+          <Property Name="CancelDateTime" Type="datetime" />
+          <Property Name="isCancellationSMSSent" Type="int" />
+          <Property Name="CanceledDateTime" Type="datetime" />
+          <Property Name="RejectedDateTime" Type="datetime" />
+          <Property Name="isthroughriderportal" Type="int" />
+          <Property Name="CancelByKFCMiddelWear" Type="int" />
+          <Property Name="FPCancelationReason" Type="varchar" MaxLength="100" />
+          <Property Name="FBR_BRA_InvNo" Type="nvarchar(max)" />
+          <Property Name="FBR_Reversal_InvNo" Type="nvarchar(max)" />
+          <Property Name="TotalTaxCharged" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TotalDiscountFBR" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TaxPercentageFBR" Type="bigint" />
+          <Property Name="TaxAmountFBR" Type="bigint" />
+          <Property Name="TotalAmountExclusiveofTaxFBR" Type="bigint" />
+          <Property Name="FlagPandaProVoucher_Partial" Type="bit" />
+          <Property Name="ServiceChargesCreditOrdersForTax" Type="bigint" />
+          <Property Name="ServiceChargesExclusiveofTax" Type="bigint" />
+          <Property Name="ServiceChargesTaxCharged" Type="bigint" />
+          <Property Name="isTaxCalculatedFP" Type="int" />
+        </EntityType>
+        <EntityType Name="DeliveryOrderDetail">
+          <Key>
+            <PropertyRef Name="DeliveryOrderDetailID" />
+          </Key>
+          <Property Name="DeliveryOrderDetailID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OrderID" Type="bigint" />
+          <Property Name="FamilyID" Type="bigint" />
+          <Property Name="MenuItemID" Type="bigint" />
+          <Property Name="MenuPrice" Type="bigint" />
+          <Property Name="Quantity" Type="bigint" />
+          <Property Name="IsWithCheze" Type="bit" />
+          <Property Name="IsFrenchFriesUpSize" Type="bit" />
+          <Property Name="IsDrinkUpsize" Type="bit" />
+          <Property Name="MenuFamilyMeasureID" Type="bigint" />
+          <Property Name="instruction" Type="varchar" MaxLength="250" />
+          <Property Name="ItemTotalAmountforTax" Type="bigint" />
+          <Property Name="ItemAmountExcofTax" Type="bigint" />
+          <Property Name="ItemTaxRate" Type="bigint" />
+          <Property Name="ItemTaxCharged" Type="bigint" />
+          <Property Name="ServiceChargesCreditOrdersForTax" Type="bigint" />
+          <Property Name="ServiceChargesExclusiveofTax" Type="bigint" />
+          <Property Name="ServiceChargesTaxCharged" Type="bigint" />
+        </EntityType>
+        <EntityType Name="DeliveryOrderTemp">
+          <Key>
+            <PropertyRef Name="DeliveryOrderID" />
+          </Key>
+          <Property Name="DeliveryOrderID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OnlineDeleiveryOrderID" Type="bigint" />
+          <Property Name="OrderNo" Type="bigint" />
+          <Property Name="BranchID" Type="bigint" />
+          <Property Name="CustomerID" Type="bigint" />
+          <Property Name="OrderStatus" Type="bigint" />
+          <Property Name="PromotionID" Type="bigint" />
+          <Property Name="HundredthOrderCount" Type="bigint" />
+          <Property Name="DeliveryAddress" Type="nvarchar" MaxLength="500" />
+          <Property Name="Instruction" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Amount" Type="bigint" />
+          <Property Name="AgentID" Type="bigint" />
+          <Property Name="BookedDateTime" Type="datetime" />
+          <Property Name="ReceivedByID" Type="bigint" />
+          <Property Name="ReceivedByDateTime" Type="datetime" />
+          <Property Name="DispatchedByID" Type="bigint" />
+          <Property Name="DispatchedDateTime" Type="datetime" />
+          <Property Name="FinalStatusByID" Type="bigint" />
+          <Property Name="FinalStatusDateTIme" Type="datetime" />
+          <Property Name="BranchRiderID" Type="bigint" />
+          <Property Name="PartialRejectAmount" Type="bigint" />
+          <Property Name="PartialRejectComment" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Location" Type="bigint" />
+          <Property Name="PaymentMode" Type="nvarchar" MaxLength="50" />
+          <Property Name="CancelAgentID" Type="bigint" />
+          <Property Name="CancelComment" Type="nvarchar" MaxLength="1000" />
+          <Property Name="BranchLock" Type="bit" />
+          <Property Name="takeAway" Type="bit" />
+          <Property Name="ServiceCharges" Type="bigint" />
+          <Property Name="timeRequired" Type="nvarchar" MaxLength="50" />
+          <Property Name="OrderThrough" Type="nvarchar" MaxLength="50" />
+          <Property Name="Complaints" Type="nvarchar(max)" />
+          <Property Name="isModified" Type="bit" />
+          <Property Name="modifiedDate" Type="datetime" />
+          <Property Name="modifiedBy" Type="bigint" />
+          <Property Name="ComplaintComments" Type="nvarchar(max)" />
+          <Property Name="ComplaintCategory" Type="nvarchar" MaxLength="100" />
+          <Property Name="ComplaintStatus" Type="int" />
+          <Property Name="ComplaintStatusBy" Type="bigint" />
+          <Property Name="ComplaintStatusDateTIme" Type="datetime" />
+          <Property Name="AddressDisable" Type="bit" />
+          <Property Name="DonationAmount" Type="bigint" />
+          <Property Name="TempStatus" Type="int" />
+          <Property Name="ItemDetailArray" Type="nvarchar(max)" />
+          <Property Name="CIN" Type="nvarchar" MaxLength="100" />
+          <Property Name="Discount" Type="bigint" />
+          <Property Name="VoucherNo" Type="nvarchar" MaxLength="100" />
+          <Property Name="cancelOrderTempCommnet" Type="nvarchar(max)" />
+          <Property Name="cancelOrderTempReason" Type="nvarchar(max)" />
+          <Property Name="isAccept" Type="int" />
+          <Property Name="regionID" Type="int" />
+          <Property Name="OrderCity" Type="nvarchar" MaxLength="100" />
+          <Property Name="isAssigned" Type="bit" />
+          <Property Name="cancelStatus" Type="bigint" />
+          <Property Name="confirmCancelAgentID" Type="bigint" />
+          <Property Name="confirmCancelDate" Type="datetime" />
+          <Property Name="cancelOrderTempCommnetForward" Type="varchar(max)" />
+          <Property Name="cancelOrderTempReasonForward" Type="varchar(max)" />
+          <Property Name="API_Response" Type="nvarchar(max)" />
+          <Property Name="Website" Type="nvarchar" MaxLength="50" />
+          <Property Name="voucherName" Type="nvarchar" MaxLength="250" />
+          <Property Name="description" Type="nvarchar(max)" />
+          <Property Name="voucherAmount" Type="bigint" />
+          <Property Name="FB_API_ResponseTime" Type="nvarchar" MaxLength="150" />
+          <Property Name="onlineTransactionDetails" Type="nvarchar(max)" />
+          <Property Name="isPickup" Type="int" />
+          <Property Name="isBranchAccept" Type="int" />
+          <Property Name="branchAcceptStatus" Type="int" />
+          <Property Name="branchNotAcceptReason" Type="nvarchar" MaxLength="1000" />
+          <Property Name="acceptStatusBy" Type="bigint" />
+          <Property Name="acceptStatusAt" Type="datetime" />
+          <Property Name="isThroughApp" Type="nchar" MaxLength="10" />
+          <Property Name="lat" Type="nvarchar" MaxLength="50" />
+          <Property Name="lon" Type="nvarchar" MaxLength="50" />
+          <Property Name="OrderType" Type="varchar" MaxLength="50" />
+          <Property Name="fpToken" Type="varchar" MaxLength="550" />
+          <Property Name="FBR_BRA_InvNo" Type="nvarchar(max)" />
+          <Property Name="TotalTaxCharged" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TaxPercentageFBR" Type="bigint" />
+          <Property Name="TaxAmountFBR" Type="bigint" />
+          <Property Name="TotalAmountExclusiveofTaxFBR" Type="bigint" />
+          <Property Name="ServiceChargesCreditOrdersForTax" Type="bigint" />
+          <Property Name="ServiceChargesExclusiveofTax" Type="bigint" />
+          <Property Name="ServiceChargesTaxCharged" Type="bigint" />
+        </EntityType>
+        <EntityType Name="foodPandaDeliveryBranch">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="branchId" Type="bigint" />
+        </EntityType>
+        <EntityType Name="FoodPandaPayload">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Payload" Type="varchar(max)" />
+          <Property Name="cd" Type="datetime" />
+          <Property Name="branchId" Type="varchar" MaxLength="20" />
+          <Property Name="requestStartTime" Type="datetime" />
+          <Property Name="requestEndTime" Type="datetime" />
+          <Property Name="totalDuration" Type="varchar" MaxLength="25" />
+          <Property Name="response" Type="varchar" MaxLength="500" />
+          <Property Name="ServerIP" Type="varchar" MaxLength="50" />
+          <Property Name="apiType" Type="varchar" MaxLength="50" />
+          <Property Name="orderNo" Type="varchar" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="FpAcknowledgementQueue">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DeliveryOrderIdTemp" Type="bigint" />
+          <Property Name="IsRead" Type="int" />
+          <Property Name="cd" Type="datetime" />
+          <Property Name="token" Type="varchar" MaxLength="550" />
+          <Property Name="ud" Type="datetime" />
+          <Property Name="ProcessingStartTime" Type="datetime" />
+          <Property Name="ProcessingEndTime" Type="datetime" />
+          <Property Name="TotalProcessingTime" Type="varchar" MaxLength="50" />
+          <Property Name="Response" Type="varchar" MaxLength="500" />
+          <Property Name="nooftries" Type="int" />
+          <Property Name="AccessToken" Type="varchar" MaxLength="2500" />
+        </EntityType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FamilyID" Type="bigint" />
+          <Property Name="MenuItemID" Type="bigint" />
+          <Property Name="FamilyMeasureID" Type="bigint" />
+          <Property Name="GrossPrice" Type="bigint" />
+          <Property Name="GST" Type="bigint" />
+          <Property Name="MenuPrice" Type="bigint" />
+          <Property Name="Description" Type="nvarchar" MaxLength="1000" />
+          <Property Name="CreatedByID" Type="bigint" />
+          <Property Name="CreatedDateTime" Type="datetime" />
+          <Property Name="ModifiedByID" Type="bigint" />
+          <Property Name="ModifiedDateTime" Type="datetime" />
+          <Property Name="RecStatusID" Type="bigint" />
+          <Property Name="VersionNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="barcode" Type="nvarchar" MaxLength="50" />
+          <Property Name="barcodeFP" Type="nvarchar" MaxLength="50" />
+          <Property Name="isDisabled" Type="bit" />
+          <Property Name="isDisabledTemp" Type="bit" />
+          <Property Name="IsMidnight" Type="bit" />
+          <Property Name="MidnightTime" Type="nvarchar" MaxLength="50" />
+          <Property Name="ImagePath" Type="varchar" MaxLength="200" />
+          <Property Name="pos_itemCode" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <Function Name="Proc_addDynamicPosQueue" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="apiName" Type="varchar" Mode="In" />
+          <Parameter Name="DeliveryOrderID" Type="varchar" Mode="In" />
+          <Parameter Name="statusId" Type="varchar" Mode="In" />
+          <Parameter Name="paymentMode" Type="varchar" Mode="In" />
+          <Parameter Name="creditMode" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Proc_getAPI_forTax" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="proc_getBranchDetailsbyIDforSimplex" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="Proc_getOrderDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="orderID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="proc_InsertCustomerTemp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Address" Type="varchar" Mode="In" />
+          <Parameter Name="firstName" Type="varchar" Mode="In" />
+          <Parameter Name="Phone1" Type="varchar" Mode="In" />
+          <Parameter Name="Phone2" Type="varchar" Mode="In" />
+          <Parameter Name="LoyalityCardNumber" Type="varchar" Mode="In" />
+          <Parameter Name="Email" Type="varchar" Mode="In" />
+          <Parameter Name="AccountNumber" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Proc_insertFBRActivityLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="data" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="Response" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="Proc_insertFBRInvoiceNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderID" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="InvoiceNo" Type="varchar(max)" Mode="In" />
+          <Parameter Name="InvoiceType" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="Proc_insertFBRNewOrderDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderID" Type="bigint" Mode="In" />
+          <Parameter Name="TaxPercentageFBR" Type="bigint" Mode="In" />
+          <Parameter Name="TaxAmountFBR" Type="bigint" Mode="In" />
+          <Parameter Name="TotalAmountExclusiveofTaxFBR" Type="bigint" Mode="In" />
+          <Parameter Name="TotalDiscountFBR" Type="bigint" Mode="In" />
+          <Parameter Name="TotalTaxCharged" Type="bigint" Mode="In" />
+          <Parameter Name="ServiceChargesCreditOrders" Type="bigint" Mode="In" />
+          <Parameter Name="ServiceChargesExclusiveofTax" Type="bigint" Mode="In" />
+          <Parameter Name="ServiceChargesTaxCharged" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="Proc_IsOrderExistByCIN_New" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CIN" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Proc_LogFPAPICall" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="APILink" Type="varchar" Mode="In" />
+          <Parameter Name="RequestJson" Type="varchar(max)" Mode="In" />
+          <Parameter Name="RequestResponse" Type="varchar(max)" Mode="In" />
+          <Parameter Name="StatusDescription" Type="varchar" Mode="In" />
+          <Parameter Name="APICallStartTime" Type="datetime" Mode="In" />
+          <Parameter Name="APICallEndTime" Type="datetime" Mode="In" />
+          <Parameter Name="ProcessTime" Type="varchar" Mode="In" />
+          <Parameter Name="apiType" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Proc_ReceiveFoodPandaOrderOnBranch" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DeliveryOrderId" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="Proc_SaveFoodPandaOrderTemp_New" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OnlineDeleiveryOrderID" Type="varchar" Mode="In" />
+          <Parameter Name="OrderNo" Type="varchar" Mode="In" />
+          <Parameter Name="CIN" Type="varchar" Mode="In" />
+          <Parameter Name="Branch" Type="varchar" Mode="In" />
+          <Parameter Name="PaymentMode" Type="varchar" Mode="In" />
+          <Parameter Name="CustomerID" Type="bigint" Mode="In" />
+          <Parameter Name="Amount" Type="varchar" Mode="In" />
+          <Parameter Name="DeliveryAddress" Type="varchar" Mode="In" />
+          <Parameter Name="Instruction" Type="varchar" Mode="In" />
+          <Parameter Name="takeAway" Type="bit" Mode="In" />
+          <Parameter Name="ServiceCharges" Type="varchar" Mode="In" />
+          <Parameter Name="timeRequired" Type="varchar" Mode="In" />
+          <Parameter Name="OrderThrough" Type="varchar" Mode="In" />
+          <Parameter Name="ItemDetailArray" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="regionID" Type="varchar" Mode="In" />
+          <Parameter Name="City" Type="varchar" Mode="In" />
+          <Parameter Name="Website" Type="varchar" Mode="In" />
+          <Parameter Name="description" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="onlineTransactionDetails" Type="varchar(max)" Mode="In" />
+          <Parameter Name="isPickup" Type="varchar" Mode="In" />
+          <Parameter Name="lat" Type="varchar" Mode="In" />
+          <Parameter Name="lon" Type="varchar" Mode="In" />
+          <Parameter Name="OrderType" Type="varchar" Mode="In" />
+          <Parameter Name="token" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Proc_SaveFoodPandaOrderTemp_New_One" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OnlineDeleiveryOrderID" Type="varchar" Mode="In" />
+          <Parameter Name="OrderNo" Type="varchar" Mode="In" />
+          <Parameter Name="CIN" Type="varchar" Mode="In" />
+          <Parameter Name="Branch" Type="varchar" Mode="In" />
+          <Parameter Name="PaymentMode" Type="varchar" Mode="In" />
+          <Parameter Name="CustomerID" Type="bigint" Mode="In" />
+          <Parameter Name="Amount" Type="varchar" Mode="In" />
+          <Parameter Name="DeliveryAddress" Type="varchar" Mode="In" />
+          <Parameter Name="Instruction" Type="varchar" Mode="In" />
+          <Parameter Name="takeAway" Type="bit" Mode="In" />
+          <Parameter Name="ServiceCharges" Type="varchar" Mode="In" />
+          <Parameter Name="timeRequired" Type="varchar" Mode="In" />
+          <Parameter Name="OrderThrough" Type="varchar" Mode="In" />
+          <Parameter Name="ItemDetailArray" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="regionID" Type="varchar" Mode="In" />
+          <Parameter Name="City" Type="varchar" Mode="In" />
+          <Parameter Name="Website" Type="varchar" Mode="In" />
+          <Parameter Name="description" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="onlineTransactionDetails" Type="varchar(max)" Mode="In" />
+          <Parameter Name="isPickup" Type="varchar" Mode="In" />
+          <Parameter Name="lat" Type="varchar" Mode="In" />
+          <Parameter Name="lon" Type="varchar" Mode="In" />
+          <Parameter Name="OrderType" Type="varchar" Mode="In" />
+          <Parameter Name="token" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Proc_SaveOrderDetailTemp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderID" Type="bigint" Mode="In" />
+          <Parameter Name="FamilyID" Type="bigint" Mode="In" />
+          <Parameter Name="MenuItemID" Type="bigint" Mode="In" />
+          <Parameter Name="MenuPrice" Type="bigint" Mode="In" />
+          <Parameter Name="Quantity" Type="bigint" Mode="In" />
+          <Parameter Name="IsWithCheze" Type="bit" Mode="In" />
+          <Parameter Name="IsFrenchFriesUpSize" Type="bit" Mode="In" />
+          <Parameter Name="IsDrinkUpsize" Type="bit" Mode="In" />
+          <Parameter Name="MenuFamilyMeasureID" Type="bigint" Mode="In" />
+          <Parameter Name="barcode" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="Proc_SaveOrderDetailTemp_FP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="OrderID" Type="bigint" Mode="In" />
+          <Parameter Name="FamilyID" Type="bigint" Mode="In" />
+          <Parameter Name="MenuItemID" Type="bigint" Mode="In" />
+          <Parameter Name="MenuPrice" Type="bigint" Mode="In" />
+          <Parameter Name="Quantity" Type="bigint" Mode="In" />
+          <Parameter Name="IsWithCheze" Type="bit" Mode="In" />
+          <Parameter Name="IsFrenchFriesUpSize" Type="bit" Mode="In" />
+          <Parameter Name="IsDrinkUpsize" Type="bit" Mode="In" />
+          <Parameter Name="MenuFamilyMeasureID" Type="bigint" Mode="In" />
+          <Parameter Name="barcode" Type="nvarchar" Mode="In" />
+          <Parameter Name="Instruction" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Proc_updateOrderDetailsforItemTaxDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DeliveryOrderDetailID" Type="bigint" Mode="In" />
+          <Parameter Name="ItemSaleValue" Type="bigint" Mode="In" />
+          <Parameter Name="ItemTotalAmount" Type="bigint" Mode="In" />
+          <Parameter Name="ItemTaxCharged" Type="bigint" Mode="In" />
+          <Parameter Name="TaxRateItem" Type="bigint" Mode="In" />
+        </Function>
+        <EntityContainer Name="KFC_PortalModelStoreContainer">
+          <EntitySet Name="Branch" EntityType="Self.Branch" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DeliveryOrder" EntityType="Self.DeliveryOrder" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DeliveryOrderDetail" EntityType="Self.DeliveryOrderDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DeliveryOrderTemp" EntityType="Self.DeliveryOrderTemp" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="foodPandaDeliveryBranch" EntityType="Self.foodPandaDeliveryBranch" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FoodPandaPayload" EntityType="Self.FoodPandaPayload" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FpAcknowledgementQueue" EntityType="Self.FpAcknowledgementQueue" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Menu" EntityType="Self.Menu" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KFC_PortalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DeliveryOrder">
+          <Key>
+            <PropertyRef Name="DeliveryOrderID" />
+          </Key>
+          <Property Name="DeliveryOrderID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderNo" Type="Int64" />
+          <Property Name="BranchID" Type="Int64" />
+          <Property Name="CustomerID" Type="Int64" />
+          <Property Name="OrderStatus" Type="Int64" />
+          <Property Name="PromotionID" Type="Int64" />
+          <Property Name="HundredthOrderCount" Type="Int64" />
+          <Property Name="DeliveryAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Instruction" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Amount" Type="Int64" />
+          <Property Name="AgentID" Type="Int64" />
+          <Property Name="BookedDateTime" Type="DateTime" Precision="3" />
+          <Property Name="ReceivedByID" Type="Int64" />
+          <Property Name="ReceivedByDateTime" Type="DateTime" Precision="3" />
+          <Property Name="DispatchedByID" Type="Int64" />
+          <Property Name="DispatchedDateTime" Type="DateTime" Precision="3" />
+          <Property Name="FinalStatusByID" Type="Int64" />
+          <Property Name="FinalStatusDateTIme" Type="DateTime" Precision="3" />
+          <Property Name="BranchRiderID" Type="Int64" />
+          <Property Name="PartialRejectAmount" Type="Int64" />
+          <Property Name="PartialRejectComment" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Location" Type="Int64" />
+          <Property Name="PaymentMode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CancelAgentID" Type="Int64" />
+          <Property Name="CancelComment" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="BranchLock" Type="Boolean" />
+          <Property Name="takeAway" Type="Boolean" />
+          <Property Name="ServiceCharges" Type="Int64" />
+          <Property Name="timeRequired" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OrderThrough" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Complaints" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="isModified" Type="Boolean" />
+          <Property Name="modifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="modifiedBy" Type="Int64" />
+          <Property Name="ComplaintComments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ComplaintCategory" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ComplaintStatus" Type="Int32" />
+          <Property Name="ComplaintStatusBy" Type="Int64" />
+          <Property Name="ComplaintStatusDateTIme" Type="DateTime" Precision="3" />
+          <Property Name="AddressDisable" Type="Boolean" />
+          <Property Name="DonationAmount" Type="Int64" />
+          <Property Name="IsPusshToPOS" Type="Boolean" />
+          <Property Name="deliverOnBranch" Type="Boolean" />
+          <Property Name="OfflineOrder" Type="Int32" />
+          <Property Name="DiscountPercent" Type="Int64" />
+          <Property Name="Discount" Type="Double" />
+          <Property Name="DeliveryOrderIDTemp" Type="Int64" />
+          <Property Name="cancelCheckOnBranch" Type="Int32" />
+          <Property Name="customerAddressDisableComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ConfirmRejectionComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="isConfirmRejection" Type="Int32" />
+          <Property Name="ConfirmRejectionBy" Type="Int64" />
+          <Property Name="ConfirmRejectionDate" Type="DateTime" Precision="3" />
+          <Property Name="CLI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SamsungRiderDate" Type="DateTime" Precision="3" />
+          <Property Name="SamsungDeliveryDate" Type="DateTime" Precision="3" />
+          <Property Name="Latitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Longitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AppRiderId" Type="Int64" />
+          <Property Name="AppOrderStatus" Type="Int64" />
+          <Property Name="AppOrderStatusDate" Type="DateTime" Precision="3" />
+          <Property Name="AppRiderAssignDate" Type="DateTime" Precision="3" />
+          <Property Name="lat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="lon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SamsungAPIResponse" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="isPushToSamsung" Type="Boolean" />
+          <Property Name="rating" Type="Double" />
+          <Property Name="rating2" Type="Double" />
+          <Property Name="rating3" Type="Double" />
+          <Property Name="ratingComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="HowDoYouKnow" Type="Int64" />
+          <Property Name="DistanceByRider" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AutoTransfer" Type="Boolean" />
+          <Property Name="isPushToRiderApp" Type="Boolean" />
+          <Property Name="isPickup" Type="Int32" />
+          <Property Name="reachedDateTime" Type="DateTime" Precision="3" />
+          <Property Name="deliveryTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="dynamicApiResponseCreate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="dynamicApiDateTime" Type="DateTime" Precision="3" />
+          <Property Name="dynamicApiResponseUpdate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PaymentModeOld" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="isChargeToFoodPanda" Type="Int32" />
+          <Property Name="chargeToFoodPandaReason" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="isPaymentModeChange" Type="Int32" />
+          <Property Name="FPOrderId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NEW_TIME" Type="DateTime" Precision="3" />
+          <Property Name="RECEIVED_TIME" Type="DateTime" Precision="3" />
+          <Property Name="WAITING_FOR_TRANSPORT_TIME" Type="DateTime" Precision="3" />
+          <Property Name="ASSIGNED_TO_TRANSPORT_TIME" Type="DateTime" Precision="3" />
+          <Property Name="COURIER_ACCEPTED_DELIVERY_TIME" Type="DateTime" Precision="3" />
+          <Property Name="NEAR_VENDOR_TIME" Type="DateTime" Precision="3" />
+          <Property Name="PICKED_UP_TIME" Type="DateTime" Precision="3" />
+          <Property Name="COURIER_LEFT_VENDOR_TIME" Type="DateTime" Precision="3" />
+          <Property Name="NEAR_CUSTOMER_TIME" Type="DateTime" Precision="3" />
+          <Property Name="DELIVERED_TIME" Type="DateTime" Precision="3" />
+          <Property Name="DELAYED_TIME" Type="DateTime" Precision="3" />
+          <Property Name="CANCELLED_TIME" Type="DateTime" Precision="3" />
+          <Property Name="fpAssignDatetime" Type="DateTime" Precision="3" />
+          <Property Name="VentureDiveOrderId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="cancelByKFC" Type="Int32" />
+          <Property Name="PaymentReversalId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ActionId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PaymentReversalAction" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="PaymentReversalDateTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PaymentReversalCreateDate" Type="DateTime" Precision="3" />
+          <Property Name="ARN" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="CancelDateTime" Type="DateTime" Precision="3" />
+          <Property Name="isCancellationSMSSent" Type="Int32" />
+          <Property Name="CanceledDateTime" Type="DateTime" Precision="3" />
+          <Property Name="RejectedDateTime" Type="DateTime" Precision="3" />
+          <Property Name="isthroughriderportal" Type="Int32" />
+          <Property Name="CancelByKFCMiddelWear" Type="Int32" />
+          <Property Name="FPCancelationReason" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="FBR_BRA_InvNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FBR_Reversal_InvNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TotalTaxCharged" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TotalDiscountFBR" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TaxPercentageFBR" Type="Int64" />
+          <Property Name="TaxAmountFBR" Type="Int64" />
+          <Property Name="TotalAmountExclusiveofTaxFBR" Type="Int64" />
+          <Property Name="FlagPandaProVoucher_Partial" Type="Boolean" />
+          <Property Name="ServiceChargesCreditOrdersForTax" Type="Int64" />
+          <Property Name="ServiceChargesExclusiveofTax" Type="Int64" />
+          <Property Name="ServiceChargesTaxCharged" Type="Int64" />
+          <Property Name="isTaxCalculatedFP" Type="Int32" />
+        </EntityType>
+        <EntityType Name="DeliveryOrderDetail">
+          <Key>
+            <PropertyRef Name="DeliveryOrderDetailID" />
+          </Key>
+          <Property Name="DeliveryOrderDetailID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderID" Type="Int64" />
+          <Property Name="FamilyID" Type="Int64" />
+          <Property Name="MenuItemID" Type="Int64" />
+          <Property Name="MenuPrice" Type="Int64" />
+          <Property Name="Quantity" Type="Int64" />
+          <Property Name="IsWithCheze" Type="Boolean" />
+          <Property Name="IsFrenchFriesUpSize" Type="Boolean" />
+          <Property Name="IsDrinkUpsize" Type="Boolean" />
+          <Property Name="MenuFamilyMeasureID" Type="Int64" />
+          <Property Name="instruction" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="ItemTotalAmountforTax" Type="Int64" />
+          <Property Name="ItemAmountExcofTax" Type="Int64" />
+          <Property Name="ItemTaxRate" Type="Int64" />
+          <Property Name="ItemTaxCharged" Type="Int64" />
+          <Property Name="ServiceChargesCreditOrdersForTax" Type="Int64" />
+          <Property Name="ServiceChargesExclusiveofTax" Type="Int64" />
+          <Property Name="ServiceChargesTaxCharged" Type="Int64" />
+        </EntityType>
+        <EntityType Name="DeliveryOrderTemp">
+          <Key>
+            <PropertyRef Name="DeliveryOrderID" />
+          </Key>
+          <Property Name="DeliveryOrderID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OnlineDeleiveryOrderID" Type="Int64" />
+          <Property Name="OrderNo" Type="Int64" />
+          <Property Name="BranchID" Type="Int64" />
+          <Property Name="CustomerID" Type="Int64" />
+          <Property Name="OrderStatus" Type="Int64" />
+          <Property Name="PromotionID" Type="Int64" />
+          <Property Name="HundredthOrderCount" Type="Int64" />
+          <Property Name="DeliveryAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Instruction" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Amount" Type="Int64" />
+          <Property Name="AgentID" Type="Int64" />
+          <Property Name="BookedDateTime" Type="DateTime" Precision="3" />
+          <Property Name="ReceivedByID" Type="Int64" />
+          <Property Name="ReceivedByDateTime" Type="DateTime" Precision="3" />
+          <Property Name="DispatchedByID" Type="Int64" />
+          <Property Name="DispatchedDateTime" Type="DateTime" Precision="3" />
+          <Property Name="FinalStatusByID" Type="Int64" />
+          <Property Name="FinalStatusDateTIme" Type="DateTime" Precision="3" />
+          <Property Name="BranchRiderID" Type="Int64" />
+          <Property Name="PartialRejectAmount" Type="Int64" />
+          <Property Name="PartialRejectComment" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Location" Type="Int64" />
+          <Property Name="PaymentMode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CancelAgentID" Type="Int64" />
+          <Property Name="CancelComment" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="BranchLock" Type="Boolean" />
+          <Property Name="takeAway" Type="Boolean" />
+          <Property Name="ServiceCharges" Type="Int64" />
+          <Property Name="timeRequired" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OrderThrough" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Complaints" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="isModified" Type="Boolean" />
+          <Property Name="modifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="modifiedBy" Type="Int64" />
+          <Property Name="ComplaintComments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ComplaintCategory" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ComplaintStatus" Type="Int32" />
+          <Property Name="ComplaintStatusBy" Type="Int64" />
+          <Property Name="ComplaintStatusDateTIme" Type="DateTime" Precision="3" />
+          <Property Name="AddressDisable" Type="Boolean" />
+          <Property Name="DonationAmount" Type="Int64" />
+          <Property Name="TempStatus" Type="Int32" />
+          <Property Name="ItemDetailArray" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CIN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Discount" Type="Int64" />
+          <Property Name="VoucherNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="cancelOrderTempCommnet" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="cancelOrderTempReason" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="isAccept" Type="Int32" />
+          <Property Name="regionID" Type="Int32" />
+          <Property Name="OrderCity" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="isAssigned" Type="Boolean" />
+          <Property Name="cancelStatus" Type="Int64" />
+          <Property Name="confirmCancelAgentID" Type="Int64" />
+          <Property Name="confirmCancelDate" Type="DateTime" Precision="3" />
+          <Property Name="cancelOrderTempCommnetForward" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="cancelOrderTempReasonForward" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="API_Response" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Website" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="voucherName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="voucherAmount" Type="Int64" />
+          <Property Name="FB_API_ResponseTime" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="onlineTransactionDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="isPickup" Type="Int32" />
+          <Property Name="isBranchAccept" Type="Int32" />
+          <Property Name="branchAcceptStatus" Type="Int32" />
+          <Property Name="branchNotAcceptReason" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="acceptStatusBy" Type="Int64" />
+          <Property Name="acceptStatusAt" Type="DateTime" Precision="3" />
+          <Property Name="isThroughApp" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="lat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="lon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="OrderType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="fpToken" Type="String" MaxLength="550" FixedLength="false" Unicode="false" />
+          <Property Name="FBR_BRA_InvNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TotalTaxCharged" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TaxPercentageFBR" Type="Int64" />
+          <Property Name="TaxAmountFBR" Type="Int64" />
+          <Property Name="TotalAmountExclusiveofTaxFBR" Type="Int64" />
+          <Property Name="ServiceChargesCreditOrdersForTax" Type="Int64" />
+          <Property Name="ServiceChargesExclusiveofTax" Type="Int64" />
+          <Property Name="ServiceChargesTaxCharged" Type="Int64" />
+        </EntityType>
+        <EntityContainer Name="KFC_PortalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DeliveryOrders" EntityType="Self.DeliveryOrder" />
+          <EntitySet Name="DeliveryOrderDetails" EntityType="Self.DeliveryOrderDetail" />
+          <EntitySet Name="DeliveryOrderTemps" EntityType="Self.DeliveryOrderTemp" />
+          <FunctionImport Name="Proc_IsOrderExistByCIN_New" ReturnType="Collection(Int64)">
+          <Parameter Name="CIN" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Proc_SaveFoodPandaOrderTemp_New" ReturnType="Collection(Int64)">
+            <Parameter Name="OnlineDeleiveryOrderID" Mode="In" Type="String" />
+            <Parameter Name="OrderNo" Mode="In" Type="String" />
+            <Parameter Name="CIN" Mode="In" Type="String" />
+            <Parameter Name="Branch" Mode="In" Type="String" />
+            <Parameter Name="PaymentMode" Mode="In" Type="String" />
+            <Parameter Name="CustomerID" Mode="In" Type="Int64" />
+            <Parameter Name="Amount" Mode="In" Type="String" />
+            <Parameter Name="DeliveryAddress" Mode="In" Type="String" />
+            <Parameter Name="Instruction" Mode="In" Type="String" />
+            <Parameter Name="takeAway" Mode="In" Type="Boolean" />
+            <Parameter Name="ServiceCharges" Mode="In" Type="String" />
+            <Parameter Name="timeRequired" Mode="In" Type="String" />
+            <Parameter Name="OrderThrough" Mode="In" Type="String" />
+            <Parameter Name="ItemDetailArray" Mode="In" Type="String" />
+            <Parameter Name="regionID" Mode="In" Type="String" />
+            <Parameter Name="City" Mode="In" Type="String" />
+            <Parameter Name="Website" Mode="In" Type="String" />
+            <Parameter Name="description" Mode="In" Type="String" />
+            <Parameter Name="onlineTransactionDetails" Mode="In" Type="String" />
+            <Parameter Name="isPickup" Mode="In" Type="String" />
+            <Parameter Name="lat" Mode="In" Type="String" />
+            <Parameter Name="lon" Mode="In" Type="String" />
+            <Parameter Name="OrderType" Mode="In" Type="String" />
+            <Parameter Name="token" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="Menus" EntityType="KFC_PortalModel.Menu" />
+          <FunctionImport Name="Proc_SaveOrderDetailTemp">
+            <Parameter Name="OrderID" Mode="In" Type="Int64" />
+            <Parameter Name="FamilyID" Mode="In" Type="Int64" />
+            <Parameter Name="MenuItemID" Mode="In" Type="Int64" />
+            <Parameter Name="MenuPrice" Mode="In" Type="Int64" />
+            <Parameter Name="Quantity" Mode="In" Type="Int64" />
+            <Parameter Name="IsWithCheze" Mode="In" Type="Boolean" />
+            <Parameter Name="IsFrenchFriesUpSize" Mode="In" Type="Boolean" />
+            <Parameter Name="IsDrinkUpsize" Mode="In" Type="Boolean" />
+            <Parameter Name="MenuFamilyMeasureID" Mode="In" Type="Int64" />
+            <Parameter Name="barcode" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="FpAcknowledgementQueues" EntityType="KFC_PortalModel.FpAcknowledgementQueue" />
+          <FunctionImport Name="proc_InsertCustomerTemp" ReturnType="Collection(Int64)">
+            <Parameter Name="Address" Mode="In" Type="String" />
+            <Parameter Name="firstName" Mode="In" Type="String" />
+            <Parameter Name="Phone1" Mode="In" Type="String" />
+            <Parameter Name="Phone2" Mode="In" Type="String" />
+            <Parameter Name="LoyalityCardNumber" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="AccountNumber" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Proc_addDynamicPosQueue">
+            <Parameter Name="apiName" Mode="In" Type="String" />
+            <Parameter Name="DeliveryOrderID" Mode="In" Type="String" />
+            <Parameter Name="statusId" Mode="In" Type="String" />
+            <Parameter Name="paymentMode" Mode="In" Type="String" />
+            <Parameter Name="creditMode" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="Branches" EntityType="KFC_PortalModel.Branch" />
+          <EntitySet Name="foodPandaDeliveryBranches" EntityType="KFC_PortalModel.foodPandaDeliveryBranch" />
+          <FunctionImport Name="Proc_LogFPAPICall">
+            <Parameter Name="APILink" Mode="In" Type="String" />
+            <Parameter Name="RequestJson" Mode="In" Type="String" />
+            <Parameter Name="RequestResponse" Mode="In" Type="String" />
+            <Parameter Name="StatusDescription" Mode="In" Type="String" />
+            <Parameter Name="APICallStartTime" Mode="In" Type="DateTime" />
+            <Parameter Name="APICallEndTime" Mode="In" Type="DateTime" />
+            <Parameter Name="ProcessTime" Mode="In" Type="String" />
+            <Parameter Name="apiType" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Proc_ReceiveFoodPandaOrderOnBranch">
+          <Parameter Name="DeliveryOrderId" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="Proc_SaveFoodPandaOrderTemp_New_One" ReturnType="Collection(Int64)">
+            <Parameter Name="OnlineDeleiveryOrderID" Mode="In" Type="String" />
+            <Parameter Name="OrderNo" Mode="In" Type="String" />
+            <Parameter Name="CIN" Mode="In" Type="String" />
+            <Parameter Name="Branch" Mode="In" Type="String" />
+            <Parameter Name="PaymentMode" Mode="In" Type="String" />
+            <Parameter Name="CustomerID" Mode="In" Type="Int64" />
+            <Parameter Name="Amount" Mode="In" Type="String" />
+            <Parameter Name="DeliveryAddress" Mode="In" Type="String" />
+            <Parameter Name="Instruction" Mode="In" Type="String" />
+            <Parameter Name="takeAway" Mode="In" Type="Boolean" />
+            <Parameter Name="ServiceCharges" Mode="In" Type="String" />
+            <Parameter Name="timeRequired" Mode="In" Type="String" />
+            <Parameter Name="OrderThrough" Mode="In" Type="String" />
+            <Parameter Name="ItemDetailArray" Mode="In" Type="String" />
+            <Parameter Name="regionID" Mode="In" Type="String" />
+            <Parameter Name="City" Mode="In" Type="String" />
+            <Parameter Name="Website" Mode="In" Type="String" />
+            <Parameter Name="description" Mode="In" Type="String" />
+            <Parameter Name="onlineTransactionDetails" Mode="In" Type="String" />
+            <Parameter Name="isPickup" Mode="In" Type="String" />
+            <Parameter Name="lat" Mode="In" Type="String" />
+            <Parameter Name="lon" Mode="In" Type="String" />
+            <Parameter Name="OrderType" Mode="In" Type="String" />
+            <Parameter Name="token" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="FoodPandaPayloads" EntityType="KFC_PortalModel.FoodPandaPayload" />
+          <FunctionImport Name="Proc_SaveOrderDetailTemp_FP">
+            <Parameter Name="OrderID" Mode="In" Type="Int64" />
+            <Parameter Name="FamilyID" Mode="In" Type="Int64" />
+            <Parameter Name="MenuItemID" Mode="In" Type="Int64" />
+            <Parameter Name="MenuPrice" Mode="In" Type="Int64" />
+            <Parameter Name="Quantity" Mode="In" Type="Int64" />
+            <Parameter Name="IsWithCheze" Mode="In" Type="Boolean" />
+            <Parameter Name="IsFrenchFriesUpSize" Mode="In" Type="Boolean" />
+            <Parameter Name="IsDrinkUpsize" Mode="In" Type="Boolean" />
+            <Parameter Name="MenuFamilyMeasureID" Mode="In" Type="Int64" />
+            <Parameter Name="barcode" Mode="In" Type="String" />
+            <Parameter Name="Instruction" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Proc_getAPI_forTax" ReturnType="Collection(KFC_PortalModel.Proc_getAPI_forTax_Result)" />
+          <FunctionImport Name="proc_getBranchDetailsbyIDforSimplex" ReturnType="Collection(KFC_PortalModel.proc_getBranchDetailsbyIDforSimplex_Result)">
+            <Parameter Name="id" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="Proc_getOrderDetail" ReturnType="Collection(KFC_PortalModel.Proc_getOrderDetail_Result)">
+            <Parameter Name="orderID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Proc_insertFBRActivityLog">
+            <Parameter Name="data" Mode="In" Type="String" />
+            <Parameter Name="Response" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Proc_insertFBRInvoiceNumber">
+            <Parameter Name="OrderID" Mode="In" Type="String" />
+            <Parameter Name="InvoiceNo" Mode="In" Type="String" />
+            <Parameter Name="InvoiceType" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Proc_insertFBRNewOrderDetails">
+            <Parameter Name="OrderID" Mode="In" Type="Int64" />
+            <Parameter Name="TaxPercentageFBR" Mode="In" Type="Int64" />
+            <Parameter Name="TaxAmountFBR" Mode="In" Type="Int64" />
+            <Parameter Name="TotalAmountExclusiveofTaxFBR" Mode="In" Type="Int64" />
+            <Parameter Name="TotalDiscountFBR" Mode="In" Type="Int64" />
+            <Parameter Name="TotalTaxCharged" Mode="In" Type="Int64" />
+            <Parameter Name="ServiceChargesCreditOrders" Mode="In" Type="Int64" />
+            <Parameter Name="ServiceChargesExclusiveofTax" Mode="In" Type="Int64" />
+            <Parameter Name="ServiceChargesTaxCharged" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="Proc_updateOrderDetailsforItemTaxDetails">
+            <Parameter Name="DeliveryOrderDetailID" Mode="In" Type="Int64" />
+            <Parameter Name="ItemSaleValue" Mode="In" Type="Int64" />
+            <Parameter Name="ItemTotalAmount" Mode="In" Type="Int64" />
+            <Parameter Name="ItemTaxCharged" Mode="In" Type="Int64" />
+            <Parameter Name="TaxRateItem" Mode="In" Type="Int64" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FamilyID" Type="Int64" />
+          <Property Name="MenuItemID" Type="Int64" />
+          <Property Name="FamilyMeasureID" Type="Int64" />
+          <Property Name="GrossPrice" Type="Int64" />
+          <Property Name="GST" Type="Int64" />
+          <Property Name="MenuPrice" Type="Int64" />
+          <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedByID" Type="Int64" />
+          <Property Name="CreatedDateTime" Type="DateTime" Precision="3" />
+          <Property Name="ModifiedByID" Type="Int64" />
+          <Property Name="ModifiedDateTime" Type="DateTime" Precision="3" />
+          <Property Name="RecStatusID" Type="Int64" />
+          <Property Name="VersionNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="barcode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="barcodeFP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="isDisabled" Type="Boolean" />
+          <Property Name="isDisabledTemp" Type="Boolean" />
+          <Property Name="IsMidnight" Type="Boolean" />
+          <Property Name="MidnightTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ImagePath" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="pos_itemCode" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="FpAcknowledgementQueue">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DeliveryOrderIdTemp" Type="Int64" />
+          <Property Name="IsRead" Type="Int32" />
+          <Property Name="cd" Type="DateTime" Precision="3" />
+          <Property Name="token" Type="String" MaxLength="550" FixedLength="false" Unicode="false" />
+          <Property Name="ud" Type="DateTime" Precision="3" />
+          <Property Name="ProcessingStartTime" Type="DateTime" Precision="3" />
+          <Property Name="ProcessingEndTime" Type="DateTime" Precision="3" />
+          <Property Name="TotalProcessingTime" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Response" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="nooftries" Type="Int32" />
+          <Property Name="AccessToken" Type="String" MaxLength="2500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Branch">
+          <Key>
+            <PropertyRef Name="BranchID" />
+          </Key>
+          <Property Name="BranchID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Branch_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="regionID" Type="Int64" />
+          <Property Name="BranchID_Old" Type="Int64" />
+          <Property Name="Branch_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="RGM" Type="Int64" />
+          <Property Name="AreaCoach" Type="Int64" />
+          <Property Name="BusniessHead" Type="Int64" />
+          <Property Name="AsstManagerDelivery" Type="Int64" />
+          <Property Name="DeliveryHead" Type="Int64" />
+          <Property Name="ManagerCC" Type="Int64" />
+          <Property Name="TimeExtension" Type="Int32" />
+          <Property Name="email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="bStatus" Type="Int32" />
+          <Property Name="tempStatus" Type="Int32" />
+          <Property Name="statusReasons" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="extReasons" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ClosingTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SupplyChainManager" Type="Int64" />
+          <Property Name="SupplyChainTeam" Type="Int64" />
+          <Property Name="ConcernCallCenter" Type="Int64" />
+          <Property Name="locationIdDT" Type="Int64" />
+          <Property Name="addressDT" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DeliveryArea" Type="Int64" />
+          <Property Name="Lat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Lon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ClosingMon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ClosingTue" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ClosingWed" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ClosingThu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ClosingFri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ClosingSat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ClosingSun" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tax" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="MidnightTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FoodPandaBranchId" Type="Int64" />
+          <Property Name="isEnabledForRiderApp" Type="Int32" />
+          <Property Name="gesCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="isAutoDelivery" Type="Int32" />
+          <Property Name="perKMRate" Type="Int32" />
+          <Property Name="ServerName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="DatabaseName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Terminal" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="serverUsername" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="serverPassword" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="creditMode" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="foodPandaCode" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="posStoreNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="isDynamicPosEnabled" Type="Int32" />
+          <Property Name="OpeningTime" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="walletPassword" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="isWalletPasswordChanged" Type="Int32" />
+          <Property Name="DynamicApi" Type="Int32" />
+          <Property Name="isDynamicPullEnabled" Type="Int32" />
+          <Property Name="IsStagingEnabled" Type="Int32" />
+          <Property Name="EnabledForVentureDive" Type="Int32" />
+          <Property Name="EnabledForFPHero" Type="Int32" />
+          <Property Name="PolyGon" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Terminal_P" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="serverUsername_P" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="serverPassword_P" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="DatabaseName_P" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="posStoreNo_P" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ServerName_P" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="creditcard" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="OpeningMon" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="OpeningTue" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="OpeningWed" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="OpeningThu" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="OpeningFri" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="OpeningSat" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="OpeningSun" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="autoDispatchDistance" Type="Int32" />
+          <Property Name="autoAssignDistacne" Type="Int32" />
+          <Property Name="orderLimit" Type="Int32" />
+          <Property Name="orderAssignTime" Type="Int32" />
+          <Property Name="simplexEnabled" Type="Int32" />
+          <Property Name="PickupClosingMon" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PickupClosingTue" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PickupClosingWed" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PickupClosingThu" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PickupClosingFri" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PickupClosingSat" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PickupClosingSun" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="updatePaymentMode" Type="Boolean" />
+          <Property Name="TaxAuthority" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TaxRate" Type="Int64" />
+          <Property Name="CashTaxRate" Type="Int64" />
+          <Property Name="CreditTaxRate" Type="Int64" />
+          <Property Name="POSID" Type="Int64" />
+          <Property Name="IdentNoFBR" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="BranchNameFBR" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="CodeFBR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TokenFBR" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="PCTCode" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="isTaxWorkingEnabled" Type="Boolean" />
+          <Property Name="DynamicPosRegionId" Type="Int32" />
+          <Property Name="EnabledForFPAutoAcceptance" Type="Int32" />
+        </EntityType>
+        <EntityType Name="foodPandaDeliveryBranch">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="branchId" Type="Int64" />
+        </EntityType>
+        <EntityType Name="FoodPandaPayload">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Payload" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="cd" Type="DateTime" Precision="3" />
+          <Property Name="branchId" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="requestStartTime" Type="DateTime" Precision="3" />
+          <Property Name="requestEndTime" Type="DateTime" Precision="3" />
+          <Property Name="totalDuration" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="response" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ServerIP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="apiType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="orderNo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <ComplexType Name="Proc_getAPI_forTax_Result">
+          <Property Type="Int64" Name="id" Nullable="true" />
+          <Property Type="String" Name="FBR_API_LINK" Nullable="true" />
+          <Property Type="String" Name="BRA_API_LINK" Nullable="true" />
+          <Property Type="String" Name="OtherLink" Nullable="true" />
+          <Property Type="String" Name="TestLink" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="proc_getBranchDetailsbyIDforSimplex_Result">
+          <Property Type="Int64" Name="BranchID" Nullable="false" />
+          <Property Type="String" Name="Title" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Address" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="City" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="Branch_Name" Nullable="true" MaxLength="100" />
+          <Property Type="Int64" Name="regionID" Nullable="true" />
+          <Property Type="Int64" Name="BranchID_Old" Nullable="true" />
+          <Property Type="String" Name="Branch_Code" Nullable="true" MaxLength="100" />
+          <Property Type="Int64" Name="RGM" Nullable="true" />
+          <Property Type="Int64" Name="AreaCoach" Nullable="true" />
+          <Property Type="Int64" Name="BusniessHead" Nullable="true" />
+          <Property Type="Int64" Name="AsstManagerDelivery" Nullable="true" />
+          <Property Type="Int64" Name="DeliveryHead" Nullable="true" />
+          <Property Type="Int64" Name="ManagerCC" Nullable="true" />
+          <Property Type="Int32" Name="TimeExtension" Nullable="true" />
+          <Property Type="String" Name="email" Nullable="true" MaxLength="200" />
+          <Property Type="Int32" Name="bStatus" Nullable="true" />
+          <Property Type="Int32" Name="tempStatus" Nullable="true" />
+          <Property Type="String" Name="statusReasons" Nullable="true" />
+          <Property Type="String" Name="extReasons" Nullable="true" />
+          <Property Type="String" Name="ClosingTime" Nullable="true" MaxLength="50" />
+          <Property Type="Int64" Name="SupplyChainManager" Nullable="true" />
+          <Property Type="Int64" Name="SupplyChainTeam" Nullable="true" />
+          <Property Type="Int64" Name="ConcernCallCenter" Nullable="true" />
+          <Property Type="Int64" Name="locationIdDT" Nullable="true" />
+          <Property Type="String" Name="addressDT" Nullable="true" />
+          <Property Type="Int64" Name="DeliveryArea" Nullable="true" />
+          <Property Type="String" Name="Lat" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Lon" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ClosingMon" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ClosingTue" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ClosingWed" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ClosingThu" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ClosingFri" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ClosingSat" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ClosingSun" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="Tax" Nullable="true" Precision="18" Scale="2" />
+          <Property Type="String" Name="MidnightTime" Nullable="true" MaxLength="50" />
+          <Property Type="Int64" Name="FoodPandaBranchId" Nullable="true" />
+          <Property Type="Int32" Name="isEnabledForRiderApp" Nullable="true" />
+          <Property Type="String" Name="gesCode" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="isAutoDelivery" Nullable="true" />
+          <Property Type="Int32" Name="perKMRate" Nullable="true" />
+          <Property Type="String" Name="ServerName" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="DatabaseName" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="Terminal" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="serverUsername" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="serverPassword" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="creditMode" Nullable="true" MaxLength="150" />
+          <Property Type="String" Name="foodPandaCode" Nullable="true" MaxLength="25" />
+          <Property Type="String" Name="posStoreNo" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="isDynamicPosEnabled" Nullable="true" />
+          <Property Type="String" Name="OpeningTime" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="walletPassword" Nullable="true" MaxLength="500" />
+          <Property Type="Int32" Name="isWalletPasswordChanged" Nullable="true" />
+          <Property Type="Int32" Name="DynamicApi" Nullable="true" />
+          <Property Type="Int32" Name="isDynamicPullEnabled" Nullable="true" />
+          <Property Type="Int32" Name="IsStagingEnabled" Nullable="true" />
+          <Property Type="Int32" Name="EnabledForVentureDive" Nullable="true" />
+          <Property Type="Int32" Name="EnabledForFPHero" Nullable="true" />
+          <Property Type="String" Name="PolyGon" Nullable="true" />
+          <Property Type="String" Name="Terminal_P" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="serverUsername_P" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="serverPassword_P" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="DatabaseName_P" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="posStoreNo_P" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="ServerName_P" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="creditcard" Nullable="true" MaxLength="5" />
+          <Property Type="String" Name="OpeningMon" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="OpeningTue" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="OpeningWed" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="OpeningThu" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="OpeningFri" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="OpeningSat" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="OpeningSun" Nullable="true" MaxLength="100" />
+          <Property Type="Int32" Name="autoDispatchDistance" Nullable="true" />
+          <Property Type="Int32" Name="autoAssignDistacne" Nullable="true" />
+          <Property Type="Int32" Name="orderLimit" Nullable="true" />
+          <Property Type="Int32" Name="orderAssignTime" Nullable="true" />
+          <Property Type="Int32" Name="simplexEnabled" Nullable="true" />
+          <Property Type="String" Name="PickupClosingMon" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="PickupClosingTue" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="PickupClosingWed" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="PickupClosingThu" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="PickupClosingFri" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="PickupClosingSat" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="PickupClosingSun" Nullable="true" MaxLength="100" />
+          <Property Type="Boolean" Name="updatePaymentMode" Nullable="true" />
+          <Property Type="String" Name="TaxAuthority" Nullable="true" MaxLength="50" />
+          <Property Type="Int64" Name="TaxRate" Nullable="true" />
+          <Property Type="Int64" Name="CashTaxRate" Nullable="true" />
+          <Property Type="Int64" Name="CreditTaxRate" Nullable="true" />
+          <Property Type="Int64" Name="POSID" Nullable="true" />
+          <Property Type="String" Name="IdentNoFBR" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="BranchNameFBR" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="CodeFBR" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="TokenFBR" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="PCTCode" Nullable="true" MaxLength="500" />
+          <Property Type="Boolean" Name="isTaxWorkingEnabled" Nullable="true" />
+          <Property Type="Int32" Name="DynamicPosRegionId" Nullable="true" />
+          <Property Type="Int32" Name="EnabledForFPAutoAcceptance" Nullable="true" />
+          <Property Type="String" Name="email2" Nullable="false" MaxLength="200" />
+          <Property Type="String" Name="locationTitle" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="Proc_getOrderDetail_Result">
+          <Property Type="Int64" Name="DeliveryOrderDetailID" Nullable="false" />
+          <Property Type="Int64" Name="Quantity" Nullable="true" />
+          <Property Type="Boolean" Name="IsWithCheze" Nullable="true" />
+          <Property Type="Boolean" Name="IsDrinkUpsize" Nullable="true" />
+          <Property Type="Int64" Name="MenuItemID" Nullable="true" />
+          <Property Type="Int64" Name="FamilyID" Nullable="true" />
+          <Property Type="Int64" Name="MenuPrice" Nullable="true" />
+          <Property Type="String" Name="Instruction" Nullable="false" MaxLength="250" />
+          <Property Type="Boolean" Name="IsFrenchFriesUpSize" Nullable="true" />
+          <Property Type="String" Name="Title" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Description" Nullable="true" MaxLength="1000" />
+          <Property Type="String" Name="pos_itemCode" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="newpos_itemCode" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="FMTitle" Nullable="true" MaxLength="200" />
+          <Property Type="Int64" Name="MenuFamilyMeasureID" Nullable="true" />
+          <Property Type="Int64" Name="realMenuPrice" Nullable="true" />
+          <Property Type="String" Name="MFTitle" Nullable="true" MaxLength="200" />
+          <Property Type="Int64" Name="TaxPercentageFBR" Nullable="false" />
+          <Property Type="String" Name="FBR_BRA_InvNo" Nullable="false" />
+          <Property Type="String" Name="PaymentMode" Nullable="true" MaxLength="50" />
+          <Property Type="Int64" Name="CashTaxRate" Nullable="false" />
+          <Property Type="Int64" Name="CreditTaxRate" Nullable="false" />
+          <Property Type="Boolean" Name="isTaxWorkingEnabled" Nullable="false" />
+          <Property Type="String" Name="OrderThrough" Nullable="true" MaxLength="50" />
+          <Property Type="Int64" Name="ServiceChargesCreditOrdersForTax" Nullable="false" />
+          <Property Type="Int64" Name="ServiceChargesExclusiveofTax" Nullable="false" />
+          <Property Type="Int64" Name="ServiceChargesTaxCharged" Nullable="false" />
+          <Property Type="Int64" Name="ItemTotalAmountforTax" Nullable="false" />
+          <Property Type="Int64" Name="ItemAmountExcofTax" Nullable="false" />
+          <Property Type="Int64" Name="ItemTaxRate" Nullable="false" />
+          <Property Type="Int64" Name="ItemTaxCharged" Nullable="false" />
+          <Property Type="Int64" Name="ServiceCharges" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KFC_PortalModelStoreContainer" CdmEntityContainer="KFC_PortalEntities">
+          <EntitySetMapping Name="DeliveryOrders">
+            <EntityTypeMapping TypeName="KFC_PortalModel.DeliveryOrder">
+              <MappingFragment StoreEntitySet="DeliveryOrder">
+                <ScalarProperty Name="isTaxCalculatedFP" ColumnName="isTaxCalculatedFP" />
+                <ScalarProperty Name="ServiceChargesTaxCharged" ColumnName="ServiceChargesTaxCharged" />
+                <ScalarProperty Name="ServiceChargesExclusiveofTax" ColumnName="ServiceChargesExclusiveofTax" />
+                <ScalarProperty Name="ServiceChargesCreditOrdersForTax" ColumnName="ServiceChargesCreditOrdersForTax" />
+                <ScalarProperty Name="FlagPandaProVoucher_Partial" ColumnName="FlagPandaProVoucher_Partial" />
+                <ScalarProperty Name="TotalAmountExclusiveofTaxFBR" ColumnName="TotalAmountExclusiveofTaxFBR" />
+                <ScalarProperty Name="TaxAmountFBR" ColumnName="TaxAmountFBR" />
+                <ScalarProperty Name="TaxPercentageFBR" ColumnName="TaxPercentageFBR" />
+                <ScalarProperty Name="TotalDiscountFBR" ColumnName="TotalDiscountFBR" />
+                <ScalarProperty Name="TotalTaxCharged" ColumnName="TotalTaxCharged" />
+                <ScalarProperty Name="FBR_Reversal_InvNo" ColumnName="FBR_Reversal_InvNo" />
+                <ScalarProperty Name="FBR_BRA_InvNo" ColumnName="FBR_BRA_InvNo" />
+                <ScalarProperty Name="FPCancelationReason" ColumnName="FPCancelationReason" />
+                <ScalarProperty Name="CancelByKFCMiddelWear" ColumnName="CancelByKFCMiddelWear" />
+                <ScalarProperty Name="DeliveryOrderID" ColumnName="DeliveryOrderID" />
+                <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+                <ScalarProperty Name="PromotionID" ColumnName="PromotionID" />
+                <ScalarProperty Name="HundredthOrderCount" ColumnName="HundredthOrderCount" />
+                <ScalarProperty Name="DeliveryAddress" ColumnName="DeliveryAddress" />
+                <ScalarProperty Name="Instruction" ColumnName="Instruction" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+                <ScalarProperty Name="BookedDateTime" ColumnName="BookedDateTime" />
+                <ScalarProperty Name="ReceivedByID" ColumnName="ReceivedByID" />
+                <ScalarProperty Name="ReceivedByDateTime" ColumnName="ReceivedByDateTime" />
+                <ScalarProperty Name="DispatchedByID" ColumnName="DispatchedByID" />
+                <ScalarProperty Name="DispatchedDateTime" ColumnName="DispatchedDateTime" />
+                <ScalarProperty Name="FinalStatusByID" ColumnName="FinalStatusByID" />
+                <ScalarProperty Name="FinalStatusDateTIme" ColumnName="FinalStatusDateTIme" />
+                <ScalarProperty Name="BranchRiderID" ColumnName="BranchRiderID" />
+                <ScalarProperty Name="PartialRejectAmount" ColumnName="PartialRejectAmount" />
+                <ScalarProperty Name="PartialRejectComment" ColumnName="PartialRejectComment" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+                <ScalarProperty Name="CancelAgentID" ColumnName="CancelAgentID" />
+                <ScalarProperty Name="CancelComment" ColumnName="CancelComment" />
+                <ScalarProperty Name="BranchLock" ColumnName="BranchLock" />
+                <ScalarProperty Name="takeAway" ColumnName="takeAway" />
+                <ScalarProperty Name="ServiceCharges" ColumnName="ServiceCharges" />
+                <ScalarProperty Name="timeRequired" ColumnName="timeRequired" />
+                <ScalarProperty Name="OrderThrough" ColumnName="OrderThrough" />
+                <ScalarProperty Name="Complaints" ColumnName="Complaints" />
+                <ScalarProperty Name="isModified" ColumnName="isModified" />
+                <ScalarProperty Name="modifiedDate" ColumnName="modifiedDate" />
+                <ScalarProperty Name="modifiedBy" ColumnName="modifiedBy" />
+                <ScalarProperty Name="ComplaintComments" ColumnName="ComplaintComments" />
+                <ScalarProperty Name="ComplaintCategory" ColumnName="ComplaintCategory" />
+                <ScalarProperty Name="ComplaintStatus" ColumnName="ComplaintStatus" />
+                <ScalarProperty Name="ComplaintStatusBy" ColumnName="ComplaintStatusBy" />
+                <ScalarProperty Name="ComplaintStatusDateTIme" ColumnName="ComplaintStatusDateTIme" />
+                <ScalarProperty Name="AddressDisable" ColumnName="AddressDisable" />
+                <ScalarProperty Name="DonationAmount" ColumnName="DonationAmount" />
+                <ScalarProperty Name="IsPusshToPOS" ColumnName="IsPusshToPOS" />
+                <ScalarProperty Name="deliverOnBranch" ColumnName="deliverOnBranch" />
+                <ScalarProperty Name="OfflineOrder" ColumnName="OfflineOrder" />
+                <ScalarProperty Name="DiscountPercent" ColumnName="DiscountPercent" />
+                <ScalarProperty Name="Discount" ColumnName="Discount" />
+                <ScalarProperty Name="DeliveryOrderIDTemp" ColumnName="DeliveryOrderIDTemp" />
+                <ScalarProperty Name="cancelCheckOnBranch" ColumnName="cancelCheckOnBranch" />
+                <ScalarProperty Name="customerAddressDisableComment" ColumnName="customerAddressDisableComment" />
+                <ScalarProperty Name="ConfirmRejectionComment" ColumnName="ConfirmRejectionComment" />
+                <ScalarProperty Name="isConfirmRejection" ColumnName="isConfirmRejection" />
+                <ScalarProperty Name="ConfirmRejectionBy" ColumnName="ConfirmRejectionBy" />
+                <ScalarProperty Name="ConfirmRejectionDate" ColumnName="ConfirmRejectionDate" />
+                <ScalarProperty Name="CLI" ColumnName="CLI" />
+                <ScalarProperty Name="SamsungRiderDate" ColumnName="SamsungRiderDate" />
+                <ScalarProperty Name="SamsungDeliveryDate" ColumnName="SamsungDeliveryDate" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="AppRiderId" ColumnName="AppRiderId" />
+                <ScalarProperty Name="AppOrderStatus" ColumnName="AppOrderStatus" />
+                <ScalarProperty Name="AppOrderStatusDate" ColumnName="AppOrderStatusDate" />
+                <ScalarProperty Name="AppRiderAssignDate" ColumnName="AppRiderAssignDate" />
+                <ScalarProperty Name="lat" ColumnName="lat" />
+                <ScalarProperty Name="lon" ColumnName="lon" />
+                <ScalarProperty Name="SamsungAPIResponse" ColumnName="SamsungAPIResponse" />
+                <ScalarProperty Name="isPushToSamsung" ColumnName="isPushToSamsung" />
+                <ScalarProperty Name="rating" ColumnName="rating" />
+                <ScalarProperty Name="rating2" ColumnName="rating2" />
+                <ScalarProperty Name="rating3" ColumnName="rating3" />
+                <ScalarProperty Name="ratingComment" ColumnName="ratingComment" />
+                <ScalarProperty Name="HowDoYouKnow" ColumnName="HowDoYouKnow" />
+                <ScalarProperty Name="DistanceByRider" ColumnName="DistanceByRider" />
+                <ScalarProperty Name="AutoTransfer" ColumnName="AutoTransfer" />
+                <ScalarProperty Name="isPushToRiderApp" ColumnName="isPushToRiderApp" />
+                <ScalarProperty Name="isPickup" ColumnName="isPickup" />
+                <ScalarProperty Name="reachedDateTime" ColumnName="reachedDateTime" />
+                <ScalarProperty Name="deliveryTime" ColumnName="deliveryTime" />
+                <ScalarProperty Name="dynamicApiResponseCreate" ColumnName="dynamicApiResponseCreate" />
+                <ScalarProperty Name="dynamicApiDateTime" ColumnName="dynamicApiDateTime" />
+                <ScalarProperty Name="dynamicApiResponseUpdate" ColumnName="dynamicApiResponseUpdate" />
+                <ScalarProperty Name="PaymentModeOld" ColumnName="PaymentModeOld" />
+                <ScalarProperty Name="isChargeToFoodPanda" ColumnName="isChargeToFoodPanda" />
+                <ScalarProperty Name="chargeToFoodPandaReason" ColumnName="chargeToFoodPandaReason" />
+                <ScalarProperty Name="isPaymentModeChange" ColumnName="isPaymentModeChange" />
+                <ScalarProperty Name="FPOrderId" ColumnName="FPOrderId" />
+                <ScalarProperty Name="NEW_TIME" ColumnName="NEW_TIME" />
+                <ScalarProperty Name="RECEIVED_TIME" ColumnName="RECEIVED_TIME" />
+                <ScalarProperty Name="WAITING_FOR_TRANSPORT_TIME" ColumnName="WAITING_FOR_TRANSPORT_TIME" />
+                <ScalarProperty Name="ASSIGNED_TO_TRANSPORT_TIME" ColumnName="ASSIGNED_TO_TRANSPORT_TIME" />
+                <ScalarProperty Name="COURIER_ACCEPTED_DELIVERY_TIME" ColumnName="COURIER_ACCEPTED_DELIVERY_TIME" />
+                <ScalarProperty Name="NEAR_VENDOR_TIME" ColumnName="NEAR_VENDOR_TIME" />
+                <ScalarProperty Name="PICKED_UP_TIME" ColumnName="PICKED_UP_TIME" />
+                <ScalarProperty Name="COURIER_LEFT_VENDOR_TIME" ColumnName="COURIER_LEFT_VENDOR_TIME" />
+                <ScalarProperty Name="NEAR_CUSTOMER_TIME" ColumnName="NEAR_CUSTOMER_TIME" />
+                <ScalarProperty Name="DELIVERED_TIME" ColumnName="DELIVERED_TIME" />
+                <ScalarProperty Name="DELAYED_TIME" ColumnName="DELAYED_TIME" />
+                <ScalarProperty Name="CANCELLED_TIME" ColumnName="CANCELLED_TIME" />
+                <ScalarProperty Name="fpAssignDatetime" ColumnName="fpAssignDatetime" />
+                <ScalarProperty Name="VentureDiveOrderId" ColumnName="VentureDiveOrderId" />
+                <ScalarProperty Name="cancelByKFC" ColumnName="cancelByKFC" />
+                <ScalarProperty Name="PaymentReversalId" ColumnName="PaymentReversalId" />
+                <ScalarProperty Name="ActionId" ColumnName="ActionId" />
+                <ScalarProperty Name="PaymentReversalAction" ColumnName="PaymentReversalAction" />
+                <ScalarProperty Name="PaymentReversalDateTime" ColumnName="PaymentReversalDateTime" />
+                <ScalarProperty Name="PaymentReversalCreateDate" ColumnName="PaymentReversalCreateDate" />
+                <ScalarProperty Name="ARN" ColumnName="ARN" />
+                <ScalarProperty Name="CancelDateTime" ColumnName="CancelDateTime" />
+                <ScalarProperty Name="isCancellationSMSSent" ColumnName="isCancellationSMSSent" />
+                <ScalarProperty Name="CanceledDateTime" ColumnName="CanceledDateTime" />
+                <ScalarProperty Name="RejectedDateTime" ColumnName="RejectedDateTime" />
+                <ScalarProperty Name="isthroughriderportal" ColumnName="isthroughriderportal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DeliveryOrderDetails">
+            <EntityTypeMapping TypeName="KFC_PortalModel.DeliveryOrderDetail">
+              <MappingFragment StoreEntitySet="DeliveryOrderDetail">
+                <ScalarProperty Name="ServiceChargesTaxCharged" ColumnName="ServiceChargesTaxCharged" />
+                <ScalarProperty Name="ServiceChargesExclusiveofTax" ColumnName="ServiceChargesExclusiveofTax" />
+                <ScalarProperty Name="ServiceChargesCreditOrdersForTax" ColumnName="ServiceChargesCreditOrdersForTax" />
+                <ScalarProperty Name="ItemTaxCharged" ColumnName="ItemTaxCharged" />
+                <ScalarProperty Name="ItemTaxRate" ColumnName="ItemTaxRate" />
+                <ScalarProperty Name="ItemAmountExcofTax" ColumnName="ItemAmountExcofTax" />
+                <ScalarProperty Name="ItemTotalAmountforTax" ColumnName="ItemTotalAmountforTax" />
+                <ScalarProperty Name="instruction" ColumnName="instruction" />
+                <ScalarProperty Name="DeliveryOrderDetailID" ColumnName="DeliveryOrderDetailID" />
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="FamilyID" ColumnName="FamilyID" />
+                <ScalarProperty Name="MenuItemID" ColumnName="MenuItemID" />
+                <ScalarProperty Name="MenuPrice" ColumnName="MenuPrice" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="IsWithCheze" ColumnName="IsWithCheze" />
+                <ScalarProperty Name="IsFrenchFriesUpSize" ColumnName="IsFrenchFriesUpSize" />
+                <ScalarProperty Name="IsDrinkUpsize" ColumnName="IsDrinkUpsize" />
+                <ScalarProperty Name="MenuFamilyMeasureID" ColumnName="MenuFamilyMeasureID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DeliveryOrderTemps">
+            <EntityTypeMapping TypeName="KFC_PortalModel.DeliveryOrderTemp">
+              <MappingFragment StoreEntitySet="DeliveryOrderTemp">
+                <ScalarProperty Name="ServiceChargesTaxCharged" ColumnName="ServiceChargesTaxCharged" />
+                <ScalarProperty Name="ServiceChargesExclusiveofTax" ColumnName="ServiceChargesExclusiveofTax" />
+                <ScalarProperty Name="ServiceChargesCreditOrdersForTax" ColumnName="ServiceChargesCreditOrdersForTax" />
+                <ScalarProperty Name="TotalAmountExclusiveofTaxFBR" ColumnName="TotalAmountExclusiveofTaxFBR" />
+                <ScalarProperty Name="TaxAmountFBR" ColumnName="TaxAmountFBR" />
+                <ScalarProperty Name="TaxPercentageFBR" ColumnName="TaxPercentageFBR" />
+                <ScalarProperty Name="TotalTaxCharged" ColumnName="TotalTaxCharged" />
+                <ScalarProperty Name="FBR_BRA_InvNo" ColumnName="FBR_BRA_InvNo" />
+                <ScalarProperty Name="DeliveryOrderID" ColumnName="DeliveryOrderID" />
+                <ScalarProperty Name="OnlineDeleiveryOrderID" ColumnName="OnlineDeleiveryOrderID" />
+                <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+                <ScalarProperty Name="PromotionID" ColumnName="PromotionID" />
+                <ScalarProperty Name="HundredthOrderCount" ColumnName="HundredthOrderCount" />
+                <ScalarProperty Name="DeliveryAddress" ColumnName="DeliveryAddress" />
+                <ScalarProperty Name="Instruction" ColumnName="Instruction" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+                <ScalarProperty Name="BookedDateTime" ColumnName="BookedDateTime" />
+                <ScalarProperty Name="ReceivedByID" ColumnName="ReceivedByID" />
+                <ScalarProperty Name="ReceivedByDateTime" ColumnName="ReceivedByDateTime" />
+                <ScalarProperty Name="DispatchedByID" ColumnName="DispatchedByID" />
+                <ScalarProperty Name="DispatchedDateTime" ColumnName="DispatchedDateTime" />
+                <ScalarProperty Name="FinalStatusByID" ColumnName="FinalStatusByID" />
+                <ScalarProperty Name="FinalStatusDateTIme" ColumnName="FinalStatusDateTIme" />
+                <ScalarProperty Name="BranchRiderID" ColumnName="BranchRiderID" />
+                <ScalarProperty Name="PartialRejectAmount" ColumnName="PartialRejectAmount" />
+                <ScalarProperty Name="PartialRejectComment" ColumnName="PartialRejectComment" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+                <ScalarProperty Name="CancelAgentID" ColumnName="CancelAgentID" />
+                <ScalarProperty Name="CancelComment" ColumnName="CancelComment" />
+                <ScalarProperty Name="BranchLock" ColumnName="BranchLock" />
+                <ScalarProperty Name="takeAway" ColumnName="takeAway" />
+                <ScalarProperty Name="ServiceCharges" ColumnName="ServiceCharges" />
+                <ScalarProperty Name="timeRequired" ColumnName="timeRequired" />
+                <ScalarProperty Name="OrderThrough" ColumnName="OrderThrough" />
+                <ScalarProperty Name="Complaints" ColumnName="Complaints" />
+                <ScalarProperty Name="isModified" ColumnName="isModified" />
+                <ScalarProperty Name="modifiedDate" ColumnName="modifiedDate" />
+                <ScalarProperty Name="modifiedBy" ColumnName="modifiedBy" />
+                <ScalarProperty Name="ComplaintComments" ColumnName="ComplaintComments" />
+                <ScalarProperty Name="ComplaintCategory" ColumnName="ComplaintCategory" />
+                <ScalarProperty Name="ComplaintStatus" ColumnName="ComplaintStatus" />
+                <ScalarProperty Name="ComplaintStatusBy" ColumnName="ComplaintStatusBy" />
+                <ScalarProperty Name="ComplaintStatusDateTIme" ColumnName="ComplaintStatusDateTIme" />
+                <ScalarProperty Name="AddressDisable" ColumnName="AddressDisable" />
+                <ScalarProperty Name="DonationAmount" ColumnName="DonationAmount" />
+                <ScalarProperty Name="TempStatus" ColumnName="TempStatus" />
+                <ScalarProperty Name="ItemDetailArray" ColumnName="ItemDetailArray" />
+                <ScalarProperty Name="CIN" ColumnName="CIN" />
+                <ScalarProperty Name="Discount" ColumnName="Discount" />
+                <ScalarProperty Name="VoucherNo" ColumnName="VoucherNo" />
+                <ScalarProperty Name="cancelOrderTempCommnet" ColumnName="cancelOrderTempCommnet" />
+                <ScalarProperty Name="cancelOrderTempReason" ColumnName="cancelOrderTempReason" />
+                <ScalarProperty Name="isAccept" ColumnName="isAccept" />
+                <ScalarProperty Name="regionID" ColumnName="regionID" />
+                <ScalarProperty Name="OrderCity" ColumnName="OrderCity" />
+                <ScalarProperty Name="isAssigned" ColumnName="isAssigned" />
+                <ScalarProperty Name="cancelStatus" ColumnName="cancelStatus" />
+                <ScalarProperty Name="confirmCancelAgentID" ColumnName="confirmCancelAgentID" />
+                <ScalarProperty Name="confirmCancelDate" ColumnName="confirmCancelDate" />
+                <ScalarProperty Name="cancelOrderTempCommnetForward" ColumnName="cancelOrderTempCommnetForward" />
+                <ScalarProperty Name="cancelOrderTempReasonForward" ColumnName="cancelOrderTempReasonForward" />
+                <ScalarProperty Name="API_Response" ColumnName="API_Response" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="voucherName" ColumnName="voucherName" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="voucherAmount" ColumnName="voucherAmount" />
+                <ScalarProperty Name="FB_API_ResponseTime" ColumnName="FB_API_ResponseTime" />
+                <ScalarProperty Name="onlineTransactionDetails" ColumnName="onlineTransactionDetails" />
+                <ScalarProperty Name="isPickup" ColumnName="isPickup" />
+                <ScalarProperty Name="isBranchAccept" ColumnName="isBranchAccept" />
+                <ScalarProperty Name="branchAcceptStatus" ColumnName="branchAcceptStatus" />
+                <ScalarProperty Name="branchNotAcceptReason" ColumnName="branchNotAcceptReason" />
+                <ScalarProperty Name="acceptStatusBy" ColumnName="acceptStatusBy" />
+                <ScalarProperty Name="acceptStatusAt" ColumnName="acceptStatusAt" />
+                <ScalarProperty Name="isThroughApp" ColumnName="isThroughApp" />
+                <ScalarProperty Name="lat" ColumnName="lat" />
+                <ScalarProperty Name="lon" ColumnName="lon" />
+                <ScalarProperty Name="OrderType" ColumnName="OrderType" />
+                <ScalarProperty Name="fpToken" ColumnName="fpToken" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Proc_IsOrderExistByCIN_New" FunctionName="KFC_PortalModel.Store.Proc_IsOrderExistByCIN_New" />
+          <FunctionImportMapping FunctionImportName="Proc_SaveFoodPandaOrderTemp_New" FunctionName="KFC_PortalModel.Store.Proc_SaveFoodPandaOrderTemp_New" />
+          <EntitySetMapping Name="Menus">
+            <EntityTypeMapping TypeName="KFC_PortalModel.Menu">
+              <MappingFragment StoreEntitySet="Menu">
+                <ScalarProperty Name="pos_itemCode" ColumnName="pos_itemCode" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="MidnightTime" ColumnName="MidnightTime" />
+                <ScalarProperty Name="IsMidnight" ColumnName="IsMidnight" />
+                <ScalarProperty Name="isDisabledTemp" ColumnName="isDisabledTemp" />
+                <ScalarProperty Name="isDisabled" ColumnName="isDisabled" />
+                <ScalarProperty Name="barcodeFP" ColumnName="barcodeFP" />
+                <ScalarProperty Name="barcode" ColumnName="barcode" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+                <ScalarProperty Name="RecStatusID" ColumnName="RecStatusID" />
+                <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+                <ScalarProperty Name="ModifiedByID" ColumnName="ModifiedByID" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="MenuPrice" ColumnName="MenuPrice" />
+                <ScalarProperty Name="GST" ColumnName="GST" />
+                <ScalarProperty Name="GrossPrice" ColumnName="GrossPrice" />
+                <ScalarProperty Name="FamilyMeasureID" ColumnName="FamilyMeasureID" />
+                <ScalarProperty Name="MenuItemID" ColumnName="MenuItemID" />
+                <ScalarProperty Name="FamilyID" ColumnName="FamilyID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Proc_SaveOrderDetailTemp" FunctionName="KFC_PortalModel.Store.Proc_SaveOrderDetailTemp" />
+          <EntitySetMapping Name="FpAcknowledgementQueues">
+            <EntityTypeMapping TypeName="KFC_PortalModel.FpAcknowledgementQueue">
+              <MappingFragment StoreEntitySet="FpAcknowledgementQueue">
+                <ScalarProperty Name="AccessToken" ColumnName="AccessToken" />
+                <ScalarProperty Name="nooftries" ColumnName="nooftries" />
+                <ScalarProperty Name="Response" ColumnName="Response" />
+                <ScalarProperty Name="TotalProcessingTime" ColumnName="TotalProcessingTime" />
+                <ScalarProperty Name="ProcessingEndTime" ColumnName="ProcessingEndTime" />
+                <ScalarProperty Name="ProcessingStartTime" ColumnName="ProcessingStartTime" />
+                <ScalarProperty Name="ud" ColumnName="ud" />
+                <ScalarProperty Name="token" ColumnName="token" />
+                <ScalarProperty Name="cd" ColumnName="cd" />
+                <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+                <ScalarProperty Name="DeliveryOrderIdTemp" ColumnName="DeliveryOrderIdTemp" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="proc_InsertCustomerTemp" FunctionName="KFC_PortalModel.Store.proc_InsertCustomerTemp" />
+          <FunctionImportMapping FunctionImportName="Proc_addDynamicPosQueue" FunctionName="KFC_PortalModel.Store.Proc_addDynamicPosQueue" />
+          <EntitySetMapping Name="Branches">
+            <EntityTypeMapping TypeName="KFC_PortalModel.Branch">
+              <MappingFragment StoreEntitySet="Branch">
+                <ScalarProperty Name="EnabledForFPAutoAcceptance" ColumnName="EnabledForFPAutoAcceptance" />
+                <ScalarProperty Name="DynamicPosRegionId" ColumnName="DynamicPosRegionId" />
+                <ScalarProperty Name="isTaxWorkingEnabled" ColumnName="isTaxWorkingEnabled" />
+                <ScalarProperty Name="PCTCode" ColumnName="PCTCode" />
+                <ScalarProperty Name="TokenFBR" ColumnName="TokenFBR" />
+                <ScalarProperty Name="CodeFBR" ColumnName="CodeFBR" />
+                <ScalarProperty Name="BranchNameFBR" ColumnName="BranchNameFBR" />
+                <ScalarProperty Name="IdentNoFBR" ColumnName="IdentNoFBR" />
+                <ScalarProperty Name="POSID" ColumnName="POSID" />
+                <ScalarProperty Name="CreditTaxRate" ColumnName="CreditTaxRate" />
+                <ScalarProperty Name="CashTaxRate" ColumnName="CashTaxRate" />
+                <ScalarProperty Name="TaxRate" ColumnName="TaxRate" />
+                <ScalarProperty Name="TaxAuthority" ColumnName="TaxAuthority" />
+                <ScalarProperty Name="updatePaymentMode" ColumnName="updatePaymentMode" />
+                <ScalarProperty Name="PickupClosingSun" ColumnName="PickupClosingSun" />
+                <ScalarProperty Name="PickupClosingSat" ColumnName="PickupClosingSat" />
+                <ScalarProperty Name="PickupClosingFri" ColumnName="PickupClosingFri" />
+                <ScalarProperty Name="PickupClosingThu" ColumnName="PickupClosingThu" />
+                <ScalarProperty Name="PickupClosingWed" ColumnName="PickupClosingWed" />
+                <ScalarProperty Name="PickupClosingTue" ColumnName="PickupClosingTue" />
+                <ScalarProperty Name="PickupClosingMon" ColumnName="PickupClosingMon" />
+                <ScalarProperty Name="simplexEnabled" ColumnName="simplexEnabled" />
+                <ScalarProperty Name="orderAssignTime" ColumnName="orderAssignTime" />
+                <ScalarProperty Name="orderLimit" ColumnName="orderLimit" />
+                <ScalarProperty Name="autoAssignDistacne" ColumnName="autoAssignDistacne" />
+                <ScalarProperty Name="autoDispatchDistance" ColumnName="autoDispatchDistance" />
+                <ScalarProperty Name="OpeningSun" ColumnName="OpeningSun" />
+                <ScalarProperty Name="OpeningSat" ColumnName="OpeningSat" />
+                <ScalarProperty Name="OpeningFri" ColumnName="OpeningFri" />
+                <ScalarProperty Name="OpeningThu" ColumnName="OpeningThu" />
+                <ScalarProperty Name="OpeningWed" ColumnName="OpeningWed" />
+                <ScalarProperty Name="OpeningTue" ColumnName="OpeningTue" />
+                <ScalarProperty Name="OpeningMon" ColumnName="OpeningMon" />
+                <ScalarProperty Name="creditcard" ColumnName="creditcard" />
+                <ScalarProperty Name="ServerName_P" ColumnName="ServerName_P" />
+                <ScalarProperty Name="posStoreNo_P" ColumnName="posStoreNo_P" />
+                <ScalarProperty Name="DatabaseName_P" ColumnName="DatabaseName_P" />
+                <ScalarProperty Name="serverPassword_P" ColumnName="serverPassword_P" />
+                <ScalarProperty Name="serverUsername_P" ColumnName="serverUsername_P" />
+                <ScalarProperty Name="Terminal_P" ColumnName="Terminal_P" />
+                <ScalarProperty Name="PolyGon" ColumnName="PolyGon" />
+                <ScalarProperty Name="EnabledForFPHero" ColumnName="EnabledForFPHero" />
+                <ScalarProperty Name="EnabledForVentureDive" ColumnName="EnabledForVentureDive" />
+                <ScalarProperty Name="IsStagingEnabled" ColumnName="IsStagingEnabled" />
+                <ScalarProperty Name="isDynamicPullEnabled" ColumnName="isDynamicPullEnabled" />
+                <ScalarProperty Name="DynamicApi" ColumnName="DynamicApi" />
+                <ScalarProperty Name="isWalletPasswordChanged" ColumnName="isWalletPasswordChanged" />
+                <ScalarProperty Name="walletPassword" ColumnName="walletPassword" />
+                <ScalarProperty Name="OpeningTime" ColumnName="OpeningTime" />
+                <ScalarProperty Name="isDynamicPosEnabled" ColumnName="isDynamicPosEnabled" />
+                <ScalarProperty Name="posStoreNo" ColumnName="posStoreNo" />
+                <ScalarProperty Name="foodPandaCode" ColumnName="foodPandaCode" />
+                <ScalarProperty Name="creditMode" ColumnName="creditMode" />
+                <ScalarProperty Name="serverPassword" ColumnName="serverPassword" />
+                <ScalarProperty Name="serverUsername" ColumnName="serverUsername" />
+                <ScalarProperty Name="Terminal" ColumnName="Terminal" />
+                <ScalarProperty Name="DatabaseName" ColumnName="DatabaseName" />
+                <ScalarProperty Name="ServerName" ColumnName="ServerName" />
+                <ScalarProperty Name="perKMRate" ColumnName="perKMRate" />
+                <ScalarProperty Name="isAutoDelivery" ColumnName="isAutoDelivery" />
+                <ScalarProperty Name="gesCode" ColumnName="gesCode" />
+                <ScalarProperty Name="isEnabledForRiderApp" ColumnName="isEnabledForRiderApp" />
+                <ScalarProperty Name="FoodPandaBranchId" ColumnName="FoodPandaBranchId" />
+                <ScalarProperty Name="MidnightTime" ColumnName="MidnightTime" />
+                <ScalarProperty Name="Tax" ColumnName="Tax" />
+                <ScalarProperty Name="ClosingSun" ColumnName="ClosingSun" />
+                <ScalarProperty Name="ClosingSat" ColumnName="ClosingSat" />
+                <ScalarProperty Name="ClosingFri" ColumnName="ClosingFri" />
+                <ScalarProperty Name="ClosingThu" ColumnName="ClosingThu" />
+                <ScalarProperty Name="ClosingWed" ColumnName="ClosingWed" />
+                <ScalarProperty Name="ClosingTue" ColumnName="ClosingTue" />
+                <ScalarProperty Name="ClosingMon" ColumnName="ClosingMon" />
+                <ScalarProperty Name="Lon" ColumnName="Lon" />
+                <ScalarProperty Name="Lat" ColumnName="Lat" />
+                <ScalarProperty Name="DeliveryArea" ColumnName="DeliveryArea" />
+                <ScalarProperty Name="addressDT" ColumnName="addressDT" />
+                <ScalarProperty Name="locationIdDT" ColumnName="locationIdDT" />
+                <ScalarProperty Name="ConcernCallCenter" ColumnName="ConcernCallCenter" />
+                <ScalarProperty Name="SupplyChainTeam" ColumnName="SupplyChainTeam" />
+                <ScalarProperty Name="SupplyChainManager" ColumnName="SupplyChainManager" />
+                <ScalarProperty Name="ClosingTime" ColumnName="ClosingTime" />
+                <ScalarProperty Name="extReasons" ColumnName="extReasons" />
+                <ScalarProperty Name="statusReasons" ColumnName="statusReasons" />
+                <ScalarProperty Name="tempStatus" ColumnName="tempStatus" />
+                <ScalarProperty Name="bStatus" ColumnName="bStatus" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="TimeExtension" ColumnName="TimeExtension" />
+                <ScalarProperty Name="ManagerCC" ColumnName="ManagerCC" />
+                <ScalarProperty Name="DeliveryHead" ColumnName="DeliveryHead" />
+                <ScalarProperty Name="AsstManagerDelivery" ColumnName="AsstManagerDelivery" />
+                <ScalarProperty Name="BusniessHead" ColumnName="BusniessHead" />
+                <ScalarProperty Name="AreaCoach" ColumnName="AreaCoach" />
+                <ScalarProperty Name="RGM" ColumnName="RGM" />
+                <ScalarProperty Name="Branch_Code" ColumnName="Branch_Code" />
+                <ScalarProperty Name="BranchID_Old" ColumnName="BranchID_Old" />
+                <ScalarProperty Name="regionID" ColumnName="regionID" />
+                <ScalarProperty Name="Branch_Name" ColumnName="Branch_Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="foodPandaDeliveryBranches">
+            <EntityTypeMapping TypeName="KFC_PortalModel.foodPandaDeliveryBranch">
+              <MappingFragment StoreEntitySet="foodPandaDeliveryBranch">
+                <ScalarProperty Name="branchId" ColumnName="branchId" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Proc_LogFPAPICall" FunctionName="KFC_PortalModel.Store.Proc_LogFPAPICall" />
+          <FunctionImportMapping FunctionImportName="Proc_ReceiveFoodPandaOrderOnBranch" FunctionName="KFC_PortalModel.Store.Proc_ReceiveFoodPandaOrderOnBranch" />
+          <FunctionImportMapping FunctionImportName="Proc_SaveFoodPandaOrderTemp_New_One" FunctionName="KFC_PortalModel.Store.Proc_SaveFoodPandaOrderTemp_New_One" />
+          <EntitySetMapping Name="FoodPandaPayloads">
+            <EntityTypeMapping TypeName="KFC_PortalModel.FoodPandaPayload">
+              <MappingFragment StoreEntitySet="FoodPandaPayload">
+                <ScalarProperty Name="orderNo" ColumnName="orderNo" />
+                <ScalarProperty Name="apiType" ColumnName="apiType" />
+                <ScalarProperty Name="ServerIP" ColumnName="ServerIP" />
+                <ScalarProperty Name="response" ColumnName="response" />
+                <ScalarProperty Name="totalDuration" ColumnName="totalDuration" />
+                <ScalarProperty Name="requestEndTime" ColumnName="requestEndTime" />
+                <ScalarProperty Name="requestStartTime" ColumnName="requestStartTime" />
+                <ScalarProperty Name="branchId" ColumnName="branchId" />
+                <ScalarProperty Name="cd" ColumnName="cd" />
+                <ScalarProperty Name="Payload" ColumnName="Payload" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="Proc_SaveOrderDetailTemp_FP" FunctionName="KFC_PortalModel.Store.Proc_SaveOrderDetailTemp_FP" />
+          <FunctionImportMapping FunctionImportName="Proc_getAPI_forTax" FunctionName="KFC_PortalModel.Store.Proc_getAPI_forTax">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KFC_PortalModel.Proc_getAPI_forTax_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="FBR_API_LINK" ColumnName="FBR_API_LINK" />
+                <ScalarProperty Name="BRA_API_LINK" ColumnName="BRA_API_LINK" />
+                <ScalarProperty Name="OtherLink" ColumnName="OtherLink" />
+                <ScalarProperty Name="TestLink" ColumnName="TestLink" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="proc_getBranchDetailsbyIDforSimplex" FunctionName="KFC_PortalModel.Store.proc_getBranchDetailsbyIDforSimplex">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KFC_PortalModel.proc_getBranchDetailsbyIDforSimplex_Result">
+                <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Branch_Name" ColumnName="Branch_Name" />
+                <ScalarProperty Name="regionID" ColumnName="regionID" />
+                <ScalarProperty Name="BranchID_Old" ColumnName="BranchID_Old" />
+                <ScalarProperty Name="Branch_Code" ColumnName="Branch_Code" />
+                <ScalarProperty Name="RGM" ColumnName="RGM" />
+                <ScalarProperty Name="AreaCoach" ColumnName="AreaCoach" />
+                <ScalarProperty Name="BusniessHead" ColumnName="BusniessHead" />
+                <ScalarProperty Name="AsstManagerDelivery" ColumnName="AsstManagerDelivery" />
+                <ScalarProperty Name="DeliveryHead" ColumnName="DeliveryHead" />
+                <ScalarProperty Name="ManagerCC" ColumnName="ManagerCC" />
+                <ScalarProperty Name="TimeExtension" ColumnName="TimeExtension" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="bStatus" ColumnName="bStatus" />
+                <ScalarProperty Name="tempStatus" ColumnName="tempStatus" />
+                <ScalarProperty Name="statusReasons" ColumnName="statusReasons" />
+                <ScalarProperty Name="extReasons" ColumnName="extReasons" />
+                <ScalarProperty Name="ClosingTime" ColumnName="ClosingTime" />
+                <ScalarProperty Name="SupplyChainManager" ColumnName="SupplyChainManager" />
+                <ScalarProperty Name="SupplyChainTeam" ColumnName="SupplyChainTeam" />
+                <ScalarProperty Name="ConcernCallCenter" ColumnName="ConcernCallCenter" />
+                <ScalarProperty Name="locationIdDT" ColumnName="locationIdDT" />
+                <ScalarProperty Name="addressDT" ColumnName="addressDT" />
+                <ScalarProperty Name="DeliveryArea" ColumnName="DeliveryArea" />
+                <ScalarProperty Name="Lat" ColumnName="Lat" />
+                <ScalarProperty Name="Lon" ColumnName="Lon" />
+                <ScalarProperty Name="ClosingMon" ColumnName="ClosingMon" />
+                <ScalarProperty Name="ClosingTue" ColumnName="ClosingTue" />
+                <ScalarProperty Name="ClosingWed" ColumnName="ClosingWed" />
+                <ScalarProperty Name="ClosingThu" ColumnName="ClosingThu" />
+                <ScalarProperty Name="ClosingFri" ColumnName="ClosingFri" />
+                <ScalarProperty Name="ClosingSat" ColumnName="ClosingSat" />
+                <ScalarProperty Name="ClosingSun" ColumnName="ClosingSun" />
+                <ScalarProperty Name="Tax" ColumnName="Tax" />
+                <ScalarProperty Name="MidnightTime" ColumnName="MidnightTime" />
+                <ScalarProperty Name="FoodPandaBranchId" ColumnName="FoodPandaBranchId" />
+                <ScalarProperty Name="isEnabledForRiderApp" ColumnName="isEnabledForRiderApp" />
+                <ScalarProperty Name="gesCode" ColumnName="gesCode" />
+                <ScalarProperty Name="isAutoDelivery" ColumnName="isAutoDelivery" />
+                <ScalarProperty Name="perKMRate" ColumnName="perKMRate" />
+                <ScalarProperty Name="ServerName" ColumnName="ServerName" />
+                <ScalarProperty Name="DatabaseName" ColumnName="DatabaseName" />
+                <ScalarProperty Name="Terminal" ColumnName="Terminal" />
+                <ScalarProperty Name="serverUsername" ColumnName="serverUsername" />
+                <ScalarProperty Name="serverPassword" ColumnName="serverPassword" />
+                <ScalarProperty Name="creditMode" ColumnName="creditMode" />
+                <ScalarProperty Name="foodPandaCode" ColumnName="foodPandaCode" />
+                <ScalarProperty Name="posStoreNo" ColumnName="posStoreNo" />
+                <ScalarProperty Name="isDynamicPosEnabled" ColumnName="isDynamicPosEnabled" />
+                <ScalarProperty Name="OpeningTime" ColumnName="OpeningTime" />
+                <ScalarProperty Name="walletPassword" ColumnName="walletPassword" />
+                <ScalarProperty Name="isWalletPasswordChanged" ColumnName="isWalletPasswordChanged" />
+                <ScalarProperty Name="DynamicApi" ColumnName="DynamicApi" />
+                <ScalarProperty Name="isDynamicPullEnabled" ColumnName="isDynamicPullEnabled" />
+                <ScalarProperty Name="IsStagingEnabled" ColumnName="IsStagingEnabled" />
+                <ScalarProperty Name="EnabledForVentureDive" ColumnName="EnabledForVentureDive" />
+                <ScalarProperty Name="EnabledForFPHero" ColumnName="EnabledForFPHero" />
+                <ScalarProperty Name="PolyGon" ColumnName="PolyGon" />
+                <ScalarProperty Name="Terminal_P" ColumnName="Terminal_P" />
+                <ScalarProperty Name="serverUsername_P" ColumnName="serverUsername_P" />
+                <ScalarProperty Name="serverPassword_P" ColumnName="serverPassword_P" />
+                <ScalarProperty Name="DatabaseName_P" ColumnName="DatabaseName_P" />
+                <ScalarProperty Name="posStoreNo_P" ColumnName="posStoreNo_P" />
+                <ScalarProperty Name="ServerName_P" ColumnName="ServerName_P" />
+                <ScalarProperty Name="creditcard" ColumnName="creditcard" />
+                <ScalarProperty Name="OpeningMon" ColumnName="OpeningMon" />
+                <ScalarProperty Name="OpeningTue" ColumnName="OpeningTue" />
+                <ScalarProperty Name="OpeningWed" ColumnName="OpeningWed" />
+                <ScalarProperty Name="OpeningThu" ColumnName="OpeningThu" />
+                <ScalarProperty Name="OpeningFri" ColumnName="OpeningFri" />
+                <ScalarProperty Name="OpeningSat" ColumnName="OpeningSat" />
+                <ScalarProperty Name="OpeningSun" ColumnName="OpeningSun" />
+                <ScalarProperty Name="autoDispatchDistance" ColumnName="autoDispatchDistance" />
+                <ScalarProperty Name="autoAssignDistacne" ColumnName="autoAssignDistacne" />
+                <ScalarProperty Name="orderLimit" ColumnName="orderLimit" />
+                <ScalarProperty Name="orderAssignTime" ColumnName="orderAssignTime" />
+                <ScalarProperty Name="simplexEnabled" ColumnName="simplexEnabled" />
+                <ScalarProperty Name="PickupClosingMon" ColumnName="PickupClosingMon" />
+                <ScalarProperty Name="PickupClosingTue" ColumnName="PickupClosingTue" />
+                <ScalarProperty Name="PickupClosingWed" ColumnName="PickupClosingWed" />
+                <ScalarProperty Name="PickupClosingThu" ColumnName="PickupClosingThu" />
+                <ScalarProperty Name="PickupClosingFri" ColumnName="PickupClosingFri" />
+                <ScalarProperty Name="PickupClosingSat" ColumnName="PickupClosingSat" />
+                <ScalarProperty Name="PickupClosingSun" ColumnName="PickupClosingSun" />
+                <ScalarProperty Name="updatePaymentMode" ColumnName="updatePaymentMode" />
+                <ScalarProperty Name="TaxAuthority" ColumnName="TaxAuthority" />
+                <ScalarProperty Name="TaxRate" ColumnName="TaxRate" />
+                <ScalarProperty Name="CashTaxRate" ColumnName="CashTaxRate" />
+                <ScalarProperty Name="CreditTaxRate" ColumnName="CreditTaxRate" />
+                <ScalarProperty Name="POSID" ColumnName="POSID" />
+                <ScalarProperty Name="IdentNoFBR" ColumnName="IdentNoFBR" />
+                <ScalarProperty Name="BranchNameFBR" ColumnName="BranchNameFBR" />
+                <ScalarProperty Name="CodeFBR" ColumnName="CodeFBR" />
+                <ScalarProperty Name="TokenFBR" ColumnName="TokenFBR" />
+                <ScalarProperty Name="PCTCode" ColumnName="PCTCode" />
+                <ScalarProperty Name="isTaxWorkingEnabled" ColumnName="isTaxWorkingEnabled" />
+                <ScalarProperty Name="DynamicPosRegionId" ColumnName="DynamicPosRegionId" />
+                <ScalarProperty Name="EnabledForFPAutoAcceptance" ColumnName="EnabledForFPAutoAcceptance" />
+                <ScalarProperty Name="email2" ColumnName="email2" />
+                <ScalarProperty Name="locationTitle" ColumnName="locationTitle" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Proc_getOrderDetail" FunctionName="KFC_PortalModel.Store.Proc_getOrderDetail">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KFC_PortalModel.Proc_getOrderDetail_Result">
+                <ScalarProperty Name="DeliveryOrderDetailID" ColumnName="DeliveryOrderDetailID" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="IsWithCheze" ColumnName="IsWithCheze" />
+                <ScalarProperty Name="IsDrinkUpsize" ColumnName="IsDrinkUpsize" />
+                <ScalarProperty Name="MenuItemID" ColumnName="MenuItemID" />
+                <ScalarProperty Name="FamilyID" ColumnName="FamilyID" />
+                <ScalarProperty Name="MenuPrice" ColumnName="MenuPrice" />
+                <ScalarProperty Name="Instruction" ColumnName="Instruction" />
+                <ScalarProperty Name="IsFrenchFriesUpSize" ColumnName="IsFrenchFriesUpSize" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="pos_itemCode" ColumnName="pos_itemCode" />
+                <ScalarProperty Name="newpos_itemCode" ColumnName="newpos_itemCode" />
+                <ScalarProperty Name="FMTitle" ColumnName="FMTitle" />
+                <ScalarProperty Name="MenuFamilyMeasureID" ColumnName="MenuFamilyMeasureID" />
+                <ScalarProperty Name="realMenuPrice" ColumnName="realMenuPrice" />
+                <ScalarProperty Name="MFTitle" ColumnName="MFTitle" />
+                <ScalarProperty Name="TaxPercentageFBR" ColumnName="TaxPercentageFBR" />
+                <ScalarProperty Name="FBR_BRA_InvNo" ColumnName="FBR_BRA_InvNo" />
+                <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+                <ScalarProperty Name="CashTaxRate" ColumnName="CashTaxRate" />
+                <ScalarProperty Name="CreditTaxRate" ColumnName="CreditTaxRate" />
+                <ScalarProperty Name="isTaxWorkingEnabled" ColumnName="isTaxWorkingEnabled" />
+                <ScalarProperty Name="OrderThrough" ColumnName="OrderThrough" />
+                <ScalarProperty Name="ServiceChargesCreditOrdersForTax" ColumnName="ServiceChargesCreditOrdersForTax" />
+                <ScalarProperty Name="ServiceChargesExclusiveofTax" ColumnName="ServiceChargesExclusiveofTax" />
+                <ScalarProperty Name="ServiceChargesTaxCharged" ColumnName="ServiceChargesTaxCharged" />
+                <ScalarProperty Name="ItemTotalAmountforTax" ColumnName="ItemTotalAmountforTax" />
+                <ScalarProperty Name="ItemAmountExcofTax" ColumnName="ItemAmountExcofTax" />
+                <ScalarProperty Name="ItemTaxRate" ColumnName="ItemTaxRate" />
+                <ScalarProperty Name="ItemTaxCharged" ColumnName="ItemTaxCharged" />
+                <ScalarProperty Name="ServiceCharges" ColumnName="ServiceCharges" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Proc_insertFBRActivityLog" FunctionName="KFC_PortalModel.Store.Proc_insertFBRActivityLog" />
+          <FunctionImportMapping FunctionImportName="Proc_insertFBRInvoiceNumber" FunctionName="KFC_PortalModel.Store.Proc_insertFBRInvoiceNumber" />
+          <FunctionImportMapping FunctionImportName="Proc_insertFBRNewOrderDetails" FunctionName="KFC_PortalModel.Store.Proc_insertFBRNewOrderDetails" />
+          <FunctionImportMapping FunctionImportName="Proc_updateOrderDetailsforItemTaxDetails" FunctionName="KFC_PortalModel.Store.Proc_updateOrderDetailsforItemTaxDetails" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

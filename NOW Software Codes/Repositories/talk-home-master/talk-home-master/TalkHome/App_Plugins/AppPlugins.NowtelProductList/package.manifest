@@ -1,0 +1,19 @@
+{
+  propertyEditors: [
+    {
+      alias: "AppPlugins.NowtelProductList",
+      name: "Nowtel Product list",
+      editor: {
+        view: "~/App_Plugins/AppPlugins.NowtelProductList/nowtelproductlist.html",
+        valueType: "STRING"
+      }
+    }
+  ]
+  ,
+  javascript: [
+    '~/App_Plugins/AppPlugins.NowtelProductList/nowtelproductlist.controller.js'
+  ],
+  css: [
+    '~/App_Plugins/css/plugins.css'
+  ]
+}

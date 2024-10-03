@@ -1,0 +1,66 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TalkHome.Log.Properties" GeneratedClassName="Zabbix">
+  <Profiles />
+  <Settings>
+    <Setting Name="Host" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">TalkHome</Value>
+    </Setting>
+    <Setting Name="DebugExePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">zabbix\zabbix_sender.exe</Value>
+    </Setting>
+    <Setting Name="Ip" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">172.24.0.224</Value>
+    </Setting>
+    <Setting Name="ReleaseExePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\</Value>
+    </Setting>
+    <Setting Name="CriticalSeverity" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">critical.severity</Value>
+    </Setting>
+    <Setting Name="InfoSeverity" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">info.severity</Value>
+    </Setting>
+    <Setting Name="CorruptedAppTopUpUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">App top up page request had a corrupted Url</Value>
+    </Setting>
+    <Setting Name="AppUserNotFound" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">App  Msisdn account not found</Value>
+    </Setting>
+    <Setting Name="AppUserNotVerifiedAtCheckout" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">App Msisdn account not found at checkout</Value>
+    </Setting>
+    <Setting Name="CorruptedAddBundleUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">App bundle purchase request had a corrupted Url</Value>
+    </Setting>
+    <Setting Name="AppBundleNotFound" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">App bundle not found at checkout</Value>
+    </Setting>
+    <Setting Name="EmptyAppBasket" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">App empty basket at checkout</Value>
+    </Setting>
+    <Setting Name="GetMiPayCustomerFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Get customer call failed</Value>
+    </Setting>
+    <Setting Name="WebApiLoginRequestFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Login endpoint failed to respond</Value>
+    </Setting>
+    <Setting Name="SignatureVerificationException" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">An invalid JWT signature was detected</Value>
+    </Setting>
+    <Setting Name="StartPaymentFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">App start payment call failed</Value>
+    </Setting>
+    <Setting Name="RetrievePaymentFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Retrieve payment call failed</Value>
+    </Setting>
+    <Setting Name="NumberVerificationFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Number verification failed to respond</Value>
+    </Setting>
+    <Setting Name="MailOrderRequestFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Mail order request failed to respond</Value>
+    </Setting>
+    <Setting Name="TransactionRecord" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">transaction.record</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

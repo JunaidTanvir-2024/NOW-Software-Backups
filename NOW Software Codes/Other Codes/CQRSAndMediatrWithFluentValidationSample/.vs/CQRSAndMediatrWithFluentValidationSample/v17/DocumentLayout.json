@@ -1,0 +1,189 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B234C8ED-A8A9-4230-ABEB-C594CA7859F8}|CQRSAndMediatrWithFluentValidationSampleApplication\\CQRSAndMediatrWithFluentValidationSampleApplication.csproj|c:\\users\\junai\\downloads\\cqrsandmediatrwithfluentvalidationsample\\cqrsandmediatrwithfluentvalidationsampleapplication\\product\\pipeline\\loggingbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B234C8ED-A8A9-4230-ABEB-C594CA7859F8}|CQRSAndMediatrWithFluentValidationSampleApplication\\CQRSAndMediatrWithFluentValidationSampleApplication.csproj|solutionrelative:cqrsandmediatrwithfluentvalidationsampleapplication\\product\\pipeline\\loggingbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B234C8ED-A8A9-4230-ABEB-C594CA7859F8}|CQRSAndMediatrWithFluentValidationSampleApplication\\CQRSAndMediatrWithFluentValidationSampleApplication.csproj|c:\\users\\junai\\downloads\\cqrsandmediatrwithfluentvalidationsample\\cqrsandmediatrwithfluentvalidationsampleapplication\\product\\pipeline\\validationbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B234C8ED-A8A9-4230-ABEB-C594CA7859F8}|CQRSAndMediatrWithFluentValidationSampleApplication\\CQRSAndMediatrWithFluentValidationSampleApplication.csproj|solutionrelative:cqrsandmediatrwithfluentvalidationsampleapplication\\product\\pipeline\\validationbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC3F651-E743-43A1-A85A-C19F3D1B9AB0}|CQRSAndMediatrWithFluentValidationSampleApi\\CQRSAndMediatrWithFluentValidationSampleApi.csproj|c:\\users\\junai\\downloads\\cqrsandmediatrwithfluentvalidationsample\\cqrsandmediatrwithfluentvalidationsampleapi\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEC3F651-E743-43A1-A85A-C19F3D1B9AB0}|CQRSAndMediatrWithFluentValidationSampleApi\\CQRSAndMediatrWithFluentValidationSampleApi.csproj|solutionrelative:cqrsandmediatrwithfluentvalidationsampleapi\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B234C8ED-A8A9-4230-ABEB-C594CA7859F8}|CQRSAndMediatrWithFluentValidationSampleApplication\\CQRSAndMediatrWithFluentValidationSampleApplication.csproj|c:\\users\\junai\\downloads\\cqrsandmediatrwithfluentvalidationsample\\cqrsandmediatrwithfluentvalidationsampleapplication\\product\\productmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B234C8ED-A8A9-4230-ABEB-C594CA7859F8}|CQRSAndMediatrWithFluentValidationSampleApplication\\CQRSAndMediatrWithFluentValidationSampleApplication.csproj|solutionrelative:cqrsandmediatrwithfluentvalidationsampleapplication\\product\\productmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B234C8ED-A8A9-4230-ABEB-C594CA7859F8}|CQRSAndMediatrWithFluentValidationSampleApplication\\CQRSAndMediatrWithFluentValidationSampleApplication.csproj|c:\\users\\junai\\downloads\\cqrsandmediatrwithfluentvalidationsample\\cqrsandmediatrwithfluentvalidationsampleapplication\\product\\validator\\addorupdateproductcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B234C8ED-A8A9-4230-ABEB-C594CA7859F8}|CQRSAndMediatrWithFluentValidationSampleApplication\\CQRSAndMediatrWithFluentValidationSampleApplication.csproj|solutionrelative:cqrsandmediatrwithfluentvalidationsampleapplication\\product\\validator\\addorupdateproductcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC3F651-E743-43A1-A85A-C19F3D1B9AB0}|CQRSAndMediatrWithFluentValidationSampleApi\\CQRSAndMediatrWithFluentValidationSampleApi.csproj|c:\\users\\junai\\downloads\\cqrsandmediatrwithfluentvalidationsample\\cqrsandmediatrwithfluentvalidationsampleapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEC3F651-E743-43A1-A85A-C19F3D1B9AB0}|CQRSAndMediatrWithFluentValidationSampleApi\\CQRSAndMediatrWithFluentValidationSampleApi.csproj|solutionrelative:cqrsandmediatrwithfluentvalidationsampleapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC3F651-E743-43A1-A85A-C19F3D1B9AB0}|CQRSAndMediatrWithFluentValidationSampleApi\\CQRSAndMediatrWithFluentValidationSampleApi.csproj|c:\\users\\junai\\downloads\\cqrsandmediatrwithfluentvalidationsample\\cqrsandmediatrwithfluentvalidationsampleapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEC3F651-E743-43A1-A85A-C19F3D1B9AB0}|CQRSAndMediatrWithFluentValidationSampleApi\\CQRSAndMediatrWithFluentValidationSampleApi.csproj|solutionrelative:cqrsandmediatrwithfluentvalidationsampleapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B234C8ED-A8A9-4230-ABEB-C594CA7859F8}|CQRSAndMediatrWithFluentValidationSampleApplication\\CQRSAndMediatrWithFluentValidationSampleApplication.csproj|c:\\users\\junai\\downloads\\cqrsandmediatrwithfluentvalidationsample\\cqrsandmediatrwithfluentvalidationsampleapplication\\product\\query\\getproductquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B234C8ED-A8A9-4230-ABEB-C594CA7859F8}|CQRSAndMediatrWithFluentValidationSampleApplication\\CQRSAndMediatrWithFluentValidationSampleApplication.csproj|solutionrelative:cqrsandmediatrwithfluentvalidationsampleapplication\\product\\query\\getproductquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B234C8ED-A8A9-4230-ABEB-C594CA7859F8}|CQRSAndMediatrWithFluentValidationSampleApplication\\CQRSAndMediatrWithFluentValidationSampleApplication.csproj|c:\\users\\junai\\downloads\\cqrsandmediatrwithfluentvalidationsample\\cqrsandmediatrwithfluentvalidationsampleapplication\\product\\data\\productsinmemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B234C8ED-A8A9-4230-ABEB-C594CA7859F8}|CQRSAndMediatrWithFluentValidationSampleApplication\\CQRSAndMediatrWithFluentValidationSampleApplication.csproj|solutionrelative:cqrsandmediatrwithfluentvalidationsampleapplication\\product\\data\\productsinmemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApi\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "CQRSAndMediatrWithFluentValidationSampleApi\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApi\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "CQRSAndMediatrWithFluentValidationSampleApi\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAADwvygAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:24:02.588Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddOrUpdateProductCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Validator\\AddOrUpdateProductCommandValidator.cs",
+              "RelativeDocumentMoniker": "CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Validator\\AddOrUpdateProductCommandValidator.cs",
+              "ToolTip": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Validator\\AddOrUpdateProductCommandValidator.cs",
+              "RelativeToolTip": "CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Validator\\AddOrUpdateProductCommandValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T11:22:00.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoggingBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Pipeline\\LoggingBehaviour.cs",
+              "RelativeDocumentMoniker": "CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Pipeline\\LoggingBehaviour.cs",
+              "ToolTip": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Pipeline\\LoggingBehaviour.cs",
+              "RelativeToolTip": "CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Pipeline\\LoggingBehaviour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:41:54.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApi\\Program.cs",
+              "RelativeDocumentMoniker": "CQRSAndMediatrWithFluentValidationSampleApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApi\\Program.cs",
+              "RelativeToolTip": "CQRSAndMediatrWithFluentValidationSampleApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:26:12.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetProductQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Query\\GetProductQuery.cs",
+              "RelativeDocumentMoniker": "CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Query\\GetProductQuery.cs",
+              "ToolTip": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Query\\GetProductQuery.cs",
+              "RelativeToolTip": "CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Query\\GetProductQuery.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAcwCcAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:26:04.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApi\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "CQRSAndMediatrWithFluentValidationSampleApi\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApi\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "CQRSAndMediatrWithFluentValidationSampleApi\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAswBkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:26:04.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ValidationBehaviour.cs",
+              "DocumentMoniker": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Pipeline\\ValidationBehaviour.cs",
+              "RelativeDocumentMoniker": "CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Pipeline\\ValidationBehaviour.cs",
+              "ToolTip": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Pipeline\\ValidationBehaviour.cs",
+              "RelativeToolTip": "CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Pipeline\\ValidationBehaviour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAywAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:25:52.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductModule.cs",
+              "DocumentMoniker": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\ProductModule.cs",
+              "RelativeDocumentMoniker": "CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\ProductModule.cs",
+              "ToolTip": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\ProductModule.cs",
+              "RelativeToolTip": "CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\ProductModule.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:25:15.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductsInMemory.cs",
+              "DocumentMoniker": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Data\\ProductsInMemory.cs",
+              "RelativeDocumentMoniker": "CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Data\\ProductsInMemory.cs",
+              "ToolTip": "C:\\Users\\Junai\\Downloads\\CQRSAndMediatrWithFluentValidationSample\\CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Data\\ProductsInMemory.cs",
+              "RelativeToolTip": "CQRSAndMediatrWithFluentValidationSampleApplication\\Product\\Data\\ProductsInMemory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T09:24:20.026Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

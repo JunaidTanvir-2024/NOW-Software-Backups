@@ -1,0 +1,42 @@
+USE fusion_hub3
+DECLARE @total_pages INT,
+        @total_records INT,
+		@myProductFilter  product_filters;
+
+
+		INSERT @myProductFilter
+		(
+		    country_iso_code,
+		    currency_code,
+		    calling_code,
+		    validity_unit,
+		    operator_id,
+		    product_id,
+		    product_category_id,
+		    product_alias_name,
+		    operator_name,
+		    product_subcategory_name
+		)
+		VALUES
+		(   'us', -- country_iso_code - nvarchar(2)
+		    'usd', -- currency_code - nvarchar(50)
+		    NULL, -- calling_code - smallint
+		    NULL, -- validity_unit - nvarchar(100)
+		    NULL, -- operator_id - bigint
+		    NULL, -- product_id - bigint
+		    NULL, -- product_category_id - bigint
+		    NULL, -- product_alias_name - nvarchar(250)
+		    NULL, -- operator_name - nvarchar(150)
+		    NULL  -- product_subcategory_name - nvarchar(150)
+		    )
+
+
+EXEC dbo.fh_product_get @filters = @myProductFilter,                       -- product_filters
+                        @is_active = 1,                     -- bit
+                        @is_deleted = 0,                    -- bit
+                        @page = 1,                             -- int
+                        @records_per_page = 2000,                 -- int
+                        @total_pages = @total_pages OUTPUT,    -- int
+                        @total_records = @total_records OUTPUT -- int
+
+SELECT @total_records[TotalRecords],@total_pages [TotalPages]

@@ -1,0 +1,140 @@
+ALTER PROC dbo.fh_product_get
+  (
+  @filters product_filters READONLY,
+
+  @is_active BIT,
+  @is_deleted BIT,
+  @page AS INT,
+  @records_per_page AS INT,
+  @total_pages AS INT OUTPUT,
+  @total_records AS INT OUTPUT
+)
+
+AS
+BEGIN
+
+  DECLARE @getCountryIsoCode AS VARCHAR(50),
+		 @getCurrencyCode AS VARCHAR(50),
+		 @getCallingCode AS SMALLINT,
+		 @getProductValidtiy AS NVARCHAR(50),
+		 @getOperatorId AS NVARCHAR(50),
+		 @getProductid AS BIGINT,
+		 @getproductCategoryId AS BIGINT,
+		 @getproductAliasName AS [nvarchar] (250),
+		 @getproductOperatorName AS [nvarchar] (150),
+		 @getProductSubCategoryName AS [nvarchar] (150)
+
+
+  SET @getCountryIsoCode = (SELECT [country_iso_code]
+  FROM @filters)
+  SET @getCurrencyCode =  (SELECT [currency_code]
+  FROM @filters)
+  SET @getCallingCode =  (SELECT [calling_code]
+  FROM @filters)
+  SET @getProductValidtiy = (SELECT [validity_unit]
+  FROM @filters)
+  SET @getOperatorId = (SELECT [operator_id]
+  FROM @filters)
+  SET @getProductid = (SELECT [product_id]
+  FROM @filters)
+  SET @getproductCategoryId = (SELECT [product_category_id]
+  FROM @filters)
+  SET @getproductAliasName = (SELECT [product_alias_name]
+  FROM @filters)
+  SET @getproductOperatorName = (SELECT [operator_name]
+  FROM @filters)
+  SET @getProductSubCategoryName = (SELECT [product_subcategory_name]
+  FROM @filters)
+
+  SELECT @total_pages = CEILING(COUNT(*) / (CAST(@records_per_page AS FLOAT))), @total_records =COUNT(*)
+  FROM dbo.product p
+  WHERE p.is_active = @is_active
+    AND p.is_deleted = @is_deleted;
+
+  SELECT p.product_id AS [ProductId],
+    p.name AS [ProductName],
+    p.name_alias AS [ProductAliasName],
+    p.description AS [Description],
+
+    p.validity_unit AS [ValidityUnit],
+    p.validity_value AS [ValidityValue],
+    p.vendor_product_code AS [VendorProductCode],
+    --  concat('https://operator-logo.dtone.com/logo-',p.vendor_operator_code,'-1.png') AS [VendorProductCode],
+    p.vendor_operator_code AS [VendorOperatorCode],
+    concat ('https://operator-logo.dtone.com/logo-',p.vendor_operator_code,'-1.png') AS [Logo],
+    p.product_type AS [ProductType],
+
+    c.name AS [CountryName],
+    c.iso_code2 AS [CountryIsoCode2],
+    c.iso_code3 AS [CountryIsoCode3],
+    c.continent AS [Continent],
+    c.calling_code AS [CallingCode],
+
+    op.name AS [OperatorName],
+    op.name_alias AS [OperatorAliasName],
+    op.short_code AS [OperatorShortCode],
+    op.description AS [OperatorDescription],
+
+    cu.name AS [CurrencyName],
+    cu.code AS [CurrencyCode],
+    cu.is_default AS [CurrencyIsDefault],
+
+    pc.name AS [CategoryName],
+    pc.description AS [CategoryDescription],
+
+    psc.name AS [SubCategoryName],
+    psc. description AS [SubCategoryDescription],
+
+    --  v.name AS [VendorName],
+    p.name AS [VendorName],
+    v.description AS [VendorDescription],
+
+    pp.price AS [SellingPrice],
+    pp.tax AS [Tax],
+    pp.fee AS [Fee],
+    pp.range_min_price AS [MaxPrice],
+    pp.range_max_price AS [MinPrice],
+
+    (
+        SELECT pb.unit AS [Unit],
+      pb.unit_type AS [UnitType],
+      pb.benefit_type AS [BenefitType],
+	  pb.description AS [BenefitDescription],
+      pb.benefit_with_tax AS [BenefitWithTax],
+      pb.benefit_without_tax AS [BenefitWithoutTax]
+
+    FROM dbo.product_benefit pb
+    WHERE pb.product_id = p.product_id
+    FOR JSON PATH
+) AS ProductBenefitsJson
+
+
+  FROM dbo.product p
+    INNER JOIN dbo.operator op ON op.operator_id = p.operator_id
+    INNER JOIN dbo.country c ON c.country_id = op.country_id
+    INNER JOIN dbo.currency_unit cu ON cu.currency_unit_id = p.currency_unit_id
+    INNER JOIN dbo.vendor v ON v.vendor_id = p.vendor_id
+    LEFT JOIN dbo.product_price pp ON p.product_id = pp.product_price_id
+    INNER JOIN dbo.product_category pc ON pc.product_category_id = p.product_category_id
+    INNER JOIN dbo.product_subcategory psc ON psc.product_category_id = pc.product_category_id
+
+  WHERE
+			  p.is_active = 1
+    AND p.is_deleted = 0
+    AND ( @getCountryIsoCode IS NULL OR c.iso_code2 = @getCountryIsoCode )
+    AND (@getCallingCode IS NULL OR c.calling_code = @getCallingCode )
+    AND (@getCurrencyCode IS NULL OR cu.code = @getCurrencyCode)
+    AND (@getProductValidtiy IS NULL OR p.validity_unit = @getProductValidtiy )
+    AND (@getOperatorId IS NULL OR op.operator_id = @getOperatorId )
+    AND (@getProductid IS NULL OR p.product_id = @getProductid )
+    AND (@getproductCategoryId IS NULL OR pc.product_category_id = @getproductCategoryId )
+    AND (@getproductAliasName IS NULL OR p.name_alias = @getproductAliasName)
+    AND (@getproductOperatorName IS NULL OR op.short_code = @getproductOperatorName)
+    AND (@getProductSubCategoryName IS NULL OR psc.short_code = @getProductSubCategoryName)
+  ORDER BY p.product_id OFFSET (@page - 1) * @records_per_page ROWS FETCH NEXT @records_per_page ROWS ONLY;
+
+END;
+GO
+
+
+

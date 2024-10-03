@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="App_help_link_0" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="App_help_link_1" xml:space="preserve">
+    <value>Conditions Générales</value>
+  </data>
+  <data name="App_help_link_2" xml:space="preserve">
+    <value>Politique de Confidentialité</value>
+  </data>
+  <data name="Button_0" xml:space="preserve">
+    <value>Recharger</value>
+  </data>
+  <data name="Button_1" xml:space="preserve">
+    <value>Recharger en utilisant PayPal</value>
+  </data>
+  <data name="Button_2" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Button_3" xml:space="preserve">
+    <value>Continuer</value>
+  </data>
+  <data name="Button_4" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="Button_5" xml:space="preserve">
+    <value>Arrière</value>
+  </data>
+  <data name="Button_apply_voucher" xml:space="preserve">
+    <value>Apply voucher</value>
+  </data>
+  <data name="Button_make_payment" xml:space="preserve">
+    <value>Make payment</value>
+  </data>
+  <data name="Charset" xml:space="preserve">
+    <value>utf-8</value>
+  </data>
+  <data name="Form_label_0" xml:space="preserve">
+    <value>Bon d'achat</value>
+  </data>
+  <data name="Form_label_1" xml:space="preserve">
+    <value>J'accepte les termes et conditions</value>
+  </data>
+  <data name="Form_label_10" xml:space="preserve">
+    <value>Confirmez votre e-mail</value>
+  </data>
+  <data name="Form_label_11" xml:space="preserve">
+    <value>Adresse (ligne 1)</value>
+  </data>
+  <data name="Form_label_12" xml:space="preserve">
+    <value>Adresse (ligne 2)</value>
+  </data>
+  <data name="Form_label_13" xml:space="preserve">
+    <value>Ville</value>
+  </data>
+  <data name="Form_label_14" xml:space="preserve">
+    <value>Département/État</value>
+  </data>
+  <data name="Form_label_15" xml:space="preserve">
+    <value>Code postal</value>
+  </data>
+  <data name="Form_label_16" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="Form_label_17" xml:space="preserve">
+    <value>Type de carte</value>
+  </data>
+  <data name="Form_label_18" xml:space="preserve">
+    <value>Numéro de carte</value>
+  </data>
+  <data name="Form_label_19" xml:space="preserve">
+    <value>Nom sur la carte</value>
+  </data>
+  <data name="Form_label_20" xml:space="preserve">
+    <value>Code de sécurité</value>
+  </data>
+  <data name="Form_label_21" xml:space="preserve">
+    <value>Numéro de série</value>
+  </data>
+  <data name="Form_label_22" xml:space="preserve">
+    <value>Date de début</value>
+  </data>
+  <data name="Form_label_23" xml:space="preserve">
+    <value>Date d'expiration</value>
+  </data>
+  <data name="Form_label_24" xml:space="preserve">
+    <value>Mois</value>
+  </data>
+  <data name="Form_label_25" xml:space="preserve">
+    <value>Année</value>
+  </data>
+  <data name="Form_label_7" xml:space="preserve">
+    <value>Prénom</value>
+  </data>
+  <data name="Form_label_8" xml:space="preserve">
+    <value>Nom de famille</value>
+  </data>
+  <data name="Form_label_9" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Label_add_credit" xml:space="preserve">
+    <value>Ajouter du crédit</value>
+  </data>
+  <data name="Label_add_voucher" xml:space="preserve">
+    <value>Ajouter une recharge</value>
+  </data>
+  <data name="Label_select_option" xml:space="preserve">
+    <value>Sélectionnez une option de recharge</value>
+  </data>
+  <data name="Message_0" xml:space="preserve">
+    <value>Une erreur est survenue lors de la vérification de votre compte. Retournez à l'écran d'accueil, puis essayez à nouveau. Si le problème persiste, veuillez contacter notre service à la clientèle.</value>
+  </data>
+  <data name="Message_1" xml:space="preserve">
+    <value>Votre transaction a été annulée.</value>
+  </data>
+  <data name="Message_10" xml:space="preserve">
+    <value>Votre carte a été autorisée et nous avons bien reçu votre paiement. Vous allez recevoir très bientôt un e-mail confirmant votre achat et contenant le numéro de référence de la transaction. Merci pour votre achat.</value>
+  </data>
+  <data name="Message_101" xml:space="preserve">
+    <value>You have reached the maximum number of bundles for your subscription</value>
+  </data>
+  <data name="Message_12" xml:space="preserve">
+    <value>Un problème est survenu pendant l’établissement de la connexion/la réception de la réponse. Veuillez contacter notre Service client.</value>
+  </data>
+  <data name="Message_13" xml:space="preserve">
+    <value>La création du relevé de transactions a échoué.</value>
+  </data>
+  <data name="Message_14" xml:space="preserve">
+    <value>Votre transaction a réussi. Une erreur est survenue pendant que nous tentions de recharger votre compte. Notre administrateur système en a été averti et le crédit sera ajouté à votre compte très prochainement.</value>
+  </data>
+  <data name="Message_15" xml:space="preserve">
+    <value>Un problème est survenu pendant l’établissement de la connexion/la réception de la réponse. Veuillez contacter notre Service client.</value>
+  </data>
+  <data name="Message_16" xml:space="preserve">
+    <value>La validation sécurisée en 3D a échoué.</value>
+  </data>
+  <data name="Message_17" xml:space="preserve">
+    <value>Un problème est survenu pendant l’établissement de la connexion/la réception de la réponse. Veuillez contacter notre Service client.</value>
+  </data>
+  <data name="Message_18" xml:space="preserve">
+    <value>La validation de votre envoi a échoué.</value>
+  </data>
+  <data name="Message_19" xml:space="preserve">
+    <value>Une erreur de serveur interne est survenue.</value>
+  </data>
+  <data name="Message_2" xml:space="preserve">
+    <value>Votre transaction a été annulée pour des raisons de sécurité car la procédure de recharge a été inactive pendant un certain temps.</value>
+  </data>
+  <data name="Message_3" xml:space="preserve">
+    <value>Votre compte a été crédité avec succès de la somme de €1.</value>
+  </data>
+  <data name="Message_4" xml:space="preserve">
+    <value>Nous avons été incapables de recharger votre compte. Veuillez réessayer plus tard.</value>
+  </data>
+  <data name="Message_5" xml:space="preserve">
+    <value>Cette recharge n'est pas reconnue.</value>
+  </data>
+  <data name="Message_6" xml:space="preserve">
+    <value>Nous avons été incapables de recharger votre compte. Veuillez essayer de nouveau ou contacter le service à la clientèle.</value>
+  </data>
+  <data name="Message_601" xml:space="preserve">
+    <value>Le paiement n'a pas été autorisé</value>
+  </data>
+  <data name="Message_7" xml:space="preserve">
+    <value>Cette recharge a expiré.</value>
+  </data>
+  <data name="Message_783" xml:space="preserve">
+    <value>Le renouvellement automatique a été configuré avec succès</value>
+  </data>
+  <data name="Message_784" xml:space="preserve">
+    <value>L'utilisateur a dépassé les commandes SIM pour ce compte. Veuillez contacter le service clientèle si vous avez besoin d'une autre carte SIM</value>
+  </data>
+  <data name="Message_785" xml:space="preserve">
+    <value>Crédit insuffisant pour ajouter ce produit au panier. Commander avec les produits du panier actuel</value>
+  </data>
+  <data name="Message_786" xml:space="preserve">
+    <value>Crédit insuffisant sur votre compte mobile pour effectuer le transfert.</value>
+  </data>
+  <data name="Message_787" xml:space="preserve">
+    <value>The email addresses do no match</value>
+  </data>
+  <data name="Message_8" xml:space="preserve">
+    <value>Cette recharge est non valide.</value>
+  </data>
+  <data name="Message_9" xml:space="preserve">
+    <value>Une erreur est survenue pendant que nous tentions de traiter votre paiement. Veuillez réessayer ; si le problème persiste, contactez notre Service client.</value>
+  </data>
+  <data name="Message_994" xml:space="preserve">
+    <value>You entered an invalid post code. Please try again</value>
+  </data>
+  <data name="Message_995" xml:space="preserve">
+    <value>Please contact customer services to validate the account for this PIN</value>
+  </data>
+</root>

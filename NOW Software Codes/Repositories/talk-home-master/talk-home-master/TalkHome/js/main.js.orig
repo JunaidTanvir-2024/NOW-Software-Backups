@@ -1,0 +1,366 @@
+/**
+ * JS entry point for the website.
+ * Initialises JS AMD modules based on a comma-separated list of module names found on every HTML tag with the attribute 
+ * `data-js-module`.
+ * 
+ * @author micheled
+ * Created on 12.07.2017
+ * 
+ */
+'use strict';
+$(document).ready(function() {
+
+    var modules = '',
+        breakPoint = 960,
+        width = $(document).width();
+    
+    function InitialiseJSModulesOnPage () {
+        $('[data-js-module]').each(function () {
+            modules += ($(this).attr('data-js-module').split(',')) + ','; // Add to the comma-separated string
+        });
+
+        var modulesArr = modules.split(','); // Create the array of modules name
+
+        for (var i = 0, max = modulesArr.length; i < max; i++) {
+            var module = modulesArr[i];
+            window[module]; // Create a new global object using the module name (aka initiliase it)
+        }
+    }
+
+    InitialiseJSModulesOnPage(); // Initialise JS modules found by scanning [data-js-modules] attributes
+
+    // Most basic url parser
+    // All Credits to https://gist.github.com/jlong/2428561
+    // parser.protocol; => "http:"
+    // parser.hostname; => "example.com"
+    // parser.port;     => "3000"
+    // parser.pathname; => "/pathname/"
+    // parser.search;   => "?search=test"
+    // parser.hash;     => "#hash"
+    // parser.host;     => "example.com:30
+    //var parser = document.createElement('a');
+    //parser.href = window.location.href;
+    //var paths = parser.pathname.split("/"); // close enough to C# fragments
+    var parser = document.createElement('a');
+    parser.href = window.location.href;
+    var hrefLocationPath = parser.pathname;
+
+    if (hrefLocationPath.indexOf("/") > 0) {
+        hrefLocationPath = "/" + hrefLocationPath;
+    }
+    var paths = hrefLocationPath.split("/"); // close enough to C# fragments
+
+    console.log(paths);
+    
+    // UI for menus
+
+    // Show the main menu
+
+    var menu = new Menu;
+    $('.anchor').each(function () {
+        if ($(this).attr('data-child-id') === paths[1]) {
+            menu.showMenu($(this));
+        }
+    });
+
+    // Sets menu links to active
+    $('.main-menu').find('a').each(function () {
+        if ($(this).attr('href') === hrefLocationPath)
+            $(this).addClass('active');
+    });
+
+    // apply background class to hovered authenticate menu `Hi ...` link
+    $('.user-menu .authorised').mouseenter(function () {
+        $(this).addClass('active');
+    });
+    $('.user-menu .authorised').mouseleave(function () {
+        $(this).removeClass('active');
+    });
+    $('.ham').click(function () {
+        $('#menuBackground').toggle();
+        $(this).toggleClass('active');
+        $('#mainMenu').slideToggle();
+    });
+
+    // Initialise Rates
+    new Rates;
+
+    // Smooth scrolling
+    $('a[href^="#"]').on('click', function (e) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            e.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+
+    // Drop down divs
+    $('[data-dropdown=true]').click(function () {
+        if ($(this).hasClass('active') == true) {
+            $('[data-dropdown=true]').removeClass('active').find('.answer.active').slideUp(500);
+            $('[data-dropdown=true]').removeClass('active').next('.answer.active').slideUp(500);
+        } else {
+            $('[data-dropdown=true]').removeClass('active').find('.answer.active').slideUp(0);
+            $('[data-dropdown=true]').removeClass('active').next('.answer.active').slideUp(0);
+            $(this).addClass('active').find('.answer').addClass('active').slideDown(500);
+            $(this).addClass('active').next('.answer').addClass('active').slideDown(500);
+        }  
+    });
+    $('#showMore').click(function () {
+        $('[data-show-more=true]').slideDown(250);
+    });
+    // My Account mobile dropdown product select
+    $('#myAccountSelect').change(function () {
+        $(this).find('option').each(function () {
+            if ($(this).is(':selected'))
+                window.location.href = $(this).attr('data-href');
+        });
+    });
+
+    // Register product selection form
+    if ($('#registerProduct').length > 0) {
+        $('[name=productCode]').change(function () {
+            $('#selectionForm').submit();
+        });
+    }
+
+
+    function hidePopUps() {
+        $('.bundle-description').each(function () {
+            $(this).slideUp();
+        });
+
+        $('.sms-help-pop').each(function () {
+            $(this).slideUp();
+        
+        });
+    }
+
+    //Help pop ups
+    $(".more-info").on("click", function (e) {
+        hidePopUps();
+     
+        var p = $(this).parent().parent().find(".bundle-description");
+
+        if ($("#TopProducts").length == 0) {
+            p.css({ left: 400 });
+            p.css({ top: -140 });
+        }
+        else {
+            p.css({ left: 110 });
+            p.css({ top: 20 });
+        }
+        
+        p.fadeIn();
+
+        $(this).parent().parent().parent().find(".close-description").on("click", function (event) {
+            $(this).closest(".bundle-description").slideUp();
+            event.stopPropagation();
+        });
+    });
+
+    $(".purchase-sms-code").on("click", function (event) {
+        hidePopUps();
+        var p = $(this).parent().parent().find(".sms-help-pop");
+
+        if ($("#TopProducts").length == 0) {
+            p.css({ left: 790 });
+            p.css({ top: -140 });
+        }
+        else {
+            p.css({ left: 110 });
+            p.css({ top: 190 });
+        }
+        
+        p.fadeIn();
+
+        $(this).parent().parent().parent().find(".sms-close-description").on("click", function (event) {
+            $(this).closest(".sms-help-pop").slideUp();
+            event.stopPropagation();
+        });
+    });
+
+
+    //Google tags
+
+    $("#SimOrderButton").on("click", function () {
+        var lbl = "sim_order: " + $("#EmailAddress").val();
+        gtag('event', 'purchase', {
+            'event_category': 'ecommerce',
+            'event_label': lbl
+        });
+    })
+
+    if ($("#notification .alert").length > 0) {
+        var lbl = "sim_order_validation: " + $("#EmailAddress").val();
+        gtag('event', 'purchase', {
+            'event_category': 'ecommerce',
+            'event_label': lbl
+        });
+        var vl = $("#notification .alert").text();
+
+        gtag('event', 'exception', {
+            'event_category': 'description',
+            'event_label': vl
+        });
+    }
+
+
+
+    $(".cta-container a").on("click", function (e) {
+        var l = $(this).attr("href");
+        gtag('event', 'cta', {
+            'origin': 'button',
+            'event_label': l
+        });
+    });
+
+    $("#mainMenu a").on("click", function (e) {
+        var l = $(this).attr("href");
+        gtag('event', 'cta', {
+            'origin': 'menu',
+            'event_label': l
+        });
+    });
+
+    $(".destinations").on("change", function () {
+        var d = $(this).val();
+        gtag('event', 'select_content', {
+            'origin': 'destination',
+            'event_label': d
+        });
+    })
+
+    $(".iphone-app").on("click", function (e) {
+        var l = $(this).attr("href");
+        gtag('event', 'cta', {
+            'origin': 'button',
+            'event_label': 'friendzone iphone'
+        });
+    });
+
+
+    $(".google-play-app").on("click", function (e) {
+        var l = $(this).attr("href");
+        gtag('event', 'cta', {
+            'origin': 'button',
+            'event_label': 'friendzone google play'
+        });
+    });
+
+
+    $(".window-app").on("click", function (e) {
+        var l = $(this).attr("href");
+        gtag('event', 'cta', {
+            'origin': 'button',
+            'event_label': 'friendzone windows app'
+        });
+    });
+
+<<<<<<< HEAD
+/*
+    $(function () {
+        $(".meter > span").each(function () {
+            $(this)
+                .data("origWidth", $(this).width())
+                .width(0)
+                .animate({
+                    width: $(this).data("origWidth")
+                }, 1200);
+        });
+    });
+*/
+=======
+    });
+  
+     
+    // Clear out the Order SIM form 
+    if ($("#OrderSimForm").length > 0) {
+        $("form").get(0).reset();
+    }
+   
+
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        $(".bundle-visualizer").each(function () {
+            try{
+                var id = $(this).attr("id");
+                var remaining = Number($(this).data("remaining"));
+                var total = Number($(this).data("total"));
+                var pUsed = ((total - remaining) / total) * 100;
+                var pRemaining = (remaining / total) * 100;
+                var data = google.visualization.arrayToDataTable([
+                                          ['Usage', 'Amount'],
+                                          ['Used', pUsed],
+                                          ['Left', pRemaining]
+                ]);
+
+                var options = {
+                    pieHole: 0.5,
+                    pieSliceTextStyle: {
+                        color: 'black',
+                    },
+                    colors: ['#dd3912', '#252192']
+                };
+
+                var chart = new google.visualization.PieChart(document.getElementById(id));
+                chart.draw(data, options);
+            }
+            catch(e){
+                console.log("unable to render chart" + id);
+                $(this).hide();
+            }
+        });
+
+    }
+
+
+    $("#SimSwapCheck").on('change', function () {
+        var self = $(this);
+        if (self.is(":checked")) {
+            $("#SimSwap").val("on");
+        } else {
+            $("#SimSwap").val("off");
+        }
+    });
+
+
+
+    $(".auto-renew-checkbox").on('change', function () {
+        var isRenew = false;
+        var self = $(this);
+        if (self.is(":checked")) {
+            isRenew = true;  
+        }
+
+        var jdata = {
+            'msisdn': self.data("msidn"),
+            'productCode': self.data("productcode"),
+            'autoTopUp': isRenew,
+            'calling_packageid': self.data("guid")
+        };
+        var auto = self.closest('div').find('.autorenewerror');
+        $(auto).hide();
+        $.ajax({
+            type: "POST",
+            url: autoRenewUrl,
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(jdata),
+            dataType: "json",
+            success: function (recData) {},
+            error: function () {
+                $(auto).show();
+                $(self).prop("checked", false);
+            }
+        });
+
+>>>>>>> feature/ccratesopt
+
+});
+
+
+
+

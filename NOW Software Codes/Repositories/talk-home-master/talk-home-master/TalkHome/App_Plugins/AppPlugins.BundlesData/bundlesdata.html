@@ -1,0 +1,19 @@
+﻿<div class="app-plugin" ng-controller="AppPlugins.BundlesData">
+
+    <label for="data">Data</label>
+    <input 
+           id="data"
+           name="data"
+           pattern="[0-9]*"
+           class="umb-editor umb-number ng-pristine ng-valid ng-valid-number ng-valid-min"
+           fix-number=""
+           min="0"
+           max=""
+           step="0.5"
+           type="number"
+           ng-model="model.value.data" />
+        
+    <label for="unit">Unit</label>
+    <input type="text" id="unit" name="unit" ng-model="model.value.unit" />
+ 
+</div>

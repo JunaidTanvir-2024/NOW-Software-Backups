@@ -1,0 +1,32 @@
+{
+  "userName": "user1",
+  "email": "user1@gmail.com",
+  "passowrd": "123546aaAA++"
+}
+
+
+{
+  "userName": "user2",
+  "email": "user2@email.com",
+  "password": "123456AAaa++"
+}
+
+SC-Email
+{
+  "email": "Junaid@gmail.com",
+  "password": "Junaid123*"
+}
+
+
+123546aaAA++
+
+
+SENDERSERVICE
+CALLBACKHUB
+PAYMENTHUB
+
+**94508630**!!**
+dppy tsgp wrsp fklf
+
+
+FluentMigrator libraray for DB

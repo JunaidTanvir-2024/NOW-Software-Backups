@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TalkHome.WebServices.Properties" GeneratedClassName="Hosts">
+  <Profiles />
+  <Settings>
+    <Setting Name="LabPayment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://api.payment.talkhome.co.uk</Value>
+    </Setting>
+    <Setting Name="ProdPayment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://api.payment.talkhome.co.uk</Value>
+    </Setting>
+    <Setting Name="AddressIo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://api.getaddress.io/find</Value>
+    </Setting>
+    <Setting Name="IpInfo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://ipinfo.io</Value>
+    </Setting>
+    <Setting Name="ProdAppApi" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://api.talkhomeapp.com</Value>
+    </Setting>
+    <Setting Name="LabAppApi" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:7066</Value>
+    </Setting>
+    <Setting Name="ProdWebApi" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:7066</Value>
+    </Setting>
+    <Setting Name="LabWebApi" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:7066</Value>
+    </Setting>
+    <Setting Name="LabThmApi" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2222</Value>
+    </Setting>
+    <Setting Name="ProdThmApi" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2222</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

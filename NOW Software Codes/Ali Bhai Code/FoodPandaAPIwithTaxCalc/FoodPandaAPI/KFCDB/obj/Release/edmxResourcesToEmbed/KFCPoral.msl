@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KFC_PortalModelStoreContainer" CdmEntityContainer="KFC_PortalEntities">
+    <EntitySetMapping Name="DeliveryOrders">
+      <EntityTypeMapping TypeName="KFC_PortalModel.DeliveryOrder">
+        <MappingFragment StoreEntitySet="DeliveryOrder">
+          <ScalarProperty Name="isTaxCalculatedFP" ColumnName="isTaxCalculatedFP" />
+          <ScalarProperty Name="ServiceChargesTaxCharged" ColumnName="ServiceChargesTaxCharged" />
+          <ScalarProperty Name="ServiceChargesExclusiveofTax" ColumnName="ServiceChargesExclusiveofTax" />
+          <ScalarProperty Name="ServiceChargesCreditOrdersForTax" ColumnName="ServiceChargesCreditOrdersForTax" />
+          <ScalarProperty Name="FlagPandaProVoucher_Partial" ColumnName="FlagPandaProVoucher_Partial" />
+          <ScalarProperty Name="TotalAmountExclusiveofTaxFBR" ColumnName="TotalAmountExclusiveofTaxFBR" />
+          <ScalarProperty Name="TaxAmountFBR" ColumnName="TaxAmountFBR" />
+          <ScalarProperty Name="TaxPercentageFBR" ColumnName="TaxPercentageFBR" />
+          <ScalarProperty Name="TotalDiscountFBR" ColumnName="TotalDiscountFBR" />
+          <ScalarProperty Name="TotalTaxCharged" ColumnName="TotalTaxCharged" />
+          <ScalarProperty Name="FBR_Reversal_InvNo" ColumnName="FBR_Reversal_InvNo" />
+          <ScalarProperty Name="FBR_BRA_InvNo" ColumnName="FBR_BRA_InvNo" />
+          <ScalarProperty Name="FPCancelationReason" ColumnName="FPCancelationReason" />
+          <ScalarProperty Name="CancelByKFCMiddelWear" ColumnName="CancelByKFCMiddelWear" />
+          <ScalarProperty Name="DeliveryOrderID" ColumnName="DeliveryOrderID" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="PromotionID" ColumnName="PromotionID" />
+          <ScalarProperty Name="HundredthOrderCount" ColumnName="HundredthOrderCount" />
+          <ScalarProperty Name="DeliveryAddress" ColumnName="DeliveryAddress" />
+          <ScalarProperty Name="Instruction" ColumnName="Instruction" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="BookedDateTime" ColumnName="BookedDateTime" />
+          <ScalarProperty Name="ReceivedByID" ColumnName="ReceivedByID" />
+          <ScalarProperty Name="ReceivedByDateTime" ColumnName="ReceivedByDateTime" />
+          <ScalarProperty Name="DispatchedByID" ColumnName="DispatchedByID" />
+          <ScalarProperty Name="DispatchedDateTime" ColumnName="DispatchedDateTime" />
+          <ScalarProperty Name="FinalStatusByID" ColumnName="FinalStatusByID" />
+          <ScalarProperty Name="FinalStatusDateTIme" ColumnName="FinalStatusDateTIme" />
+          <ScalarProperty Name="BranchRiderID" ColumnName="BranchRiderID" />
+          <ScalarProperty Name="PartialRejectAmount" ColumnName="PartialRejectAmount" />
+          <ScalarProperty Name="PartialRejectComment" ColumnName="PartialRejectComment" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="CancelAgentID" ColumnName="CancelAgentID" />
+          <ScalarProperty Name="CancelComment" ColumnName="CancelComment" />
+          <ScalarProperty Name="BranchLock" ColumnName="BranchLock" />
+          <ScalarProperty Name="takeAway" ColumnName="takeAway" />
+          <ScalarProperty Name="ServiceCharges" ColumnName="ServiceCharges" />
+          <ScalarProperty Name="timeRequired" ColumnName="timeRequired" />
+          <ScalarProperty Name="OrderThrough" ColumnName="OrderThrough" />
+          <ScalarProperty Name="Complaints" ColumnName="Complaints" />
+          <ScalarProperty Name="isModified" ColumnName="isModified" />
+          <ScalarProperty Name="modifiedDate" ColumnName="modifiedDate" />
+          <ScalarProperty Name="modifiedBy" ColumnName="modifiedBy" />
+          <ScalarProperty Name="ComplaintComments" ColumnName="ComplaintComments" />
+          <ScalarProperty Name="ComplaintCategory" ColumnName="ComplaintCategory" />
+          <ScalarProperty Name="ComplaintStatus" ColumnName="ComplaintStatus" />
+          <ScalarProperty Name="ComplaintStatusBy" ColumnName="ComplaintStatusBy" />
+          <ScalarProperty Name="ComplaintStatusDateTIme" ColumnName="ComplaintStatusDateTIme" />
+          <ScalarProperty Name="AddressDisable" ColumnName="AddressDisable" />
+          <ScalarProperty Name="DonationAmount" ColumnName="DonationAmount" />
+          <ScalarProperty Name="IsPusshToPOS" ColumnName="IsPusshToPOS" />
+          <ScalarProperty Name="deliverOnBranch" ColumnName="deliverOnBranch" />
+          <ScalarProperty Name="OfflineOrder" ColumnName="OfflineOrder" />
+          <ScalarProperty Name="DiscountPercent" ColumnName="DiscountPercent" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="DeliveryOrderIDTemp" ColumnName="DeliveryOrderIDTemp" />
+          <ScalarProperty Name="cancelCheckOnBranch" ColumnName="cancelCheckOnBranch" />
+          <ScalarProperty Name="customerAddressDisableComment" ColumnName="customerAddressDisableComment" />
+          <ScalarProperty Name="ConfirmRejectionComment" ColumnName="ConfirmRejectionComment" />
+          <ScalarProperty Name="isConfirmRejection" ColumnName="isConfirmRejection" />
+          <ScalarProperty Name="ConfirmRejectionBy" ColumnName="ConfirmRejectionBy" />
+          <ScalarProperty Name="ConfirmRejectionDate" ColumnName="ConfirmRejectionDate" />
+          <ScalarProperty Name="CLI" ColumnName="CLI" />
+          <ScalarProperty Name="SamsungRiderDate" ColumnName="SamsungRiderDate" />
+          <ScalarProperty Name="SamsungDeliveryDate" ColumnName="SamsungDeliveryDate" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="AppRiderId" ColumnName="AppRiderId" />
+          <ScalarProperty Name="AppOrderStatus" ColumnName="AppOrderStatus" />
+          <ScalarProperty Name="AppOrderStatusDate" ColumnName="AppOrderStatusDate" />
+          <ScalarProperty Name="AppRiderAssignDate" ColumnName="AppRiderAssignDate" />
+          <ScalarProperty Name="lat" ColumnName="lat" />
+          <ScalarProperty Name="lon" ColumnName="lon" />
+          <ScalarProperty Name="SamsungAPIResponse" ColumnName="SamsungAPIResponse" />
+          <ScalarProperty Name="isPushToSamsung" ColumnName="isPushToSamsung" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+          <ScalarProperty Name="rating2" ColumnName="rating2" />
+          <ScalarProperty Name="rating3" ColumnName="rating3" />
+          <ScalarProperty Name="ratingComment" ColumnName="ratingComment" />
+          <ScalarProperty Name="HowDoYouKnow" ColumnName="HowDoYouKnow" />
+          <ScalarProperty Name="DistanceByRider" ColumnName="DistanceByRider" />
+          <ScalarProperty Name="AutoTransfer" ColumnName="AutoTransfer" />
+          <ScalarProperty Name="isPushToRiderApp" ColumnName="isPushToRiderApp" />
+          <ScalarProperty Name="isPickup" ColumnName="isPickup" />
+          <ScalarProperty Name="reachedDateTime" ColumnName="reachedDateTime" />
+          <ScalarProperty Name="deliveryTime" ColumnName="deliveryTime" />
+          <ScalarProperty Name="dynamicApiResponseCreate" ColumnName="dynamicApiResponseCreate" />
+          <ScalarProperty Name="dynamicApiDateTime" ColumnName="dynamicApiDateTime" />
+          <ScalarProperty Name="dynamicApiResponseUpdate" ColumnName="dynamicApiResponseUpdate" />
+          <ScalarProperty Name="PaymentModeOld" ColumnName="PaymentModeOld" />
+          <ScalarProperty Name="isChargeToFoodPanda" ColumnName="isChargeToFoodPanda" />
+          <ScalarProperty Name="chargeToFoodPandaReason" ColumnName="chargeToFoodPandaReason" />
+          <ScalarProperty Name="isPaymentModeChange" ColumnName="isPaymentModeChange" />
+          <ScalarProperty Name="FPOrderId" ColumnName="FPOrderId" />
+          <ScalarProperty Name="NEW_TIME" ColumnName="NEW_TIME" />
+          <ScalarProperty Name="RECEIVED_TIME" ColumnName="RECEIVED_TIME" />
+          <ScalarProperty Name="WAITING_FOR_TRANSPORT_TIME" ColumnName="WAITING_FOR_TRANSPORT_TIME" />
+          <ScalarProperty Name="ASSIGNED_TO_TRANSPORT_TIME" ColumnName="ASSIGNED_TO_TRANSPORT_TIME" />
+          <ScalarProperty Name="COURIER_ACCEPTED_DELIVERY_TIME" ColumnName="COURIER_ACCEPTED_DELIVERY_TIME" />
+          <ScalarProperty Name="NEAR_VENDOR_TIME" ColumnName="NEAR_VENDOR_TIME" />
+          <ScalarProperty Name="PICKED_UP_TIME" ColumnName="PICKED_UP_TIME" />
+          <ScalarProperty Name="COURIER_LEFT_VENDOR_TIME" ColumnName="COURIER_LEFT_VENDOR_TIME" />
+          <ScalarProperty Name="NEAR_CUSTOMER_TIME" ColumnName="NEAR_CUSTOMER_TIME" />
+          <ScalarProperty Name="DELIVERED_TIME" ColumnName="DELIVERED_TIME" />
+          <ScalarProperty Name="DELAYED_TIME" ColumnName="DELAYED_TIME" />
+          <ScalarProperty Name="CANCELLED_TIME" ColumnName="CANCELLED_TIME" />
+          <ScalarProperty Name="fpAssignDatetime" ColumnName="fpAssignDatetime" />
+          <ScalarProperty Name="VentureDiveOrderId" ColumnName="VentureDiveOrderId" />
+          <ScalarProperty Name="cancelByKFC" ColumnName="cancelByKFC" />
+          <ScalarProperty Name="PaymentReversalId" ColumnName="PaymentReversalId" />
+          <ScalarProperty Name="ActionId" ColumnName="ActionId" />
+          <ScalarProperty Name="PaymentReversalAction" ColumnName="PaymentReversalAction" />
+          <ScalarProperty Name="PaymentReversalDateTime" ColumnName="PaymentReversalDateTime" />
+          <ScalarProperty Name="PaymentReversalCreateDate" ColumnName="PaymentReversalCreateDate" />
+          <ScalarProperty Name="ARN" ColumnName="ARN" />
+          <ScalarProperty Name="CancelDateTime" ColumnName="CancelDateTime" />
+          <ScalarProperty Name="isCancellationSMSSent" ColumnName="isCancellationSMSSent" />
+          <ScalarProperty Name="CanceledDateTime" ColumnName="CanceledDateTime" />
+          <ScalarProperty Name="RejectedDateTime" ColumnName="RejectedDateTime" />
+          <ScalarProperty Name="isthroughriderportal" ColumnName="isthroughriderportal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeliveryOrderDetails">
+      <EntityTypeMapping TypeName="KFC_PortalModel.DeliveryOrderDetail">
+        <MappingFragment StoreEntitySet="DeliveryOrderDetail">
+          <ScalarProperty Name="ServiceChargesTaxCharged" ColumnName="ServiceChargesTaxCharged" />
+          <ScalarProperty Name="ServiceChargesExclusiveofTax" ColumnName="ServiceChargesExclusiveofTax" />
+          <ScalarProperty Name="ServiceChargesCreditOrdersForTax" ColumnName="ServiceChargesCreditOrdersForTax" />
+          <ScalarProperty Name="ItemTaxCharged" ColumnName="ItemTaxCharged" />
+          <ScalarProperty Name="ItemTaxRate" ColumnName="ItemTaxRate" />
+          <ScalarProperty Name="ItemAmountExcofTax" ColumnName="ItemAmountExcofTax" />
+          <ScalarProperty Name="ItemTotalAmountforTax" ColumnName="ItemTotalAmountforTax" />
+          <ScalarProperty Name="instruction" ColumnName="instruction" />
+          <ScalarProperty Name="DeliveryOrderDetailID" ColumnName="DeliveryOrderDetailID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="FamilyID" ColumnName="FamilyID" />
+          <ScalarProperty Name="MenuItemID" ColumnName="MenuItemID" />
+          <ScalarProperty Name="MenuPrice" ColumnName="MenuPrice" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="IsWithCheze" ColumnName="IsWithCheze" />
+          <ScalarProperty Name="IsFrenchFriesUpSize" ColumnName="IsFrenchFriesUpSize" />
+          <ScalarProperty Name="IsDrinkUpsize" ColumnName="IsDrinkUpsize" />
+          <ScalarProperty Name="MenuFamilyMeasureID" ColumnName="MenuFamilyMeasureID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeliveryOrderTemps">
+      <EntityTypeMapping TypeName="KFC_PortalModel.DeliveryOrderTemp">
+        <MappingFragment StoreEntitySet="DeliveryOrderTemp">
+          <ScalarProperty Name="ServiceChargesTaxCharged" ColumnName="ServiceChargesTaxCharged" />
+          <ScalarProperty Name="ServiceChargesExclusiveofTax" ColumnName="ServiceChargesExclusiveofTax" />
+          <ScalarProperty Name="ServiceChargesCreditOrdersForTax" ColumnName="ServiceChargesCreditOrdersForTax" />
+          <ScalarProperty Name="TotalAmountExclusiveofTaxFBR" ColumnName="TotalAmountExclusiveofTaxFBR" />
+          <ScalarProperty Name="TaxAmountFBR" ColumnName="TaxAmountFBR" />
+          <ScalarProperty Name="TaxPercentageFBR" ColumnName="TaxPercentageFBR" />
+          <ScalarProperty Name="TotalTaxCharged" ColumnName="TotalTaxCharged" />
+          <ScalarProperty Name="FBR_BRA_InvNo" ColumnName="FBR_BRA_InvNo" />
+          <ScalarProperty Name="DeliveryOrderID" ColumnName="DeliveryOrderID" />
+          <ScalarProperty Name="OnlineDeleiveryOrderID" ColumnName="OnlineDeleiveryOrderID" />
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="PromotionID" ColumnName="PromotionID" />
+          <ScalarProperty Name="HundredthOrderCount" ColumnName="HundredthOrderCount" />
+          <ScalarProperty Name="DeliveryAddress" ColumnName="DeliveryAddress" />
+          <ScalarProperty Name="Instruction" ColumnName="Instruction" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="BookedDateTime" ColumnName="BookedDateTime" />
+          <ScalarProperty Name="ReceivedByID" ColumnName="ReceivedByID" />
+          <ScalarProperty Name="ReceivedByDateTime" ColumnName="ReceivedByDateTime" />
+          <ScalarProperty Name="DispatchedByID" ColumnName="DispatchedByID" />
+          <ScalarProperty Name="DispatchedDateTime" ColumnName="DispatchedDateTime" />
+          <ScalarProperty Name="FinalStatusByID" ColumnName="FinalStatusByID" />
+          <ScalarProperty Name="FinalStatusDateTIme" ColumnName="FinalStatusDateTIme" />
+          <ScalarProperty Name="BranchRiderID" ColumnName="BranchRiderID" />
+          <ScalarProperty Name="PartialRejectAmount" ColumnName="PartialRejectAmount" />
+          <ScalarProperty Name="PartialRejectComment" ColumnName="PartialRejectComment" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="CancelAgentID" ColumnName="CancelAgentID" />
+          <ScalarProperty Name="CancelComment" ColumnName="CancelComment" />
+          <ScalarProperty Name="BranchLock" ColumnName="BranchLock" />
+          <ScalarProperty Name="takeAway" ColumnName="takeAway" />
+          <ScalarProperty Name="ServiceCharges" ColumnName="ServiceCharges" />
+          <ScalarProperty Name="timeRequired" ColumnName="timeRequired" />
+          <ScalarProperty Name="OrderThrough" ColumnName="OrderThrough" />
+          <ScalarProperty Name="Complaints" ColumnName="Complaints" />
+          <ScalarProperty Name="isModified" ColumnName="isModified" />
+          <ScalarProperty Name="modifiedDate" ColumnName="modifiedDate" />
+          <ScalarProperty Name="modifiedBy" ColumnName="modifiedBy" />
+          <ScalarProperty Name="ComplaintComments" ColumnName="ComplaintComments" />
+          <ScalarProperty Name="ComplaintCategory" ColumnName="ComplaintCategory" />
+          <ScalarProperty Name="ComplaintStatus" ColumnName="ComplaintStatus" />
+          <ScalarProperty Name="ComplaintStatusBy" ColumnName="ComplaintStatusBy" />
+          <ScalarProperty Name="ComplaintStatusDateTIme" ColumnName="ComplaintStatusDateTIme" />
+          <ScalarProperty Name="AddressDisable" ColumnName="AddressDisable" />
+          <ScalarProperty Name="DonationAmount" ColumnName="DonationAmount" />
+          <ScalarProperty Name="TempStatus" ColumnName="TempStatus" />
+          <ScalarProperty Name="ItemDetailArray" ColumnName="ItemDetailArray" />
+          <ScalarProperty Name="CIN" ColumnName="CIN" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="VoucherNo" ColumnName="VoucherNo" />
+          <ScalarProperty Name="cancelOrderTempCommnet" ColumnName="cancelOrderTempCommnet" />
+          <ScalarProperty Name="cancelOrderTempReason" ColumnName="cancelOrderTempReason" />
+          <ScalarProperty Name="isAccept" ColumnName="isAccept" />
+          <ScalarProperty Name="regionID" ColumnName="regionID" />
+          <ScalarProperty Name="OrderCity" ColumnName="OrderCity" />
+          <ScalarProperty Name="isAssigned" ColumnName="isAssigned" />
+          <ScalarProperty Name="cancelStatus" ColumnName="cancelStatus" />
+          <ScalarProperty Name="confirmCancelAgentID" ColumnName="confirmCancelAgentID" />
+          <ScalarProperty Name="confirmCancelDate" ColumnName="confirmCancelDate" />
+          <ScalarProperty Name="cancelOrderTempCommnetForward" ColumnName="cancelOrderTempCommnetForward" />
+          <ScalarProperty Name="cancelOrderTempReasonForward" ColumnName="cancelOrderTempReasonForward" />
+          <ScalarProperty Name="API_Response" ColumnName="API_Response" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="voucherName" ColumnName="voucherName" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="voucherAmount" ColumnName="voucherAmount" />
+          <ScalarProperty Name="FB_API_ResponseTime" ColumnName="FB_API_ResponseTime" />
+          <ScalarProperty Name="onlineTransactionDetails" ColumnName="onlineTransactionDetails" />
+          <ScalarProperty Name="isPickup" ColumnName="isPickup" />
+          <ScalarProperty Name="isBranchAccept" ColumnName="isBranchAccept" />
+          <ScalarProperty Name="branchAcceptStatus" ColumnName="branchAcceptStatus" />
+          <ScalarProperty Name="branchNotAcceptReason" ColumnName="branchNotAcceptReason" />
+          <ScalarProperty Name="acceptStatusBy" ColumnName="acceptStatusBy" />
+          <ScalarProperty Name="acceptStatusAt" ColumnName="acceptStatusAt" />
+          <ScalarProperty Name="isThroughApp" ColumnName="isThroughApp" />
+          <ScalarProperty Name="lat" ColumnName="lat" />
+          <ScalarProperty Name="lon" ColumnName="lon" />
+          <ScalarProperty Name="OrderType" ColumnName="OrderType" />
+          <ScalarProperty Name="fpToken" ColumnName="fpToken" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Proc_IsOrderExistByCIN_New" FunctionName="KFC_PortalModel.Store.Proc_IsOrderExistByCIN_New" />
+    <FunctionImportMapping FunctionImportName="Proc_SaveFoodPandaOrderTemp_New" FunctionName="KFC_PortalModel.Store.Proc_SaveFoodPandaOrderTemp_New" />
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="KFC_PortalModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="pos_itemCode" ColumnName="pos_itemCode" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="MidnightTime" ColumnName="MidnightTime" />
+          <ScalarProperty Name="IsMidnight" ColumnName="IsMidnight" />
+          <ScalarProperty Name="isDisabledTemp" ColumnName="isDisabledTemp" />
+          <ScalarProperty Name="isDisabled" ColumnName="isDisabled" />
+          <ScalarProperty Name="barcodeFP" ColumnName="barcodeFP" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="VersionNo" ColumnName="VersionNo" />
+          <ScalarProperty Name="RecStatusID" ColumnName="RecStatusID" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedByID" ColumnName="ModifiedByID" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="MenuPrice" ColumnName="MenuPrice" />
+          <ScalarProperty Name="GST" ColumnName="GST" />
+          <ScalarProperty Name="GrossPrice" ColumnName="GrossPrice" />
+          <ScalarProperty Name="FamilyMeasureID" ColumnName="FamilyMeasureID" />
+          <ScalarProperty Name="MenuItemID" ColumnName="MenuItemID" />
+          <ScalarProperty Name="FamilyID" ColumnName="FamilyID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Proc_SaveOrderDetailTemp" FunctionName="KFC_PortalModel.Store.Proc_SaveOrderDetailTemp" />
+    <EntitySetMapping Name="FpAcknowledgementQueues">
+      <EntityTypeMapping TypeName="KFC_PortalModel.FpAcknowledgementQueue">
+        <MappingFragment StoreEntitySet="FpAcknowledgementQueue">
+          <ScalarProperty Name="AccessToken" ColumnName="AccessToken" />
+          <ScalarProperty Name="nooftries" ColumnName="nooftries" />
+          <ScalarProperty Name="Response" ColumnName="Response" />
+          <ScalarProperty Name="TotalProcessingTime" ColumnName="TotalProcessingTime" />
+          <ScalarProperty Name="ProcessingEndTime" ColumnName="ProcessingEndTime" />
+          <ScalarProperty Name="ProcessingStartTime" ColumnName="ProcessingStartTime" />
+          <ScalarProperty Name="ud" ColumnName="ud" />
+          <ScalarProperty Name="token" ColumnName="token" />
+          <ScalarProperty Name="cd" ColumnName="cd" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="DeliveryOrderIdTemp" ColumnName="DeliveryOrderIdTemp" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="proc_InsertCustomerTemp" FunctionName="KFC_PortalModel.Store.proc_InsertCustomerTemp" />
+    <FunctionImportMapping FunctionImportName="Proc_addDynamicPosQueue" FunctionName="KFC_PortalModel.Store.Proc_addDynamicPosQueue" />
+    <EntitySetMapping Name="Branches">
+      <EntityTypeMapping TypeName="KFC_PortalModel.Branch">
+        <MappingFragment StoreEntitySet="Branch">
+          <ScalarProperty Name="EnabledForFPAutoAcceptance" ColumnName="EnabledForFPAutoAcceptance" />
+          <ScalarProperty Name="DynamicPosRegionId" ColumnName="DynamicPosRegionId" />
+          <ScalarProperty Name="isTaxWorkingEnabled" ColumnName="isTaxWorkingEnabled" />
+          <ScalarProperty Name="PCTCode" ColumnName="PCTCode" />
+          <ScalarProperty Name="TokenFBR" ColumnName="TokenFBR" />
+          <ScalarProperty Name="CodeFBR" ColumnName="CodeFBR" />
+          <ScalarProperty Name="BranchNameFBR" ColumnName="BranchNameFBR" />
+          <ScalarProperty Name="IdentNoFBR" ColumnName="IdentNoFBR" />
+          <ScalarProperty Name="POSID" ColumnName="POSID" />
+          <ScalarProperty Name="CreditTaxRate" ColumnName="CreditTaxRate" />
+          <ScalarProperty Name="CashTaxRate" ColumnName="CashTaxRate" />
+          <ScalarProperty Name="TaxRate" ColumnName="TaxRate" />
+          <ScalarProperty Name="TaxAuthority" ColumnName="TaxAuthority" />
+          <ScalarProperty Name="updatePaymentMode" ColumnName="updatePaymentMode" />
+          <ScalarProperty Name="PickupClosingSun" ColumnName="PickupClosingSun" />
+          <ScalarProperty Name="PickupClosingSat" ColumnName="PickupClosingSat" />
+          <ScalarProperty Name="PickupClosingFri" ColumnName="PickupClosingFri" />
+          <ScalarProperty Name="PickupClosingThu" ColumnName="PickupClosingThu" />
+          <ScalarProperty Name="PickupClosingWed" ColumnName="PickupClosingWed" />
+          <ScalarProperty Name="PickupClosingTue" ColumnName="PickupClosingTue" />
+          <ScalarProperty Name="PickupClosingMon" ColumnName="PickupClosingMon" />
+          <ScalarProperty Name="simplexEnabled" ColumnName="simplexEnabled" />
+          <ScalarProperty Name="orderAssignTime" ColumnName="orderAssignTime" />
+          <ScalarProperty Name="orderLimit" ColumnName="orderLimit" />
+          <ScalarProperty Name="autoAssignDistacne" ColumnName="autoAssignDistacne" />
+          <ScalarProperty Name="autoDispatchDistance" ColumnName="autoDispatchDistance" />
+          <ScalarProperty Name="OpeningSun" ColumnName="OpeningSun" />
+          <ScalarProperty Name="OpeningSat" ColumnName="OpeningSat" />
+          <ScalarProperty Name="OpeningFri" ColumnName="OpeningFri" />
+          <ScalarProperty Name="OpeningThu" ColumnName="OpeningThu" />
+          <ScalarProperty Name="OpeningWed" ColumnName="OpeningWed" />
+          <ScalarProperty Name="OpeningTue" ColumnName="OpeningTue" />
+          <ScalarProperty Name="OpeningMon" ColumnName="OpeningMon" />
+          <ScalarProperty Name="creditcard" ColumnName="creditcard" />
+          <ScalarProperty Name="ServerName_P" ColumnName="ServerName_P" />
+          <ScalarProperty Name="posStoreNo_P" ColumnName="posStoreNo_P" />
+          <ScalarProperty Name="DatabaseName_P" ColumnName="DatabaseName_P" />
+          <ScalarProperty Name="serverPassword_P" ColumnName="serverPassword_P" />
+          <ScalarProperty Name="serverUsername_P" ColumnName="serverUsername_P" />
+          <ScalarProperty Name="Terminal_P" ColumnName="Terminal_P" />
+          <ScalarProperty Name="PolyGon" ColumnName="PolyGon" />
+          <ScalarProperty Name="EnabledForFPHero" ColumnName="EnabledForFPHero" />
+          <ScalarProperty Name="EnabledForVentureDive" ColumnName="EnabledForVentureDive" />
+          <ScalarProperty Name="IsStagingEnabled" ColumnName="IsStagingEnabled" />
+          <ScalarProperty Name="isDynamicPullEnabled" ColumnName="isDynamicPullEnabled" />
+          <ScalarProperty Name="DynamicApi" ColumnName="DynamicApi" />
+          <ScalarProperty Name="isWalletPasswordChanged" ColumnName="isWalletPasswordChanged" />
+          <ScalarProperty Name="walletPassword" ColumnName="walletPassword" />
+          <ScalarProperty Name="OpeningTime" ColumnName="OpeningTime" />
+          <ScalarProperty Name="isDynamicPosEnabled" ColumnName="isDynamicPosEnabled" />
+          <ScalarProperty Name="posStoreNo" ColumnName="posStoreNo" />
+          <ScalarProperty Name="foodPandaCode" ColumnName="foodPandaCode" />
+          <ScalarProperty Name="creditMode" ColumnName="creditMode" />
+          <ScalarProperty Name="serverPassword" ColumnName="serverPassword" />
+          <ScalarProperty Name="serverUsername" ColumnName="serverUsername" />
+          <ScalarProperty Name="Terminal" ColumnName="Terminal" />
+          <ScalarProperty Name="DatabaseName" ColumnName="DatabaseName" />
+          <ScalarProperty Name="ServerName" ColumnName="ServerName" />
+          <ScalarProperty Name="perKMRate" ColumnName="perKMRate" />
+          <ScalarProperty Name="isAutoDelivery" ColumnName="isAutoDelivery" />
+          <ScalarProperty Name="gesCode" ColumnName="gesCode" />
+          <ScalarProperty Name="isEnabledForRiderApp" ColumnName="isEnabledForRiderApp" />
+          <ScalarProperty Name="FoodPandaBranchId" ColumnName="FoodPandaBranchId" />
+          <ScalarProperty Name="MidnightTime" ColumnName="MidnightTime" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="ClosingSun" ColumnName="ClosingSun" />
+          <ScalarProperty Name="ClosingSat" ColumnName="ClosingSat" />
+          <ScalarProperty Name="ClosingFri" ColumnName="ClosingFri" />
+          <ScalarProperty Name="ClosingThu" ColumnName="ClosingThu" />
+          <ScalarProperty Name="ClosingWed" ColumnName="ClosingWed" />
+          <ScalarProperty Name="ClosingTue" ColumnName="ClosingTue" />
+          <ScalarProperty Name="ClosingMon" ColumnName="ClosingMon" />
+          <ScalarProperty Name="Lon" ColumnName="Lon" />
+          <ScalarProperty Name="Lat" ColumnName="Lat" />
+          <ScalarProperty Name="DeliveryArea" ColumnName="DeliveryArea" />
+          <ScalarProperty Name="addressDT" ColumnName="addressDT" />
+          <ScalarProperty Name="locationIdDT" ColumnName="locationIdDT" />
+          <ScalarProperty Name="ConcernCallCenter" ColumnName="ConcernCallCenter" />
+          <ScalarProperty Name="SupplyChainTeam" ColumnName="SupplyChainTeam" />
+          <ScalarProperty Name="SupplyChainManager" ColumnName="SupplyChainManager" />
+          <ScalarProperty Name="ClosingTime" ColumnName="ClosingTime" />
+          <ScalarProperty Name="extReasons" ColumnName="extReasons" />
+          <ScalarProperty Name="statusReasons" ColumnName="statusReasons" />
+          <ScalarProperty Name="tempStatus" ColumnName="tempStatus" />
+          <ScalarProperty Name="bStatus" ColumnName="bStatus" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="TimeExtension" ColumnName="TimeExtension" />
+          <ScalarProperty Name="ManagerCC" ColumnName="ManagerCC" />
+          <ScalarProperty Name="DeliveryHead" ColumnName="DeliveryHead" />
+          <ScalarProperty Name="AsstManagerDelivery" ColumnName="AsstManagerDelivery" />
+          <ScalarProperty Name="BusniessHead" ColumnName="BusniessHead" />
+          <ScalarProperty Name="AreaCoach" ColumnName="AreaCoach" />
+          <ScalarProperty Name="RGM" ColumnName="RGM" />
+          <ScalarProperty Name="Branch_Code" ColumnName="Branch_Code" />
+          <ScalarProperty Name="BranchID_Old" ColumnName="BranchID_Old" />
+          <ScalarProperty Name="regionID" ColumnName="regionID" />
+          <ScalarProperty Name="Branch_Name" ColumnName="Branch_Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="foodPandaDeliveryBranches">
+      <EntityTypeMapping TypeName="KFC_PortalModel.foodPandaDeliveryBranch">
+        <MappingFragment StoreEntitySet="foodPandaDeliveryBranch">
+          <ScalarProperty Name="branchId" ColumnName="branchId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Proc_LogFPAPICall" FunctionName="KFC_PortalModel.Store.Proc_LogFPAPICall" />
+    <FunctionImportMapping FunctionImportName="Proc_ReceiveFoodPandaOrderOnBranch" FunctionName="KFC_PortalModel.Store.Proc_ReceiveFoodPandaOrderOnBranch" />
+    <FunctionImportMapping FunctionImportName="Proc_SaveFoodPandaOrderTemp_New_One" FunctionName="KFC_PortalModel.Store.Proc_SaveFoodPandaOrderTemp_New_One" />
+    <EntitySetMapping Name="FoodPandaPayloads">
+      <EntityTypeMapping TypeName="KFC_PortalModel.FoodPandaPayload">
+        <MappingFragment StoreEntitySet="FoodPandaPayload">
+          <ScalarProperty Name="orderNo" ColumnName="orderNo" />
+          <ScalarProperty Name="apiType" ColumnName="apiType" />
+          <ScalarProperty Name="ServerIP" ColumnName="ServerIP" />
+          <ScalarProperty Name="response" ColumnName="response" />
+          <ScalarProperty Name="totalDuration" ColumnName="totalDuration" />
+          <ScalarProperty Name="requestEndTime" ColumnName="requestEndTime" />
+          <ScalarProperty Name="requestStartTime" ColumnName="requestStartTime" />
+          <ScalarProperty Name="branchId" ColumnName="branchId" />
+          <ScalarProperty Name="cd" ColumnName="cd" />
+          <ScalarProperty Name="Payload" ColumnName="Payload" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Proc_SaveOrderDetailTemp_FP" FunctionName="KFC_PortalModel.Store.Proc_SaveOrderDetailTemp_FP" />
+  </EntityContainerMapping>
+</Mapping>

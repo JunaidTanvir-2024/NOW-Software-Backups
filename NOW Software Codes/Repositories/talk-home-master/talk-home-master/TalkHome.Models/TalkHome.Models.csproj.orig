@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2E5DDBB-5692-460C-B2A9-AEA7764325EB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TalkHome.Models</RootNamespace>
+    <AssemblyName>TalkHome.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Staging|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Staging\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FoolproofValidation">
+      <HintPath>..\packages\foolproof\lib\net45\FoolproofValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="JWT">
+      <HintPath>..\packages\JWT\lib\net35\JWT.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="umbraco, Version=1.0.6361.21162, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core\lib\net45\umbraco.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.Core, Version=1.0.6361.21154, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core\lib\net45\Umbraco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.Web.PublishedContentModels">
+      <HintPath>..\TalkHome\Bin\Umbraco.Web.PublishedContentModels.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountCodes.cs" />
+<<<<<<< HEAD
+    <Compile Include="AirtimeTransfer.cs" />
+    <Compile Include="AirtimeTransferProducts.cs" />
+=======
+    <Compile Include="ActiveCampaignResult.cs" />
+>>>>>>> feature/ccratesopt
+    <Compile Include="App\AppUserBillingAddress.cs" />
+    <Compile Include="AutoTopUpRequest.cs" />
+    <Compile Include="BasketRequest.cs" />
+    <Compile Include="CallingCardCreditOrderRequest.cs" />
+    <Compile Include="CheckoutRequest.cs" />
+    <Compile Include="Enums\ExpiryAlert.cs" />
+    <Compile Include="Enums\ProductNames.cs" />
+    <Compile Include="Enums\ReadableProductCodes.cs" />
+    <Compile Include="I18nCountry.cs" />
+    <Compile Include="Enums\AddressType.cs" />
+    <Compile Include="Enums\ApiRequestType.cs" />
+    <Compile Include="Enums\ChannelType.cs" />
+    <Compile Include="Enums\MailOrderAvailableProducts.cs" />
+    <Compile Include="Enums\PaymentMethod.cs" />
+    <Compile Include="Enums\PaymentType.cs" />
+    <Compile Include="Enums\ProductType.cs" />
+    <Compile Include="Enums\ProductCodes.cs" />
+    <Compile Include="Enums\UniqueIDType.cs" />
+    <Compile Include="Enums\Messages.cs" />
+    <Compile Include="FullNameModel.cs" />
+    <Compile Include="I18nCurrencyDetails.cs" />
+    <Compile Include="MailTemplate.cs" />
+    <Compile Include="NewPasswordRequest.cs" />
+    <Compile Include="ResetPasswordRequest.cs" />
+    <Compile Include="PromoSignUpRequest.cs" />
+    <Compile Include="SignUpRequest.cs" />
+    <Compile Include="ViewModels\CreditPurchasesViewModel.cs" />
+    <Compile Include="ViewModels\LoginRequest.cs" />
+    <Compile Include="ViewModels\CustomerMenuViewModel.cs" />
+    <Compile Include="ViewModels\MyDashboardViewModel.cs" />
+    <Compile Include="ViewModels\PlansBundleViewModel.cs" />
+    <Compile Include="ViewModels\SettingsViewModel.cs" />
+    <Compile Include="ViewModels\UpdateAccountConfirmationModel.cs" />
+    <Compile Include="ViewModels\UpdatePasswordModel.cs" />
+    <Compile Include="WebApi\AutoRenew.cs" />
+    <Compile Include="WebApi\DTOs\AddBundleDTO.cs" />
+    <Compile Include="WebApi\DTOs\AutoRenewSettingsRequestDTO.cs" />
+    <Compile Include="WebApi\DTOs\AutoTopUpSettingsRequestDTO.cs" />
+    <Compile Include="WebApi\DTOs\HistoryPageDTO.cs" />
+    <Compile Include="GetTotalPages.cs" />
+    <Compile Include="I18nCountryName.cs" />
+    <Compile Include="MailOrderRequest.cs" />
+    <Compile Include="ModelStateExtensions.cs" />
+    <Compile Include="AddressModel.cs" />
+    <Compile Include="Alert.cs" />
+    <Compile Include="AlertStyles.cs" />
+    <Compile Include="AuthenticateMessages.cs" />
+    <Compile Include="GenericMessages.cs" />
+    <Compile Include="JWTPayload.cs" />
+    <Compile Include="Enums\Title.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="SalutationKeys.cs" />
+    <Compile Include="Validation\RequestValidations.cs" />
+    <Compile Include="VerifyNumberRequest.cs" />
+    <Compile Include="AddProductRequest.cs" />
+    <Compile Include="ViewModels\AddressDetailsViewModel.cs" />
+    <Compile Include="ViewModels\DTOs\CheckoutPageDTO.cs" />
+    <Compile Include="ViewModels\FourRelatedFAQsViewModel.cs" />
+    <Compile Include="ViewModels\ImportantInformationViewModel.cs" />
+    <Compile Include="ViewModels\LoginFormViewModel.cs" />
+    <Compile Include="ViewModels\ProductFilterViewModel.cs" />
+    <Compile Include="ViewModels\SEOTags.cs" />
+    <Compile Include="ViewModels\TopUp\TopUpAmountViewModel.cs" />
+    <Compile Include="WebApi\AddProduct\AddProductBillingAddress.cs" />
+    <Compile Include="WebApi\DTOs\PromoSignUpRequestDTO.cs" />
+    <Compile Include="WebApi\DTOs\RedeemPointsRequestDTO.cs" />
+    <Compile Include="WebApi\DTOs\RedeemVoucherRequestDTO.cs" />
+    <Compile Include="WebApi\DTOs\SignUpRequestDTO.cs" />
+    <Compile Include="WebApi\DTOs\UpdateAddressRequestDTO.cs" />
+    <Compile Include="WebApi\DTOs\UpdateAddressResponseDTO.cs" />
+    <Compile Include="WebApi\DTOs\UpdatePasswordRequestDTO.cs" />
+    <Compile Include="WebApi\DTOs\UpdatePasswordResponseDTO.cs" />
+    <Compile Include="WebApi\DTOs\UserExistsResponseDTO.cs" />
+    <Compile Include="WebApi\DTOs\VerifyNumberRequestDTO.cs" />
+    <Compile Include="WebApi\DTOs\VerifyNumberResponseDTO.cs" />
+    <Compile Include="WebApi\PasswordChange.cs" />
+    <Compile Include="WebApi\PasswordResetTokenValidation.cs" />
+    <Compile Include="WebApi\Payment\MethodOfPayment.cs" />
+    <Compile Include="WebApi\Payment\OneClickCheckoutRequest.cs" />
+    <Compile Include="WebApi\Payment\OneClickCheckoutResponse.cs" />
+    <Compile Include="WebApi\Payment\PaymentRetrieveRequest.cs" />
+    <Compile Include="WebApi\Payment\PaymentRetrieveResponse.cs" />
+    <Compile Include="WebApi\Payment\RetrieveOneClickRequest.cs" />
+    <Compile Include="WebApi\DTOs\StartPaymentRequestDTO.cs" />
+    <Compile Include="ProductCodeRequest.cs" />
+    <Compile Include="ProductCodes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AccountDetailsViewModel.cs" />
+    <Compile Include="WebApi\DTOs\AddProductRequestDTO.cs" />
+    <Compile Include="ViewModels\AddressIo\AddressIoResult.cs" />
+    <Compile Include="ViewModels\AddressIo\AddressIoViewModel.cs" />
+    <Compile Include="App\AddAppBundleRequest.cs" />
+    <Compile Include="ViewModels\App\AppCheckoutViewModel.cs" />
+    <Compile Include="ViewModels\App\AppMessageViewModel.cs" />
+    <Compile Include="ViewModels\App\AppPageRequestModel.cs" />
+    <Compile Include="ViewModels\App\AppTopUpViewModel.cs" />
+    <Compile Include="ViewModels\BaksetViewModel.cs" />
+    <Compile Include="ViewModels\CampaignPageViewModel.cs" />
+    <Compile Include="ViewModels\CreateAnAccountViewModel.cs" />
+    <Compile Include="ViewModels\MyAccountViewModel.cs" />
+    <Compile Include="ViewModels\History\HistoryViewModel.cs" />
+    <Compile Include="ViewModels\CustomerDetailsViewModel.cs" />
+    <Compile Include="WebApi\DTOs\LoginRequestDTO.cs" />
+    <Compile Include="ViewModels\Payment\StartPaymentViewModel.cs" />
+    <Compile Include="ViewModels\RegisterProductViewModel.cs" />
+    <Compile Include="WebApi\DTOs\ResetPasswordConfirmRequestDTO.cs" />
+    <Compile Include="WebApi\DTOs\ResetPasswordRequestDTO.cs" />
+    <Compile Include="WebApi\DTOs\NewPasswordRequestDTO.cs" />
+    <Compile Include="ViewModels\TopUp\TopUpPageViewModel.cs" />
+    <Compile Include="ViewModels\Umbraco\CustomPageViewModel.cs" />
+    <Compile Include="ViewModels\Umbraco\HomepageViewModel.cs" />
+    <Compile Include="ViewModels\Umbraco\TalkHomeProductViewModel.cs" />
+    <Compile Include="WebApi\DTOs\AccountDetailsResponseDTO.cs" />
+    <Compile Include="WebApi\Addresses.cs" />
+    <Compile Include="WebApi\DTOs\LoginResponseDTO.cs" />
+    <Compile Include="WebApi\AuthenticationContent.cs" />
+    <Compile Include="WebApi\DTOs\MailOrderRequestDTO.cs" />
+    <Compile Include="WebApi\DTOs\SignUpResponseDTO.cs" />
+    <Compile Include="WebApi\DTOs\NewPasswordResponseDTO.cs" />
+    <Compile Include="WebApi\DTOs\ResetPasswordConfirmResponseDTO.cs" />
+    <Compile Include="WebApi\DTOs\ResetPasswordResponseDTO.cs" />
+    <Compile Include="WebApi\ResetPassword.cs" />
+    <Compile Include="WebApi\DTOs\VerifySignUpResponseDTO.cs" />
+    <Compile Include="WebApi\DTOs\AccountSummaryRequestDTO.cs" />
+    <Compile Include="WebApi\DTOs\AccountSummaryResponseDTO.cs" />
+    <Compile Include="WebApi\SignUp.cs" />
+    <Compile Include="WebApi\UserAccountBundles.cs" />
+    <Compile Include="WebApi\UserAccountLastTopup.cs" />
+    <Compile Include="WebApi\UserAccountSummary.cs" />
+    <Compile Include="WebApi\AppAccount.cs" />
+    <Compile Include="WebApi\CallingCardAccount.cs" />
+    <Compile Include="WebApi\MobileAccount.cs" />
+    <Compile Include="WebApi\DTOs\AddProductResponseDTO.cs" />
+    <Compile Include="WebApi\AddressIo\AddressIoResponse.cs" />
+    <Compile Include="WebApi\App\AppUserModel.cs" />
+    <Compile Include="WebApi\CallingCards\Minutes.cs" />
+    <Compile Include="WebApi\CallingCards\MinutesRecord.cs" />
+    <Compile Include="WebApi\GenericApiResponse.cs" />
+    <Compile Include="WebApi\History\CallHistoryRecord.cs" />
+    <Compile Include="WebApi\History\PaymentHistoryRecord.cs" />
+    <Compile Include="WebApi\IpInfo\IpInfoResponse.cs" />
+    <Compile Include="WebApi\Rates\UKNationalRate.cs" />
+    <Compile Include="WebApi\Payment\BillingAddress.cs" />
+    <Compile Include="WebApi\Payment\customer.cs" />
+    <Compile Include="WebApi\Payment\Friend.cs" />
+    <Compile Include="WebApi\Payment\GetCustomerRequestModel.cs" />
+    <Compile Include="WebApi\Payment\MiPayCustomerModel.cs" />
+    <Compile Include="WebApi\Payment\PaymentMethod.cs" />
+    <Compile Include="WebApi\Payment\RecurringPayment.cs" />
+    <Compile Include="WebApi\DTOs\StartPaymentResponseDTO.cs" />
+    <Compile Include="WebApi\Payment\UniqueId.cs" />
+    <Compile Include="WebApi\Rates\Destination.cs" />
+    <Compile Include="WebApi\Rates\Minutes.cs" />
+    <Compile Include="WebApi\Rates\Rate.cs" />
+    <Compile Include="WebApi\Rates\RoamingRate.cs" />
+    <Compile Include="WebApi\Rates\TopMinute.cs" />
+    <Compile Include="WebApi\Rates\TopRateRequest.cs" />
+    <Compile Include="WebApi\Rates\TotalPages.cs" />
+    <Compile Include="WebApi\TopUpRequest.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

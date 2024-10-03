@@ -1,0 +1,14 @@
+﻿/*Framework : Bootstrap 4.3*/
+@import url('bootstrap/css/bootstrap.min.css');
+
+/*Lato Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/*Icons: Font-awesome 5.10.2*/
+@import url('fontawesome/css/all.min.css');
+
+/*Custom Style*/
+@import url('style.css');
+
+/* Slick Slider Settings Stylesheet */
+@import url("slick-settings.css");

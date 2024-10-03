@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Talk Home Payment Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <link href="payment.css" rel="stylesheet" type='text/css'>
+
+</head>
+<body>
+    <div class="page-wrap">
+        <header class="header">
+            <div class="inner">
+                <div class="logo"></div>
+            </div>
+            <div class="now-background"></div>
+        </header>
+
+        <div class="container body-content">
+
+            <div class="box-container clearfix TALK_HOME">
+
+                <form class="form" action="/UnregisteredPayment/Summary" method="post">
+
+                    <h2 class="title">Card Details</h2>
+
+                    <div class="subtitle">Please enter your details</div>
+
+                    <div class="input-container clearfix">
+
+                        <div class="contains-input">
+                            <label for="CardNumber">Card Number</label>
+                            <input class="input-validation-error" data-val="true" data-val-regex="The card number must be numbers only with no spaces or other characters" data-val-regex-pattern="\d{16}" data-val-required="Please enter your card number" id="CardNumber" name="CardNumber" placeholder="Please Enter" type="tel" value="" />
+                            <span class="field-validation-error" data-valmsg-for="CardNumber" data-valmsg-replace="true">Please enter your card number</span>
+                        </div>
+
+                        <div class="contains-input">
+                            <label for="Exp_Date">Expiry Date</label>
+
+                            <div class="expiry-wrapper">
+                                <div class="select expiry month">
+                                    <select class="input-validation-error " data-val="true" data-val-regex="Invalid Expiry Date" data-val-regex-pattern="^(0?[1-9]|1[012])$" data-val-required="Card expiry date is required" id="ExpiryMonth" maxlength="2" name="ExpiryMonth" tabindex="3" type="tel">
+                                        <option selected="selected" value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    <span class="field-validation-error" data-valmsg-for="ExpiryMonth" data-valmsg-replace="true">ExpiryDateValidationError</span>
+                                </div>
+                                <div class="select expiry year">
+                                    <select class="" data-val="true" data-val-regex="Year_Regex" data-val-regex-pattern="[a-zA-Z0-9]+" data-val-required="Card expiry date is required" id="ExpiryYear" maxlength="4" name="ExpiryYear" tabindex="4" title="" type="tel">
+                                        <option selected="selected" value="17">2017</option>
+                                        <option value="18">2018</option>
+                                        <option value="19">2019</option>
+                                        <option value="20">2020</option>
+                                        <option value="21">2021</option>
+                                    </select>
+                                    <span class="field-validation-valid" data-valmsg-for="ExpiryYear" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            
+                        </div>
+
+                        <div class="contains-input">
+                            <label for="SecurityCode">Security Code</label>
+                            <input class="input-validation-error auto-complete-off" data-val="true" data-val-regex="The security code should be 3 digits" data-val-regex-pattern="^[0-9]{3,4}$" data-val-required="The security code should be 3 digits" id="SecurityCode" maxlength="3" name="SecurityCode" placeholder="Last 3 digits on back of card" type="tel" />
+                            <span class="field-validation-error" data-valmsg-for="SecurityCode" data-valmsg-replace="true">The security code should be 3 digits</span>
+                        </div>
+
+                    </div>
+
+                    <input name="__RequestVerificationToken" type="hidden" />
+                    <input id="MethodOfPaymentIdentifier" name="MethodOfPaymentIdentifier" type="hidden" />   
+
+                    <input type="submit" class="btn-primary" value="PAY £10" />
+
+                    <p class="terms">By using this service, you're accepting our <a href="/Home/Terms" target="_blank">terms and conditions</a> and <a href="/Home/Privacy" target="_blank">privacy policy</a>.</p>
+                    
+                    <div class="powered-by-mipay">
+                        <a href="http://www.mi-pay.com/" target="_blank">Payments powered by Mi-Pay</a>
+                    </div>     
+                </form>
+            </div>
+        </div>
+
+        <div class="line"></div>
+    </div>
+
+    <footer class="footer"></footer>
+
+</body>
+</html>

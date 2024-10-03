@@ -1,0 +1,180 @@
+﻿.port-info-header {
+    font-size: 1.3em;
+}
+
+.pac-info {
+    display: -ms-grid;
+    -ms-grid-rows: 50% 50%;
+    -ms-grid-columns: 50% 50%;
+    display: grid;
+    text-align: left;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "port-info-type port-info-code" "port-info-date port-info-msisdn";
+}
+
+    .pac-info div label,
+    .pac-info div div {
+        padding: 10px 10px 10px 27%;
+    }
+
+    .pac-info div div {
+        padding-top: 4px;
+    }
+
+    .pac-info label {
+        color: white;
+        display: block;
+        font-weight: bold;
+        background-color: var(--theme-dark-blue);
+    }
+
+.port-info-type {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: port-info-type;
+}
+
+
+.port-info-code {
+    width: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: port-info-code;
+}
+
+    .port-info-code label {
+    }
+
+.port-info-date {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: port-info-date;
+}
+
+.port-info-msisdn {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: port-info-msisdn;
+}
+
+
+#SwitchInfoPlans {
+    display: grid;
+    display: -ms-grid;
+}
+
+    #SwitchInfoPlans .switch-plans-header {
+        color: white;
+        padding: 10px;
+        font-size: 1.3em;
+        font-weight: bold;
+        text-align: center;
+        background-color: var(--theme-dark-blue);
+    }
+
+    #SwitchInfoPlans .switch-plans-body .name {
+        font-weight: bold;
+    }
+
+    #SwitchInfoPlans .switch-plans-body .switch-plans-cell-left,
+    #SwitchInfoPlans .switch-plans-body .switch-plans-cell-right {
+        width: 36%;
+        min-height: 100px;
+        padding-left: 13%;
+        padding-top: 15px;
+    }
+
+        #SwitchInfoPlans .switch-plans-body .switch-plans-cell-left .name:nth-child(3),
+        #SwitchInfoPlans .switch-plans-body .switch-plans-cell-right .name:nth-child(3) {
+            margin-top: 15px;
+        }
+
+    #SwitchInfoPlans .switch-plans-body .switch-plans-cell-left {
+        float: left;
+    }
+
+    #SwitchInfoPlans .switch-plans-body .switch-plans-cell-right {
+        float: right;
+    }
+
+#PortingInformationButtons {
+}
+
+    #PortingInformationButtons a {
+        width: 30%;
+        color: black;
+        border: none;
+        margin: 30px 0;
+        padding: 10px 0;
+        text-align: center;
+        background-color: var(--theme-yellow);
+    }
+
+        #PortingInformationButtons a:focus,
+        #PortingInformationButtons a:hover,
+        #PortingInformationButtons a:active,
+        #PortingInformationButtons a:visited {
+            text-decoration: none;
+        }
+
+    #PortingInformationButtons #BackToPortDetails {
+        float: left;
+        margin-left: 14%;
+    }
+
+    #PortingInformationButtons #CancelPorts {
+        float: right;
+        margin-right: 10%;
+    }
+
+
+@media all and (max-width: 760px) {
+
+    /*.pac-info {
+        display: grid;
+        text-align: left;
+        background-color: white;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas: "port-info-type" "port-info-code" "port-info-date" "port-info-msisdn";
+    }*/
+
+    .pac-info div label,
+    .pac-info div div {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #SwitchInfoPlans {
+        background-color: white;
+    }
+
+        /*#SwitchInfoPlans .switch-plans-header {
+            font-size: 1.1em;
+        }*/
+
+        #SwitchInfoPlans .switch-plans-body > div:nth-child(2n - 1) /*Making sure last element is always light grey*/ {
+            background-color: var(--theme-light-grey);
+        }
+
+        #SwitchInfoPlans .switch-plans-body .switch-plans-cell-left,
+        #SwitchInfoPlans .switch-plans-body .switch-plans-cell-right {
+            width: 86%;
+            float: left;
+        }
+
+    #PortingInformationButtons {
+        display: grid;
+        display: -ms-grid;
+        margin-top: 15px;
+    }
+
+        #PortingInformationButtons #CancelPorts,
+        #PortingInformationButtons #BackToPortDetails {
+            width: 90%;
+            float: left;
+            margin: 15px 0;
+            margin-left: 5%;
+        }
+}

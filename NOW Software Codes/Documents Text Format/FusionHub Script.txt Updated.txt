@@ -1,0 +1,294 @@
+USE [master]
+GO
+/****** Object:  Database [FusionHub]    Script Date: 03-Oct-23 7:50:35 PM ******/
+CREATE DATABASE [FusionHub]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'FusionHub', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA\FusionHub.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'FusionHub_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA\FusionHub_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+ WITH CATALOG_COLLATION = DATABASE_DEFAULT, LEDGER = OFF
+GO
+ALTER DATABASE [FusionHub] SET COMPATIBILITY_LEVEL = 160
+GO
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [FusionHub].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE [FusionHub] SET ANSI_NULL_DEFAULT OFF 
+GO
+ALTER DATABASE [FusionHub] SET ANSI_NULLS OFF 
+GO
+ALTER DATABASE [FusionHub] SET ANSI_PADDING OFF 
+GO
+ALTER DATABASE [FusionHub] SET ANSI_WARNINGS OFF 
+GO
+ALTER DATABASE [FusionHub] SET ARITHABORT OFF 
+GO
+ALTER DATABASE [FusionHub] SET AUTO_CLOSE OFF 
+GO
+ALTER DATABASE [FusionHub] SET AUTO_SHRINK OFF 
+GO
+ALTER DATABASE [FusionHub] SET AUTO_UPDATE_STATISTICS ON 
+GO
+ALTER DATABASE [FusionHub] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+ALTER DATABASE [FusionHub] SET CURSOR_DEFAULT  GLOBAL 
+GO
+ALTER DATABASE [FusionHub] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+ALTER DATABASE [FusionHub] SET NUMERIC_ROUNDABORT OFF 
+GO
+ALTER DATABASE [FusionHub] SET QUOTED_IDENTIFIER OFF 
+GO
+ALTER DATABASE [FusionHub] SET RECURSIVE_TRIGGERS OFF 
+GO
+ALTER DATABASE [FusionHub] SET  DISABLE_BROKER 
+GO
+ALTER DATABASE [FusionHub] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+ALTER DATABASE [FusionHub] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+ALTER DATABASE [FusionHub] SET TRUSTWORTHY OFF 
+GO
+ALTER DATABASE [FusionHub] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+ALTER DATABASE [FusionHub] SET PARAMETERIZATION SIMPLE 
+GO
+ALTER DATABASE [FusionHub] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+ALTER DATABASE [FusionHub] SET HONOR_BROKER_PRIORITY OFF 
+GO
+ALTER DATABASE [FusionHub] SET RECOVERY FULL 
+GO
+ALTER DATABASE [FusionHub] SET  MULTI_USER 
+GO
+ALTER DATABASE [FusionHub] SET PAGE_VERIFY CHECKSUM  
+GO
+ALTER DATABASE [FusionHub] SET DB_CHAINING OFF 
+GO
+ALTER DATABASE [FusionHub] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+ALTER DATABASE [FusionHub] SET TARGET_RECOVERY_TIME = 60 SECONDS 
+GO
+ALTER DATABASE [FusionHub] SET DELAYED_DURABILITY = DISABLED 
+GO
+ALTER DATABASE [FusionHub] SET ACCELERATED_DATABASE_RECOVERY = OFF  
+GO
+EXEC sys.sp_db_vardecimal_storage_format N'FusionHub', N'ON'
+GO
+ALTER DATABASE [FusionHub] SET QUERY_STORE = ON
+GO
+ALTER DATABASE [FusionHub] SET QUERY_STORE (OPERATION_MODE = READ_WRITE, CLEANUP_POLICY = (STALE_QUERY_THRESHOLD_DAYS = 30), DATA_FLUSH_INTERVAL_SECONDS = 900, INTERVAL_LENGTH_MINUTES = 60, MAX_STORAGE_SIZE_MB = 1000, QUERY_CAPTURE_MODE = AUTO, SIZE_BASED_CLEANUP_MODE = AUTO, MAX_PLANS_PER_QUERY = 200, WAIT_STATS_CAPTURE_MODE = ON)
+GO
+USE [FusionHub]
+GO
+/****** Object:  Table [dbo].[Availablity_Zone]    Script Date: 03-Oct-23 7:50:36 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Availablity_Zone](
+	[id] [bigint] NOT NULL,
+	[uid] [bigint] NULL,
+	[generic_name] [varchar](50) NULL,
+	[description] [varchar](50) NULL,
+ CONSTRAINT [PK_Availablity_Zone] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Country]    Script Date: 03-Oct-23 7:50:36 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Country](
+	[id] [bigint] NOT NULL,
+	[uid] [bigint] NULL,
+	[iso_code2] [varchar](2) NULL,
+	[iso_code3] [varchar](3) NULL,
+	[dialing_code] [smallint] NULL,
+	[country_name] [varchar](50) NULL,
+	[iso_numeric_code] [varchar](50) NULL,
+ CONSTRAINT [PK_Country] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Country_Availablity_Zone]    Script Date: 03-Oct-23 7:50:36 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Country_Availablity_Zone](
+	[id] [bigint] NOT NULL,
+	[uid] [bigint] NULL,
+	[availiblity_zone_id] [bigint] NULL,
+	[country_id] [bigint] NULL,
+ CONSTRAINT [PK_Country_Availablity_Zone] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Currency_Unit]    Script Date: 03-Oct-23 7:50:36 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Currency_Unit](
+	[Id] [bigint] NOT NULL,
+	[uid] [bigint] NULL,
+	[currency_code] [varchar](50) NULL,
+	[currency_name] [varchar](50) NULL,
+	[is_default] [bit] NULL,
+ CONSTRAINT [PK_Currency_Unit] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Operator]    Script Date: 03-Oct-23 7:50:36 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Operator](
+	[id] [bigint] NOT NULL,
+	[uid] [bigint] NULL,
+	[name] [varchar](50) NULL,
+	[short_name] [varchar](50) NULL,
+	[description] [varchar](50) NULL,
+	[country_id] [bigint] NULL,
+	[external_id] [bigint] NULL,
+ CONSTRAINT [PK_Operator] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Product]    Script Date: 03-Oct-23 7:50:36 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Product](
+	[id] [bigint] NOT NULL,
+	[guid] [bigint] NULL,
+	[country_id] [bigint] NULL,
+	[operator_id] [bigint] NULL,
+	[currency_unit_id] [bigint] NULL,
+	[product_type_id] [bigint] NULL,
+	[country_availablity_zone_id] [bigint] NULL,
+	[external_id] [bigint] NULL,
+ CONSTRAINT [PK_Product] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Product_Price_Details]    Script Date: 03-Oct-23 7:50:36 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Product_Price_Details](
+	[id] [bigint] NOT NULL,
+	[uid] [bigint] NULL,
+	[proudct_id] [bigint] NULL,
+	[price_amount] [decimal](18, 0) NULL,
+	[tax_amount] [decimal](18, 0) NULL,
+	[fee_amount] [decimal](18, 0) NULL,
+	[retail_amount] [decimal](18, 0) NULL,
+	[retail_tax] [decimal](18, 0) NULL,
+	[retail_fee] [decimal](18, 0) NULL,
+	[effective_from] [datetime2](7) NULL,
+	[effictive_to] [datetime2](7) NULL,
+ CONSTRAINT [PK_Product_Price_Details] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Product_Type]    Script Date: 03-Oct-23 7:50:36 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Product_Type](
+	[id] [bigint] NOT NULL,
+	[uid] [bigint] NULL,
+	[product_type_name] [varchar](50) NULL,
+	[product_type_short_name] [varchar](50) NULL,
+	[description] [varchar](50) NULL,
+ CONSTRAINT [PK_Product_Type] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[vendor_operator]    Script Date: 03-Oct-23 7:50:36 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[vendor_operator](
+	[id] [bigint] NOT NULL,
+	[uid] [bigint] NULL,
+	[operator_id] [bigint] NULL,
+	[generic_name] [varchar](50) NULL,
+	[description] [varchar](50) NULL,
+ CONSTRAINT [PK_Operator_Generic_Name] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Country_Availablity_Zone]  WITH CHECK ADD  CONSTRAINT [FK_Country_Availablity_Zone_Availablity_Zone] FOREIGN KEY([availiblity_zone_id])
+REFERENCES [dbo].[Availablity_Zone] ([id])
+GO
+ALTER TABLE [dbo].[Country_Availablity_Zone] CHECK CONSTRAINT [FK_Country_Availablity_Zone_Availablity_Zone]
+GO
+ALTER TABLE [dbo].[Country_Availablity_Zone]  WITH CHECK ADD  CONSTRAINT [FK_Country_Availablity_Zone_Country] FOREIGN KEY([country_id])
+REFERENCES [dbo].[Country] ([id])
+GO
+ALTER TABLE [dbo].[Country_Availablity_Zone] CHECK CONSTRAINT [FK_Country_Availablity_Zone_Country]
+GO
+ALTER TABLE [dbo].[Operator]  WITH CHECK ADD  CONSTRAINT [FK_Operator_Country] FOREIGN KEY([country_id])
+REFERENCES [dbo].[Country] ([id])
+GO
+ALTER TABLE [dbo].[Operator] CHECK CONSTRAINT [FK_Operator_Country]
+GO
+ALTER TABLE [dbo].[Product]  WITH CHECK ADD  CONSTRAINT [FK_Product_Country] FOREIGN KEY([country_id])
+REFERENCES [dbo].[Country] ([id])
+GO
+ALTER TABLE [dbo].[Product] CHECK CONSTRAINT [FK_Product_Country]
+GO
+ALTER TABLE [dbo].[Product]  WITH CHECK ADD  CONSTRAINT [FK_Product_Currency_Unit] FOREIGN KEY([currency_unit_id])
+REFERENCES [dbo].[Currency_Unit] ([Id])
+GO
+ALTER TABLE [dbo].[Product] CHECK CONSTRAINT [FK_Product_Currency_Unit]
+GO
+ALTER TABLE [dbo].[Product]  WITH CHECK ADD  CONSTRAINT [FK_Product_Product_Type] FOREIGN KEY([product_type_id])
+REFERENCES [dbo].[Product_Type] ([id])
+GO
+ALTER TABLE [dbo].[Product] CHECK CONSTRAINT [FK_Product_Product_Type]
+GO
+ALTER TABLE [dbo].[Product_Price_Details]  WITH CHECK ADD  CONSTRAINT [FK_Product_Price_Details_Product] FOREIGN KEY([proudct_id])
+REFERENCES [dbo].[Product] ([id])
+GO
+ALTER TABLE [dbo].[Product_Price_Details] CHECK CONSTRAINT [FK_Product_Price_Details_Product]
+GO
+ALTER TABLE [dbo].[vendor_operator]  WITH CHECK ADD  CONSTRAINT [FK_Operator_Generic_Name_Operator] FOREIGN KEY([operator_id])
+REFERENCES [dbo].[Operator] ([id])
+GO
+ALTER TABLE [dbo].[vendor_operator] CHECK CONSTRAINT [FK_Operator_Generic_Name_Operator]
+GO
+USE [master]
+GO
+ALTER DATABASE [FusionHub] SET  READ_WRITE 
+GO

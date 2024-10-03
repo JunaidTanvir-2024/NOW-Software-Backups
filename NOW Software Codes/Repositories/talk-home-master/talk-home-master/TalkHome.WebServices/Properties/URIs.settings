@@ -1,0 +1,133 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TalkHome.WebServices.Properties" GeneratedClassName="URIs">
+  <Profiles />
+  <Settings>
+    <Setting Name="Authenticate" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/talkhome/useraccount/login</Value>
+    </Setting>
+    <Setting Name="ResetPasswordRequest" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/talkhome/useraccount/resetpassword/start</Value>
+    </Setting>
+    <Setting Name="ResetPasswordConfirm" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/talkhome/useraccount/resetpassword/confirm</Value>
+    </Setting>
+    <Setting Name="NewPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/talkhome/useraccount/resetpassword/change</Value>
+    </Setting>
+    <Setting Name="Destination" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/rates/thm/standard/international/destinations</Value>
+    </Setting>
+    <Setting Name="MobileTopRates" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/rates/thm/nonuseraccount/international/top</Value>
+    </Setting>
+    <Setting Name="TalkHomeAppTopRates" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/rates/tha/nonuseraccount/international/top</Value>
+    </Setting>
+    <Setting Name="CallingCardsTopMinutes" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/rates/thcc/nonuseraccount/minutes/top</Value>
+    </Setting>
+    <Setting Name="CallHistoryPage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/history/call</Value>
+    </Setting>
+    <Setting Name="CallHistoryTotalPages" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/history/call/totalpages</Value>
+    </Setting>
+    <Setting Name="AccountSummary" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/useraccount/summary</Value>
+    </Setting>
+    <Setting Name="SignUp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/talkhome/useraccount/signup</Value>
+    </Setting>
+    <Setting Name="MailOrder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/talkhome/sim/order/new</Value>
+    </Setting>
+    <Setting Name="CallingCardsMinutes" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/rates/thcc/nonuseraccount/minutes/all</Value>
+    </Setting>
+    <Setting Name="TalkHomeAppRates" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/rates/tha/nonuseraccount/international/all</Value>
+    </Setting>
+    <Setting Name="TalkHomeMobileUKRates" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/rates/thm/nonuseraccount/uk/all</Value>
+    </Setting>
+    <Setting Name="TalkHomeMobileInternationalRates" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/rates/thm/nonuseraccount/international/all</Value>
+    </Setting>
+    <Setting Name="AccountDetails" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/talkhome/useraccount/summary</Value>
+    </Setting>
+    <Setting Name="PaymentHistoryPage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/history/payment</Value>
+    </Setting>
+    <Setting Name="PaymentHistoryTotalPages" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/history/payment/totalpages</Value>
+    </Setting>
+    <Setting Name="VerifySignUpEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/talkhome/confirm</Value>
+    </Setting>
+    <Setting Name="TalkHomeMobileRoamingRates" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/rates/thm/nonuseraccount/roaming/all</Value>
+    </Setting>
+    <Setting Name="GetAppUserByMsisdn" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/website/in-app-details</Value>
+    </Setting>
+    <Setting Name="GetCustomer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/th/merchant/getcustomer</Value>
+    </Setting>
+    <Setting Name="AddProduct" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/talkhome/product</Value>
+    </Setting>
+    <Setting Name="SaveAppUserBillingAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/useraccount/address</Value>
+    </Setting>
+    <Setting Name="StartPayment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/th/payment/start</Value>
+    </Setting>
+    <Setting Name="PaymentRetrieve" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/th/payment/retrieve</Value>
+    </Setting>
+    <Setting Name="OneClickCheckout" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/th/merchant/oneclick</Value>
+    </Setting>
+    <Setting Name="OneClickRetrieve" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/th/payment/oneclickstatus</Value>
+    </Setting>
+    <Setting Name="PromoSignUp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/promotional</Value>
+    </Setting>
+    <Setting Name="RedeemVoucher" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/voucher/add</Value>
+    </Setting>
+    <Setting Name="ReedemPoints" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/redeempoints</Value>
+    </Setting>
+    <Setting Name="AutoRenewBundles" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/Bundle/SetBundleAutoRenewal</Value>
+    </Setting>
+    <Setting Name="AutoRenewTopUp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/set/credit/autorenewal</Value>
+    </Setting>
+    <Setting Name="UpdateAddressHome" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/update/address/home</Value>
+    </Setting>
+    <Setting Name="UpdateAddressBilling" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/update/address/billing</Value>
+    </Setting>
+    <Setting Name="UpdateAddressShipping" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/update/address/shipping</Value>
+    </Setting>
+    <Setting Name="TalkHomeAppInternationalRates" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/destinations1</Value>
+    </Setting>
+    <Setting Name="CreditSimOrder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/Sim/CreditSimRequest</Value>
+    </Setting>
+    <Setting Name="CreditSimPayment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/Sim/CreditSimPayment</Value>
+    </Setting>
+    <Setting Name="CreditSimFullfilment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/Sim/CreditSimFullfilment
+</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

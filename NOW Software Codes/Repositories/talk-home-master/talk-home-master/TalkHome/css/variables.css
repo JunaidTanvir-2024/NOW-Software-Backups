@@ -1,0 +1,8 @@
+﻿:root {
+    --theme-black: #1b0909;
+    --theme-yellow: #e3ff19;
+    --theme-dark-blue: #252198;
+    --theme-light-blue: #56daf3;
+    --theme-light-grey: #f8f8f8;
+    --iphone5-width: 321px; /*actually its 320, but cannot seem to use it in media queries*/
+}

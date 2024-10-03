@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TalkHome.Properties" GeneratedClassName="App">
+  <Profiles />
+  <Settings>
+    <Setting Name="SiteName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Talk Home</Value>
+    </Setting>
+    <Setting Name="OGSiteName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">talkhome.co.uk</Value>
+    </Setting>
+    <Setting Name="OGType" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">website</Value>
+    </Setting>
+    <Setting Name="OGTwitterName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">@TalkHomeUK</Value>
+    </Setting>
+    <Setting Name="DefaultTopUpValue" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="THM" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Talk Home Mobile</Value>
+    </Setting>
+    <Setting Name="THA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Talk Home App</Value>
+    </Setting>
+    <Setting Name="THCC" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Calling Cards</Value>
+    </Setting>
+    <Setting Name="CSBundle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">a109057c-79da-43b0-8ad3-47de447678fc</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

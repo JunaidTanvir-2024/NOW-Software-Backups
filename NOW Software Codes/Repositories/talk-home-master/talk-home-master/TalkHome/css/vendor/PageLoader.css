@@ -1,0 +1,156 @@
+﻿/* ----------------------------------------------------------------------------- LoadingBar Start------------------ */
+
+@keyframes LoadingBar {
+    0% {
+        transform: translateX(-102%)
+    }
+
+    45% {
+        transform: translateX(0)
+    }
+
+    55% {
+        transform: translateX(0)
+    }
+
+    90% {
+        transform: translateX(102%)
+    }
+
+    100% {
+        transform: translateX(102%)
+    }
+}
+
+.loading-bar {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    overflow-x: hidden;
+    background-color: #59c9e4; /* use px color $primary-light */
+}
+
+    .loading-bar:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 102%;
+        background-color: #fff; /* use px color $primary-default */
+        animation: LoadingBar 1.5s cubic-bezier(.5,.01,.51,1) infinite;
+    }
+
+.home-loading-bar {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    overflow-x: hidden;
+    background-color: #59c9e4; /* use px color $primary-light */
+}
+
+    .home-loading-bar:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 102%;
+        background-color: #2f3387; /* use px color $primary-default */
+        animation: LoadingBar 1.5s cubic-bezier(.5,.01,.51,1) infinite;
+    }
+
+.truespan {
+    float: right;
+    margin-right: 8px;
+    margin-top: -35px;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+
+.pagesloader {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(255,255,255,0.75);
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+}
+
+.overlay__inner {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.overlay__content {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/*.PCloader {
+    position: fixed;
+    bottom: 67px;
+    border: 16px solid #a9abca;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    left: -55px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}*/
+
+
+.PCloader {
+    border: 16px solid #a9abca;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; 
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ----------------------------------------------------------------------------- LoadingBar End ------------------ */

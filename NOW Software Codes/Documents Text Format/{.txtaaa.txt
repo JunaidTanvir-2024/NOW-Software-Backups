@@ -1,0 +1,17 @@
+{
+  "email": "Test1@email.com",
+  "password": "abcdAAA@1234",
+  "userType": 1,
+
+}
+
+Wifi Name : Tanvir
+Password : 5037657++
+
+{
+  "userRegisterInfo": {
+    "userName": "user1",
+    "emailOrPhone": "user1@email.com",
+    "password": "abcd@AAA123"
+  }
+}

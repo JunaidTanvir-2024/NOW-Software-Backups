@@ -1,0 +1,23 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+/* Fonts Lato */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+/* Bootstrap v4.1.1 */
+@import url("bootstrap.min.css");
+
+/* Main Stylesheet */
+@import url("stylesheet.css");
+/*@import url("toggle-btn.css");*/
+
+/* Slick Slider Settings Stylesheet */
+/*@import url("../slick/slick-settings.css");*/
+
+
+/* Main Stylesheet */
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+
+
+

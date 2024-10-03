@@ -1,0 +1,19 @@
+USE PragimTech
+
+
+SELECT * FROM 
+dbo.Employees3 e 
+WHERE e.Salary  = (SELECT MAX(e1.Salary) FROM dbo.Employees3 e1 WHERE  e1.Salary <  (SELECT MAX(e2.Salary) FROM dbo.Employees3 e2 ))
+
+
+SELECT * FROM 
+dbo.Employees3 e 
+WHERE e.Salary  = (SELECT MAX(e1.Salary) FROM dbo.Employees3 e1  )
+
+
+GO	
+SELECT * 
+FROM dbo.Employees3 e1
+WHERE  1 =  (SELECT COUNT(e2.Salary) FROM dbo.Employees3 e2 WHERE e2.Salary > e1.Salary)
+
+

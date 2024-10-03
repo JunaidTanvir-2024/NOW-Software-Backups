@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "C24MHuIDKtD1FdJbNa7rrSVfo5iooDW17vyTPZ1Y0ec=",
+  "Source": "CQRSAndMediatrWithFluentValidationSampleApi",
+  "BasePath": "_content/CQRSAndMediatrWithFluentValidationSampleApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

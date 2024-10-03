@@ -1,0 +1,21 @@
+
+SELECT  TOP 10 * FROM dbo.operator
+UPDATE dbo.operator
+SET name_alias  =REPLACE(LOWER(name), ' ', '_')
+UPDATE dbo.operator
+SET short_code  =REPLACE(LOWER(name), ' ', '_')
+
+
+
+SELECT TOP 10 * FROM dbo.product
+UPDATE dbo.product
+SET name_alias  =REPLACE(LOWER(name), ' ', '_')
+
+
+
+SELECT * FROM dbo.product_subcategory
+UPDATE dbo.product_subcategory
+SET short_code  =REPLACE(LOWER(name), ' ', '_')
+
+
+
